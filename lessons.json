@@ -1,0 +1,30 @@
+{
+  "1": {
+    "title": "Động từ cơ bản",
+    "words": [
+      {
+        "kanji": "行きます",
+        "hiragana": "いきます", 
+        "romaji": "ikimasu",
+        "meaning": "đi",
+        "example": "学校へ行きます。",
+        "exampleVn": "Tôi đi đến trường.",
+        "grammar": "学校 (trường) + へ (đến) + 行きます (đi)",
+        "breakdown": [
+          {"word": "学校", "reading": "がっこう", "type": "noun", "meaning": "trường học"},
+          {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến, về phía"},
+          {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+        ],
+        "pattern": "Danh từ + へ + Động từ di chuyển",
+        "examples": [
+          {"jp": "家へ帰ります。", "vn": "Tôi về nhà."},
+          {"jp": "会社へ行きます。", "vn": "Tôi đi công ty."}
+        ]
+      }
+    ]
+  },
+  "2": {
+    "title": "Bài học khác",
+    "words": [...]
+  }
+}
