@@ -9,7 +9,7 @@
         "meaning": "đi",
         "example": "学校へ行きます。",
         "exampleVn": "Tôi đi đến trường.",
-        "grammar": "学校 (trường) + へ (đến) + 行きます (đi)",
+        "grammar": "学校 (trường) + へ (đến) + 行きます (đi) - Trợ từ へ chỉ hướng đi",
         "breakdown": [
           {"word": "学校", "reading": "がっこう", "type": "noun", "meaning": "trường học"},
           {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến, về phía"},
@@ -18,31 +18,53 @@
         "pattern": "Danh từ + へ + Động từ di chuyển",
         "examples": [
           {"jp": "家へ帰ります。", "vn": "Tôi về nhà."},
-          {"jp": "会社へ行きます。", "vn": "Tôi đi công ty."}
+          {"jp": "会社へ行きます。", "vn": "Tôi đi công ty."},
+          {"jp": "駅へ走ります。", "vn": "Tôi chạy đến ga."}
+        ]
+      },
+      {
+        "kanji": "来ます",
+        "hiragana": "きます",
+        "romaji": "kimasu",
+        "meaning": "đến",
+        "example": "友達が来ます。",
+        "exampleVn": "Bạn tôi đến.",
+        "grammar": "友達 (bạn) + が (chủ ngữ) + 来ます (đến)",
+        "breakdown": [
+          {"word": "友達", "reading": "ともだち", "type": "noun", "meaning": "bạn bè"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "đánh dấu chủ ngữ"},
+          {"word": "来ます", "reading": "きます", "type": "verb", "meaning": "đến (lịch sự)"}
+        ],
+        "pattern": "Chủ ngữ + が + Động từ",
+        "examples": [
+          {"jp": "先生が来ます。", "vn": "Thầy giáo đến."},
+          {"jp": "電車が来ます。", "vn": "Tàu điện đến."},
+          {"jp": "雨が来ます。", "vn": "Mưa đến."}
         ]
       }
     ]
   },
   "2": {
     "title": "Bài học khác",
-    words": [
+    "words": [
       {
-        "kanji": "行きます",
-        "hiragana": "いきます", 
-        "romaji": "ikimasu",
-        "meaning": "đi",
-        "example": "学校へ行きます。",
-        "exampleVn": "Tôi đi đến trường.",
-        "grammar": "学校 (trường) + へ (đến) + 行きます (đi)",
+        "kanji": "食べます",
+        "hiragana": "たべます",
+        "romaji": "tabemasu",
+        "meaning": "ăn",
+        "example": "ご飯を食べます。",
+        "exampleVn": "Tôi ăn cơm.",
+        "grammar": "ご飯 (cơm) + を (tân ngữ) + 食べます (ăn)",
         "breakdown": [
-          {"word": "学校", "reading": "がっこう", "type": "noun", "meaning": "trường học"},
-          {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến, về phía"},
-          {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+          {"word": "ご飯", "reading": "ごはん", "type": "noun", "meaning": "cơm"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "đánh dấu tân ngữ"},
+          {"word": "食べます", "reading": "たべます", "type": "verb", "meaning": "ăn (lịch sự)"}
         ],
-        "pattern": "Danh từ + へ + Động từ di chuyển",
+        "pattern": "Danh từ + を + Động từ",
         "examples": [
-          {"jp": "家へ帰ります。", "vn": "Tôi về nhà."},
-          {"jp": "会社へ行きます。", "vn": "Tôi đi công ty."}
+          {"jp": "りんごを食べます。", "vn": "Tôi ăn táo."},
+          {"jp": "パンを食べます。", "vn": "Tôi ăn bánh mì."},
+          {"jp": "魚を食べます。", "vn": "Tôi ăn cá."}
         ]
       }
     ]
