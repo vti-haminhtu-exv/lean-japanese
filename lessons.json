@@ -68,5 +68,30 @@
         ]
       }
     ]
+  },
+   "3": {
+    "title": "Bài học khác",
+    "words": [
+      {
+        "kanji": "食べます",
+        "hiragana": "たべます",
+        "romaji": "tabemasu",
+        "meaning": "ăn",
+        "example": "ご飯を食べます。",
+        "exampleVn": "Tôi ăn cơm.",
+        "grammar": "ご飯 (cơm) + を (tân ngữ) + 食べます (ăn)",
+        "breakdown": [
+          {"word": "ご飯", "reading": "ごはん", "type": "noun", "meaning": "cơm"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "đánh dấu tân ngữ"},
+          {"word": "食べます", "reading": "たべます", "type": "verb", "meaning": "ăn (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + Động từ",
+        "examples": [
+          {"jp": "りんごを食べます。", "vn": "Tôi ăn táo."},
+          {"jp": "パンを食べます。", "vn": "Tôi ăn bánh mì."},
+          {"jp": "魚を食べます。", "vn": "Tôi ăn cá."}
+        ]
+      }
+    ]
   }
 }
