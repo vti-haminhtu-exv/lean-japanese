@@ -1,0 +1,661 @@
+{
+  "title": "Hành động và phương tiện di chuyển",
+  "words": [
+    {
+      "kanji": "行きます",
+      "hiragana": "いきます",
+      "romaji": "ikimasu",
+      "meaning": "đi",
+      "example": "学校へ行きます。",
+      "exampleVn": "Tôi đi đến trường.",
+      "grammar": "学校 (trường) + へ (đến) + 行きます (đi) - Trợ từ へ chỉ hướng đi",
+      "breakdown": [
+        {"word": "学校", "reading": "がっこう", "type": "noun", "meaning": "trường học"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến, về phía"},
+        {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+      ],
+      "pattern": "Danh từ + へ + Động từ di chuyển",
+      "examples": [
+        {"jp": "家へ帰ります。", "vn": "Tôi về nhà."},
+        {"jp": "会社へ行きます。", "vn": "Tôi đi công ty."},
+        {"jp": "駅へ走ります。", "vn": "Tôi chạy đến ga."}
+      ]
+    },
+    {
+      "kanji": "来ます",
+      "hiragana": "きます",
+      "romaji": "kimasu",
+      "meaning": "đến",
+      "example": "友達が家に来ます。",
+      "exampleVn": "Bạn đến nhà tôi.",
+      "grammar": "友達 (bạn) + が (chủ ngữ) + 家 (nhà) + に (đến) + 来ます (đến) - が đánh dấu chủ ngữ",
+      "breakdown": [
+        {"word": "友達", "reading": "ともだち", "type": "noun", "meaning": "bạn bè"},
+        {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+        {"word": "家", "reading": "うち", "type": "noun", "meaning": "nhà"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "đến, tại"},
+        {"word": "来ます", "reading": "きます", "type": "verb", "meaning": "đến (lịch sự)"}
+      ],
+      "pattern": "Ai đó + が + Địa điểm + に + 来ます",
+      "examples": [
+        {"jp": "お客さんが来ます。", "vn": "Khách đến."},
+        {"jp": "先生が教室に来ます。", "vn": "Thầy đến lớp."},
+        {"jp": "雨が来ます。", "vn": "Mưa sắp đến."}
+      ]
+    },
+    {
+      "kanji": "帰ります",
+      "hiragana": "かえります",
+      "romaji": "kaerimasu",
+      "meaning": "về",
+      "example": "毎日うちへ帰ります。",
+      "exampleVn": "Hàng ngày tôi về nhà.",
+      "grammar": "毎日 (hàng ngày) + うち (nhà) + へ (về) + 帰ります (về) - Trạng từ thời gian đứng đầu",
+      "breakdown": [
+        {"word": "毎日", "reading": "まいにち", "type": "time", "meaning": "hàng ngày"},
+        {"word": "うち", "reading": "うち", "type": "noun", "meaning": "nhà (của tôi)"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "về phía"},
+        {"word": "帰ります", "reading": "かえります", "type": "verb", "meaning": "về (lịch sự)"}
+      ],
+      "pattern": "Thời gian + Địa điểm + へ + 帰ります",
+      "examples": [
+        {"jp": "夜遅く帰ります。", "vn": "Tôi về muộn vào buổi tối."},
+        {"jp": "国へ帰ります。", "vn": "Tôi về nước."},
+        {"jp": "すぐ帰ります。", "vn": "Tôi về ngay."}
+      ]
+    },
+    {
+      "kanji": "学校",
+      "hiragana": "がっこう",
+      "romaji": "gakkō",
+      "meaning": "trường học",
+      "example": "学校は大きいです。",
+      "exampleVn": "Trường học thì to.",
+      "grammar": "学校 (trường) + は (chủ đề) + 大きい (to) + です (lịch sự) - Cấu trúc tính từ-i + です",
+      "breakdown": [
+        {"word": "学校", "reading": "がっこう", "type": "noun", "meaning": "trường học"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "大きい", "reading": "おおきい", "type": "adjective", "meaning": "to, lớn"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "thể lịch sự"}
+      ],
+      "pattern": "Danh từ + は + Tính từ-i + です",
+      "examples": [
+        {"jp": "学校は新しいです。", "vn": "Trường học thì mới."},
+        {"jp": "学校は遠いです。", "vn": "Trường học thì xa."},
+        {"jp": "学校は楽しいです。", "vn": "Trường học thì vui."}
+      ]
+    },
+    {
+      "kanji": "駅",
+      "hiragana": "えき",
+      "romaji": "eki",
+      "meaning": "nhà ga",
+      "example": "駅で電車にのります。",
+      "exampleVn": "Tôi lên tàu ở nhà ga.",
+      "grammar": "駅 (ga) + で (tại) + 電車 (tàu) + に (lên) + のります (lên) - で chỉ nơi hành động",
+      "breakdown": [
+        {"word": "駅", "reading": "えき", "type": "noun", "meaning": "nhà ga"},
+        {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở (nơi hành động)"},
+        {"word": "電車", "reading": "でんしゃ", "type": "noun", "meaning": "tàu điện"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "lên (phương tiện)"},
+        {"word": "のります", "reading": "のります", "type": "verb", "meaning": "lên, đi (phương tiện)"}
+      ],
+      "pattern": "Nơi chốn + で + Phương tiện + に + のります",
+      "examples": [
+        {"jp": "バス停でバスにのります。", "vn": "Tôi lên xe buýt ở trạm."},
+        {"jp": "空港で飛行機にのります。", "vn": "Tôi lên máy bay ở sân bay."},
+        {"jp": "ここで車にのります。", "vn": "Tôi lên xe ở đây."}
+      ]
+    },
+    {
+      "kanji": "飛行機",
+      "hiragana": "ひこうき",
+      "romaji": "hikōki",
+      "meaning": "máy bay",
+      "example": "飛行機で東京へ行きます。",
+      "exampleVn": "Tôi đi Tokyo bằng máy bay.",
+      "grammar": "飛行機 (máy bay) + で (bằng) + 東京 (Tokyo) + へ (đến) - で chỉ phương tiện",
+      "breakdown": [
+        {"word": "飛行機", "reading": "ひこうき", "type": "noun", "meaning": "máy bay"},
+        {"word": "で", "reading": "で", "type": "particle", "meaning": "bằng (phương tiện)"},
+        {"word": "東京", "reading": "とうきょう", "type": "noun", "meaning": "Tokyo"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến"},
+        {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+      ],
+      "pattern": "Phương tiện + で + Địa điểm + へ + 行きます",
+      "examples": [
+        {"jp": "電車で大阪へ行きます。", "vn": "Tôi đi Osaka bằng tàu điện."},
+        {"jp": "バスで学校へ行きます。", "vn": "Tôi đi học bằng xe buýt."},
+        {"jp": "船でアメリカへ行きます。", "vn": "Tôi đi Mỹ bằng tàu thủy."}
+      ]
+    },
+    {
+      "kanji": "船",
+      "hiragana": "ふね",
+      "romaji": "fune",
+      "meaning": "thuyền, tàu thủy",
+      "example": "船で島へ行きます。",
+      "exampleVn": "Tôi đi đến đảo bằng tàu.",
+      "grammar": "船 (tàu) + で (bằng) + 島 (đảo) + へ (đến) + 行きます (đi) - で = phương tiện",
+      "breakdown": [
+        {"word": "船", "reading": "ふね", "type": "noun", "meaning": "tàu thủy"},
+        {"word": "で", "reading": "で", "type": "particle", "meaning": "bằng (phương tiện)"},
+        {"word": "島", "reading": "しま", "type": "noun", "meaning": "đảo"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến"},
+        {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+      ],
+      "pattern": "Phương tiện + で + Địa điểm + へ + 行きます",
+      "examples": [
+        {"jp": "フェリーで北海道へ行きます。", "vn": "Tôi đi Hokkaido bằng phà."},
+        {"jp": "小さい船で釣りに行きます。", "vn": "Tôi đi câu cá bằng thuyền nhỏ."},
+        {"jp": "船で旅行します。", "vn": "Tôi du lịch bằng tàu."}
+      ]
+    },
+    {
+      "kanji": "電車",
+      "hiragana": "でんしゃ",
+      "romaji": "densha",
+      "meaning": "tàu điện",
+      "example": "電車は速いです。",
+      "exampleVn": "Tàu điện thì nhanh.",
+      "grammar": "電車 (tàu điện) + は (chủ đề) + 速い (nhanh) + です - Tính từ-i miêu tả tính chất",
+      "breakdown": [
+        {"word": "電車", "reading": "でんしゃ", "type": "noun", "meaning": "tàu điện"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "速い", "reading": "はやい", "type": "adjective", "meaning": "nhanh"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "thể lịch sự"}
+      ],
+      "pattern": "Danh từ + は + Tính từ-i + です",
+      "examples": [
+        {"jp": "電車は便利です。", "vn": "Tàu điện thì tiện lợi."},
+        {"jp": "電車は安いです。", "vn": "Tàu điện thì rẻ."},
+        {"jp": "電車は時間通りです。", "vn": "Tàu điện thì đúng giờ."}
+      ]
+    },
+    {
+      "kanji": "地下鉄",
+      "hiragana": "ちかてつ",
+      "romaji": "chikatetsu",
+      "meaning": "tàu điện ngầm",
+      "example": "地下鉄で会社へ行きます。",
+      "exampleVn": "Tôi đi làm bằng tàu điện ngầm.",
+      "grammar": "地下鉄 (tàu ngầm) + で (bằng) + 会社 (công ty) + へ (đến) - で = phương tiện đi lại",
+      "breakdown": [
+        {"word": "地下鉄", "reading": "ちかてつ", "type": "noun", "meaning": "tàu điện ngầm"},
+        {"word": "で", "reading": "で", "type": "particle", "meaning": "bằng (phương tiện)"},
+        {"word": "会社", "reading": "かいしゃ", "type": "noun", "meaning": "công ty"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến"},
+        {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+      ],
+      "pattern": "Phương tiện + で + Nơi làm việc + へ + 行きます",
+      "examples": [
+        {"jp": "地下鉄で東京駅へ行きます。", "vn": "Tôi đi ga Tokyo bằng tàu ngầm."},
+        {"jp": "地下鉄は地下を走ります。", "vn": "Tàu ngầm chạy dưới lòng đất."},
+        {"jp": "地下鉄の駅は深いです。", "vn": "Ga tàu ngầm thì sâu."}
+      ]
+    },
+    {
+      "kanji": "新幹線",
+      "hiragana": "しんかんせん",
+      "romaji": "shinkansen",
+      "meaning": "tàu siêu tốc Shinkansen",
+      "example": "新幹線で大阪へ行きます。",
+      "exampleVn": "Tôi đi Osaka bằng Shinkansen.",
+      "grammar": "新幹線 (Shinkansen) + で (bằng) + 大阪 (Osaka) + へ (đến) - Tên riêng + で",
+      "breakdown": [
+        {"word": "新幹線", "reading": "しんかんせん", "type": "noun", "meaning": "tàu siêu tốc Shinkansen"},
+        {"word": "で", "reading": "で", "type": "particle", "meaning": "bằng (phương tiện)"},
+        {"word": "大阪", "reading": "おおさか", "type": "noun", "meaning": "Osaka"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến"},
+        {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+      ],
+      "pattern": "Tàu đặc biệt + で + Thành phố lớn + へ + 行きます",
+      "examples": [
+        {"jp": "新幹線で京都へ行きます。", "vn": "Tôi đi Kyoto bằng Shinkansen."},
+        {"jp": "新幹線はとても速いです。", "vn": "Shinkansen rất nhanh."},
+        {"jp": "新幹線の切符は高いです。", "vn": "Vé Shinkansen thì đắt."}
+      ]
+    },
+    {
+      "kanji": "自転車",
+      "hiragana": "じてんしゃ",
+      "romaji": "jitensha",
+      "meaning": "xe đạp",
+      "example": "自転車で学校へ行きます。",
+      "exampleVn": "Tôi đi học bằng xe đạp.",
+      "grammar": "自転車 (xe đạp) + で (bằng) + 学校 (trường) + へ (đến) - で chỉ phương tiện",
+      "breakdown": [
+        {"word": "自転車", "reading": "じてんしゃ", "type": "noun", "meaning": "xe đạp"},
+        {"word": "で", "reading": "で", "type": "particle", "meaning": "bằng (phương tiện)"},
+        {"word": "学校", "reading": "がっこう", "type": "noun", "meaning": "trường học"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến"},
+        {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+      ],
+      "pattern": "Phương tiện cá nhân + で + Địa điểm + へ + 行きます",
+      "examples": [
+        {"jp": "自転車で公園へ行きます。", "vn": "Tôi đi công viên bằng xe đạp."},
+        {"jp": "自転車は健康にいいです。", "vn": "Xe đạp tốt cho sức khỏe."},
+        {"jp": "自転車で買い物に行きます。", "vn": "Tôi đi mua sắm bằng xe đạp."}
+      ]
+    },
+    {
+      "kanji": "車",
+      "hiragana": "くるま",
+      "romaji": "kuruma",
+      "meaning": "xe ô tô",
+      "example": "車があります。",
+      "exampleVn": "Tôi có ô tô.",
+      "grammar": "車 (xe) + が (chủ ngữ) + あります (có) - が + あります = có cái gì",
+      "breakdown": [
+        {"word": "車", "reading": "くるま", "type": "noun", "meaning": "xe ô tô"},
+        {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ (tồn tại)"},
+        {"word": "あります", "reading": "あります", "type": "verb", "meaning": "có, tồn tại (đồ vật)"}
+      ],
+      "pattern": "Đồ vật + が + あります",
+      "examples": [
+        {"jp": "家に車があります。", "vn": "Ở nhà có xe ô tô."},
+        {"jp": "車が2台あります。", "vn": "Có 2 chiếc xe."},
+        {"jp": "赤い車があります。", "vn": "Có chiếc xe màu đỏ."}
+      ]
+    },
+    {
+      "kanji": "人",
+      "hiragana": "ひと",
+      "romaji": "hito",
+      "meaning": "người",
+      "example": "あの人は先生です。",
+      "exampleVn": "Người kia là thầy giáo.",
+      "grammar": "あの (kia) + 人 (người) + は (chủ đề) + 先生 (giáo viên) + です - あの = chỉ định xa",
+      "breakdown": [
+        {"word": "あの", "reading": "あの", "type": "adjective", "meaning": "kia (xa cả người nói và nghe)"},
+        {"word": "人", "reading": "ひと", "type": "noun", "meaning": "người"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "先生", "reading": "せんせい", "type": "noun", "meaning": "thầy/cô giáo"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+      ],
+      "pattern": "Từ chỉ định + 人 + は + Nghề nghiệp + です",
+      "examples": [
+        {"jp": "この人は学生です。", "vn": "Người này là học sinh."},
+        {"jp": "その人は医者です。", "vn": "Người đó là bác sĩ."},
+        {"jp": "あの人は有名です。", "vn": "Người kia thì nổi tiếng."}
+      ]
+    },
+    {
+      "kanji": "友達",
+      "hiragana": "ともだち",
+      "romaji": "tomodachi",
+      "meaning": "bạn bè",
+      "example": "友達とあそびます。",
+      "exampleVn": "Tôi chơi với bạn.",
+      "grammar": "友達 (bạn) + と (với) + あそびます (chơi) - と chỉ người cùng làm",
+      "breakdown": [
+        {"word": "友達", "reading": "ともだち", "type": "noun", "meaning": "bạn bè"},
+        {"word": "と", "reading": "と", "type": "particle", "meaning": "với, cùng"},
+        {"word": "あそびます", "reading": "あそびます", "type": "verb", "meaning": "chơi (lịch sự)"}
+      ],
+      "pattern": "Người + と + Hoạt động",
+      "examples": [
+        {"jp": "友達と映画を見ます。", "vn": "Tôi xem phim với bạn."},
+        {"jp": "友達と話します。", "vn": "Tôi nói chuyện với bạn."},
+        {"jp": "友達と買い物します。", "vn": "Tôi đi mua sắm với bạn."}
+      ]
+    },
+    {
+      "kanji": "一人で",
+      "hiragana": "ひとりで",
+      "romaji": "hitoride",
+      "meaning": "một mình",
+      "example": "一人で映画を見ます。",
+      "exampleVn": "Tôi xem phim một mình.",
+      "grammar": "一人で (một mình) + 映画 (phim) + を (tân ngữ) + 見ます (xem) - で chỉ trạng thái",
+      "breakdown": [
+        {"word": "一人で", "reading": "ひとりで", "type": "adjective", "meaning": "một mình"},
+        {"word": "映画", "reading": "えいが", "type": "noun", "meaning": "phim"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+        {"word": "見ます", "reading": "みます", "type": "verb", "meaning": "xem (lịch sự)"}
+      ],
+      "pattern": "一人で + Hoạt động",
+      "examples": [
+        {"jp": "一人で勉強します。", "vn": "Tôi học một mình."},
+        {"jp": "一人で旅行します。", "vn": "Tôi du lịch một mình."},
+        {"jp": "一人で食事します。", "vn": "Tôi ăn một mình."}
+      ]
+    },
+    {
+      "kanji": "今週",
+      "hiragana": "こんしゅう",
+      "romaji": "konshū",
+      "meaning": "tuần này",
+      "example": "今週は忙しいです。",
+      "exampleVn": "Tuần này bận.",
+      "grammar": "今週 (tuần này) + は (chủ đề) + 忙しい (bận) + です - Thời gian + は",
+      "breakdown": [
+        {"word": "今週", "reading": "こんしゅう", "type": "time", "meaning": "tuần này"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "忙しい", "reading": "いそがしい", "type": "adjective", "meaning": "bận rộn"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "thể lịch sự"}
+      ],
+      "pattern": "Thời gian + は + Tính từ + です",
+      "examples": [
+        {"jp": "今週は暑いです。", "vn": "Tuần này nóng."},
+        {"jp": "今週は楽しいです。", "vn": "Tuần này vui."},
+        {"jp": "今週は大変です。", "vn": "Tuần này vất vả."}
+      ]
+    },
+    {
+      "kanji": "先週",
+      "hiragana": "せんしゅう",
+      "romaji": "senshū",
+      "meaning": "tuần trước",
+      "example": "先週テストがありました。",
+      "exampleVn": "Tuần trước đã có bài kiểm tra.",
+      "grammar": "先週 (tuần trước) + テスト (test) + が + ありました (đã có) - Thì quá khứ",
+      "breakdown": [
+        {"word": "先週", "reading": "せんしゅう", "type": "time", "meaning": "tuần trước"},
+        {"word": "テスト", "reading": "テスト", "type": "noun", "meaning": "bài kiểm tra"},
+        {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+        {"word": "ありました", "reading": "ありました", "type": "verb", "meaning": "đã có (quá khứ)"}
+      ],
+      "pattern": "Thời gian + Sự kiện + が + ありました",
+      "examples": [
+        {"jp": "先週パーティーがありました。", "vn": "Tuần trước đã có tiệc."},
+        {"jp": "先週会議がありました。", "vn": "Tuần trước đã có cuộc họp."},
+        {"jp": "先週雨がありました。", "vn": "Tuần trước đã có mưa."}
+      ]
+    },
+    {
+      "kanji": "来週",
+      "hiragana": "らいしゅう",
+      "romaji": "raishū",
+      "meaning": "tuần sau",
+      "example": "来週旅行します。",
+      "exampleVn": "Tuần sau tôi đi du lịch.",
+      "grammar": "来週 (tuần sau) + 旅行 (du lịch) + します (làm) - Thì tương lai",
+      "breakdown": [
+        {"word": "来週", "reading": "らいしゅう", "type": "time", "meaning": "tuần sau"},
+        {"word": "旅行", "reading": "りょこう", "type": "noun", "meaning": "du lịch"},
+        {"word": "します", "reading": "します", "type": "verb", "meaning": "làm (lịch sự)"}
+      ],
+      "pattern": "Thời gian tương lai + Hoạt động + します",
+      "examples": [
+        {"jp": "来週試験があります。", "vn": "Tuần sau có kỳ thi."},
+        {"jp": "来週友達と会います。", "vn": "Tuần sau tôi gặp bạn."},
+        {"jp": "来週忙しくなります。", "vn": "Tuần sau sẽ bận."}
+      ]
+    },
+    {
+      "kanji": "今月",
+      "hiragana": "こんげつ",
+      "romaji": "kongetsu",
+      "meaning": "tháng này",
+      "example": "今月は4月です。",
+      "exampleVn": "Tháng này là tháng 4.",
+      "grammar": "今月 (tháng này) + は + 4月 (tháng 4) + です - A は B です = A là B",
+      "breakdown": [
+        {"word": "今月", "reading": "こんげつ", "type": "time", "meaning": "tháng này"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "4月", "reading": "しがつ", "type": "time", "meaning": "tháng 4"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+      ],
+      "pattern": "Thời gian + は + Thời điểm cụ thể + です",
+      "examples": [
+        {"jp": "今月は忙しい月です。", "vn": "Tháng này là tháng bận rộn."},
+        {"jp": "今月は暖かいです。", "vn": "Tháng này ấm áp."},
+        {"jp": "今月は長いです。", "vn": "Tháng này dài."}
+      ]
+    },
+    {
+      "kanji": "先月",
+      "hiragana": "せんげつ",
+      "romaji": "sengetsu",
+      "meaning": "tháng trước",
+      "example": "先月日本へ行きました。",
+      "exampleVn": "Tháng trước tôi đã đi Nhật.",
+      "grammar": "先月 (tháng trước) + 日本 (Nhật) + へ + 行きました (đã đi) - Quá khứ ~ました",
+      "breakdown": [
+        {"word": "先月", "reading": "せんげつ", "type": "time", "meaning": "tháng trước"},
+        {"word": "日本", "reading": "にほん", "type": "noun", "meaning": "Nhật Bản"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến"},
+        {"word": "行きました", "reading": "いきました", "type": "verb", "meaning": "đã đi (quá khứ)"}
+      ],
+      "pattern": "Thời gian quá khứ + Địa điểm + へ + 行きました",
+      "examples": [
+        {"jp": "先月韓国へ行きました。", "vn": "Tháng trước tôi đã đi Hàn Quốc."},
+        {"jp": "先月映画を見ました。", "vn": "Tháng trước tôi đã xem phim."},
+        {"jp": "先月本を買いました。", "vn": "Tháng trước tôi đã mua sách."}
+      ]
+    },
+    {
+      "kanji": "来月",
+      "hiragana": "らいげつ",
+      "romaji": "raigetsu",
+      "meaning": "tháng sau",
+      "example": "来月は誕生日です。",
+      "exampleVn": "Tháng sau là sinh nhật tôi.",
+      "grammar": "来月 (tháng sau) + は + 誕生日 (sinh nhật) + です - Dự định tương lai",
+      "breakdown": [
+        {"word": "来月", "reading": "らいげつ", "type": "time", "meaning": "tháng sau"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "誕生日", "reading": "たんじょうび", "type": "noun", "meaning": "sinh nhật"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+      ],
+      "pattern": "Thời gian tương lai + は + Sự kiện + です",
+      "examples": [
+        {"jp": "来月試験があります。", "vn": "Tháng sau có kỳ thi."},
+        {"jp": "来月結婚式があります。", "vn": "Tháng sau có đám cưới."},
+        {"jp": "来月引っ越しします。", "vn": "Tháng sau tôi chuyển nhà."}
+      ]
+    },
+    {
+      "kanji": "今年",
+      "hiragana": "ことし",
+      "romaji": "kotoshi",
+      "meaning": "năm nay",
+      "example": "今年は2025年です。",
+      "exampleVn": "Năm nay là năm 2025.",
+      "grammar": "今年 (năm nay) + は + 2025年 (năm 2025) + です - Thông tin về thời gian",
+      "breakdown": [
+        {"word": "今年", "reading": "ことし", "type": "time", "meaning": "năm nay"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "2025年", "reading": "にせんにじゅうごねん", "type": "time", "meaning": "năm 2025"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+      ],
+      "pattern": "Thời gian + は + Năm cụ thể + です",
+      "examples": [
+        {"jp": "今年は忙しい年です。", "vn": "Năm nay là năm bận rộn."},
+        {"jp": "今年は暑いです。", "vn": "Năm nay nóng."},
+        {"jp": "今年は楽しいです。", "vn": "Năm nay vui."}
+      ]
+    },
+    {
+      "kanji": "去年",
+      "hiragana": "きょねん",
+      "romaji": "kyonen",
+      "meaning": "năm ngoái",
+      "example": "去年大学を卒業しました。",
+      "exampleVn": "Năm ngoái tôi tốt nghiệp đại học.",
+      "grammar": "去年 (năm ngoái) + 大学 (đại học) + を + 卒業しました (tốt nghiệp) - を đánh dấu tân ngữ",
+      "breakdown": [
+        {"word": "去年", "reading": "きょねん", "type": "time", "meaning": "năm ngoái"},
+        {"word": "大学", "reading": "だいがく", "type": "noun", "meaning": "đại học"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+        {"word": "卒業しました", "reading": "そつぎょうしました", "type": "verb", "meaning": "đã tốt nghiệp"}
+      ],
+      "pattern": "Thời gian quá khứ + Tổ chức + を + 卒業しました",
+      "examples": [
+        {"jp": "去年高校を卒業しました。", "vn": "Năm ngoái tôi tốt nghiệp cấp 3."},
+        {"jp": "去年働き始めました。", "vn": "Năm ngoái tôi bắt đầu làm việc."},
+        {"jp": "去年結婚しました。", "vn": "Năm ngoái tôi kết hôn."}
+      ]
+    },
+    {
+      "kanji": "来年",
+      "hiragana": "らいねん",
+      "romaji": "rainen",
+      "meaning": "năm sau",
+      "example": "来年日本に行きたいです。",
+      "exampleVn": "Năm sau tôi muốn đi Nhật.",
+      "grammar": "来年 (năm sau) + 日本 (Nhật) + に + 行きたい (muốn đi) + です - ~たい = muốn",
+      "breakdown": [
+        {"word": "来年", "reading": "らいねん", "type": "time", "meaning": "năm sau"},
+        {"word": "日本", "reading": "にほん", "type": "noun", "meaning": "Nhật Bản"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "đến"},
+        {"word": "行きたい", "reading": "いきたい", "type": "verb", "meaning": "muốn đi"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "thể lịch sự"}
+      ],
+      "pattern": "Thời gian tương lai + Địa điểm + に + ~たいです",
+      "examples": [
+        {"jp": "来年結婚したいです。", "vn": "Năm sau tôi muốn kết hôn."},
+        {"jp": "来年家を買いたいです。", "vn": "Năm sau tôi muốn mua nhà."},
+        {"jp": "来年転職したいです。", "vn": "Năm sau tôi muốn chuyển việc."}
+      ]
+    },
+    {
+      "kanji": "何月",
+      "hiragana": "なんがつ",
+      "romaji": "nangatsu",
+      "meaning": "tháng mấy",
+      "example": "何月に日本へ行きますか。",
+      "exampleVn": "Bạn đi Nhật vào tháng mấy?",
+      "grammar": "何月 (tháng mấy) + に (vào) + 日本へ行きますか - Câu hỏi với 何 + か",
+      "breakdown": [
+        {"word": "何月", "reading": "なんがつ", "type": "time", "meaning": "tháng mấy (câu hỏi)"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "vào (thời gian)"},
+        {"word": "日本", "reading": "にほん", "type": "noun", "meaning": "Nhật Bản"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến"},
+        {"word": "行きますか", "reading": "いきますか", "type": "verb", "meaning": "đi không? (câu hỏi)"}
+      ],
+      "pattern": "何月 + に + Địa điểm + へ + 行きますか",
+      "examples": [
+        {"jp": "何月に生まれましたか。", "vn": "Bạn sinh vào tháng mấy?"},
+        {"jp": "何月が好きですか。", "vn": "Bạn thích tháng nào?"},
+        {"jp": "何月に結婚しますか。", "vn": "Bạn kết hôn vào tháng mấy?"}
+      ]
+    },
+    {
+      "kanji": "日",
+      "hiragana": "にち",
+      "romaji": "nichi",
+      "meaning": "ngày",
+      "example": "日曜日に休みます。",
+      "exampleVn": "Tôi nghỉ vào Chủ Nhật.",
+      "grammar": "日曜日 (Chủ Nhật) + に (vào) + 休みます (nghỉ) - に chỉ thời gian cụ thể",
+      "breakdown": [
+        {"word": "日曜日", "reading": "にちようび", "type": "time", "meaning": "Chủ Nhật"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "vào (thời gian)"},
+        {"word": "休みます", "reading": "やすみます", "type": "verb", "meaning": "nghỉ ngơi (lịch sự)"}
+      ],
+      "pattern": "Thứ trong tuần + に + Hoạt động",
+      "examples": [
+        {"jp": "月曜日に働きます。", "vn": "Tôi làm việc vào thứ Hai."},
+        {"jp": "土曜日に買い物します。", "vn": "Tôi mua sắm vào thứ Bảy."},
+        {"jp": "金曜日に映画を見ます。", "vn": "Tôi xem phim vào thứ Sáu."}
+      ]
+    },
+    {
+      "kanji": "何日",
+      "hiragana": "なんにち",
+      "romaji": "nannichi",
+      "meaning": "ngày mấy",
+      "example": "今日は何日ですか。",
+      "exampleVn": "Hôm nay là ngày mấy?",
+      "grammar": "今日 (hôm nay) + は + 何日 (ngày mấy) + ですか - Câu hỏi thông tin",
+      "breakdown": [
+        {"word": "今日", "reading": "きょう", "type": "time", "meaning": "hôm nay"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "何日", "reading": "なんにち", "type": "time", "meaning": "ngày mấy (câu hỏi)"},
+        {"word": "ですか", "reading": "ですか", "type": "verb", "meaning": "là không? (câu hỏi)"}
+      ],
+      "pattern": "Thời gian + は + 何日 + ですか",
+      "examples": [
+        {"jp": "誕生日は何日ですか。", "vn": "Sinh nhật là ngày mấy?"},
+        {"jp": "試験は何日ですか。", "vn": "Kỳ thi là ngày mấy?"},
+        {"jp": "明日は何日ですか。", "vn": "Ngày mai là ngày mấy?"}
+      ]
+    },
+    {
+      "kanji": "誕生日",
+      "hiragana": "たんじょうび",
+      "romaji": "tanjōbi",
+      "meaning": "sinh nhật",
+      "example": "誕生日は7月30日です。",
+      "exampleVn": "Sinh nhật tôi là ngày 30 tháng 7.",
+      "grammar": "誕生日 (sinh nhật) + は + 7月30日 (30/7) + です - Ngày tháng cụ thể",
+      "breakdown": [
+        {"word": "誕生日", "reading": "たんじょうび", "type": "noun", "meaning": "sinh nhật"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "7月30日", "reading": "しちがつさんじゅうにち", "type": "time", "meaning": "ngày 30 tháng 7"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+      ],
+      "pattern": "Sự kiện + は + Ngày tháng + です",
+      "examples": [
+        {"jp": "誕生日おめでとう。", "vn": "Chúc mừng sinh nhật."},
+        {"jp": "誕生日パーティーをします。", "vn": "Tôi tổ chức tiệc sinh nhật."},
+        {"jp": "誕生日プレゼントを買います。", "vn": "Tôi mua quà sinh nhật."}
+      ]
+    },
+    {
+      "kanji": "普通",
+      "hiragana": "ふつう",
+      "romaji": "futsū",
+      "meaning": "tàu thường",
+      "example": "普通電車はおそいです。",
+      "exampleVn": "Tàu thường thì chậm.",
+      "grammar": "普通電車 (tàu thường) + は + おそい (chậm) + です - Tính từ-i + です",
+      "breakdown": [
+        {"word": "普通電車", "reading": "ふつうでんしゃ", "type": "noun", "meaning": "tàu thường (không nhanh)"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "おそい", "reading": "おそい", "type": "adjective", "meaning": "chậm"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "thể lịch sự"}
+      ],
+      "pattern": "Loại tàu + は + Tính từ + です",
+      "examples": [
+        {"jp": "普通電車は安いです。", "vn": "Tàu thường thì rẻ."},
+        {"jp": "普通電車はどこでも止まります。", "vn": "Tàu thường dừng ở mọi ga."},
+        {"jp": "普通の切符を買います。", "vn": "Tôi mua vé thường."}
+      ]
+    },
+    {
+      "kanji": "急行",
+      "hiragana": "きゅうこう",
+      "romaji": "kyūkō",
+      "meaning": "tàu nhanh",
+      "example": "急行にのります。",
+      "exampleVn": "Tôi đi tàu nhanh.",
+      "grammar": "急行 (tàu nhanh) + に + のります (lên) - に thể hiện đích đến của hành động",
+      "breakdown": [
+        {"word": "急行", "reading": "きゅうこう", "type": "noun", "meaning": "tàu nhanh"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "lên (phương tiện)"},
+        {"word": "のります", "reading": "のります", "type": "verb", "meaning": "lên, đi (phương tiện)"}
+      ],
+      "pattern": "Loại tàu + に + のります",
+      "examples": [
+        {"jp": "急行は速いです。", "vn": "Tàu nhanh thì nhanh."},
+        {"jp": "急行の切符はいくらですか。", "vn": "Vé tàu nhanh bao nhiều tiền?"},
+        {"jp": "急行で行きましょう。", "vn": "Chúng ta đi tàu nhanh nhé."}
+      ]
+    },
+    {
+      "kanji": "特急",
+      "hiragana": "とっきゅう",
+      "romaji": "tokkyū",
+      "meaning": "tàu tốc hành đặc biệt",
+      "example": "特急はとても速いです。",
+      "exampleVn": "Tàu tốc hành đặc biệt rất nhanh.",
+      "grammar": "特急 (tàu đặc biệt) + は + とても (rất) + 速い (nhanh) + です - Trạng từ とても",
+      "breakdown": [
+        {"word": "特急", "reading": "とっきゅう", "type": "noun", "meaning": "tàu tốc hành đặc biệt"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+        {"word": "とても", "reading": "とても", "type": "adjective", "meaning": "rất, vô cùng"},
+        {"word": "速い", "reading": "はやい", "type": "adjective", "meaning": "nhanh"},
+        {"word": "です", "reading": "です", "type": "verb", "meaning": "thể lịch sự"}
+      ],
+      "pattern": "Danh từ + は + とても + Tính từ + です",
+      "examples": [
+        {"jp": "特急は高いです。", "vn": "Tàu đặc biệt thì đắt."},
+        {"jp": "特急の座席は快適です。", "vn": "Ghế ngồi tàu đặc biệt thì thoải mái."},
+        {"jp": "特急で2時間です。", "vn": "Đi tàu đặc biệt mất 2 tiếng."}
+      ]
+    }
+  ]
+}
