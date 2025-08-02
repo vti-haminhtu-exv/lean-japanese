@@ -729,5 +729,311 @@
       ]
     }
   ]
+},
+  "14": {
+  "title": "Hành động và chỉ dẫn",
+  "words": [
+    {
+      "kanji": "開けます",
+      "hiragana": "あけます",
+      "romaji": "akemasu",
+      "meaning": "mở",
+      "example": "窓を開けます。",
+      "exampleVn": "Tôi mở cửa sổ.",
+      "grammar": "窓 (cửa sổ) + を (tân ngữ) + 開けます (mở) - を đánh dấu tân ngữ trực tiếp",
+      "breakdown": [
+        {"word": "窓", "reading": "まど", "type": "noun", "meaning": "cửa sổ"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "開けます", "reading": "あけます", "type": "verb", "meaning": "mở (lịch sự)"}
+      ],
+      "pattern": "Danh từ + を + Động từ hành động",
+      "examples": [
+        {"jp": "ドアを開けます。", "vn": "Tôi mở cửa."},
+        {"jp": "本を開けます。", "vn": "Tôi mở sách."},
+        {"jp": "箱を開けます。", "vn": "Tôi mở hộp."}
+      ]
+    },
+    {
+      "kanji": "閉めます",
+      "hiragana": "しめます",
+      "romaji": "shimemasu",
+      "meaning": "đóng",
+      "example": "ドアを閉めます。",
+      "exampleVn": "Tôi đóng cửa.",
+      "grammar": "ドア (cửa) + を (tân ngữ) + 閉めます (đóng) - Hành động tác động lên vật",
+      "breakdown": [
+        {"word": "ドア", "reading": "ドア", "type": "noun", "meaning": "cửa"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "閉めます", "reading": "しめます", "type": "verb", "meaning": "đóng (lịch sự)"}
+      ],
+      "pattern": "Vật thể + を + 閉めます",
+      "examples": [
+        {"jp": "窓を閉めます。", "vn": "Tôi đóng cửa sổ."},
+        {"jp": "冷蔵庫を閉めます。", "vn": "Tôi đóng tủ lạnh."},
+        {"jp": "引き出しを閉めます。", "vn": "Tôi đóng ngăn kéo."}
+      ]
+    },
+    {
+      "kanji": "急ぎます",
+      "hiragana": "いそぎます",
+      "romaji": "isogimasu",
+      "meaning": "vội, gấp",
+      "example": "学校へ急ぎます。",
+      "exampleVn": "Tôi vội đến trường.",
+      "grammar": "学校 (trường) + へ (đến) + 急ぎます (vội) - へ chỉ hướng đi với tốc độ nhanh",
+      "breakdown": [
+        {"word": "学校", "reading": "がっこう", "type": "noun", "meaning": "trường học"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến, về phía"},
+        {"word": "急ぎます", "reading": "いそぎます", "type": "verb", "meaning": "vội vã (lịch sự)"}
+      ],
+      "pattern": "Địa điểm + へ + 急ぎます",
+      "examples": [
+        {"jp": "会社へ急ぎます。", "vn": "Tôi vội đến công ty."},
+        {"jp": "家へ急ぎます。", "vn": "Tôi vội về nhà."},
+        {"jp": "駅へ急ぎます。", "vn": "Tôi vội đến ga."}
+      ]
+    },
+    {
+      "kanji": "待ちます",
+      "hiragana": "まちます",
+      "romaji": "machimasu",
+      "meaning": "đợi, chờ",
+      "example": "バスを待ちます。",
+      "exampleVn": "Tôi đợi xe buýt.",
+      "grammar": "バス (xe buýt) + を (tân ngữ) + 待ちます (chờ) - を đánh dấu đối tượng được chờ",
+      "breakdown": [
+        {"word": "バス", "reading": "バス", "type": "noun", "meaning": "xe buýt"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "待ちます", "reading": "まちます", "type": "verb", "meaning": "đợi, chờ (lịch sự)"}
+      ],
+      "pattern": "Đối tượng chờ + を + 待ちます",
+      "examples": [
+        {"jp": "友達を待ちます。", "vn": "Tôi đợi bạn."},
+        {"jp": "電車を待ちます。", "vn": "Tôi đợi tàu điện."},
+        {"jp": "タクシーを待ちます。", "vn": "Tôi đợi taxi."}
+      ]
+    },
+    {
+      "kanji": "止めます",
+      "hiragana": "とめます",
+      "romaji": "tomemasu",
+      "meaning": "dừng, đỗ",
+      "example": "車を止めます。",
+      "exampleVn": "Tôi dừng xe.",
+      "grammar": "車 (xe) + を (tân ngữ) + 止めます (dừng) - Hành động làm cho xe dừng lại",
+      "breakdown": [
+        {"word": "車", "reading": "くるま", "type": "noun", "meaning": "xe ô tô"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "止めます", "reading": "とめます", "type": "verb", "meaning": "dừng, đỗ (lịch sự)"}
+      ],
+      "pattern": "Phương tiện + を + 止めます",
+      "examples": [
+        {"jp": "自転車を止めます。", "vn": "Tôi dừng xe đạp."},
+        {"jp": "ここで車を止めます。", "vn": "Tôi đỗ xe ở đây."},
+        {"jp": "駐車場に車を止めます。", "vn": "Tôi đỗ xe ở bãi đậu xe."}
+      ]
+    },
+    {
+      "kanji": "曲がります",
+      "hiragana": "まがります",
+      "romaji": "magarimasu",
+      "meaning": "rẽ, quẹo",
+      "example": "右へ曲がります。",
+      "exampleVn": "Rẽ phải.",
+      "grammar": "右 (phải) + へ (về phía) + 曲がります (rẽ) - へ chỉ hướng rẽ",
+      "breakdown": [
+        {"word": "右", "reading": "みぎ", "type": "noun", "meaning": "bên phải"},
+        {"word": "へ", "reading": "へ", "type": "particle", "meaning": "về phía"},
+        {"word": "曲がります", "reading": "まがります", "type": "verb", "meaning": "rẽ, quẹo (lịch sự)"}
+      ],
+      "pattern": "Hướng + へ + 曲がります",
+      "examples": [
+        {"jp": "左へ曲がります。", "vn": "Rẽ trái."},
+        {"jp": "次の角で曲がります。", "vn": "Rẽ ở góc tiếp theo."},
+        {"jp": "信号で曲がります。", "vn": "Rẽ ở đèn giao thông."}
+      ]
+    },
+    {
+      "kanji": "持ちます",
+      "hiragana": "もちます",
+      "romaji": "mochimasu",
+      "meaning": "cầm, mang",
+      "example": "荷物を持ちます。",
+      "exampleVn": "Tôi mang hành lý.",
+      "grammar": "荷物 (hành lý) + を (tân ngữ) + 持ちます (mang) - を đánh dấu vật được cầm",
+      "breakdown": [
+        {"word": "荷物", "reading": "にもつ", "type": "noun", "meaning": "hành lý, đồ đạc"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "持ちます", "reading": "もちます", "type": "verb", "meaning": "cầm, mang (lịch sự)"}
+      ],
+      "pattern": "Đồ vật + を + 持ちます",
+      "examples": [
+        {"jp": "バッグを持ちます。", "vn": "Tôi cầm túi."},
+        {"jp": "傘を持ちます。", "vn": "Tôi cầm ô."},
+        {"jp": "本を持ちます。", "vn": "Tôi cầm sách."}
+      ]
+    },
+    {
+      "kanji": "取ります",
+      "hiragana": "とります",
+      "romaji": "torimasu",
+      "meaning": "lấy",
+      "example": "塩を取ってください。",
+      "exampleVn": "Làm ơn lấy muối giúp tôi.",
+      "grammar": "塩 (muối) + を (tân ngữ) + 取って (lấy) + ください (xin hãy) - Thể te + ください = lời nhờ",
+      "breakdown": [
+        {"word": "塩", "reading": "しお", "type": "noun", "meaning": "muối"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "取って", "reading": "とって", "type": "verb", "meaning": "lấy (thể te)"},
+        {"word": "ください", "reading": "ください", "type": "auxiliary", "meaning": "xin hãy (lịch sự)"}
+      ],
+      "pattern": "Vật + を + 取って + ください",
+      "examples": [
+        {"jp": "砂糖を取ってください。", "vn": "Làm ơn lấy đường giúp tôi."},
+        {"jp": "写真を取ります。", "vn": "Tôi chụp ảnh."},
+        {"jp": "資料を取ります。", "vn": "Tôi lấy tài liệu."}
+      ]
+    },
+    {
+      "kanji": "手伝います",
+      "hiragana": "てつだいます",
+      "romaji": "tetsudaimasu",
+      "meaning": "giúp đỡ",
+      "example": "母を手伝います。",
+      "exampleVn": "Tôi giúp mẹ.",
+      "grammar": "母 (mẹ) + を (tân ngữ) + 手伝います (giúp) - を đánh dấu người được giúp",
+      "breakdown": [
+        {"word": "母", "reading": "はは", "type": "noun", "meaning": "mẹ (của tôi)"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "手伝います", "reading": "てつだいます", "type": "verb", "meaning": "giúp đỡ (lịch sự)"}
+      ],
+      "pattern": "Người + を + 手伝います",
+      "examples": [
+        {"jp": "父を手伝います。", "vn": "Tôi giúp bố."},
+        {"jp": "友達を手伝います。", "vn": "Tôi giúp bạn."},
+        {"jp": "先生を手伝います。", "vn": "Tôi giúp thầy cô."}
+      ]
+    },
+    {
+      "kanji": "呼びます",
+      "hiragana": "よびます",
+      "romaji": "yobimasu",
+      "meaning": "gọi",
+      "example": "タクシーを呼びます。",
+      "exampleVn": "Tôi gọi taxi.",
+      "grammar": "タクシー (taxi) + を (tân ngữ) + 呼びます (gọi) - を đánh dấu đối tượng được gọi",
+      "breakdown": [
+        {"word": "タクシー", "reading": "タクシー", "type": "noun", "meaning": "taxi"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "呼びます", "reading": "よびます", "type": "verb", "meaning": "gọi (lịch sự)"}
+      ],
+      "pattern": "Đối tượng + を + 呼びます",
+      "examples": [
+        {"jp": "医者を呼びます。", "vn": "Tôi gọi bác sĩ."},
+        {"jp": "友達を呼びます。", "vn": "Tôi gọi bạn."},
+        {"jp": "警察を呼びます。", "vn": "Tôi gọi cảnh sát."}
+      ]
+    },
+    {
+      "kanji": "話します",
+      "hiragana": "はなします",
+      "romaji": "hanashimasu",
+      "meaning": "nói",
+      "example": "先生と話します。",
+      "exampleVn": "Tôi nói chuyện với cô giáo.",
+      "grammar": "先生 (giáo viên) + と (với) + 話します (nói) - と chỉ đối tác hành động",
+      "breakdown": [
+        {"word": "先生", "reading": "せんせい", "type": "noun", "meaning": "thầy/cô giáo"},
+        {"word": "と", "reading": "と", "type": "particle", "meaning": "với, cùng"},
+        {"word": "話します", "reading": "はなします", "type": "verb", "meaning": "nói chuyện (lịch sự)"}
+      ],
+      "pattern": "Người + と + 話します",
+      "examples": [
+        {"jp": "友達と話します。", "vn": "Tôi nói chuyện với bạn."},
+        {"jp": "母と話します。", "vn": "Tôi nói chuyện với mẹ."},
+        {"jp": "日本語で話します。", "vn": "Tôi nói bằng tiếng Nhật."}
+      ]
+    },
+    {
+      "kanji": "見せます",
+      "hiragana": "みせます",
+      "romaji": "misemasu",
+      "meaning": "cho xem",
+      "example": "写真を見せます。",
+      "exampleVn": "Tôi cho xem ảnh.",
+      "grammar": "写真 (ảnh) + を (tân ngữ) + 見せます (cho xem) - Động từ trao đổi với を",
+      "breakdown": [
+        {"word": "写真", "reading": "しゃしん", "type": "noun", "meaning": "ảnh"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "見せます", "reading": "みせます", "type": "verb", "meaning": "cho xem (lịch sự)"}
+      ],
+      "pattern": "Vật + を + 見せます",
+      "examples": [
+        {"jp": "パスポートを見せます。", "vn": "Tôi cho xem hộ chiếu."},
+        {"jp": "地図を見せます。", "vn": "Tôi cho xem bản đồ."},
+        {"jp": "手紙を見せます。", "vn": "Tôi cho xem thư."}
+      ]
+    },
+    {
+      "kanji": "教えます",
+      "hiragana": "おしえます",
+      "romaji": "oshiemasu",
+      "meaning": "chỉ, dạy",
+      "example": "住所を教えます。",
+      "exampleVn": "Tôi chỉ địa chỉ.",
+      "grammar": "住所 (địa chỉ) + を (tân ngữ) + 教えます (chỉ) - を đánh dấu thông tin được dạy",
+      "breakdown": [
+        {"word": "住所", "reading": "じゅうしょ", "type": "noun", "meaning": "địa chỉ"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "教えます", "reading": "おしえます", "type": "verb", "meaning": "chỉ, dạy (lịch sự)"}
+      ],
+      "pattern": "Thông tin + を + 教えます",
+      "examples": [
+        {"jp": "名前を教えます。", "vn": "Tôi chỉ tên."},
+        {"jp": "道を教えます。", "vn": "Tôi chỉ đường."},
+        {"jp": "日本語を教えます。", "vn": "Tôi dạy tiếng Nhật."}
+      ]
+    },
+    {
+      "kanji": "始めます",
+      "hiragana": "はじめます",
+      "romaji": "hajimemasu",
+      "meaning": "bắt đầu",
+      "example": "授業を始めます。",
+      "exampleVn": "Tôi bắt đầu tiết học.",
+      "grammar": "授業 (tiết học) + を (tân ngữ) + 始めます (bắt đầu) - を đánh dấu hoạt động được khởi động",
+      "breakdown": [
+        {"word": "授業", "reading": "じゅぎょう", "type": "noun", "meaning": "tiết học"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "始めます", "reading": "はじめます", "type": "verb", "meaning": "bắt đầu (lịch sự)"}
+      ],
+      "pattern": "Hoạt động + を + 始めます",
+      "examples": [
+        {"jp": "仕事を始めます。", "vn": "Tôi bắt đầu công việc."},
+        {"jp": "勉強を始めます。", "vn": "Tôi bắt đầu học."},
+        {"jp": "会議を始めます。", "vn": "Tôi bắt đầu cuộc họp."}
+      ]
+    },
+    {
+      "kanji": "降ります",
+      "hiragana": "ふります",
+      "romaji": "furimasu",
+      "meaning": "rơi (mưa, tuyết...)",
+      "example": "雨が降ります。",
+      "exampleVn": "Trời mưa.",
+      "grammar": "雨 (mưa) + が (chủ ngữ) + 降ります (rơi) - が đánh dấu hiện tượng tự nhiên",
+      "breakdown": [
+        {"word": "雨", "reading": "あめ", "type": "noun", "meaning": "mưa"},
+        {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+        {"word": "降ります", "reading": "ふります", "type": "verb", "meaning": "rơi, rửa (lịch sự)"}
+      ],
+      "pattern": "Hiện tượng thời tiết + が + 降ります",
+      "examples": [
+        {"jp": "雪が降ります。", "vn": "Tuyết rơi."},
+        {"jp": "今日雨が降ります。", "vn": "Hôm nay trời mưa."},
+        {"jp": "明日雪が降ります。", "vn": "Ngày mai tuyết rơi."}
+      ]
+    }
+  ]
 }
 }
