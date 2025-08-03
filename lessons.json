@@ -658,7 +658,45 @@
         {"jp": "特急で2時間です。", "vn": "Đi tàu đặc biệt mất 2 tiếng."}
       ]
     }
-  ]
+  ],
+  "readingPassage": {
+    "title": "Một ngày của Taro-san",
+    "text": "太郎さんは学生です。毎日学校へ行きます。朝、自転車で駅へ急ぎます。駅で電車に乗ります。電車は普通電車です。少し遅いですが、便利です。今週はとても忙しいです。月曜日に友達が家に来ます。一人で勉強するのは難しいので、友達と一緒に勉強します。火曜日にテストがあります。先週、太郎さんはテストの準備をしました。来週、太郎さんは友達と映画を見ます。土曜日に新幹線で大阪へ行きます。新幹線はとても速いです。日曜日に家に帰ります。家に車がありますが、太郎さんはまだ運転しません。来月は太郎さんの誕生日です。誕生日パーティーをします。友達が「何月何日にパーティーをしますか」と聞きます。太郎さんは「7月30日です」と答えます。今年は2025年で、太郎さんは20歳になります。去年、太郎さんは高校を卒業しました。来年、大学へ行きたいです。",
+    "translation": "Taro-san là học sinh. Hàng ngày, anh ấy đi đến trường. Buổi sáng, anh ấy đạp xe đến ga. Ở ga, anh ấy lên tàu điện. Tàu là tàu thường, hơi chậm nhưng tiện lợi. Tuần này rất bận rộn. Thứ Hai, bạn đến nhà anh ấy. Học một mình thì khó, nên anh ấy học cùng bạn. Thứ Ba có bài kiểm tra. Tuần trước, Taro-san đã chuẩn bị cho bài kiểm tra. Tuần sau, anh ấy sẽ xem phim với bạn. Thứ Bảy, anh ấy đi Osaka bằng Shinkansen. Shinkansen rất nhanh. Chủ Nhật, anh ấy về nhà. Ở nhà có xe ô tô, nhưng Taro-san chưa lái xe. Tháng sau là sinh nhật của anh ấy. Anh ấy sẽ tổ chức tiệc sinh nhật. Bạn hỏi: “Tiệc sinh nhật tổ chức vào ngày tháng nào?” Taro-san trả lời: “Ngày 30 tháng 7.” Năm nay là 2025, và Taro-san sẽ 20 tuổi. Năm ngoái, anh ấy tốt nghiệp cấp ba. Năm sau, anh ấy muốn vào đại học.",
+    "highlightedWords": [
+      {"word": "毎日", "meaning": "hàng ngày"},
+      {"word": "学校", "meaning": "trường học"},
+      {"word": "行きます", "meaning": "đi"},
+      {"word": "自転車", "meaning": "xe đạp"},
+      {"word": "駅", "meaning": "nhà ga"},
+      {"word": "電車", "meaning": "tàu điện"},
+      {"word": "乗ります", "meaning": "lên (phương tiện)"},
+      {"word": "普通", "meaning": "tàu thường"},
+      {"word": "今週", "meaning": "tuần này"},
+      {"word": "忙しい", "meaning": "bận rộn"},
+      {"word": "友達", "meaning": "bạn bè"},
+      {"word": "来ます", "meaning": "đến"},
+      {"word": "一人で", "meaning": "một mình"},
+      {"word": "テスト", "meaning": "bài kiểm tra"},
+      {"word": "先週", "meaning": "tuần trước"},
+      {"word": "来週", "meaning": "tuần sau"},
+      {"word": "新幹線", "meaning": "tàu siêu tốc Shinkansen"},
+      {"word": "大阪", "meaning": "Osaka"},
+      {"word": "速い", "meaning": "nhanh"},
+      {"word": "日曜日", "meaning": "Chủ Nhật"},
+      {"word": "帰ります", "meaning": "về"},
+      {"word": "車", "meaning": "xe ô tô"},
+      {"word": "あります", "meaning": "có, tồn tại"},
+      {"word": "来月", "meaning": "tháng sau"},
+      {"word": "誕生日", "meaning": "sinh nhật"},
+      {"word": "何月", "meaning": "tháng mấy"},
+      {"word": "何日", "meaning": "ngày mấy"},
+      {"word": "今年", "meaning": "năm nay"},
+      {"word": "去年", "meaning": "năm ngoái"},
+      {"word": "来年", "meaning": "năm sau"},
+      {"word": "大学", "meaning": "đại học"}
+    ]
+  }
 },
   "14": {
   "title": "Hành động và chỉ dẫn",
@@ -1400,7 +1438,55 @@
         {"jp": "これでお願いします。(現金)", "vn": "Cho tôi thanh toán bằng tiền mặt."}
       ]
     }
-  ]
+  ],
+  "readingPassage": {
+    "title": "Chuyến đi công tác của Suzuki-san",
+    "text": "鈴木さんは会社員です。朝、早く起きます。雨が降りますから、傘を持ちます。窓を開けて、エアコンをつけます。朝ごはんの準備をします。塩と砂糖を取ります。コップに水を入れます。タクシーを呼びます。「駅まで急いでください」と運転手に言います。駅で電車を待ちます。信号を見て、右に曲がってくださいと言います。会社に着くと、書類をコピーします。パスポートを見せます。昼休みに、友達と話します。「ゆっくり話してください」と友達が言います。地図を見て、住所を教えます。会議を始めます。会議の後、鈴木さんは「もう少し書類を準備します」と言います。仕事が終わると、店に行きます。「これでお願いします」と店員に言います。あれ？財布がない！やっと見つけて、支払います。家に帰ると、ドアを閉めます。あとで、友達に電話します。「また明日話しましょう」と話します。漢字の読み方を教えます。",
+    "translation": "Suzuki-san là nhân viên công ty. Buổi sáng, anh ấy dậy sớm. Vì trời mưa, anh ấy mang ô. Anh ấy mở cửa sổ và bật máy điều hòa. Anh ấy chuẩn bị bữa sáng, lấy muối và đường, rồi đổ nước vào cốc. Anh ấy gọi taxi và nói với tài xế: “Làm ơn đến ga nhanh.” Ở ga, anh ấy đợi tàu điện. Nhìn đèn giao thông, anh ấy nói: “Hãy rẽ phải.” Khi đến công ty, anh ấy sao chép tài liệu và trình hộ chiếu. Vào giờ nghỉ trưa, anh ấy nói chuyện với bạn và bạn nói: “Nói chậm thôi.” Anh ấy xem bản đồ và chỉ địa chỉ. Anh ấy bắt đầu cuộc họp. Sau cuộc họp, Suzuki-san nói: “Tôi sẽ chuẩn bị thêm tài liệu.” Sau giờ làm, anh ấy đến cửa hàng và nói với nhân viên: “Cho tôi thanh toán số tiền này.” Ủa? Ví tiền đâu rồi! Cuối cùng tìm thấy, anh ấy thanh toán. Về nhà, anh ấy đóng cửa. Sau đó, anh ấy gọi điện cho bạn và nói: “Nói chuyện tiếp vào ngày mai nhé.” Anh ấy dạy cách đọc chữ Hán.",
+    "highlightedWords": [
+      {"word": "雨", "meaning": "mưa"},
+      {"word": "降ります", "meaning": "rơi (mưa)"},
+      {"word": "傘", "meaning": "ô"},
+      {"word": "持ちます", "meaning": "mang, cầm"},
+      {"word": "窓", "meaning": "cửa sổ"},
+      {"word": "開けます", "meaning": "mở"},
+      {"word": "エアコン", "meaning": "máy điều hòa"},
+      {"word": "つけます", "meaning": "bật"},
+      {"word": "塩", "meaning": "muối"},
+      {"word": "砂糖", "meaning": "đường"},
+      {"word": "取ります", "meaning": "lấy"},
+      {"word": "コップ", "meaning": "cốc"},
+      {"word": "入れます", "meaning": "đổ vào"},
+      {"word": "タクシー", "meaning": "taxi"},
+      {"word": "呼びます", "meaning": "gọi"},
+      {"word": "急ぎます", "meaning": "vội, gấp"},
+      {"word": "駅", "meaning": "nhà ga"},
+      {"word": "待ちます", "meaning": "đợi, chờ"},
+      {"word": "信号", "meaning": "đèn giao thông"},
+      {"word": "曲がってください", "meaning": "hãy rẽ (phải/trái)"},
+      {"word": "書類", "meaning": "tài liệu"},
+      {"word": "コピーします", "meaning": "sao chép"},
+      {"word": "パスポート", "meaning": "hộ chiếu"},
+      {"word": "見せます", "meaning": "cho xem, trình"},
+      {"word": "友達", "meaning": "bạn bè"},
+      {"word": "話します", "meaning": "nói, nói chuyện"},
+      {"word": "ゆっくり", "meaning": "chậm, thong thả"},
+      {"word": "地図", "meaning": "bản đồ"},
+      {"word": "住所", "meaning": "địa chỉ"},
+      {"word": "教えます", "meaning": "dạy, chỉ bảo"},
+      {"word": "始めます", "meaning": "bắt đầu"},
+      {"word": "もう少し", "meaning": "thêm một chút nữa"},
+      {"word": "これでお願いします", "meaning": "cho tôi gửi số tiền này"},
+      {"word": "あれ？", "meaning": "Ủa?, Ơ? (ngạc nhiên nhẹ)"},
+      {"word": "財布", "meaning": "ví tiền"},
+      {"word": "ドア", "meaning": "cửa"},
+      {"word": "閉めます", "meaning": "đóng"},
+      {"word": "あとで", "meaning": "sau"},
+      {"word": "また", "meaning": "lại, nữa"},
+      {"word": "漢字", "meaning": "chữ Hán"},
+      {"word": "読み方", "meaning": "cách đọc"}
+    ]
+  }
 },
 "15": {
   "title": "Hoạt động và mối quan hệ xã hội",
@@ -1942,7 +2028,41 @@
         {"jp": "どちらからいらっしゃいましたか。", "vn": "Anh/chị đến từ đâu ạ?"}
       ]
     }
-  ]
+  ],
+  "readingPassage": {
+    "title": "Một ngày bận rộn của Tanaka-san",
+    "text": "田中さんは毎朝早く起きます。まず、窓を開けます。雨が降りますから、すぐ窓を閉めます。エアコンをつけて、部屋を涼しくします。朝ごはんの準備をします。塩と砂糖を取ります。お茶をコップに入れます。友達を呼びます。「さあ、朝ごはんを食べましょう！」と言います。友達は地図を持ってきます。「この住所を教えてください」と田中さんに言います。田中さんは地図を見せて、道を教えます。食事が終わると、駅へ急ぎます。信号でバスを待ちます。運転手に「右に曲がってください」と言います。バスに乗って、会社へ行きます。会社で書類をコピーします。パスポートも見せます。昼休みに、友達と話します。「もう少しゆっくり話してください」と友達が言います。仕事の後、田中さんはスーパーで買い物をします。「これでお願いします」と店員に言います。家に帰ると、かばんを持ちます。あれ？鍵がない！やっと見つけて、ドアを開けます。夜、また友達と話します。名前や住所の読み方を教えます。最後に、ドアを閉めて寝ます。",
+    "translation": "Tanaka-san dậy sớm mỗi sáng. Đầu tiên, anh ấy mở cửa sổ. Vì trời mưa, anh ấy lập tức đóng cửa sổ. Anh ấy bật máy điều hòa để làm mát phòng. Anh ấy chuẩn bị bữa sáng, lấy muối và đường, rồi đổ trà vào cốc. Anh ấy gọi bạn và nói: “Nào, ăn sáng thôi!” Bạn mang bản đồ đến và nói: “Hãy chỉ cho tôi địa chỉ này.” Tanaka-san cho xem bản đồ và chỉ đường. Sau bữa ăn, anh ấy vội vã đến ga, đợi xe buýt ở đèn giao thông, và nói với tài xế: “Hãy rẽ phải.” Anh ấy lên xe buýt để đến công ty. Ở công ty, anh ấy sao chép tài liệu và trình hộ chiếu. Vào giờ nghỉ trưa, anh ấy nói chuyện với bạn. Bạn nói: “Nói chậm thêm một chút đi.” Sau giờ làm, Tanaka-san mua sắm ở siêu thị và nói với nhân viên: “Cho tôi gửi số tiền này.” Về nhà, anh ấy cầm túi. Ủa? Chìa khóa đâu rồi! Cuối cùng tìm thấy, anh ấy mở cửa. Tối đến, anh ấy lại nói chuyện với bạn, dạy cách đọc tên và địa chỉ. Cuối cùng, anh ấy đóng cửa và đi ngủ.",
+    "highlightedWords": [
+      {"word": "開けます", "meaning": "mở (cửa)"},
+      {"word": "降ります", "meaning": "rơi (mưa, tuyết...)"},
+      {"word": "閉めます", "meaning": "đóng (cửa)"},
+      {"word": "エアコン", "meaning": "máy điều hòa"},
+      {"word": "塩", "meaning": "muối"},
+      {"word": "砂糖", "meaning": "đường"},
+      {"word": "取ります", "meaning": "lấy"},
+      {"word": "呼びます", "meaning": "gọi"},
+      {"word": "さあ", "meaning": "nào (thúc giục)"},
+      {"word": "地図", "meaning": "bản đồ"},
+      {"word": "住所", "meaning": "địa chỉ"},
+      {"word": "教えます", "meaning": "dạy, chỉ bảo"},
+      {"word": "見せます", "meaning": "cho xem, trình"},
+      {"word": "急ぎます", "meaning": "vội, gấp"},
+      {"word": "信号", "meaning": "đèn giao thông"},
+      {"word": "待ちます", "meaning": "đợi, chờ"},
+      {"word": "曲がってください", "meaning": "hãy rẽ (phải/trái)"},
+      {"word": "コピーします", "meaning": "sao chép"},
+      {"word": "パスポート", "meaning": "hộ chiếu"},
+      {"word": "話します", "meaning": "nói, nói chuyện"},
+      {"word": "ゆっくり", "meaning": "chậm, thong thả"},
+      {"word": "これでお願いします", "meaning": "cho tôi gửi số tiền này"},
+      {"word": "持ちます", "meaning": "mang, cầm"},
+      {"word": "あれ？", "meaning": "Ủa?, Ơ? (ngạc nhiên nhẹ)"},
+      {"word": "名前", "meaning": "tên"},
+      {"word": "読み方", "meaning": "cách đọc"},
+      {"word": "また", "meaning": "lại, nữa"}
+    ]
+  }
 },
 "16": {
   "title": "Hành động và tính từ mô tả",
@@ -2568,6 +2688,38 @@
         {"jp": "一番を選びます。", "vn": "Tôi chọn số một."}
       ]
     }
-  ]
+  ],
+  "readingPassage": {
+    "title": "Chuyến tham quan Kyoto của Yumi-san",
+    "text": "由美さんは若い留学生です。朝、ジョギングをします。シャワーを浴びて、緑の服を着ます。長いスカートと短いジャケットを選びます。駅で電車に乗ります。東京駅で新幹線を乗り換えます。京都駅で電車を降ります。お寺と神社を見ます。友達に「どの神社が好きですか」と聞かれます。彼女は「一番きれいな神社が好きです」と答えます。背が高い友達と話します。頭がいい留学生も一緒です。昼ごはんに、お茶をカップに入れます。サービスがいいレストランで食事をします。道が暗いので、早く家に帰ります。家で長い本を読みます。短い映画も見ます。あとで、友達に手紙を出します。「このお寺の写真が一番好きです」と書きます。夜、仕事の話をやめます。明るい部屋でゆっくり休みます。",
+    "translation": "Yumi-san là một du học sinh trẻ. Sáng sớm, cô ấy chạy bộ, tắm vòi sen, và mặc quần áo màu xanh lá. Cô ấy chọn một chiếc váy dài và một chiếc áo khoác ngắn. Ở ga, cô ấy lên tàu điện, chuyển tàu shinkansen ở ga Tokyo, và xuống tàu ở ga Kyoto. Cô ấy tham quan chùa và đền thờ thần đạo. Khi bạn hỏi: “Bạn thích đền thờ nào?”, cô ấy trả lời: “Tôi thích đền thờ đẹp nhất.” Cô ấy nói chuyện với người bạn cao và một du học sinh thông minh. Vào bữa trưa, cô ấy đổ trà vào cốc và ăn ở một nhà hàng có dịch vụ tốt. Vì đường tối, cô ấy nhanh chóng về nhà. Ở nhà, cô ấy đọc một cuốn sách dài và xem một bộ phim ngắn. Sau đó, cô ấy gửi thư cho bạn, viết: “Bức ảnh chùa này là cái tôi thích nhất.” Tối đến, cô ấy ngừng nói về công việc và nghỉ ngơi thong thả trong căn phòng sáng sủa.",
+    "highlightedWords": [
+      {"word": "若い", "meaning": "trẻ"},
+      {"word": "留学生", "meaning": "du học sinh"},
+      {"word": "ジョギング", "meaning": "chạy bộ"},
+      {"word": "シャワー", "meaning": "vòi sen"},
+      {"word": "浴びます", "meaning": "tắm (vòi sen)"},
+      {"word": "緑", "meaning": "màu xanh lá, cây xanh"},
+      {"word": "長い", "meaning": "dài"},
+      {"word": "短い", "meaning": "ngắn"},
+      {"word": "乗ります", "meaning": "lên (tàu, xe...)"},
+      {"word": "乗り換えます", "meaning": "chuyển (tàu, xe...)"},
+      {"word": "降ります", "meaning": "xuống (tàu, xe...)"},
+      {"word": "お寺", "meaning": "chùa"},
+      {"word": "神社", "meaning": "đền thờ thần đạo"},
+      {"word": "どの", "meaning": "cái nào (trong ≥ 3 cái)"},
+      {"word": "一番", "meaning": "số một, nhất"},
+      {"word": "背が高い", "meaning": "cao (dùng cho người)"},
+      {"word": "頭がいい", "meaning": "thông minh"},
+      {"word": "入れます", "meaning": "cho vào, bỏ vào"},
+      {"word": "サービス", "meaning": "dịch vụ"},
+      {"word": "暗い", "meaning": "tối"},
+      {"word": "出します", "meaning": "lấy ra, gửi đi"},
+      {"word": "やめます", "meaning": "bỏ, nghỉ (việc...)"},
+      {"word": "明るい", "meaning": "sáng"},
+      {"word": "ゆっくり", "meaning": "chậm, thong thả"}
+    ]
+  }
 }
+
 }
