@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>📚 Flash Cards Tiếng Nhật</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            box-sizing: border-box;
+            touch-action: manipulation; /* Prevent default touch behaviors */
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        }
+
+        /* Japanese text uses Noto Sans JP */
+        .japanese-text, .kanji, .hiragana, .romaji, .example-jp, .pattern-jp {
+            font-family: 'Noto Sans JP', serif;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .author-credit {
+            text-align: center;
+            color: rgba(255,255,255,0.95);
+            font-size: 13px;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-weight: 600;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Loading screen */
+        .loading-screen {
+            background: white;
+            border-radius: 12px;
+            padding: 30px 15px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            margin-bottom: 15px;
+        }
+
+        .loading-spinner {
+            width: 36px;
+            height: 36px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #007bff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            color: #333;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .error-screen {
+            background: white;
+            border-radius: 12px;
+            padding: 25px 15px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            margin-bottom: 15px;
+        }
+
+        .error-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .error-title {
+            color: #dc3545;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .error-message {
+            color: #666;
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+            white-space: pre-line;
+        }
+
+        .retry-btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            touch-action: manipulation;
+        }
+
+        .retry-btn:hover {
+            background: #0056b3;
+        }
+
+        /* Lesson Selection Menu */
+        .lesson-selector {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .lesson-title {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .lesson-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .lesson-btn {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: 2px solid #e9ecef;
+            padding: 12px 8px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+            color: #333;
+            touch-action: manipulation;
+            position: relative;
+            overflow: hidden;
+            min-height: 85px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .lesson-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .lesson-btn:hover::before {
+            left: 100%;
+        }
+
+        .lesson-btn:active {
+            transform: scale(0.95);
+        }
+
+        .lesson-btn.active {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            border-color: #0056b3;
+            box-shadow: 0 3px 12px rgba(0,123,255,0.3);
+        }
+
+        .lesson-btn.completed {
+            background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+            color: white;
+            border-color: #1e7e34;
+            box-shadow: 0 3px 12px rgba(40,167,69,0.3);
+        }
+
+        .lesson-icon {
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+
+        .lesson-number {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .lesson-name {
+            font-size: 11px;
+            opacity: 0.9;
+            line-height: 1.2;
+        }
+
+        .lesson-stats {
+            font-size: 10px;
+            opacity: 0.8;
+            margin-top: 3px;
+        }
+
+        .lesson-info {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-top: 12px;
+            line-height: 1.4;
+        }
+
+        /* Learning Interface */
+        .learning-container {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .progress {
+            text-align: center;
+            color: #333;
+            margin: 0 0 15px 0;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 15px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 10px;
+            border: 2px solid #dee2e6;
+        }
+
+        .current-lesson {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 14px;
+            box-shadow: 0 3px 12px rgba(0,123,255,0.3);
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .card.flipped {
+            background: linear-gradient(135deg, #e8f5e8 0%, #f1f8e9 100%);
+            border-color: #c3e6cb;
+        }
+
+        .kanji {
+            font-size: 2.4em;
+            font-weight: 700;
+            color: #333;
+            margin: 6px 0;
+            line-height: 1.2;
+        }
+
+        .hiragana {
+            font-size: 1.3em;
+            color: #0066cc;
+            margin: 4px 0;
+            line-height: 1.3;
+            font-weight: 500;
+        }
+
+        .romaji {
+            font-size: 1em;
+            color: #666;
+            font-style: italic;
+            margin: 6px 0;
+            line-height: 1.3;
+            font-weight: 400;
+        }
+
+        .meaning {
+            font-size: 1.3em;
+            color: #009900;
+            font-weight: 700;
+            margin: 10px 0;
+            line-height: 1.3;
+        }
+
+        .example {
+            background: linear-gradient(135deg, #fff3e0 0%, #fafafa 100%);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 12px 0;
+            border-left: 3px solid #ff9800;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .example-jp {
+            font-size: 1em;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .example-vn {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        /* Grammar analysis */
+        .detailed-grammar {
+            background: linear-gradient(135deg, #fff3e0 0%, #fafafa 100%);
+            border-left: 3px solid #ff9800;
+            border-radius: 10px;
+            padding: 14px;
+            margin: 12px 0;
+            font-size: 0.85em;
+            line-height: 1.6;
+            text-align: left;
+            display: none;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .grammar-header {
+            color: #f57c00;
+            font-weight: 700;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .sentence-breakdown {
+            background: white;
+            border-radius: 6px;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .word-part {
+            display: inline-block;
+            margin: 3px 5px;
+            padding: 6px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+
+        .word-part.noun { background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); color: #1976d2; }
+        .word-part.verb { background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%); color: #388e3c; }
+        .word-part.particle { background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); color: #f57c00; }
+        .word-part.adjective { background: linear-gradient(135deg, #fce4ec 0%, #f8bbd9 100%); color: #c2185b; }
+        .word-part.time { background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); color: #7b1fa2; }
+
+        /* Pattern examples */
+        .pattern-example {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            border-radius: 6px;
+            padding: 10px;
+            margin: 6px 0;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .pattern-content {
+            flex: 1;
+            margin-right: 8px;
+        }
+
+        .pattern-jp {
+            font-size: 0.95em;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 3px;
+            line-height: 1.4;
+        }
+
+        .pattern-vn {
+            font-size: 0.85em;
+            color: #666;
+            font-style: italic;
+            line-height: 1.3;
+        }
+
+        .pattern-audio {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(255,107,107,0.3);
+            transition: all 0.2s ease;
+            min-height: 32px;
+            min-width: 40px;
+            flex-shrink: 0;
+            touch-action: manipulation;
+        }
+
+        .pattern-audio:active {
+            transform: scale(0.95);
+        }
+
+        #card-number {
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            color: #999;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        /* Buttons */
+        .card-buttons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .card-buttons-single {
+            display: flex;
+            gap: 10px;
+            margin: 12px 0;
+        }
+
+        .audio-btn, .flip-btn, .grammar-btn {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 3px 12px rgba(0,123,255,0.3);
+            transition: all 0.2s ease;
+            min-height: 45px;
+            touch-action: manipulation;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .audio-btn {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            box-shadow: 0 3px 12px rgba(255,107,107,0.3);
+        }
+
+        .flip-btn {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            box-shadow: 0 3px 12px rgba(76,175,80,0.3);
+        }
+
+        .grammar-btn {
+            background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
+            box-shadow: 0 3px 12px rgba(156,39,176,0.3);
+        }
+
+        .audio-btn:active, .flip-btn:active, .grammar-btn:active {
+            transform: scale(0.95);
+        }
+
+        .controls {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 3px 12px rgba(108,117,125,0.3);
+            transition: all 0.2s ease;
+            min-height: 45px;
+            touch-action: manipulation;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        .mastered-btn {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            box-shadow: 0 3px 12px rgba(40,167,69,0.3);
+        }
+
+        .action-buttons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .test-btn, .back-btn {
+            background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 3px 12px rgba(23,162,184,0.3);
+            transition: all 0.2s ease;
+            min-height: 45px;
+            touch-action: manipulation;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .back-btn {
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+            box-shadow: 0 3px 12px rgba(108,117,125,0.3);
+        }
+
+        .test-btn:active, .back-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 480px) {
+            .kanji { font-size: 2em; }
+            .container { padding: 0; }
+            body { padding: 8px; }
+            .lesson-grid { 
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 8px;
+            }
+            .lesson-btn { 
+                padding: 10px 8px;
+                min-height: 80px;
+            }
+            .lesson-icon { font-size: 18px; }
+            .lesson-number { font-size: 13px; }
+        }
+
+        /* Interface handling */
+        .interface {
+            display: none;
+        }
+        .interface.active {
+            display: block;
+        }
+
+        .auto-speak {
+            color: #28a745;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 8px 0;
+            opacity: 0.8;
+        }
+
+        /* Test Interface */
+        .test-question {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .question-text {
+            font-size: 1em;
+            color: #495057;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+
+        .test-options {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .option-btn {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border: 2px solid #dee2e6;
+            padding: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.3s ease;
+            color: #333;
+            min-height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+        }
+
+        .option-btn:hover {
+            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+
+        .option-btn:active {
+            transform: scale(0.95);
+        }
+
+        .option-btn.correct {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            border-color: #28a745;
+            box-shadow: 0 3px 12px rgba(40,167,69,0.3);
+        }
+
+        .option-btn.wrong {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            color: white;
+            border-color: #dc3545;
+            box-shadow: 0 3px 12px rgba(220,53,69,0.3);
+        }
+
+        .option-btn.disabled {
+            pointer-events: none;
+            opacity: 0.7;
+        }
+
+        .test-result {
+            text-align: center;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #e8f5e8 0%, #f1f8e9 100%);
+            border: 2px solid #c3e6cb;
+        }
+
+        .test-result.wrong {
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+            border-color: #f5c6cb;
+        }
+
+        .result-icon {
+            font-size: 1.8em;
+            margin-bottom: 8px;
+        }
+
+        .result-text {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #155724;
+            margin-bottom: 6px;
+        }
+
+        .test-result.wrong .result-text {
+            color: #721c24;
+        }
+
+        .correct-answer {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Score Interface */
+        .score-display {
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .final-score {
+            margin-bottom: 20px;
+        }
+
+        .score-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #007bff;
+            margin-bottom: 8px;
+        }
+
+        .score-percentage {
+            font-size: 1.3em;
+            color: #28a745;
+            font-weight: 600;
+        }
+
+        .score-message {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+            margin: 15px 0;
+            padding: 12px;
+            background: linear-gradient(135deg, #fff3e0 0%, #fafafa 100%);
+            border-radius: 10px;
+            border-left: 3px solid #ff9800;
+        }
+
+        .score-details {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            border: 2px solid #dee2e6;
+        }
+
+        .score-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+            font-size: 1em;
+            font-weight: 500;
+        }
+
+        .score-row:not(:last-child) {
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        #test-card-number {
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            color: #999;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Loading Interface -->
+    <div id="loading-interface" class="interface active">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="loading-screen">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Đang tải dữ liệu bài học...</div>
+        </div>
+    </div>
+
+    <!-- Error Interface -->
+    <div id="error-interface" class="interface">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="error-screen">
+            <div class="error-icon">⚠️</div>
+            <div class="error-title">Không thể tải dữ liệu</div>
+            <div class="error-message" id="error-message">
+                Có lỗi xảy ra khi tải dữ liệu bài học. Vui lòng kiểm tra kết nối internet và thử lại.
+            </div>
+            <button class="retry-btn" id="retry-btn">🔄 Thử lại</button>
+        </div>
+    </div>
+
+    <!-- Lesson Selection Interface -->
+    <div id="lesson-selection" class="interface">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="lesson-selector">
+            <div class="lesson-title">📖 Chọn Bài Học</div>
+            <div class="lesson-grid" id="lesson-grid"></div>
+            <div class="lesson-info">
+                Nhấn vào bài học để bắt đầu. Bài đã hoàn thành sẽ có màu xanh.
+                <br>📊 Tiến độ học tập sẽ được lưu tự động.
+            </div>
+        </div>
+    </div>
+
+    <!-- Learning Interface -->
+    <div id="learning-interface" class="interface">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="learning-container">
+            <div class="current-lesson" id="current-lesson-info">📝 Bài 1: Động từ cơ bản</div>
+            <div class="progress">
+                <span id="current">1</span> / <span id="total">31</span> |
+                Đã học: <span id="mastered">0</span>/<span id="total2">31</span>
+            </div>
+            <div class="card" id="card">
+                <div id="card-number">#1</div>
+                <div id="front">
+                    <div class="kanji japanese-text" id="kanji">行きます</div>
+                    <div class="hiragana japanese-text" id="hiragana">いきます</div>
+                    <div class="romaji japanese-text" id="romaji">ikimasu</div>
+                    <div class="auto-speak">🔊 Đang tự đọc...</div>
+                    <div class="card-buttons">
+                        <button class="audio-btn" id="audioBtn">🔊 Đọc lại</button>
+                        <button class="flip-btn" id="flipBtn">👁️ Xem nghĩa</button>
+                    </div>
+                </div>
+                <div id="back" style="display: none;">
+                    <div class="kanji japanese-text" id="kanji2">行きます</div>
+                    <div class="hiragana japanese-text" id="hiragana2">いきます</div>
+                    <div class="romaji japanese-text" id="romaji2">ikimasu</div>
+                    <div class="meaning" id="meaning">đi</div>
+                    <div class="example">
+                        <div class="example-jp japanese-text" id="example-jp">学校へ行きます。</div>
+                        <div class="example-vn" id="example-vn">Tôi đi đến trường.</div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="audio-btn" id="audioBtn2">🔊 Đọc ví dụ</button>
+                        <button class="flip-btn" id="flipBtn2">🔄 Quay lại</button>
+                        <button class="grammar-btn" id="grammarBtn">📝 Phân tích ngữ pháp</button>
+                    </div>
+                    <div class="detailed-grammar" id="detailed-grammar">
+                        <div class="grammar-header">📊 Phân tích cấu trúc câu</div>
+                        <div class="sentence-breakdown" id="sentence-breakdown"></div>
+                        <div class="pattern-examples" id="pattern-examples"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="btn" id="prevBtn">⬅️ Trước</button>
+                <button class="btn" id="masteredBtn">✅ Đánh dấu</button>
+                <button class="btn" id="nextBtn">Sau ➡️</button>
+            </div>
+            <div class="action-buttons">
+                <button class="test-btn" id="startTestBtn">🧠 Bài Test Kiểm Tra</button>
+                <button class="back-btn" id="backToMenuBtn">📖 Về Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Test Interface -->
+    <div id="test-interface" class="interface">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="learning-container">
+            <div class="current-lesson" id="test-lesson-info">🧠 Bài Test - Bài 1: Động từ cơ bản</div>
+            <div class="progress">
+                Câu <span id="test-current">1</span> / <span id="test-total">10</span> |
+                Điểm: <span id="test-score">0</span>
+            </div>
+            <div class="card" id="test-card">
+                <div id="test-card-number">#1</div>
+                <div class="test-question">
+                    <div class="kanji japanese-text" id="test-kanji">行きます</div>
+                    <div class="hiragana japanese-text" id="test-hiragana">いきます</div>
+                    <div class="romaji japanese-text" id="test-romaji">ikimasu</div>
+                    <div class="question-text">Nghĩa của từ này là gì?</div>
+                </div>
+                <div class="test-options" id="test-options"></div>
+                <div class="test-result" id="test-result" style="display: none;">
+                    <div class="result-icon" id="result-icon">✅</div>
+                    <div class="result-text" id="result-text">Chính xác!</div>
+                    <div class="correct-answer" id="correct-answer">Đáp án đúng: đi</div>
+                </div>
+                <div class="card-buttons-single">
+                    <button class="audio-btn" id="test-audio-btn">🔊 Đọc từ</button>
+                    <button class="flip-btn" id="test-next-btn" style="display: none;">➡️ Câu tiếp</button>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="back-btn" id="test-back-btn">📖 Về Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Score Interface -->
+    <div id="score-interface" class="interface">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="learning-container">
+            <div class="current-lesson">🏆 Kết Quả Bài Test</div>
+            <div class="score-display">
+                <div class="final-score">
+                    <div class="score-number" id="final-score">8/10</div>
+                    <div class="score-percentage" id="score-percentage">80%</div>
+                </div>
+                <div class="score-message" id="score-message">Xuất sắc! Bạn đã làm rất tốt!</div>
+                <div class="score-details">
+                    <div class="score-row">
+                        <span>Câu đúng:</span>
+                        <span id="correct-count">8</span>
+                    </div>
+                    <div class="score-row">
+                        <span>Câu sai:</span>
+                        <span id="wrong-count">2</span>
+                    </div>
+                    <div class="score-row">
+                        <span>Tỷ lệ chính xác:</span>
+                        <span id="accuracy">80%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="test-btn" id="retry-test-btn">🔄 Làm lại</button>
+                <button class="flip-btn" id="back-to-study-btn">📚 Tiếp tục học</button>
+                <button class="back-btn" id="score-back-btn">📖 Về Menu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const DATA_URL = `https://raw.githubusercontent.com/vti-haminhtu-exv/lean-japanese/main/lessons.json?ts=${Date.now()}`;
+    const LESSON_ICONS = {
+        1: '🚶', 2: '🍽️', 3: '👥', 4: '🏠', 5: '⏰',
+        6: '🎨', 7: '🌸', 8: '📱', 9: '🚗', 10: '🏫',
+        11: '💼', 12: '🛍️', 13: '🍜', 14: '🎵', 15: '📚',
+        16: '⚽', 17: '🌍', 18: '💰', 19: '🏥', 20: '✈️',
+        21: '🎉', 22: '🌤️', 23: '👘', 24: '🗾', 25: '🎯',
+        26: '🎬', 27: '🚅', 28: '🏮', 29: '🌊', 30: '⛩️'
+    };
+
+    let allLessons = {};
+    let currentLesson = 1;
+    let currentIndex = 0;
+    let isFlipped = false;
+    let masteredSet = new Set();
+    let grammarVisible = false;
+    let words = [];
+    let testWords = [];
+    let currentTestIndex = 0;
+    let testScore = 0;
+    let selectedAnswer = '';
+    let isTestAnswered = false;
+
+    const FALLBACK_DATA = {
+        1: {
+            title: "Động từ cơ bản",
+            words: [
+                {
+                    kanji: '行きます',
+                    hiragana: 'いきます',
+                    romaji: 'ikimasu',
+                    meaning: 'đi',
+                    example: '学校へ行きます。',
+                    exampleVn: 'Tôi đi đến trường.',
+                    breakdown: [
+                        {word: '学校', reading: 'がっこう', type: 'noun', meaning: 'trường học'},
+                        {word: 'へ', reading: 'へ', type: 'particle', meaning: 'đến, về phía'},
+                        {word: '行きます', reading: 'いきます', type: 'verb', meaning: 'đi (lịch sự)'}
+                    ],
+                    pattern: 'Danh từ + へ + Động từ di chuyển',
+                    examples: [
+                        {jp: '家へ帰ります。', vn: 'Tôi về nhà.'},
+                        {jp: '会社へ行きます。', vn: 'Tôi đi công ty.'},
+                        {jp: '駅へ走ります。', vn: 'Tôi chạy đến ga.'}
+                    ]
+                },
+                {
+                    kanji: '来ます',
+                    hiragana: 'きます',
+                    romaji: 'kimasu',
+                    meaning: 'đến',
+                    example: '友達が来ます。',
+                    exampleVn: 'Bạn tôi đến.',
+                    breakdown: [
+                        {word: '友達', reading: 'ともだち', type: 'noun', meaning: 'bạn bè'},
+                        {word: 'が', reading: 'が', type: 'particle', meaning: 'đánh dấu chủ ngữ'},
+                        {word: '来ます', reading: 'きます', type: 'verb', meaning: 'đến (lịch sự)'}
+                    ],
+                    pattern: 'Chủ ngữ + が + Động từ',
+                    examples: [
+                        {jp: '先生が来ます。', vn: 'Thầy giáo đến.'},
+                        {jp: '電車が来ます。', vn: 'Tàu điện đến.'},
+                        {jp: '雨が来ます。', vn: 'Mưa đến.'}
+                    ]
+                }
+            ]
+        }
+    };
+
+    function generateLessonButtons() {
+        const grid = document.getElementById('lesson-grid');
+        grid.innerHTML = '';
+        const lessonKeys = Object.keys(allLessons);
+        
+        lessonKeys.forEach(lessonNum => {
+            const lesson = allLessons[lessonNum];
+            const icon = LESSON_ICONS[lessonNum] || '📝';
+            const btn = document.createElement('button');
+            btn.className = 'lesson-btn';
+            btn.innerHTML = `
+                <div class="lesson-icon">${icon}</div>
+                <div class="lesson-number">Bài ${lessonNum}</div>
+                <div class="lesson-name">${lesson.title}</div>
+                <div class="lesson-stats">${lesson.words.length} từ</div>
+            `;
+            if (lessonNum == currentLesson) btn.classList.add('active');
+            try {
+                const completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '[]');
+                if (completedLessons.includes(parseInt(lessonNum))) btn.classList.add('completed');
+            } catch (e) {
+                console.log('localStorage not available');
+            }
+            btn.onclick = () => selectLesson(parseInt(lessonNum));
+            grid.appendChild(btn);
+        });
+    }
+
+    function loadLessonsData() {
+        console.log("Đang tải dữ liệu từ:", DATA_URL);
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', DATA_URL, true);
+        xhr.timeout = 10000;
+        
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    try {
+                        let fixedJSON = xhr.responseText
+                            .replace(/'/g, '"')
+                            .replace(/,(\s*[}\]])/g, '$1')
+                            .replace(/[-\u001F\u007F-\u009F]/g, '')
+                            .trim();
+                        allLessons = JSON.parse(fixedJSON);
+                        generateLessonButtons();
+                        showInterface('lesson-selection');
+                    } catch (error) {
+                        console.error("Error parsing JSON:", error);
+                        handleLoadError(error);
+                    }
+                } else {
+                    console.error("HTTP Error:", xhr.status);
+                    handleLoadError(new Error('HTTP error: ' + xhr.status));
+                }
+            }
+        };
+        
+        xhr.onerror = () => handleLoadError(new Error('Network error'));
+        xhr.ontimeout = () => handleLoadError(new Error('Request timeout'));
+        xhr.send();
+    }
+
+    function handleLoadError(error) {
+        console.error("Error loading lessons:", error);
+        allLessons = FALLBACK_DATA;
+        generateLessonButtons();
+        showInterface('lesson-selection');
+        showError('Không thể tải dữ liệu từ server.\n\nLỗi: ' + error.message + '\n\nĐang sử dụng dữ liệu mẫu.', true);
+    }
+
+    function showError(message, isWarning) {
+        const errorMsg = document.getElementById('error-message');
+        const errorTitle = document.querySelector('.error-title');
+        const errorIcon = document.querySelector('.error-icon');
+        errorTitle.textContent = isWarning ? 'Cảnh báo' : 'Không thể tải dữ liệu';
+        errorIcon.textContent = isWarning ? '⚠️' : '❌';
+        errorMsg.textContent = message;
+        showInterface('error-interface');
+    }
+
+    function showInterface(interfaceId) {
+        document.querySelectorAll('.interface').forEach(intf => intf.classList.remove('active'));
+        document.getElementById(interfaceId).classList.add('active');
+    }
+
+    function selectLesson(lessonNum) {
+        currentLesson = lessonNum;
+        words = allLessons[lessonNum].words;
+        currentIndex = 0;
+        isFlipped = false;
+        masteredSet.clear();
+        document.getElementById('current-lesson-info').textContent = `📝 Bài ${lessonNum}: ${allLessons[lessonNum].title}`;
+        showInterface('learning-interface');
+        showCard();
+    }
+
+    function speak(text, lang = 'ja-JP') {
+        if ('speechSynthesis' in window) {
+            try {
+                speechSynthesis.cancel();
+                setTimeout(() => {
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.lang = lang;
+                    utterance.rate = 0.7;
+                    utterance.pitch = 1;
+                    utterance.volume = 1;
+                    speechSynthesis.speak(utterance);
+                }, 100);
+            } catch (e) {
+                console.log('Speech synthesis error:', e);
+            }
+        }
+    }
+
+    function speakJapanese() {
+        speak(words[currentIndex].hiragana, 'ja-JP');
+    }
+
+    function speakExample() {
+        speak(words[currentIndex].example, 'ja-JP');
+    }
+
+    function generateGrammarAnalysis() {
+        const word = words[currentIndex];
+        const breakdownContainer = document.getElementById('sentence-breakdown');
+        const examplesContainer = document.getElementById('pattern-examples');
+        breakdownContainer.innerHTML = '';
+        
+        if (word.breakdown) {
+            word.breakdown.forEach(part => {
+                const wordPart = document.createElement('span');
+                wordPart.className = `word-part ${part.type}`;
+                wordPart.innerHTML = `${part.word}<br><small>${part.reading}</small><br><small>${part.meaning}</small>`;
+                breakdownContainer.appendChild(wordPart);
+            });
+            const patternDiv = document.createElement('div');
+            patternDiv.style.cssText = 'margin-top: 12px; font-weight: bold; color: #1976d2;';
+            patternDiv.innerHTML = `<strong>📝 Cấu trúc:</strong> ${word.pattern}`;
+            breakdownContainer.appendChild(patternDiv);
+        }
+
+        examplesContainer.innerHTML = '<div style="font-weight: bold; color: #f57c00; margin-bottom: 8px;">📖 Các ví dụ tương tự:</div>';
+        if (word.examples) {
+            word.examples.forEach(example => {
+                const exampleDiv = document.createElement('div');
+                exampleDiv.className = 'pattern-example';
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'pattern-content';
+                const jpDiv = document.createElement('div');
+                jpDiv.className = 'pattern-jp japanese-text';
+                jpDiv.textContent = example.jp;
+                const vnDiv = document.createElement('div');
+                vnDiv.className = 'pattern-vn';
+                vnDiv.textContent = example.vn;
+                const audioBtn = document.createElement('button');
+                audioBtn.className = 'pattern-audio';
+                audioBtn.innerHTML = '🔊';
+                audioBtn.onclick = () => speakPatternExample(example.jp);
+                contentDiv.appendChild(jpDiv);
+                contentDiv.appendChild(vnDiv);
+                exampleDiv.appendChild(contentDiv);
+                exampleDiv.appendChild(audioBtn);
+                examplesContainer.appendChild(exampleDiv);
+            });
+        }
+    }
+
+    function speakPatternExample(text) {
+        speak(text, 'ja-JP');
+    }
+
+    function toggleGrammar() {
+        grammarVisible = !grammarVisible;
+        const grammarSection = document.getElementById('detailed-grammar');
+        const grammarBtn = document.getElementById('grammarBtn');
+        if (grammarVisible) {
+            generateGrammarAnalysis();
+            grammarSection.style.display = 'block';
+            grammarBtn.textContent = '➖ Ẩn phân tích';
+            grammarBtn.style.background = 'linear-gradient(135deg, #f57c00 0%, #ef6c00 100%)';
+        } else {
+            grammarSection.style.display = 'none';
+            grammarBtn.textContent = '📝 Phân tích ngữ pháp';
+            grammarBtn.style.background = 'linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%)';
+        }
+    }
+
+    function showCard() {
+        const word = words[currentIndex];
+        document.getElementById('card-number').textContent = `#${currentIndex + 1}`;
+        document.getElementById('kanji').textContent = word.kanji;
+        document.getElementById('hiragana').textContent = word.hiragana;
+        document.getElementById('romaji').textContent = word.romaji;
+        document.getElementById('kanji2').textContent = word.kanji;
+        document.getElementById('hiragana2').textContent = word.hiragana;
+        document.getElementById('romaji2').textContent = word.romaji;
+        document.getElementById('meaning').textContent = word.meaning;
+        document.getElementById('example-jp').textContent = word.example;
+        document.getElementById('example-vn').textContent = word.exampleVn;
+        document.getElementById('current').textContent = currentIndex + 1;
+        document.getElementById('total').textContent = words.length;
+        document.getElementById('total2').textContent = words.length;
+        document.getElementById('mastered').textContent = masteredSet.size;
+        const btn = document.getElementById('masteredBtn');
+        btn.textContent = masteredSet.has(currentIndex) ? '✅ Đã học' : '☑️ Đánh dấu';
+        btn.className = masteredSet.has(currentIndex) ? 'btn mastered-btn' : 'btn';
+        grammarVisible = false;
+        document.getElementById('detailed-grammar').style.display = 'none';
+        document.getElementById('grammarBtn').textContent = '📝 Phân tích ngữ pháp';
+        document.getElementById('grammarBtn').style.background = 'linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%)';
+        setTimeout(speakJapanese, 500);
+    }
+
+    function flip() {
+        isFlipped = !isFlipped;
+        const front = document.getElementById('front');
+        const back = document.getElementById('back');
+        const card = document.getElementById('card');
+        if (isFlipped) {
+            front.style.display = 'none';
+            back.style.display = 'block';
+            card.className = 'card flipped';
+        } else {
+            front.style.display = 'block';
+            back.style.display = 'none';
+            card.className = 'card';
+        }
+    }
+
+    function next() {
+        currentIndex = (currentIndex + 1) % words.length;
+        isFlipped = false;
+        document.getElementById('front').style.display = 'block';
+        document.getElementById('back').style.display = 'none';
+        document.getElementById('card').className = 'card';
+        showCard();
+    }
+
+    function prev() {
+        currentIndex = currentIndex === 0 ? words.length - 1 : currentIndex - 1;
+        isFlipped = false;
+        document.getElementById('front').style.display = 'block';
+        document.getElementById('back').style.display = 'none';
+        document.getElementById('card').className = 'card';
+        showCard();
+    }
+
+    function toggleMastered() {
+        if (masteredSet.has(currentIndex)) {
+            masteredSet.delete(currentIndex);
+        } else {
+            masteredSet.add(currentIndex);
+        }
+        showCard();
+        try {
+            const lessonProgress = { lesson: currentLesson, masteredWords: Array.from(masteredSet) };
+            localStorage.setItem(`lesson_${currentLesson}_progress`, JSON.stringify(lessonProgress));
+        } catch (e) {
+            console.log('localStorage not available');
+        }
+    }
+
+    function backToMenu() {
+        generateLessonButtons();
+        showInterface('lesson-selection');
+    }
+
+    function retryLoad() {
+        showInterface('loading-interface');
+        loadLessonsData();
+    }
+
+    function startTest() {
+        const shuffledWords = shuffleArray(words.slice());
+        testWords = shuffledWords.slice(0, Math.min(10, shuffledWords.length));
+        currentTestIndex = 0;
+        testScore = 0;
+        document.getElementById('test-lesson-info').textContent = 
+            `🧠 Bài Test - Bài ${currentLesson}: ${allLessons[currentLesson].title}`;
+        showInterface('test-interface');
+        showTestQuestion();
+    }
+
+    function shuffleArray(array) {
+        const newArray = array.slice();
+        for (let i = newArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+        }
+        return newArray;
+    }
+
+    function showTestQuestion() {
+        if (currentTestIndex >= testWords.length) {
+            showTestResult();
+            return;
+        }
+        const word = testWords[currentTestIndex];
+        isTestAnswered = false;
+        selectedAnswer = '';
+        document.getElementById('test-card-number').textContent = `#${currentTestIndex + 1}`;
+        document.getElementById('test-kanji').textContent = word.kanji;
+        document.getElementById('test-hiragana').textContent = word.hiragana;
+        document.getElementById('test-romaji').textContent = word.romaji;
+        document.getElementById('test-current').textContent = currentTestIndex + 1;
+        document.getElementById('test-total').textContent = testWords.length;
+        document.getElementById('test-score').textContent = testScore;
+        generateTestOptions(word);
+        document.getElementById('test-result').style.display = 'none';
+        document.getElementById('test-next-btn').style.display = 'none';
+    }
+
+    function generateTestOptions(correctWord) {
+        const optionsContainer = document.getElementById('test-options');
+        optionsContainer.innerHTML = '';
+        const otherWords = words.filter(w => w.meaning !== correctWord.meaning);
+        const wrongAnswers = shuffleArray(otherWords).slice(0, 3).map(w => w.meaning);
+        const allOptions = [correctWord.meaning, ...wrongAnswers];
+        const shuffledOptions = shuffleArray(allOptions);
+        shuffledOptions.forEach(option => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.textContent = option;
+            btn.onclick = () => selectTestAnswer(option, correctWord.meaning);
+            optionsContainer.appendChild(btn);
+        });
+    }
+
+    function selectTestAnswer(selected, correct) {
+        if (isTestAnswered) return;
+        isTestAnswered = true;
+        selectedAnswer = selected;
+        const optionBtns = document.querySelectorAll('.option-btn');
+        optionBtns.forEach(btn => {
+            btn.classList.add('disabled');
+            if (btn.textContent === correct) {
+                btn.classList.add('correct');
+            } else if (btn.textContent === selected && selected !== correct) {
+                btn.classList.add('wrong');
+            }
+        });
+        const resultDiv = document.getElementById('test-result');
+        const resultIcon = document.getElementById('result-icon');
+        const resultText = document.getElementById('result-text');
+        const correctAnswer = document.getElementById('correct-answer');
+        if (selected === correct) {
+            testScore++;
+            resultDiv.className = 'test-result';
+            resultIcon.textContent = '✅';
+            resultText.textContent = 'Chính xác!';
+            correctAnswer.style.display = 'none';
+        } else {
+            resultDiv.className = 'test-result wrong';
+            resultIcon.textContent = '❌';
+            resultText.textContent = 'Sai rồi!';
+            correctAnswer.textContent = `Đáp án đúng: ${correct}`;
+            correctAnswer.style.display = 'block';
+        }
+        resultDiv.style.display = 'block';
+        document.getElementById('test-next-btn').style.display = 'block';
+        document.getElementById('test-score').textContent = testScore;
+    }
+
+    function nextTestQuestion() {
+        currentTestIndex++;
+        showTestQuestion();
+    }
+
+    function showTestResult() {
+        const percentage = Math.round((testScore / testWords.length) * 100);
+        document.getElementById('final-score').textContent = `${testScore}/${testWords.length}`;
+        document.getElementById('score-percentage').textContent = `${percentage}%`;
+        document.getElementById('correct-count').textContent = testScore;
+        document.getElementById('wrong-count').textContent = testWords.length - testScore;
+        document.getElementById('accuracy').textContent = `${percentage}%`;
+        const messageEl = document.getElementById('score-message');
+        if (percentage >= 90) {
+            messageEl.textContent = '🏆 Xuất sắc! Bạn đã thành thạo bài học này!';
+            messageEl.style.background = 'linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%)';
+            messageEl.style.borderColor = '#28a745';
+        } else if (percentage >= 70) {
+            messageEl.textContent = '👍 Tốt lắm! Hãy ôn lại một chút nữa.';
+            messageEl.style.background = 'linear-gradient(135deg, #fff3e0 0%, #fafafa 100%)';
+            messageEl.style.borderColor = '#ff9800';
+        } else {
+            messageEl.textContent = '📚 Hãy học kỹ hơn và thử lại nhé!';
+            messageEl.style.background = 'linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%)';
+            messageEl.style.borderColor = '#dc3545';
+        }
+        showInterface('score-interface');
+    }
+
+    function speakTestWord() {
+        speak(testWords[currentTestIndex].hiragana, 'ja-JP');
+    }
+
+    function retryTest() {
+        startTest();
+    }
+
+    function backToStudy() {
+        showInterface('learning-interface');
+    }
+
+    function addEventListeners() {
+        const buttons = {
+            'retry-btn': retryLoad,
+            'prevBtn': prev,
+            'nextBtn': next,
+            'masteredBtn': toggleMastered,
+            'flipBtn': flip,
+            'flipBtn2': flip,
+            'audioBtn': speakJapanese,
+            'audioBtn2': speakExample,
+            'grammarBtn': toggleGrammar,
+            'backToMenuBtn': backToMenu,
+            'startTestBtn': startTest,
+            'test-audio-btn': speakTestWord,
+            'test-next-btn': nextTestQuestion,
+            'test-back-btn': backToMenu,
+            'retry-test-btn': retryTest,
+            'back-to-study-btn': backToStudy,
+            'score-back-btn': backToMenu
+        };
+
+        Object.entries(buttons).forEach(([id, handler]) => {
+            const btn = document.getElementById(id);
+            if (btn) {
+                btn.onclick = handler;
+                btn.addEventListener('touchend', e => {
+                    e.preventDefault();
+                    handler();
+                });
+            }
+        });
+
+        // Handle lesson button clicks separately
+        document.getElementById('lesson-grid').addEventListener('click', e => {
+            const btn = e.target.closest('.lesson-btn');
+            if (btn) {
+                const lessonNum = parseInt(btn.querySelector('.lesson-number').textContent.match(/\d+/)[0]);
+                selectLesson(lessonNum);
+            }
+        });
+
+        document.getElementById('lesson-grid').addEventListener('touchend', e => {
+            e.preventDefault();
+            const btn = e.target.closest('.lesson-btn');
+            if (btn) {
+                const lessonNum = parseInt(btn.querySelector('.lesson-number').textContent.match(/\d+/)[0]);
+                selectLesson(lessonNum);
+            }
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            loadLessonsData();
+            addEventListeners();
+        });
+    } else {
+        loadLessonsData();
+        addEventListeners();
+    }
+</script>
+</body>
+</html>
