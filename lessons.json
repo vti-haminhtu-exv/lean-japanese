@@ -1943,5 +1943,631 @@
       ]
     }
   ]
+},
+"16": {
+  "title": "Hành động và tính từ mô tả",
+  "words": [
+    {
+      "kanji": "乗ります",
+      "hiragana": "のります",
+      "romaji": "norimasu",
+      "meaning": "lên (tàu, xe...)",
+      "example": "電車に乗ります。",
+      "exampleVn": "Tôi lên tàu điện.",
+      "grammar": "電車 (tàu điện) + に (nơi chốn) + 乗ります (lên) - に chỉ nơi hành động diễn ra",
+      "breakdown": [
+        {"word": "電車", "reading": "でんしゃ", "type": "noun", "meaning": "tàu điện"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "tại, trên"},
+        {"word": "乗ります", "reading": "のります", "type": "verb", "meaning": "lên (lịch sự)"}
+      ],
+      "pattern": "Phương tiện + に + 乗ります",
+      "examples": [
+        {"jp": "バスに乗ります。", "vn": "Tôi lên xe buýt."},
+        {"jp": "飛行機に乗ります。", "vn": "Tôi lên máy bay."},
+        {"jp": "自転車に乗ります。", "vn": "Tôi lên xe đạp."}
+      ]
+    },
+    {
+      "kanji": "降ります",
+      "hiragana": "おります",
+      "romaji": "orimasu",
+      "meaning": "xuống (tàu, xe...)",
+      "example": "駅で電車を降ります。",
+      "exampleVn": "Tôi xuống tàu điện ở ga.",
+      "grammar": "駅 (ga) + で (nơi chốn) + 電車 (tàu điện) + を (tân ngữ) + 降ります (xuống) - で chỉ nơi hành động, を chỉ đối tượng",
+      "breakdown": [
+        {"word": "駅", "reading": "えき", "type": "noun", "meaning": "ga tàu"},
+        {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở"},
+        {"word": "電車", "reading": "でんしゃ", "type": "noun", "meaning": "tàu điện"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "降ります", "reading": "おります", "type": "verb", "meaning": "xuống (lịch sự)"}
+      ],
+      "pattern": "Địa điểm + で + Phương tiện + を + 降ります",
+      "examples": [
+        {"jp": "バス停でバスを降ります。", "vn": "Tôi xuống xe buýt ở bến xe."},
+        {"jp": "空港で飛行機を降ります。", "vn": "Tôi xuống máy bay ở sân bay."},
+        {"jp": "学校でタクシーを降ります。", "vn": "Tôi xuống taxi ở trường."}
+      ]
+    },
+    {
+      "kanji": "乗り換えます",
+      "hiragana": "のりかえます",
+      "romaji": "norikaemasu",
+      "meaning": "chuyển (tàu, xe...)",
+      "example": "東京駅で電車を乗り換えます。",
+      "exampleVn": "Tôi chuyển tàu ở ga Tokyo.",
+      "grammar": "東京駅 (ga Tokyo) + で (nơi chốn) + 電車 (tàu điện) + を (tân ngữ) + 乗り換えます (chuyển) - で chỉ nơi hành động",
+      "breakdown": [
+        {"word": "東京駅", "reading": "とうきょうえき", "type": "noun", "meaning": "ga Tokyo"},
+        {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở"},
+        {"word": "電車", "reading": "でんしゃ", "type": "noun", "meaning": "tàu điện"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "乗り換えます", "reading": "のりかえます", "type": "verb", "meaning": "chuyển (lịch sự)"}
+      ],
+      "pattern": "Địa điểm + で + Phương tiện + を + 乗り換えます",
+      "examples": [
+        {"jp": "大阪駅で新幹線を乗り換えます。", "vn": "Tôi chuyển tàu shinkansen ở ga Osaka."},
+        {"jp": "バス停でバスを乗り換えます。", "vn": "Tôi chuyển xe buýt ở bến xe."},
+        {"jp": "駅で電車を乗り換えます。", "vn": "Tôi chuyển tàu ở ga."}
+      ]
+    },
+    {
+      "kanji": "浴びます",
+      "hiragana": "あびます",
+      "romaji": "abimasu",
+      "meaning": "tắm (vòi sen)",
+      "example": "シャワーを浴びます。",
+      "exampleVn": "Tôi tắm vòi sen.",
+      "grammar": "シャワー (vòi sen) + を (tân ngữ) + 浴びます (tắm) - を đánh dấu đối tượng được tắm",
+      "breakdown": [
+        {"word": "シャワー", "reading": "シャワー", "type": "noun", "meaning": "vòi sen"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "浴びます", "reading": "あびます", "type": "verb", "meaning": "tắm (lịch sự)"}
+      ],
+      "pattern": "Vật thể + を + 浴びます",
+      "examples": [
+        {"jp": "お湯を浴びます。", "vn": "Tôi tắm nước nóng."},
+        {"jp": "水を浴びます。", "vn": "Tôi tắm nước lạnh."},
+        {"jp": "シャワーを浴びます。", "vn": "Tôi tắm vòi sen."}
+      ]
+    },
+    {
+      "kanji": "入れます",
+      "hiragana": "いれます",
+      "romaji": "iremasu",
+      "meaning": "cho vào, bỏ vào",
+      "example": "お茶をカップに入れます。",
+      "exampleVn": "Tôi cho trà vào cốc.",
+      "grammar": "お茶 (trà) + を (tân ngữ) + カップ (cốc) + に (nơi chốn) + 入れます (cho vào) - を và に chỉ đối tượng và đích",
+      "breakdown": [
+        {"word": "お茶", "reading": "おちゃ", "type": "noun", "meaning": "trà"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "カップ", "reading": "カップ", "type": "noun", "meaning": "cốc"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "vào, đến"},
+        {"word": "入れます", "reading": "いれます", "type": "verb", "meaning": "cho vào (lịch sự)"}
+      ],
+      "pattern": "Vật thể + を + Đích + に + 入れます",
+      "examples": [
+        {"jp": "水をボトルに入れます。", "vn": "Tôi cho nước vào chai."},
+        {"jp": "荷物をカバンに入れます。", "vn": "Tôi bỏ hành lý vào túi."},
+        {"jp": "砂糖をコーヒーに入れます。", "vn": "Tôi cho đường vào cà phê."}
+      ]
+    },
+    {
+      "kanji": "出します",
+      "hiragana": "だします",
+      "romaji": "dashimasu",
+      "meaning": "lấy ra, gửi đi",
+      "example": "手紙を出します。",
+      "exampleVn": "Tôi gửi thư.",
+      "grammar": "手紙 (thư) + を (tân ngữ) + 出します (gửi) - を đánh dấu đối tượng được gửi",
+      "breakdown": [
+        {"word": "手紙", "reading": "てがみ", "type": "noun", "meaning": "thư"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "出します", "reading": "だします", "type": "verb", "meaning": "lấy ra, gửi đi (lịch sự)"}
+      ],
+      "pattern": "Vật thể + を + 出します",
+      "examples": [
+        {"jp": "ゴミを出します。", "vn": "Tôi đổ rác."},
+        {"jp": "荷物をカバンから出します。", "vn": "Tôi lấy hành lý ra khỏi túi."},
+        {"jp": "書類を出します。", "vn": "Tôi nộp tài liệu."}
+      ]
+    },
+    {
+      "kanji": "入ります",
+      "hiragana": "はいります",
+      "romaji": "hairimasu",
+      "meaning": "vào (đại học...)",
+      "example": "大学に入ります。",
+      "exampleVn": "Tôi vào đại học.",
+      "grammar": "大学 (đại học) + に (đích) + 入ります (vào) - に chỉ đích của hành động",
+      "breakdown": [
+        {"word": "大学", "reading": "だいがく", "type": "noun", "meaning": "đại học"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "vào, đến"},
+        {"word": "入ります", "reading": "はいります", "type": "verb", "meaning": "vào (lịch sự)"}
+      ],
+      "pattern": "Địa điểm/Hội nhóm + に + 入ります",
+      "examples": [
+        {"jp": "部屋に入ります。", "vn": "Tôi vào phòng."},
+        {"jp": "会社に入ります。", "vn": "Tôi vào công ty."},
+        {"jp": "クラブに入ります。", "vn": "Tôi tham gia câu lạc bộ."}
+      ]
+    },
+    {
+      "kanji": "出ます",
+      "hiragana": "でます",
+      "romaji": "demasu",
+      "meaning": "ra, tốt nghiệp",
+      "example": "大学を出ます。",
+      "exampleVn": "Tôi tốt nghiệp đại học.",
+      "grammar": "大学 (đại học) + を (tân ngữ) + 出ます (ra) - を chỉ đối tượng rời khỏi",
+      "breakdown": [
+        {"word": "大学", "reading": "だいがく", "type": "noun", "meaning": "đại học"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "出ます", "reading": "でます", "type": "verb", "meaning": "ra, tốt nghiệp (lịch sự)"}
+      ],
+      "pattern": "Địa điểm/Hội nhóm + を + 出ます",
+      "examples": [
+        {"jp": "部屋を出ます。", "vn": "Tôi ra khỏi phòng."},
+        {"jp": "会社を出ます。", "vn": "Tôi rời công ty."},
+        {"jp": "学校を出ます。", "vn": "Tôi tốt nghiệp trường học."}
+      ]
+    },
+    {
+      "kanji": "やめます",
+      "hiragana": "—",
+      "romaji": "yamemasu",
+      "meaning": "bỏ, nghỉ (việc...)",
+      "example": "仕事をやめます。",
+      "exampleVn": "Tôi nghỉ việc.",
+      "grammar": "仕事 (công việc) + を (tân ngữ) + やめます (nghỉ) - を đánh dấu đối tượng bị từ bỏ",
+      "breakdown": [
+        {"word": "仕事", "reading": "しごと", "type": "noun", "meaning": "công việc"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "やめます", "reading": "やめます", "type": "verb", "meaning": "bỏ, nghỉ (lịch sự)"}
+      ],
+      "pattern": "Hoạt động + を + やめます",
+      "examples": [
+        {"jp": "タバコをやめます。", "vn": "Tôi bỏ thuốc lá."},
+        {"jp": "クラブをやめます。", "vn": "Tôi rời câu lạc bộ."},
+        {"jp": "学校をやめます。", "vn": "Tôi nghỉ học."}
+      ]
+    },
+    {
+      "kanji": "押します",
+      "hiragana": "おします",
+      "romaji": "oshimasu",
+      "meaning": "bấm, ấn (nút...)",
+      "example": "ボタンを押します。",
+      "exampleVn": "Tôi bấm nút.",
+      "grammar": "ボタン (nút) + を (tân ngữ) + 押します (bấm) - を đánh dấu đối tượng được bấm",
+      "breakdown": [
+        {"word": "ボタン", "reading": "ボタン", "type": "noun", "meaning": "nút bấm"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "押します", "reading": "おします", "type": "verb", "meaning": "bấm, ấn (lịch sự)"}
+      ],
+      "pattern": "Vật thể + を + 押します",
+      "examples": [
+        {"jp": "ベルを押します。", "vn": "Tôi bấm chuông."},
+        {"jp": "スイッチを押します。", "vn": "Tôi bấm công tắc."},
+        {"jp": "キーを押します。", "vn": "Tôi bấm phím."}
+      ]
+    },
+    {
+      "kanji": "若い",
+      "hiragana": "わかい",
+      "romaji": "wakai",
+      "meaning": "trẻ",
+      "example": "若い人です。",
+      "exampleVn": "Anh ấy là người trẻ.",
+      "grammar": "若い (trẻ) + 人 (người) + です (là) - Tính từ i mô tả đặc điểm",
+      "breakdown": [
+        {"word": "若い", "reading": "わかい", "type": "adjective", "meaning": "trẻ"},
+        {"word": "人", "reading": "ひと", "type": "noun", "meaning": "người"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "若い + Danh từ + です",
+      "examples": [
+        {"jp": "若い学生です。", "vn": "Cô ấy là học sinh trẻ."},
+        {"jp": "若い先生です。", "vn": "Anh ấy là giáo viên trẻ."},
+        {"jp": "若い友達です。", "vn": "Cô ấy là bạn trẻ."}
+      ]
+    },
+    {
+      "kanji": "長い",
+      "hiragana": "ながい",
+      "romaji": "nagai",
+      "meaning": "dài",
+      "example": "長い髪です。",
+      "exampleVn": "Tóc dài.",
+      "grammar": "長い (dài) + 髪 (tóc) + です (là) - Tính từ i mô tả đặc điểm",
+      "breakdown": [
+        {"word": "長い", "reading": "ながい", "type": "adjective", "meaning": "dài"},
+        {"word": "髪", "reading": "かみ", "type": "noun", "meaning": "tóc"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "長い + Danh từ + です",
+      "examples": [
+        {"jp": "長い道です。", "vn": "Con đường dài."},
+        {"jp": "長い映画です。", "vn": "Bộ phim dài."},
+        {"jp": "長い川です。", "vn": "Con sông dài."}
+      ]
+    },
+    {
+      "kanji": "短い",
+      "hiragana": "みじかい",
+      "romaji": "mijikai",
+      "meaning": "ngắn",
+      "example": "短いスカートです。",
+      "exampleVn": "Váy ngắn.",
+      "grammar": "短い (ngắn) + スカート (váy) + です (là) - Tính từ i mô tả đặc điểm",
+      "breakdown": [
+        {"word": "短い", "reading": "みじかい", "type": "adjective", "meaning": "ngắn"},
+        {"word": "スカート", "reading": "スカート", "type": "noun", "meaning": "váy"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "短い + Danh từ + です",
+      "examples": [
+        {"jp": "短い髪です。", "vn": "Tóc ngắn."},
+        {"jp": "短い本です。", "vn": "Cuốn sách ngắn."},
+        {"jp": "短い時間です。", "vn": "Thời gian ngắn."}
+      ]
+    },
+    {
+      "kanji": "明るい",
+      "hiragana": "あかるい",
+      "romaji": "akarui",
+      "meaning": "sáng",
+      "example": "明るい部屋です。",
+      "exampleVn": "Phòng sáng.",
+      "grammar": "明るい (sáng) + 部屋 (phòng) + です (là) - Tính từ i mô tả đặc điểm",
+      "breakdown": [
+        {"word": "明るい", "reading": "あかるい", "type": "adjective", "meaning": "sáng"},
+        {"word": "部屋", "reading": "へや", "type": "noun", "meaning": "phòng"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "明るい + Danh từ + です",
+      "examples": [
+        {"jp": "明るい光です。", "vn": "Ánh sáng rực rỡ."},
+        {"jp": "明るい色です。", "vn": "Màu sắc tươi sáng."},
+        {"jp": "明るい未来です。", "vn": "Tương lai tươi sáng."}
+      ]
+    },
+    {
+      "kanji": "暗い",
+      "hiragana": "くらい",
+      "romaji": "kurai",
+      "meaning": "tối",
+      "example": "暗い部屋です。",
+      "exampleVn": "Phòng tối.",
+      "grammar": "暗い (tối) + 部屋 (phòng) + です (là) - Tính từ i mô tả đặc điểm",
+      "breakdown": [
+        {"word": "暗い", "reading": "くらい", "type": "adjective", "meaning": "tối"},
+        {"word": "部屋", "reading": "へや", "type": "noun", "meaning": "phòng"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "暗い + Danh từ + です",
+      "examples": [
+        {"jp": "暗い夜です。", "vn": "Đêm tối."},
+        {"jp": "暗い道です。", "vn": "Con đường tối."},
+        {"jp": "暗い色です。", "vn": "Màu tối."}
+      ]
+    },
+    {
+      "kanji": "背が高い",
+      "hiragana": "せがたかい",
+      "romaji": "se ga takai",
+      "meaning": "cao (dùng cho người)",
+      "example": "彼は背が高いです。",
+      "exampleVn": "Anh ấy cao.",
+      "grammar": "彼 (anh ấy) + は (chủ đề) + 背が高い (cao) + です (là) - Tính từ cụm mô tả chiều cao",
+      "breakdown": [
+        {"word": "彼", "reading": "かれ", "type": "pronoun", "meaning": "anh ấy"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề"},
+        {"word": "背", "reading": "せ", "type": "noun", "meaning": "chiều cao"},
+        {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+        {"word": "高い", "reading": "たかい", "type": "adjective", "meaning": "cao"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "Người + は + 背が高い + です",
+      "examples": [
+        {"jp": "彼女は背が高いです。", "vn": "Cô ấy cao."},
+        {"jp": "友達は背が高いです。", "vn": "Bạn tôi cao."},
+        {"jp": "先生は背が高いです。", "vn": "Giáo viên cao."}
+      ]
+    },
+    {
+      "kanji": "背が低い",
+      "hiragana": "せがひくい",
+      "romaji": "se ga hikui",
+      "meaning": "thấp (dùng cho người)",
+      "example": "彼女は背が低いです。",
+      "exampleVn": "Cô ấy thấp.",
+      "grammar": "彼女 (cô ấy) + は (chủ đề) + 背が低い (thấp) + です (là) - Tính từ cụm mô tả chiều cao",
+      "breakdown": [
+        {"word": "彼女", "reading": "かのじょ", "type": "pronoun", "meaning": "cô ấy"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề"},
+        {"word": "背", "reading": "せ", "type": "noun", "meaning": "chiều cao"},
+        {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+        {"word": "低い", "reading": "ひくい", "type": "adjective", "meaning": "thấp"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "Người + は + 背が低い + です",
+      "examples": [
+        {"jp": "彼は背が低いです。", "vn": "Anh ấy thấp."},
+        {"jp": "友達は背が低いです。", "vn": "Bạn tôi thấp."},
+        {"jp": "学生は背が低いです。", "vn": "Học sinh thấp."}
+      ]
+    },
+    {
+      "kanji": "頭がいい",
+      "hiragana": "あたまがいい",
+      "romaji": "atama ga ii",
+      "meaning": "thông minh",
+      "example": "彼は頭がいいです。",
+      "exampleVn": "Anh ấy thông minh.",
+      "grammar": "彼 (anh ấy) + は (chủ đề) + 頭がいい (thông minh) + です (là) - Tính từ cụm mô tả trí tuệ",
+      "breakdown": [
+        {"word": "彼", "reading": "かれ", "type": "pronoun", "meaning": "anh ấy"},
+        {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề"},
+        {"word": "頭", "reading": "あたま", "type": "noun", "meaning": "đầu óc"},
+        {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+        {"word": "いい", "reading": "いい", "type": "adjective", "meaning": "tốt"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "Người + は + 頭がいい + です",
+      "examples": [
+        {"jp": "彼女は頭がいいです。", "vn": "Cô ấy thông minh."},
+        {"jp": "学生は頭がいいです。", "vn": "Học sinh thông minh."},
+        {"jp": "友達は頭がいいです。", "vn": "Bạn tôi thông minh."}
+      ]
+    },
+    {
+      "kanji": "サービス",
+      "hiragana": "—",
+      "romaji": "saabisu",
+      "meaning": "dịch vụ",
+      "example": "サービスがいいです。",
+      "exampleVn": "Dịch vụ tốt.",
+      "grammar": "サービス (dịch vụ) + が (chủ ngữ) + いい (tốt) + です (là) - が chỉ chủ ngữ mô tả",
+      "breakdown": [
+        {"word": "サービス", "reading": "サービス", "type": "noun", "meaning": "dịch vụ"},
+        {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+        {"word": "いい", "reading": "いい", "type": "adjective", "meaning": "tốt"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "サービス + が + Tính từ + です",
+      "examples": [
+        {"jp": "サービスが悪いです。", "vn": "Dịch vụ tệ."},
+        {"jp": "サービスが速いです。", "vn": "Dịch vụ nhanh."},
+        {"jp": "サービスが素晴らしいです。", "vn": "Dịch vụ tuyệt vời."}
+      ]
+    },
+    {
+      "kanji": "ジョギング",
+      "hiragana": "—",
+      "romaji": "jogingu",
+      "meaning": "chạy bộ",
+      "example": "ジョギングをします。",
+      "exampleVn": "Tôi chạy bộ.",
+      "grammar": "ジョギング (chạy bộ) + を (tân ngữ) + します (làm) - を đánh dấu hoạt động",
+      "breakdown": [
+        {"word": "ジョギング", "reading": "ジョギング", "type": "noun", "meaning": "chạy bộ"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "します", "reading": "します", "type": "verb", "meaning": "làm (lịch sự)"}
+      ],
+      "pattern": "ジョギング + を + します",
+      "examples": [
+        {"jp": "朝にジョギングをします。", "vn": "Tôi chạy bộ vào buổi sáng."},
+        {"jp": "公園でジョギングをします。", "vn": "Tôi chạy bộ ở công viên."},
+        {"jp": "毎日ジョギングをします。", "vn": "Tôi chạy bộ mỗi ngày."}
+      ]
+    },
+    {
+      "kanji": "シャワー",
+      "hiragana": "—",
+      "romaji": "shawaa",
+      "meaning": "vòi sen",
+      "example": "シャワーを浴びます。",
+      "exampleVn": "Tôi tắm vòi sen.",
+      "grammar": "シャワー (vòi sen) + を (tân ngữ) + 浴びます (tắm) - を đánh dấu đối tượng được tắm",
+      "breakdown": [
+        {"word": "シャワー", "reading": "シャワー", "type": "noun", "meaning": "vòi sen"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "浴びます", "reading": "あびます", "type": "verb", "meaning": "tắm (lịch sự)"}
+      ],
+      "pattern": "シャワー + を + 浴びます",
+      "examples": [
+        {"jp": "シャワーを使います。", "vn": "Tôi dùng vòi sen."},
+        {"jp": "シャワーを借ります。", "vn": "Tôi mượn vòi sen."},
+        {"jp": "シャワーを直します。", "vn": "Tôi sửa vòi sen."}
+      ]
+    },
+    {
+      "kanji": "緑",
+      "hiragana": "みどり",
+      "romaji": "midori",
+      "meaning": "màu xanh lá, cây xanh",
+      "example": "緑の木が好きです。",
+      "exampleVn": "Tôi thích cây xanh.",
+      "grammar": "緑 (xanh lá) + の (sở hữu) + 木 (cây) + が (chủ ngữ) + 好き (thích) + です (là)",
+      "breakdown": [
+        {"word": "緑", "reading": "みどり", "type": "noun", "meaning": "màu xanh lá, cây xanh"},
+        {"word": "の", "reading": "の", "type": "particle", "meaning": "sở hữu"},
+        {"word": "木", "reading": "き", "type": "noun", "meaning": "cây"},
+        {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+        {"word": "好き", "reading": "すき", "type": "adjective", "meaning": "thích"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "緑 + の + Danh từ + が + Tính từ + です",
+      "examples": [
+        {"jp": "緑の服が好きです。", "vn": "Tôi thích quần áo màu xanh lá."},
+        {"jp": "緑の山が見えます。", "vn": "Tôi thấy núi xanh."},
+        {"jp": "緑の公園がきれいです。", "vn": "Công viên xanh đẹp."}
+      ]
+    },
+    {
+      "kanji": "お寺",
+      "hiragana": "おてら",
+      "romaji": "otera",
+      "meaning": "chùa",
+      "example": "お寺に行きます。",
+      "exampleVn": "Tôi đi chùa.",
+      "grammar": "お寺 (chùa) + に (đích) + 行きます (đi) - に chỉ đích đến",
+      "breakdown": [
+        {"word": "お寺", "reading": "おてら", "type": "noun", "meaning": "chùa"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "đến"},
+        {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+      ],
+      "pattern": "お寺 + に + Động từ hành động",
+      "examples": [
+        {"jp": "お寺を見ます。", "vn": "Tôi xem chùa."},
+        {"jp": "お寺に入ります。", "vn": "Tôi vào chùa."},
+        {"jp": "お寺で祈ります。", "vn": "Tôi cầu nguyện ở chùa."}
+      ]
+    },
+    {
+      "kanji": "神社",
+      "hiragana": "じんじゃ",
+      "romaji": "jinja",
+      "meaning": "đền thờ thần đạo",
+      "example": "神社に行きます。",
+      "exampleVn": "Tôi đi đền thờ thần đạo.",
+      "grammar": "神社 (đền thờ) + に (đích) + 行きます (đi) - に chỉ đích đến",
+      "breakdown": [
+        {"word": "神社", "reading": "じんじゃ", "type": "noun", "meaning": "đền thờ thần đạo"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "đến"},
+        {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+      ],
+      "pattern": "神社 + に + Động từ hành động",
+      "examples": [
+        {"jp": "神社を見ます。", "vn": "Tôi xem đền thờ thần đạo."},
+        {"jp": "神社で祈ります。", "vn": "Tôi cầu nguyện ở đền thờ."},
+        {"jp": "神社に入ります。", "vn": "Tôi vào đền thờ."}
+      ]
+    },
+    {
+      "kanji": "留学生",
+      "hiragana": "りゅうがくせい",
+      "romaji": "ryuugakusei",
+      "meaning": "du học sinh",
+      "example": "留学生です。",
+      "exampleVn": "Tôi là du học sinh.",
+      "grammar": "留学生 (du học sinh) + です (là) - Danh từ kết hợp với です để mô tả",
+      "breakdown": [
+        {"word": "留学生", "reading": "りゅうがくせい", "type": "noun", "meaning": "du học sinh"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "留学生 + です",
+      "examples": [
+        {"jp": "留学生が来ます。", "vn": "Du học sinh đến."},
+        {"jp": "留学生と話します。", "vn": "Tôi nói chuyện với du học sinh."},
+        {"jp": "留学生を助けます。", "vn": "Tôi giúp du học sinh."}
+      ]
+    },
+    {
+      "kanji": "番",
+      "hiragana": "ばん",
+      "romaji": "ban",
+      "meaning": "số (thứ tự)",
+      "example": "一番を押します。",
+      "exampleVn": "Tôi bấm số một.",
+      "grammar": "一番 (số một) + を (tân ngữ) + 押します (bấm) - 番 dùng để chỉ thứ tự",
+      "breakdown": [
+        {"word": "一番", "reading": "いちばん", "type": "noun", "meaning": "số một"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "押します", "reading": "おします", "type": "verb", "meaning": "bấm (lịch sự)"}
+      ],
+      "pattern": "Số + 番 + を + Động từ hành động",
+      "examples": [
+        {"jp": "二番を押します。", "vn": "Tôi bấm số hai."},
+        {"jp": "三番を呼びます。", "vn": "Tôi gọi số ba."},
+        {"jp": "一番を取ります。", "vn": "Tôi lấy số một."}
+      ]
+    },
+    {
+      "kanji": "どの",
+      "hiragana": "—",
+      "romaji": "dono",
+      "meaning": "cái nào (trong ≥ 3 cái)",
+      "example": "どの電車に乗りますか。",
+      "exampleVn": "Bạn lên tàu nào?",
+      "grammar": "どの (cái nào) + 電車 (tàu điện) + に (nơi chốn) + 乗ります (lên) - どの là từ nghi vấn chọn lựa",
+      "breakdown": [
+        {"word": "どの", "reading": "どの", "type": "pronoun", "meaning": "cái nào"},
+        {"word": "電車", "reading": "でんしゃ", "type": "noun", "meaning": "tàu điện"},
+        {"word": "に", "reading": "に", "type": "particle", "meaning": "trên, đến"},
+        {"word": "乗ります", "reading": "のります", "type": "verb", "meaning": "lên (lịch sự)"}
+      ],
+      "pattern": "どの + Danh từ + Câu hỏi",
+      "examples": [
+        {"jp": "どのバスに乗りますか。", "vn": "Bạn lên xe buýt nào?"},
+        {"jp": "どの本が好きですか。", "vn": "Bạn thích cuốn sách nào?"},
+        {"jp": "どの駅で降りますか。", "vn": "Bạn xuống ở ga nào?"}
+      ]
+    },
+    {
+      "kanji": "どれ",
+      "hiragana": "—",
+      "romaji": "dore",
+      "meaning": "cái nào (trong ≥ 3 cái)",
+      "example": "どれが好きですか。",
+      "exampleVn": "Bạn thích cái nào?",
+      "grammar": "どれ (cái nào) + が (chủ ngữ) + 好き (thích) + です (là) - どれ là từ nghi vấn chọn lựa",
+      "breakdown": [
+        {"word": "どれ", "reading": "どれ", "type": "pronoun", "meaning": "cái nào"},
+        {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+        {"word": "好き", "reading": "すき", "type": "adjective", "meaning": "thích"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "どれ + が + Câu hỏi",
+      "examples": [
+        {"jp": "どれがいいですか。", "vn": "Cái nào tốt?"},
+        {"jp": "どれを買いますか。", "vn": "Bạn mua cái nào?"},
+        {"jp": "どれを選びますか。", "vn": "Bạn chọn cái nào?"}
+      ]
+    },
+    {
+      "kanji": "一番",
+      "hiragana": "いちばん",
+      "romaji": "ichiban",
+      "meaning": "số một, nhất",
+      "example": "一番好きな本です。",
+      "exampleVn": "Đây là cuốn sách tôi thích nhất.",
+      "grammar": "一番 (nhất) + 好きな (thích) + 本 (sách) + です (là) - 一番 chỉ mức độ cao nhất",
+      "breakdown": [
+        {"word": "一番", "reading": "いちばん", "type": "adverb", "meaning": "số một, nhất"},
+        {"word": "好きな", "reading": "すきな", "type": "adjective", "meaning": "thích"},
+        {"word": "本", "reading": "ほん", "type": "noun", "meaning": "sách"},
+        {"word": "です", "reading": "です", "type": "copula", "meaning": "là"}
+      ],
+      "pattern": "一番 + Tính từ + Danh từ + です",
+      "examples": [
+        {"jp": "一番高い山です。", "vn": "Đây là ngọn núi cao nhất."},
+        {"jp": "一番きれいな花です。", "vn": "Đây là bông hoa đẹp nhất."},
+        {"jp": "一番速い車です。", "vn": "Đây là chiếc xe nhanh nhất."}
+      ]
+    },
+    {
+      "kanji": "―番",
+      "hiragana": "―ばん",
+      "romaji": "―ban",
+      "meaning": "số ~ (dùng để đếm thứ tự)",
+      "example": "二番を押します。",
+      "exampleVn": "Tôi bấm số hai.",
+      "grammar": "二番 (số hai) + を (tân ngữ) + 押します (bấm) - 番 dùng để chỉ thứ tự",
+      "breakdown": [
+        {"word": "二番", "reading": "にばん", "type": "noun", "meaning": "số hai"},
+        {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ trực tiếp"},
+        {"word": "押します", "reading": "おします", "type": "verb", "meaning": "bấm (lịch sự)"}
+      ],
+      "pattern": "Số + 番 + を + Động từ hành động",
+      "examples": [
+        {"jp": "三番を呼びます。", "vn": "Tôi gọi số ba."},
+        {"jp": "五番を取ります。", "vn": "Tôi lấy số năm."},
+        {"jp": "一番を選びます。", "vn": "Tôi chọn số một."}
+      ]
+    }
+  ]
 }
 }
