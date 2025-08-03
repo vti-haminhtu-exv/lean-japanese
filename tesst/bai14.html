@@ -1,954 +1,4 @@
-</style>
-</head>
-<body>
-<div class="container">
-    <!-- Loading Interface -->
-    <div id="loading-interface" class="interface active">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
-        <div class="loading-screen">
-            <div class="loading-spinner"></div>
-            <div class="loading-text">Đang tải dữ liệu bài học...</div>
-        </div>
-    </div>
-
-    <!-- Error Interface -->
-    <div id="error-interface" class="interface">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
-        <div class="error-screen">
-            <div class="error-icon">⚠️</div>
-            <div class="error-title">Không thể tải dữ liệu</div>
-            <div class="error-message" id="error-message">
-                Có lỗi xảy ra khi tải dữ liệu bài học. Vui lòng kiểm tra kết nối internet và thử lại.
-            </div>
-            <button class="retry-btn" id="retry-btn">🔄 Thử lại</button>
-        </div>
-    </div>
-
-    <!-- Lesson Selection Interface -->
-    <div id="lesson-selection" class="interface">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
-        <div class="lesson-selector">
-            <div class="lesson-title">📖 Chọn Bài Học</div>
-            <div class="lesson-grid" id="lesson-grid"></div>
-            <div class="lesson-info">
-                Nhấn vào bài học để bắt đầu. Bài đã hoàn thành sẽ có màu xanh.
-                <br>📊 Tiến độ học tập sẽ được lưu tự động.
-            </div>
-        </div>
-    </div>
-
-    <!-- Learning Interface -->
-    <div id="learning-interface" class="interface">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
-        <div class="learning-container">
-            <div class="current-lesson" id="current-lesson-info">📝 Bài 1: Động từ cơ bản</div>
-            <!-- Reading Practice Section - Above Progress -->
-            <div id="reading-section" class="reading-practice" style="display: none;">
-                <div class="reading-title">📖 Luyện Đọc: <span id="reading-passage-title">Một ngày của Tanaka-san</span></div>
-                <div class="reading-content">
-                    <div class="reading-text japanese-text" id="reading-text">
-                        <!-- Reading content will be loaded here -->
-                    </div>
-                </div>
-                <div class="reading-controls">
-                    <button class="reading-audio-btn" id="reading-audio-btn">🔊 Đọc đoạn văn</button>
-                    <button class="flip-btn" id="close-reading-btn">❌ Đóng đoạn văn</button>
-                </div>
-            </div>
-
-            <div class="progress">
-                <span id="current">1</span> / <span id="total">31</span> |
-                Đã học: <span id="mastered">0</span>/<span id="total2">31</span>
-                <button class="btn" id="show-reading-btn" style="margin-left: 10px; padding: 8px 12px; font-size: 12px; min-height: auto;">📖 Luyện Đọc</button>
-            </div>
-
-            <!-- Flash Cards Section -->
-            <div id="flashcard-section">
-                <div class="card" id="card">
-                    <div id="card-number">#1</div>
-                    <div id="front">
-                        <div class="kanji japanese-text" id="kanji">行きます</div>
-                        <div class="hiragana japanese-text" id="hiragana">いきます</div>
-                        <div class="romaji japanese-text" id="romaji">ikimasu</div>
-                        <div class="auto-speak">🔊 Đang tự đọc...</div>
-                        <div class="card-buttons">
-                            <button class="audio-btn" id="audioBtn">🔊 Đọc lại</button>
-                            <button class="flip-btn" id="flipBtn">👁️ Xem nghĩa</button>
-                        </div>
-                    </div>
-                    <div id="back" style="display: none;">
-                        <div class="kanji japanese-text" id="kanji2">行きます</div>
-                        <div class="hiragana japanese-text" id="hiragana2">いきます</div>
-                        <div class="romaji japanese-text" id="romaji2">ikimasu</div>
-                        <div class="meaning" id="meaning">đi</div>
-                        <div class="example">
-                            <div class="example-jp japanese-text" id="example-jp">学校へ行きます。</div>
-                            <div class="example-vn" id="example-vn">Tôi đi đến trường.</div>
-                        </div>
-                        <div class="card-buttons">
-                            <button class="audio-btn" id="audioBtn2">🔊 Đọc ví dụ</button>
-                            <button class="flip-btn" id="flipBtn2">🔄 Quay lại</button>
-                            <button class="grammar-btn" id="grammarBtn">📝 Phân tích ngữ pháp</button>
-                        </div>
-                        <div class="detailed-grammar" id="detailed-grammar">
-                            <div class="grammar-header">📊 Phân tích cấu trúc câu</div>
-                            <div class="sentence-breakdown" id="sentence-breakdown"></div>
-                            <div class="pattern-examples" id="pattern-examples"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="controls">
-                    <button class="btn" id="prevBtn">⬅️ Trước</button>
-                    <button class="btn" id="masteredBtn">✅ Đánh dấu</button>
-                    <button class="btn" id="nextBtn">Sau ➡️</button>
-                </div>
-            </div>
-
-            <div class="action-buttons">
-                <button class="test-btn" id="startTestBtn">🧠 Bài Test Kiểm Tra</button>
-                <button class="back-btn" id="backToMenuBtn">📖 Về Menu</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Test Interface -->
-    <div id="test-interface" class="interface">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
-        <div class="learning-container">
-            <div class="current-lesson" id="test-lesson-info">🧠 Bài Test - Bài 1: Động từ cơ bản</div>
-            <div class="progress">
-                Câu <span id="test-current">1</span> / <span id="test-total">10</span> |
-                Điểm: <span id="test-score">0</span>
-            </div>
-            <div class="card" id="test-card">
-                <div id="test-card-number">#1</div>
-                <div class="test-question">
-                    <div class="kanji japanese-text" id="test-kanji">行きます</div>
-                    <div class="hiragana japanese-text" id="test-hiragana">いきます</div>
-                    <div class="romaji japanese-text" id="test-romaji">ikimasu</div>
-                    <div class="question-text">Nghĩa của từ này là gì?</div>
-                </div>
-                <div class="test-options" id="test-options"></div>
-                <div class="test-result" id="test-result" style="display: none;">
-                    <div class="result-icon" id="result-icon">✅</div>
-                    <div class="result-text" id="result-text">Chính xác!</div>
-                    <div class="correct-answer" id="correct-answer">Đáp án đúng: đi</div>
-                </div>
-                <div class="card-buttons-single">
-                    <button class="audio-btn" id="test-audio-btn">🔊 Đọc từ</button>
-                    <button class="flip-btn" id="test-next-btn" style="display: none;">➡️ Câu tiếp</button>
-                </div>
-            </div>
-            <div class="action-buttons">
-                <button class="back-btn" id="test-back-btn">📖 Về Menu</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Score Interface -->
-    <div id="score-interface" class="interface">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
-        <div class="learning-container">
-            <div class="current-lesson">🏆 Kết Quả Bài Test</div>
-            <div class="score-display">
-                <div class="final-score">
-                    <div class="score-number" id="final-score">8/10</div>
-                    <div class="score-percentage" id="score-percentage">80%</div>
-                </div>
-                <div class="score-message" id="score-message">Xuất sắc! Bạn đã làm rất tốt!</div>
-                <div class="score-details">
-                    <div class="score-row">
-                        <span>Câu đúng:</span>
-                        <span id="correct-count">8</span>
-                    </div>
-                    <div class="score-row">
-                        <span>Câu sai:</span>
-                        <span id="wrong-count">2</span>
-                    </div>
-                    <div class="score-row">
-                        <span>Tỷ lệ chính xác:</span>
-                        <span id="accuracy">80%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="action-buttons">
-                <button class="test-btn" id="retry-test-btn">🔄 Làm lại</button>
-                <button class="flip-btn" id="back-to-study-btn">📚 Tiếp tục học</button>
-                <button class="back-btn" id="score-back-btn">📖 Về Menu</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tooltip for reading practice -->
-    <div class="tooltip" id="tooltip"></div>
-</div>
-
-<script>
-    const DATA_URL = `https://raw.githubusercontent.com/vti-haminhtu-exv/lean-japanese/main/lessons.json?ts=${Date.now()}`;
-    const LESSON_ICONS = {
-        1: '🚶', 2: '🍽️', 3: '👥', 4: '🏠', 5: '⏰',
-        6: '🎨', 7: '🌸', 8: '📱', 9: '🚗', 10: '🏫',
-        11: '💼', 12: '🛍️', 13: '🍜', 14: '🎵', 15: '📚',
-        16: '⚽', 17: '🌍', 18: '💰', 19: '🏥', 20: '✈️',
-        21: '🎉', 22: '🌤️', 23: '👘', 24: '🗾', 25: '🎯',
-        26: '🎬', 27: '🚅', 28: '🏮', 29: '🌊', 30: '⛩️'
-    };
-
-    let allLessons = {};
-    let currentLesson = 1;
-    let currentIndex = 0;
-    let isFlipped = false;
-    let masteredSet = new Set();
-    let grammarVisible = false;
-    let words = [];
-    let testWords = [];
-    let currentTestIndex = 0;
-    let testScore = 0;
-    let selectedAnswer = '';
-    let isTestAnswered = false;
-    let currentStudyMode = 'flashcard'; // 'flashcard' or 'reading'
-    let isReadingVisible = false;
-
-    // Enhanced fallback data with reading passages
-    const FALLBACK_DATA = {
-        1: {
-            title: "Động từ cơ bản",
-            words: [
-                {
-                    kanji: '行きます',
-                    hiragana: 'いきます',
-                    romaji: 'ikimasu',
-                    meaning: 'đi',
-                    example: '学校へ行きます。',
-                    exampleVn: 'Tôi đi đến trường.',
-                    breakdown: [
-                        {word: '学校', reading: 'がっこう', type: 'noun', meaning: 'trường học'},
-                        {word: 'へ', reading: 'へ', type: 'particle', meaning: 'đến, về phía'},
-                        {word: '行きます', reading: 'いきます', type: 'verb', meaning: 'đi (lịch sự)'}
-                    ],
-                    pattern: 'Danh từ + へ + Động từ di chuyển',
-                    examples: [
-                        {jp: '家へ帰ります。', vn: 'Tôi về nhà.'},
-                        {jp: '会社へ行きます。', vn: 'Tôi đi công ty.'},
-                        {jp: '駅へ走ります。', vn: 'Tôi chạy đến ga.'}
-                    ]
-                },
-                {
-                    kanji: '来ます',
-                    hiragana: 'きます',
-                    romaji: 'kimasu',
-                    meaning: 'đến',
-                    example: '友達が来ます。',
-                    exampleVn: 'Bạn tôi đến.',
-                    breakdown: [
-                        {word: '友達', reading: 'ともだち', type: 'noun', meaning: 'bạn bè'},
-                        {word: 'が', reading: 'が', type: 'particle', meaning: 'đánh dấu chủ ngữ'},
-                        {word: '来ます', reading: 'きます', type: 'verb', meaning: 'đến (lịch sự)'}
-                    ],
-                    pattern: 'Chủ ngữ + が + Động từ',
-                    examples: [
-                        {jp: '先生が来ます。', vn: 'Thầy giáo đến.'},
-                        {jp: '電車が来ます。', vn: 'Tàu điện đến.'},
-                        {jp: '雨が来ます。', vn: 'Mưa đến.'}
-                    ]
-                },
-                {
-                    kanji: '帰ります',
-                    hiragana: 'かえります',
-                    romaji: 'kaerimasu',
-                    meaning: 'về',
-                    example: '家に帰ります。',
-                    exampleVn: 'Tôi về nhà.',
-                    breakdown: [
-                        {word: '家', reading: 'いえ', type: 'noun', meaning: 'nhà'},
-                        {word: 'に', reading: 'に', type: 'particle', meaning: 'vào, tại'},
-                        {word: '帰ります', reading: 'かえります', type: 'verb', meaning: 'về (lịch sự)'}
-                    ],
-                    pattern: 'Địa điểm + に + Động từ',
-                    examples: [
-                        {jp: '学校に帰ります。', vn: 'Tôi về trường.'},
-                        {jp: '国に帰ります。', vn: 'Tôi về nước.'}
-                    ]
-                },
-                {
-                    kanji: '食べます',
-                    hiragana: 'たべます',
-                    romaji: 'tabemasu',
-                    meaning: 'ăn',
-                    example: 'ご飯を食べます。',
-                    exampleVn: 'Tôi ăn cơm.',
-                    breakdown: [
-                        {word: 'ご飯', reading: 'ごはん', type: 'noun', meaning: 'cơm'},
-                        {word: 'を', reading: 'を', type: 'particle', meaning: 'đánh dấu tân ngữ'},
-                        {word: '食べます', reading: 'たべます', type: 'verb', meaning: 'ăn (lịch sự)'}
-                    ],
-                    pattern: 'Tân ngữ + を + Động từ',
-                    examples: [
-                        {jp: 'パンを食べます。', vn: 'Tôi ăn bánh mì.'},
-                        {jp: '魚を食べます。', vn: 'Tôi ăn cá.'}
-                    ]
-                },
-                {
-                    kanji: '働きます',
-                    hiragana: 'はたらきます',
-                    romaji: 'hatarakimasu',
-                    meaning: 'làm việc',
-                    example: '会社で働きます。',
-                    exampleVn: 'Tôi làm việc ở công ty.',
-                    breakdown: [
-                        {word: '会社', reading: 'かいしゃ', type: 'noun', meaning: 'công ty'},
-                        {word: 'で', reading: 'で', type: 'particle', meaning: 'tại, ở'},
-                        {word: '働きます', reading: 'はたらきます', type: 'verb', meaning: 'làm việc (lịch sự)'}
-                    ],
-                    pattern: 'Địa điểm + で + Động từ',
-                    examples: [
-                        {jp: '家で働きます。', vn: 'Tôi làm việc ở nhà.'},
-                        {jp: '学校で働きます。', vn: 'Tôi làm việc ở trường.'}
-                    ]
-                }
-            ],
-            readingPassage: {
-                title: "Một ngày của Tanaka-san",
-                text: "田中さんは毎朝七時に家を出ます。電車で会社へ行きます。会社で働きます。昼にご飯を食べます。夕方六時に会社から帰ります。家で夕食を食べます。友達が来ます。",
-                translation: "Tanaka-san rời khỏi nhà lúc 7 giờ sáng mỗi ngày. Anh ấy đi công ty bằng tàu điện. Anh ấy làm việc ở công ty. Anh ấy ăn cơm trưa. Anh ấy về từ công ty lúc 6 giờ chiều. Anh ấy ăn tối ở nhà. Bạn anh ấy đến chơi.",
-                highlightedWords: [
-                    {word: '出ます', meaning: 'rời khỏi, ra ngoài'},
-                    {word: '電車', meaning: 'tàu điện'},
-                    {word: '会社', meaning: 'công ty'},
-                    {word: '行きます', meaning: 'đi'},
-                    {word: '働きます', meaning: 'làm việc'},
-                    {word: '昼', meaning: 'trưa'},
-                    {word: 'ご飯', meaning: 'cơm'},
-                    {word: '食べます', meaning: 'ăn'},
-                    {word: '夕方', meaning: 'buổi chiều'},
-                    {word: '帰ります', meaning: 'về'},
-                    {word: '夕食', meaning: 'bữa tối'},
-                    {word: '友達', meaning: 'bạn bè'},
-                    {word: '来ます', meaning: 'đến'}
-                ]
-            }
-        },
-        2: {
-            title: "Ăn uống",
-            words: [
-                {
-                    kanji: '飲みます',
-                    hiragana: 'のみます',
-                    romaji: 'nomimasu',
-                    meaning: 'uống',
-                    example: '水を飲みます。',
-                    exampleVn: 'Tôi uống nước.'
-                },
-                {
-                    kanji: '買います',
-                    hiragana: 'かいます',
-                    romaji: 'kaimasu',
-                    meaning: 'mua',
-                    example: 'パンを買います。',
-                    exampleVn: 'Tôi mua bánh mì.'
-                }
-            ],
-            readingPassage: {
-                title: "Đi mua sắm",
-                text: "今日、スーパーに行きます。パンを買います。牛乳を買います。家に帰ります。パンを食べます。牛乳を飲みます。",
-                translation: "Hôm nay tôi đi siêu thị. Tôi mua bánh mì. Tôi mua sữa. Tôi về nhà. Tôi ăn bánh mì. Tôi uống sữa.",
-                highlightedWords: [
-                    {word: 'スーパー', meaning: 'siêu thị'},
-                    {word: 'パン', meaning: 'bánh mì'},
-                    {word: '買います', meaning: 'mua'},
-                    {word: '牛乳', meaning: 'sữa'},
-                    {word: '飲みます', meaning: 'uống'}
-                ]
-            }
-        }
-    };
-
-    function generateLessonButtons() {
-        const grid = document.getElementById('lesson-grid');
-        grid.innerHTML = '';
-        const lessonKeys = Object.keys(allLessons);
-        
-        lessonKeys.forEach(lessonNum => {
-            const lesson = allLessons[lessonNum];
-            const icon = LESSON_ICONS[lessonNum] || '📝';
-            const btn = document.createElement('button');
-            btn.className = 'lesson-btn';
-            btn.innerHTML = `
-                <div class="lesson-icon">${icon}</div>
-                <div class="lesson-number">Bài ${lessonNum}</div>
-                <div class="lesson-name">${lesson.title}</div>
-                <div class="lesson-stats">${lesson.words.length} từ</div>
-            `;
-            if (lessonNum == currentLesson) btn.classList.add('active');
-            try {
-                const completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '[]');
-                if (completedLessons.includes(parseInt(lessonNum))) btn.classList.add('completed');
-            } catch (e) {
-                console.log('localStorage not available');
-            }
-            btn.onclick = () => selectLesson(parseInt(lessonNum));
-            grid.appendChild(btn);
-        });
-    }
-
-    function loadLessonsData() {
-        console.log("Đang tải dữ liệu từ:", DATA_URL);
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', DATA_URL, true);
-        xhr.timeout = 10000;
-        
-        xhr.onreadystatechange = () => {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200) {
-                    try {
-                        let fixedJSON = xhr.responseText
-                            .replace(/'/g, '"')
-                            .replace(/,(\s*[}\]])/g, '$1')
-                            .replace(/[-\u001F\u007F-\u009F]/g, '')
-                            .trim();
-                        allLessons = JSON.parse(fixedJSON);
-                        generateLessonButtons();
-                        showInterface('lesson-selection');
-                    } catch (error) {
-                        console.error("Error parsing JSON:", error);
-                        handleLoadError(error);
-                    }
-                } else {
-                    console.error("HTTP Error:", xhr.status);
-                    handleLoadError(new Error('HTTP error: ' + xhr.status));
-                }
-            }
-        };
-        
-        xhr.onerror = () => handleLoadError(new Error('Network error'));
-        xhr.ontimeout = () => handleLoadError(new Error('Request timeout'));
-        xhr.send();
-    }
-
-    function handleLoadError(error) {
-        console.error("Error loading lessons:", error);
-        allLessons = FALLBACK_DATA;
-        generateLessonButtons();
-        showInterface('lesson-selection');
-        showError('Không thể tải dữ liệu từ server.\n\nLỗi: ' + error.message + '\n\nĐang sử dụng dữ liệu mẫu.', true);
-    }
-
-    function showError(message, isWarning) {
-        const errorMsg = document.getElementById('error-message');
-        const errorTitle = document.querySelector('.error-title');
-        const errorIcon = document.querySelector('.error-icon');
-        errorTitle.textContent = isWarning ? 'Cảnh báo' : 'Không thể tải dữ liệu';
-        errorIcon.textContent = isWarning ? '⚠️' : '❌';
-        errorMsg.textContent = message;
-        showInterface('error-interface');
-    }
-
-    function showInterface(interfaceId) {
-        document.querySelectorAll('.interface').forEach(intf => intf.classList.remove('active'));
-        document.getElementById(interfaceId).classList.add('active');
-    }
-
-    function selectLesson(lessonNum) {
-        currentLesson = lessonNum;
-        words = allLessons[lessonNum].words;
-        currentIndex = 0;
-        isFlipped = false;
-        masteredSet.clear();
-        isReadingVisible = false;
-        
-        document.getElementById('current-lesson-info').textContent = `📝 Bài ${lessonNum}: ${allLessons[lessonNum].title}`;
-        
-        // Hide reading section initially
-        document.getElementById('reading-section').style.display = 'none';
-        
-        showInterface('learning-interface');
-        showCard();
-        loadReadingPassage();
-    }
-
-    function showReadingPassage() {
-        isReadingVisible = true;
-        document.getElementById('reading-section').style.display = 'block';
-        document.getElementById('show-reading-btn').textContent = '❌ Ẩn Đọc';
-        document.getElementById('show-reading-btn').style.background = 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)';
-    }
-
-    function hideReadingPassage() {
-        isReadingVisible = false;
-        document.getElementById('reading-section').style.display = 'none';
-        document.getElementById('show-reading-btn').textContent = '📖 Luyện Đọc';
-        document.getElementById('show-reading-btn').style.background = '';
-    }
-
-    function toggleReadingPassage() {
-        if (isReadingVisible) {
-            hideReadingPassage();
-        } else {
-            showReadingPassage();
-        }
-    }
-
-    function loadReadingPassage() {
-        const lesson = allLessons[currentLesson];
-        if (!lesson.readingPassage) return;
-        
-        const readingTextEl = document.getElementById('reading-text');
-        const readingTitleEl = document.getElementById('reading-passage-title');
-        const passage = lesson.readingPassage;
-        
-        // Set title
-        readingTitleEl.textContent = passage.title;
-        
-        let highlightedText = passage.text;
-        
-        // Highlight vocabulary words
-        if (passage.highlightedWords) {
-            passage.highlightedWords.forEach(item => {
-                const regex = new RegExp(item.word, 'g');
-                highlightedText = highlightedText.replace(regex, 
-                    `<span class="highlighted-word" data-meaning="${item.meaning}">${item.word}</span>`
-                );
-            });
-        }
-        
-        readingTextEl.innerHTML = highlightedText;
-        
-        // Add event listeners for highlighted words
-        const highlightedWords = readingTextEl.querySelectorAll('.highlighted-word');
-        highlightedWords.forEach(word => {
-            word.addEventListener('mouseenter', showTooltip);
-            word.addEventListener('mouseleave', hideTooltip);
-            word.addEventListener('touchstart', showTooltip);
-            word.addEventListener('touchend', hideTooltip);
-        });
-    }
-
-    function showTooltip(e) {
-        const tooltip = document.getElementById('tooltip');
-        const meaning = e.target.getAttribute('data-meaning');
-        
-        tooltip.textContent = meaning;
-        tooltip.classList.add('show');
-        
-        // Position tooltip
-        const rect = e.target.getBoundingClientRect();
-        const tooltipRect = tooltip.getBoundingClientRect();
-        
-        let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
-        let top = rect.top - tooltipRect.height - 10;
-        
-        // Adjust if tooltip goes off screen
-        if (left < 0) left = 10;
-        if (left + tooltipRect.width > window.innerWidth) {
-            left = window.innerWidth - tooltipRect.width - 10;
-        }
-        if (top < 0) {
-            top = rect.bottom + 10;
-        }
-        
-        tooltip.style.left = left + window.scrollX + 'px';
-        tooltip.style.top = top + window.scrollY + 'px';
-    }
-
-    function hideTooltip() {
-        const tooltip = document.getElementById('tooltip');
-        tooltip.classList.remove('show');
-    }
-
-    function speak(text, lang = 'ja-JP') {
-        if ('speechSynthesis' in window) {
-            try {
-                speechSynthesis.cancel();
-                setTimeout(() => {
-                    const utterance = new SpeechSynthesisUtterance(text);
-                    utterance.lang = lang;
-                    utterance.rate = 0.7;
-                    utterance.pitch = 1;
-                    utterance.volume = 1;
-                    speechSynthesis.speak(utterance);
-                }, 100);
-            } catch (e) {
-                console.log('Speech synthesis error:', e);
-            }
-        }
-    }
-
-    function speakJapanese() {
-        speak(words[currentIndex].hiragana, 'ja-JP');
-    }
-
-    function speakExample() {
-        speak(words[currentIndex].example, 'ja-JP');
-    }
-
-    function speakReadingPassage() {
-        const lesson = allLessons[currentLesson];
-        if (lesson.readingPassage) {
-            speak(lesson.readingPassage.text, 'ja-JP');
-        }
-    }
-
-    function generateGrammarAnalysis() {
-        const word = words[currentIndex];
-        const breakdownContainer = document.getElementById('sentence-breakdown');
-        const examplesContainer = document.getElementById('pattern-examples');
-        breakdownContainer.innerHTML = '';
-        
-        if (word.breakdown) {
-            word.breakdown.forEach(part => {
-                const wordPart = document.createElement('span');
-                wordPart.className = `word-part ${part.type}`;
-                wordPart.innerHTML = `${part.word}<br><small>${part.reading}</small><br><small>${part.meaning}</small>`;
-                breakdownContainer.appendChild(wordPart);
-            });
-            const patternDiv = document.createElement('div');
-            patternDiv.style.cssText = 'margin-top: 12px; font-weight: bold; color: #1976d2;';
-            patternDiv.innerHTML = `<strong>📝 Cấu trúc:</strong> ${word.pattern}`;
-            breakdownContainer.appendChild(patternDiv);
-        }
-
-        examplesContainer.innerHTML = '<div style="font-weight: bold; color: #f57c00; margin-bottom: 8px;">📖 Các ví dụ tương tự:</div>';
-        if (word.examples) {
-            word.examples.forEach(example => {
-                const exampleDiv = document.createElement('div');
-                exampleDiv.className = 'pattern-example';
-                const contentDiv = document.createElement('div');
-                contentDiv.className = 'pattern-content';
-                const jpDiv = document.createElement('div');
-                jpDiv.className = 'pattern-jp japanese-text';
-                jpDiv.textContent = example.jp;
-                const vnDiv = document.createElement('div');
-                vnDiv.className = 'pattern-vn';
-                vnDiv.textContent = example.vn;
-                const audioBtn = document.createElement('button');
-                audioBtn.className = 'pattern-audio';
-                audioBtn.innerHTML = '🔊';
-                audioBtn.onclick = () => speakPatternExample(example.jp);
-                contentDiv.appendChild(jpDiv);
-                contentDiv.appendChild(vnDiv);
-                exampleDiv.appendChild(contentDiv);
-                exampleDiv.appendChild(audioBtn);
-                examplesContainer.appendChild(exampleDiv);
-            });
-        }
-    }
-
-    function speakPatternExample(text) {
-        speak(text, 'ja-JP');
-    }
-
-    function toggleGrammar() {
-        grammarVisible = !grammarVisible;
-        const grammarSection = document.getElementById('detailed-grammar');
-        const grammarBtn = document.getElementById('grammarBtn');
-        if (grammarVisible) {
-            generateGrammarAnalysis();
-            grammarSection.style.display = 'block';
-            grammarBtn.textContent = '➖ Ẩn phân tích';
-            grammarBtn.style.background = 'linear-gradient(135deg, #f57c00 0%, #ef6c00 100%)';
-        } else {
-            grammarSection.style.display = 'none';
-            grammarBtn.textContent = '📝 Phân tích ngữ pháp';
-            grammarBtn.style.background = 'linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%)';
-        }
-    }
-
-    function showCard() {
-        const word = words[currentIndex];
-        document.getElementById('card-number').textContent = `#${currentIndex + 1}`;
-        document.getElementById('kanji').textContent = word.kanji;
-        document.getElementById('hiragana').textContent = word.hiragana;
-        document.getElementById('romaji').textContent = word.romaji;
-        document.getElementById('kanji2').textContent = word.kanji;
-        document.getElementById('hiragana2').textContent = word.hiragana;
-        document.getElementById('romaji2').textContent = word.romaji;
-        document.getElementById('meaning').textContent = word.meaning;
-        document.getElementById('example-jp').textContent = word.example;
-        document.getElementById('example-vn').textContent = word.exampleVn;
-        document.getElementById('current').textContent = currentIndex + 1;
-        document.getElementById('total').textContent = words.length;
-        document.getElementById('total2').textContent = words.length;
-        document.getElementById('mastered').textContent = masteredSet.size;
-        const btn = document.getElementById('masteredBtn');
-        btn.textContent = masteredSet.has(currentIndex) ? '✅ Đã học' : '☑️ Đánh dấu';
-        btn.className = masteredSet.has(currentIndex) ? 'btn mastered-btn' : 'btn';
-        grammarVisible = false;
-        document.getElementById('detailed-grammar').style.display = 'none';
-        document.getElementById('grammarBtn').textContent = '📝 Phân tích ngữ pháp';
-        document.getElementById('grammarBtn').style.background = 'linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%)';
-        setTimeout(speakJapanese, 500);
-    }
-
-    function flip() {
-        isFlipped = !isFlipped;
-        const front = document.getElementById('front');
-        const back = document.getElementById('back');
-        const card = document.getElementById('card');
-        if (isFlipped) {
-            front.style.display = 'none';
-            back.style.display = 'block';
-            card.className = 'card flipped';
-        } else {
-            front.style.display = 'block';
-            back.style.display = 'none';
-            card.className = 'card';
-        }
-    }
-
-    function next() {
-        currentIndex = (currentIndex + 1) % words.length;
-        isFlipped = false;
-        document.getElementById('front').style.display = 'block';
-        document.getElementById('back').style.display = 'none';
-        document.getElementById('card').className = 'card';
-        showCard();
-    }
-
-    function prev() {
-        currentIndex = currentIndex === 0 ? words.length - 1 : currentIndex - 1;
-        isFlipped = false;
-        document.getElementById('front').style.display = 'block';
-        document.getElementById('back').style.display = 'none';
-        document.getElementById('card').className = 'card';
-        showCard();
-    }
-
-    function toggleMastered() {
-        if (masteredSet.has(currentIndex)) {
-            masteredSet.delete(currentIndex);
-        } else {
-            masteredSet.add(currentIndex);
-        }
-        showCard();
-        try {
-            const lessonProgress = { lesson: currentLesson, masteredWords: Array.from(masteredSet) };
-            localStorage.setItem(`lesson_${currentLesson}_progress`, JSON.stringify(lessonProgress));
-        } catch (e) {
-            console.log('localStorage not available');
-        }
-    }
-
-    function backToMenu() {
-        generateLessonButtons();
-        showInterface('lesson-selection');
-    }
-
-    function retryLoad() {
-        showInterface('loading-interface');
-        loadLessonsData();
-    }
-
-    function startTest() {
-        const shuffledWords = shuffleArray(words.slice());
-        testWords = shuffledWords.slice(0, Math.min(10, shuffledWords.length));
-        currentTestIndex = 0;
-        testScore = 0;
-        document.getElementById('test-lesson-info').textContent = 
-            `🧠 Bài Test - Bài ${currentLesson}: ${allLessons[currentLesson].title}`;
-        showInterface('test-interface');
-        showTestQuestion();
-    }
-
-    function shuffleArray(array) {
-        const newArray = array.slice();
-        for (let i = newArray.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-        }
-        return newArray;
-    }
-
-    function showTestQuestion() {
-        if (currentTestIndex >= testWords.length) {
-            showTestResult();
-            return;
-        }
-        const word = testWords[currentTestIndex];
-        isTestAnswered = false;
-        selectedAnswer = '';
-        document.getElementById('test-card-number').textContent = `#${currentTestIndex + 1}`;
-        document.getElementById('test-kanji').textContent = word.kanji;
-        document.getElementById('test-hiragana').textContent = word.hiragana;
-        document.getElementById('test-romaji').textContent = word.romaji;
-        document.getElementById('test-current').textContent = currentTestIndex + 1;
-        document.getElementById('test-total').textContent = testWords.length;
-        document.getElementById('test-score').textContent = testScore;
-        generateTestOptions(word);
-        document.getElementById('test-result').style.display = 'none';
-        document.getElementById('test-next-btn').style.display = 'none';
-    }
-
-    function generateTestOptions(correctWord) {
-        const optionsContainer = document.getElementById('test-options');
-        optionsContainer.innerHTML = '';
-        const otherWords = words.filter(w => w.meaning !== correctWord.meaning);
-        const wrongAnswers = shuffleArray(otherWords).slice(0, 3).map(w => w.meaning);
-        const allOptions = [correctWord.meaning, ...wrongAnswers];
-        const shuffledOptions = shuffleArray(allOptions);
-        shuffledOptions.forEach(option => {
-            const btn = document.createElement('button');
-            btn.className = 'option-btn';
-            btn.textContent = option;
-            btn.onclick = () => selectTestAnswer(option, correctWord.meaning);
-            optionsContainer.appendChild(btn);
-        });
-    }
-
-    function selectTestAnswer(selected, correct) {
-        if (isTestAnswered) return;
-        isTestAnswered = true;
-        selectedAnswer = selected;
-        const optionBtns = document.querySelectorAll('.option-btn');
-        optionBtns.forEach(btn => {
-            btn.classList.add('disabled');
-            if (btn.textContent === correct) {
-                btn.classList.add('correct');
-            } else if (btn.textContent === selected && selected !== correct) {
-                btn.classList.add('wrong');
-            }
-        });
-        const resultDiv = document.getElementById('test-result');
-        const resultIcon = document.getElementById('result-icon');
-        const resultText = document.getElementById('result-text');
-        const correctAnswer = document.getElementById('correct-answer');
-        if (selected === correct) {
-            testScore++;
-            resultDiv.className = 'test-result';
-            resultIcon.textContent = '✅';
-            resultText.textContent = 'Chính xác!';
-            correctAnswer.style.display = 'none';
-        } else {
-            resultDiv.className = 'test-result wrong';
-            resultIcon.textContent = '❌';
-            resultText.textContent = 'Sai rồi!';
-            correctAnswer.textContent = `Đáp án đúng: ${correct}`;
-            correctAnswer.style.display = 'block';
-        }
-        resultDiv.style.display = 'block';
-        document.getElementById('test-next-btn').style.display = 'block';
-        document.getElementById('test-score').textContent = testScore;
-    }
-
-    function nextTestQuestion() {
-        currentTestIndex++;
-        showTestQuestion();
-    }
-
-    function showTestResult() {
-        const percentage = Math.round((testScore / testWords.length) * 100);
-        document.getElementById('final-score').textContent = `${testScore}/${testWords.length}`;
-        document.getElementById('score-percentage').textContent = `${percentage}%`;
-        document.getElementById('correct-count').textContent = testScore;
-        document.getElementById('wrong-count').textContent = testWords.length - testScore;
-        document.getElementById('accuracy').textContent = `${percentage}%`;
-        const messageEl = document.getElementById('score-message');
-        if (percentage >= 90) {
-            messageEl.textContent = '🏆 Xuất sắc! Bạn đã thành thạo bài học này!';
-            messageEl.style.background = 'linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%)';
-            messageEl.style.borderColor = '#28a745';
-        } else if (percentage >= 70) {
-            messageEl.textContent = '👍 Tốt lắm! Hãy ôn lại một chút nữa.';
-            messageEl.style.background = 'linear-gradient(135deg, #fff3e0 0%, #fafafa 100%)';
-            messageEl.style.borderColor = '#ff9800';
-        } else {
-            messageEl.textContent = '📚 Hãy học kỹ hơn và thử lại nhé!';
-            messageEl.style.background = 'linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%)';
-            messageEl.style.borderColor = '#dc3545';
-        }
-        showInterface('score-interface');
-    }
-
-    function speakTestWord() {
-        speak(testWords[currentTestIndex].hiragana, 'ja-JP');
-    }
-
-    function retryTest() {
-        startTest();
-    }
-
-    function backToStudy() {
-        showInterface('learning-interface');
-    }
-
-    function addEventListeners() {
-        const buttons = {
-            'retry-btn': retryLoad,
-            'prevBtn': prev,
-            'nextBtn': next,
-            'masteredBtn': toggleMastered,
-            'flipBtn': flip,
-            'flipBtn2': flip,
-            'audioBtn': speakJapanese,
-            'audioBtn2': speakExample,
-            'grammarBtn': toggleGrammar,
-            'backToMenuBtn': backToMenu,
-            'startTestBtn': startTest,
-            'test-audio-btn': speakTestWord,
-            'test-next-btn': nextTestQuestion,
-            'test-back-btn': backToMenu,
-            'retry-test-btn': retryTest,
-            'back-to-study-btn': backToStudy,
-            'score-back-btn': backToMenu,
-            'reading-audio-btn': speakReadingPassage,
-            'show-reading-btn': toggleReadingPassage,
-            'close-reading-btn': hideReadingPassage
-        };
-
-        Object.entries(buttons).forEach(([id, handler]) => {
-            const btn = document.getElementById(id);
-            if (btn) {
-                btn.onclick = handler;
-                btn.addEventListener('touchend', e => {
-                    e.preventDefault();
-                    handler();
-                });
-            }
-        });
-
-        // Handle lesson button clicks
-        document.getElementById('lesson-grid').addEventListener('click', e => {
-            const btn = e.target.closest('.lesson-btn');
-            if (btn) {
-                const lessonNum = parseInt(btn.querySelector('.lesson-number').textContent.match(/\d+/)[0]);
-                selectLesson(lessonNum);
-            }
-        });
-
-        document.getElementById('lesson-grid').addEventListener('touchend', e => {
-            e.preventDefault();
-            const btn = e.target.closest('.lesson-btn');
-            if (btn) {
-                const lessonNum = parseInt(btn.querySelector('.lesson-number').textContent.match(/\d+/)[0]);
-                selectLesson(lessonNum);
-            }
-        });
-
-        // Hide tooltip when clicking elsewhere
-        document.addEventListener('click', (e) => {
-            if (!e.target.classList.contains('highlighted-word')) {
-                hideTooltip();
-            }
-        });
-    }
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => {
-            loadLessonsData();
-            addEventListeners();
-        });
-    } else {
-        loadLessonsData();
-        addEventListeners();
-    }
-</script>
-</body>
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -983,7 +33,7 @@
             -webkit-overflow-scrolling: touch;
         }
 
-        .japanese-text, .kanji, .hiragana, .romaji, .example-jp, .pattern-jp {
+        .japanese-text, .kanji, .hiragana, .romaji, .example-jp, .pattern-jp, .reading-text {
             font-family: 'Noto Sans JP', serif;
         }
 
@@ -1239,47 +289,15 @@
             box-shadow: 0 3px 12px rgba(0,123,255,0.3);
         }
 
-        /* Study Mode Tabs */
-        .study-tabs {
-            display: flex;
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 4px;
-            margin-bottom: 15px;
-            gap: 4px;
-        }
-
-        .tab-btn {
-            flex: 1;
-            background: transparent;
-            border: none;
-            padding: 10px 8px;
-            border-radius: 8px;
-            font-size: 13px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            color: #666;
-            touch-action: manipulation;
-        }
-
-        .tab-btn.active {
-            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-            color: white;
-            box-shadow: 0 2px 8px rgba(0,123,255,0.3);
-        }
-
-        .tab-btn:active {
-            transform: scale(0.95);
-        }
-
         /* Reading Practice */
         .reading-practice {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
             display: none;
-        }
-
-        .reading-practice.active {
-            display: block;
         }
 
         .reading-title {
@@ -1295,24 +313,35 @@
         }
 
         .reading-content {
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-            border: 2px solid #e9ecef;
-            border-radius: 12px;
-            padding: 20px;
-            line-height: 1.8;
-            font-size: 16px;
             margin-bottom: 15px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-            position: relative;
         }
 
         .reading-text {
-            font-family: 'Noto Sans JP', serif;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            line-height: 1.8;
+            font-size: 16px;
             color: #333;
             user-select: text;
             -webkit-user-select: text;
             -moz-user-select: text;
             -ms-user-select: text;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+
+        .reading-translation {
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+            border: 2px solid #ce93d8;
+            border-radius: 10px;
+            padding: 15px;
+            line-height: 1.6;
+            font-size: 14px;
+            color: #4a148c;
+            font-style: italic;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
 
         .highlighted-word {
@@ -1371,10 +400,10 @@
         .reading-controls {
             display: flex;
             gap: 10px;
-            margin-bottom: 15px;
+            flex-wrap: wrap;
         }
 
-        .reading-audio-btn {
+        .reading-audio-btn, .reading-close-btn {
             background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
             color: white;
             border: none;
@@ -1389,9 +418,17 @@
             display: flex;
             align-items: center;
             gap: 6px;
+            flex: 1;
+            justify-content: center;
+            min-height: 40px;
         }
 
-        .reading-audio-btn:active {
+        .reading-close-btn {
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+            box-shadow: 0 3px 12px rgba(108,117,125,0.3);
+        }
+
+        .reading-audio-btn:active, .reading-close-btn:active {
             transform: scale(0.95);
         }
 
@@ -1721,13 +758,17 @@
             .lesson-icon { font-size: 18px; }
             .lesson-number { font-size: 13px; }
             
-            .reading-content {
+            .reading-text {
                 font-size: 14px;
                 padding: 15px;
             }
             
             .reading-controls {
                 flex-direction: column;
+            }
+
+            .reading-audio-btn, .reading-close-btn {
+                flex: none;
             }
         }
 
@@ -1913,3 +954,990 @@
             font-size: 12px;
             font-weight: 500;
         }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Loading Interface -->
+    <div id="loading-interface" class="interface active">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="loading-screen">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Đang tải dữ liệu bài học...</div>
+        </div>
+    </div>
+
+    <!-- Error Interface -->
+    <div id="error-interface" class="interface">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="error-screen">
+            <div class="error-icon">⚠️</div>
+            <div class="error-title">Không thể tải dữ liệu</div>
+            <div class="error-message" id="error-message">
+                Có lỗi xảy ra khi tải dữ liệu bài học. Vui lòng kiểm tra kết nối internet và thử lại.
+            </div>
+            <button class="retry-btn" id="retry-btn">🔄 Thử lại</button>
+        </div>
+    </div>
+
+    <!-- Lesson Selection Interface -->
+    <div id="lesson-selection" class="interface">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="lesson-selector">
+            <div class="lesson-title">📖 Chọn Bài Học</div>
+            <div class="lesson-grid" id="lesson-grid"></div>
+            <div class="lesson-info">
+                Nhấn vào bài học để bắt đầu. Bài đã hoàn thành sẽ có màu xanh.
+                <br>📊 Tiến độ học tập sẽ được lưu tự động.
+            </div>
+        </div>
+    </div>
+
+    <!-- Learning Interface -->
+    <div id="learning-interface" class="interface">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="learning-container">
+            <div class="current-lesson" id="current-lesson-info">📝 Bài 1: Động từ cơ bản</div>
+            
+            <!-- Reading Practice Section -->
+            <div id="reading-section" class="reading-practice">
+                <div class="reading-title">📖 Luyện Đọc: <span id="reading-passage-title">Một ngày của Tanaka-san</span></div>
+                <div class="reading-content">
+                    <div class="reading-text" id="reading-text">
+                        <!-- Reading content will be loaded here -->
+                    </div>
+                    <div class="reading-translation" id="reading-translation">
+                        <!-- Translation will be loaded here -->
+                    </div>
+                </div>
+                <div class="reading-controls">
+                    <button class="reading-audio-btn" id="reading-audio-btn">🔊 Đọc đoạn văn</button>
+                    <button class="reading-close-btn" id="close-reading-btn">❌ Đóng đoạn văn</button>
+                </div>
+            </div>
+
+            <div class="progress">
+                <span id="current">1</span> / <span id="total">31</span> |
+                Đã học: <span id="mastered">0</span>/<span id="total2">31</span>
+                <button class="btn" id="show-reading-btn" style="margin-left: 10px; padding: 8px 12px; font-size: 12px; min-height: auto;">📖 Luyện Đọc</button>
+            </div>
+
+            <!-- Flash Cards Section -->
+            <div id="flashcard-section">
+                <div class="card" id="card">
+                    <div id="card-number">#1</div>
+                    <div id="front">
+                        <div class="kanji japanese-text" id="kanji">行きます</div>
+                        <div class="hiragana japanese-text" id="hiragana">いきます</div>
+                        <div class="romaji japanese-text" id="romaji">ikimasu</div>
+                        <div class="auto-speak">🔊 Đang tự đọc...</div>
+                        <div class="card-buttons">
+                            <button class="audio-btn" id="audioBtn">🔊 Đọc lại</button>
+                            <button class="flip-btn" id="flipBtn">👁️ Xem nghĩa</button>
+                        </div>
+                    </div>
+                    <div id="back" style="display: none;">
+                        <div class="kanji japanese-text" id="kanji2">行きます</div>
+                        <div class="hiragana japanese-text" id="hiragana2">いきます</div>
+                        <div class="romaji japanese-text" id="romaji2">ikimasu</div>
+                        <div class="meaning" id="meaning">đi</div>
+                        <div class="example">
+                            <div class="example-jp japanese-text" id="example-jp">学校へ行きます。</div>
+                            <div class="example-vn" id="example-vn">Tôi đi đến trường.</div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="audio-btn" id="audioBtn2">🔊 Đọc ví dụ</button>
+                            <button class="flip-btn" id="flipBtn2">🔄 Quay lại</button>
+                            <button class="grammar-btn" id="grammarBtn">📝 Phân tích ngữ pháp</button>
+                        </div>
+                        <div class="detailed-grammar" id="detailed-grammar">
+                            <div class="grammar-header">📊 Phân tích cấu trúc câu</div>
+                            <div class="sentence-breakdown" id="sentence-breakdown"></div>
+                            <div class="pattern-examples" id="pattern-examples"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="btn" id="prevBtn">⬅️ Trước</button>
+                    <button class="btn" id="masteredBtn">✅ Đánh dấu</button>
+                    <button class="btn" id="nextBtn">Sau ➡️</button>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="test-btn" id="startTestBtn">🧠 Bài Test Kiểm Tra</button>
+                <button class="back-btn" id="backToMenuBtn">📖 Về Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Test Interface -->
+    <div id="test-interface" class="interface">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="learning-container">
+            <div class="current-lesson" id="test-lesson-info">🧠 Bài Test - Bài 1: Động từ cơ bản</div>
+            <div class="progress">
+                Câu <span id="test-current">1</span> / <span id="test-total">10</span> |
+                Điểm: <span id="test-score">0</span>
+            </div>
+            <div class="card" id="test-card">
+                <div id="test-card-number">#1</div>
+                <div class="test-question">
+                    <div class="kanji japanese-text" id="test-kanji">行きます</div>
+                    <div class="hiragana japanese-text" id="test-hiragana">いきます</div>
+                    <div class="romaji japanese-text" id="test-romaji">ikimasu</div>
+                    <div class="question-text">Nghĩa của từ này là gì?</div>
+                </div>
+                <div class="test-options" id="test-options"></div>
+                <div class="test-result" id="test-result" style="display: none;">
+                    <div class="result-icon" id="result-icon">✅</div>
+                    <div class="result-text" id="result-text">Chính xác!</div>
+                    <div class="correct-answer" id="correct-answer">Đáp án đúng: đi</div>
+                </div>
+                <div class="card-buttons-single">
+                    <button class="audio-btn" id="test-audio-btn">🔊 Đọc từ</button>
+                    <button class="flip-btn" id="test-next-btn" style="display: none;">➡️ Câu tiếp</button>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="back-btn" id="test-back-btn">📖 Về Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Score Interface -->
+    <div id="score-interface" class="interface">
+        <h1>📚 Flash Cards Tiếng Nhật</h1>
+        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <div class="learning-container">
+            <div class="current-lesson">🏆 Kết Quả Bài Test</div>
+            <div class="score-display">
+                <div class="final-score">
+                    <div class="score-number" id="final-score">8/10</div>
+                    <div class="score-percentage" id="score-percentage">80%</div>
+                </div>
+                <div class="score-message" id="score-message">Xuất sắc! Bạn đã làm rất tốt!</div>
+                <div class="score-details">
+                    <div class="score-row">
+                        <span>Câu đúng:</span>
+                        <span id="correct-count">8</span>
+                    </div>
+                    <div class="score-row">
+                        <span>Câu sai:</span>
+                        <span id="wrong-count">2</span>
+                    </div>
+                    <div class="score-row">
+                        <span>Tỷ lệ chính xác:</span>
+                        <span id="accuracy">80%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="test-btn" id="retry-test-btn">🔄 Làm lại</button>
+                <button class="flip-btn" id="back-to-study-btn">📚 Tiếp tục học</button>
+                <button class="back-btn" id="score-back-btn">📖 Về Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tooltip for reading practice -->
+    <div class="tooltip" id="tooltip"></div>
+</div>
+
+<script>
+    const DATA_URL = `https://raw.githubusercontent.com/vti-haminhtu-exv/lean-japanese/main/lessons.json?ts=${Date.now()}`;
+    const LESSON_ICONS = {
+        1: '🚶', 2: '🍽️', 3: '👥', 4: '🏠', 5: '⏰',
+        6: '🎨', 7: '🌸', 8: '📱', 9: '🚗', 10: '🏫',
+        11: '💼', 12: '🛍️', 13: '🍜', 14: '🎵', 15: '📚',
+        16: '⚽', 17: '🌍', 18: '💰', 19: '🏥', 20: '✈️',
+        21: '🎉', 22: '🌤️', 23: '👘', 24: '🗾', 25: '🎯',
+        26: '🎬', 27: '🚅', 28: '🏮', 29: '🌊', 30: '⛩️'
+    };
+
+    let allLessons = {};
+    let currentLesson = 1;
+    let currentIndex = 0;
+    let isFlipped = false;
+    let masteredSet = new Set();
+    let grammarVisible = false;
+    let words = [];
+    let testWords = [];
+    let currentTestIndex = 0;
+    let testScore = 0;
+    let selectedAnswer = '';
+    let isTestAnswered = false;
+    let isReadingVisible = false;
+    let currentSpeechUtterance = null; // Track current speech
+
+    // Enhanced fallback data with reading passages and translations
+    const FALLBACK_DATA = {
+        1: {
+            title: "Động từ cơ bản",
+            words: [
+                {
+                    kanji: '行きます',
+                    hiragana: 'いきます',
+                    romaji: 'ikimasu',
+                    meaning: 'đi',
+                    example: '学校へ行きます。',
+                    exampleVn: 'Tôi đi đến trường.',
+                    breakdown: [
+                        {word: '学校', reading: 'がっこう', type: 'noun', meaning: 'trường học'},
+                        {word: 'へ', reading: 'へ', type: 'particle', meaning: 'đến, về phía'},
+                        {word: '行きます', reading: 'いきます', type: 'verb', meaning: 'đi (lịch sự)'}
+                    ],
+                    pattern: 'Danh từ + へ + Động từ di chuyển',
+                    examples: [
+                        {jp: '家へ帰ります。', vn: 'Tôi về nhà.'},
+                        {jp: '会社へ行きます。', vn: 'Tôi đi công ty.'},
+                        {jp: '駅へ走ります。', vn: 'Tôi chạy đến ga.'}
+                    ]
+                },
+                {
+                    kanji: '来ます',
+                    hiragana: 'きます',
+                    romaji: 'kimasu',
+                    meaning: 'đến',
+                    example: '友達が来ます。',
+                    exampleVn: 'Bạn tôi đến.',
+                    breakdown: [
+                        {word: '友達', reading: 'ともだち', type: 'noun', meaning: 'bạn bè'},
+                        {word: 'が', reading: 'が', type: 'particle', meaning: 'đánh dấu chủ ngữ'},
+                        {word: '来ます', reading: 'きます', type: 'verb', meaning: 'đến (lịch sự)'}
+                    ],
+                    pattern: 'Chủ ngữ + が + Động từ',
+                    examples: [
+                        {jp: '先生が来ます。', vn: 'Thầy giáo đến.'},
+                        {jp: '電車が来ます。', vn: 'Tàu điện đến.'},
+                        {jp: '雨が来ます。', vn: 'Mưa đến.'}
+                    ]
+                },
+                {
+                    kanji: '帰ります',
+                    hiragana: 'かえります',
+                    romaji: 'kaerimasu',
+                    meaning: 'về',
+                    example: '家に帰ります。',
+                    exampleVn: 'Tôi về nhà.',
+                    breakdown: [
+                        {word: '家', reading: 'いえ', type: 'noun', meaning: 'nhà'},
+                        {word: 'に', reading: 'に', type: 'particle', meaning: 'vào, tại'},
+                        {word: '帰ります', reading: 'かえります', type: 'verb', meaning: 'về (lịch sự)'}
+                    ],
+                    pattern: 'Địa điểm + に + Động từ',
+                    examples: [
+                        {jp: '学校に帰ります。', vn: 'Tôi về trường.'},
+                        {jp: '国に帰ります。', vn: 'Tôi về nước.'}
+                    ]
+                },
+                {
+                    kanji: '食べます',
+                    hiragana: 'たべます',
+                    romaji: 'tabemasu',
+                    meaning: 'ăn',
+                    example: 'ご飯を食べます。',
+                    exampleVn: 'Tôi ăn cơm.',
+                    breakdown: [
+                        {word: 'ご飯', reading: 'ごはん', type: 'noun', meaning: 'cơm'},
+                        {word: 'を', reading: 'を', type: 'particle', meaning: 'đánh dấu tân ngữ'},
+                        {word: '食べます', reading: 'たべます', type: 'verb', meaning: 'ăn (lịch sự)'}
+                    ],
+                    pattern: 'Tân ngữ + を + Động từ',
+                    examples: [
+                        {jp: 'パンを食べます。', vn: 'Tôi ăn bánh mì.'},
+                        {jp: '魚を食べます。', vn: 'Tôi ăn cá.'}
+                    ]
+                },
+                {
+                    kanji: '働きます',
+                    hiragana: 'はたらきます',
+                    romaji: 'hatarakimasu',
+                    meaning: 'làm việc',
+                    example: '会社で働きます。',
+                    exampleVn: 'Tôi làm việc ở công ty.',
+                    breakdown: [
+                        {word: '会社', reading: 'かいしゃ', type: 'noun', meaning: 'công ty'},
+                        {word: 'で', reading: 'で', type: 'particle', meaning: 'tại, ở'},
+                        {word: '働きます', reading: 'はたらきます', type: 'verb', meaning: 'làm việc (lịch sự)'}
+                    ],
+                    pattern: 'Địa điểm + で + Động từ',
+                    examples: [
+                        {jp: '家で働きます。', vn: 'Tôi làm việc ở nhà.'},
+                        {jp: '学校で働きます。', vn: 'Tôi làm việc ở trường.'}
+                    ]
+                }
+            ],
+            readingPassage: {
+                title: "Một ngày của Tanaka-san",
+                text: "田中さんは毎朝七時に家を出ます。電車で会社へ行きます。会社で働きます。昼にご飯を食べます。夕方六時に会社から帰ります。家で夕食を食べます。友達が来ます。",
+                translation: "Tanaka-san rời khỏi nhà lúc 7 giờ sáng mỗi ngày. Anh ấy đi công ty bằng tàu điện. Anh ấy làm việc ở công ty. Anh ấy ăn cơm trưa. Anh ấy về từ công ty lúc 6 giờ chiều. Anh ấy ăn tối ở nhà. Bạn anh ấy đến chơi.",
+                highlightedWords: [
+                    {word: '出ます', meaning: 'rời khỏi, ra ngoài'},
+                    {word: '電車', meaning: 'tàu điện'},
+                    {word: '会社', meaning: 'công ty'},
+                    {word: '行きます', meaning: 'đi'},
+                    {word: '働きます', meaning: 'làm việc'},
+                    {word: '昼', meaning: 'trưa'},
+                    {word: 'ご飯', meaning: 'cơm'},
+                    {word: '食べます', meaning: 'ăn'},
+                    {word: '夕方', meaning: 'buổi chiều'},
+                    {word: '帰ります', meaning: 'về'},
+                    {word: '夕食', meaning: 'bữa tối'},
+                    {word: '友達', meaning: 'bạn bè'},
+                    {word: '来ます', meaning: 'đến'}
+                ]
+            }
+        },
+        2: {
+            title: "Ăn uống",
+            words: [
+                {
+                    kanji: '飲みます',
+                    hiragana: 'のみます',
+                    romaji: 'nomimasu',
+                    meaning: 'uống',
+                    example: '水を飲みます。',
+                    exampleVn: 'Tôi uống nước.'
+                },
+                {
+                    kanji: '買います',
+                    hiragana: 'かいます',
+                    romaji: 'kaimasu',
+                    meaning: 'mua',
+                    example: 'パンを買います。',
+                    exampleVn: 'Tôi mua bánh mì.'
+                }
+            ],
+            readingPassage: {
+                title: "Đi mua sắm",
+                text: "今日、スーパーに行きます。パンを買います。牛乳を買います。家に帰ります。パンを食べます。牛乳を飲みます。",
+                translation: "Hôm nay tôi đi siêu thị. Tôi mua bánh mì. Tôi mua sữa. Tôi về nhà. Tôi ăn bánh mì. Tôi uống sữa.",
+                highlightedWords: [
+                    {word: 'スーパー', meaning: 'siêu thị'},
+                    {word: 'パン', meaning: 'bánh mì'},
+                    {word: '買います', meaning: 'mua'},
+                    {word: '牛乳', meaning: 'sữa'},
+                    {word: '飲みます', meaning: 'uống'}
+                ]
+            }
+        }
+    };
+
+    function generateLessonButtons() {
+        const grid = document.getElementById('lesson-grid');
+        grid.innerHTML = '';
+        const lessonKeys = Object.keys(allLessons);
+        
+        lessonKeys.forEach(lessonNum => {
+            const lesson = allLessons[lessonNum];
+            const icon = LESSON_ICONS[lessonNum] || '📝';
+            const btn = document.createElement('button');
+            btn.className = 'lesson-btn';
+            btn.innerHTML = `
+                <div class="lesson-icon">${icon}</div>
+                <div class="lesson-number">Bài ${lessonNum}</div>
+                <div class="lesson-name">${lesson.title}</div>
+                <div class="lesson-stats">${lesson.words.length} từ</div>
+            `;
+            if (lessonNum == currentLesson) btn.classList.add('active');
+            try {
+                const completedLessons = JSON.parse(localStorage.getItem('completedLessons') || '[]');
+                if (completedLessons.includes(parseInt(lessonNum))) btn.classList.add('completed');
+            } catch (e) {
+                console.log('localStorage not available');
+            }
+            btn.onclick = () => selectLesson(parseInt(lessonNum));
+            grid.appendChild(btn);
+        });
+    }
+
+    function loadLessonsData() {
+        console.log("Đang tải dữ liệu từ:", DATA_URL);
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', DATA_URL, true);
+        xhr.timeout = 10000;
+        
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    try {
+                        let fixedJSON = xhr.responseText
+                            .replace(/'/g, '"')
+                            .replace(/,(\s*[}\]])/g, '$1')
+                            .replace(/[-\u001F\u007F-\u009F]/g, '')
+                            .trim();
+                        allLessons = JSON.parse(fixedJSON);
+                        generateLessonButtons();
+                        showInterface('lesson-selection');
+                    } catch (error) {
+                        console.error("Error parsing JSON:", error);
+                        handleLoadError(error);
+                    }
+                } else {
+                    console.error("HTTP Error:", xhr.status);
+                    handleLoadError(new Error('HTTP error: ' + xhr.status));
+                }
+            }
+        };
+        
+        xhr.onerror = () => handleLoadError(new Error('Network error'));
+        xhr.ontimeout = () => handleLoadError(new Error('Request timeout'));
+        xhr.send();
+    }
+
+    function handleLoadError(error) {
+        console.error("Error loading lessons:", error);
+        allLessons = FALLBACK_DATA;
+        generateLessonButtons();
+        showInterface('lesson-selection');
+        showError('Không thể tải dữ liệu từ server.\n\nLỗi: ' + error.message + '\n\nĐang sử dụng dữ liệu mẫu.', true);
+    }
+
+    function showError(message, isWarning) {
+        const errorMsg = document.getElementById('error-message');
+        const errorTitle = document.querySelector('.error-title');
+        const errorIcon = document.querySelector('.error-icon');
+        errorTitle.textContent = isWarning ? 'Cảnh báo' : 'Không thể tải dữ liệu';
+        errorIcon.textContent = isWarning ? '⚠️' : '❌';
+        errorMsg.textContent = message;
+        showInterface('error-interface');
+    }
+
+    function showInterface(interfaceId) {
+        document.querySelectorAll('.interface').forEach(intf => intf.classList.remove('active'));
+        document.getElementById(interfaceId).classList.add('active');
+    }
+
+    function selectLesson(lessonNum) {
+        currentLesson = lessonNum;
+        words = allLessons[lessonNum].words;
+        currentIndex = 0;
+        isFlipped = false;
+        masteredSet.clear();
+        isReadingVisible = false;
+        
+        document.getElementById('current-lesson-info').textContent = `📝 Bài ${lessonNum}: ${allLessons[lessonNum].title}`;
+        
+        // Hide reading section initially
+        document.getElementById('reading-section').style.display = 'none';
+        
+        showInterface('learning-interface');
+        showCard();
+        loadReadingPassage();
+    }
+
+    function showReadingPassage() {
+        isReadingVisible = true;
+        document.getElementById('reading-section').style.display = 'block';
+        document.getElementById('show-reading-btn').textContent = '❌ Ẩn Đọc';
+        document.getElementById('show-reading-btn').style.background = 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)';
+    }
+
+    function hideReadingPassage() {
+        isReadingVisible = false;
+        document.getElementById('reading-section').style.display = 'none';
+        document.getElementById('show-reading-btn').textContent = '📖 Luyện Đọc';
+        document.getElementById('show-reading-btn').style.background = '';
+        
+        // Stop any current speech
+        stopCurrentSpeech();
+    }
+
+    function toggleReadingPassage() {
+        if (isReadingVisible) {
+            hideReadingPassage();
+        } else {
+            showReadingPassage();
+        }
+    }
+
+    function loadReadingPassage() {
+        const lesson = allLessons[currentLesson];
+        if (!lesson.readingPassage) return;
+        
+        const readingTextEl = document.getElementById('reading-text');
+        const readingTranslationEl = document.getElementById('reading-translation');
+        const readingTitleEl = document.getElementById('reading-passage-title');
+        const passage = lesson.readingPassage;
+        
+        // Set title
+        readingTitleEl.textContent = passage.title;
+        
+        let highlightedText = passage.text;
+        
+        // Highlight vocabulary words
+        if (passage.highlightedWords) {
+            passage.highlightedWords.forEach(item => {
+                const regex = new RegExp(item.word, 'g');
+                highlightedText = highlightedText.replace(regex, 
+                    `<span class="highlighted-word" data-meaning="${item.meaning}">${item.word}</span>`
+                );
+            });
+        }
+        
+        readingTextEl.innerHTML = highlightedText;
+        
+        // Set translation
+        readingTranslationEl.textContent = passage.translation;
+        
+        // Add event listeners for highlighted words
+        const highlightedWords = readingTextEl.querySelectorAll('.highlighted-word');
+        highlightedWords.forEach(word => {
+            word.addEventListener('mouseenter', showTooltip);
+            word.addEventListener('mouseleave', hideTooltip);
+            word.addEventListener('touchstart', showTooltip);
+            word.addEventListener('touchend', hideTooltip);
+        });
+    }
+
+    function showTooltip(e) {
+        const tooltip = document.getElementById('tooltip');
+        const meaning = e.target.getAttribute('data-meaning');
+        
+        tooltip.textContent = meaning;
+        tooltip.classList.add('show');
+        
+        // Position tooltip
+        const rect = e.target.getBoundingClientRect();
+        const tooltipRect = tooltip.getBoundingClientRect();
+        
+        let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
+        let top = rect.top - tooltipRect.height - 10;
+        
+        // Adjust if tooltip goes off screen
+        if (left < 0) left = 10;
+        if (left + tooltipRect.width > window.innerWidth) {
+            left = window.innerWidth - tooltipRect.width - 10;
+        }
+        if (top < 0) {
+            top = rect.bottom + 10;
+        }
+        
+        tooltip.style.left = left + window.scrollX + 'px';
+        tooltip.style.top = top + window.scrollY + 'px';
+    }
+
+    function hideTooltip() {
+        const tooltip = document.getElementById('tooltip');
+        tooltip.classList.remove('show');
+    }
+
+    function stopCurrentSpeech() {
+        if ('speechSynthesis' in window) {
+            speechSynthesis.cancel();
+        }
+        currentSpeechUtterance = null;
+    }
+
+    function speak(text, lang = 'ja-JP') {
+        if ('speechSynthesis' in window) {
+            try {
+                stopCurrentSpeech();
+                setTimeout(() => {
+                    currentSpeechUtterance = new SpeechSynthesisUtterance(text);
+                    currentSpeechUtterance.lang = lang;
+                    currentSpeechUtterance.rate = 0.7;
+                    currentSpeechUtterance.pitch = 1;
+                    currentSpeechUtterance.volume = 1;
+                    
+                    currentSpeechUtterance.onend = () => {
+                        currentSpeechUtterance = null;
+                    };
+                    
+                    speechSynthesis.speak(currentSpeechUtterance);
+                }, 100);
+            } catch (e) {
+                console.log('Speech synthesis error:', e);
+            }
+        }
+    }
+
+    function speakJapanese() {
+        speak(words[currentIndex].hiragana, 'ja-JP');
+    }
+
+    function speakExample() {
+        speak(words[currentIndex].example, 'ja-JP');
+    }
+
+    function speakReadingPassage() {
+        const lesson = allLessons[currentLesson];
+        if (lesson.readingPassage) {
+            speak(lesson.readingPassage.text, 'ja-JP');
+        }
+    }
+
+    function generateGrammarAnalysis() {
+        const word = words[currentIndex];
+        const breakdownContainer = document.getElementById('sentence-breakdown');
+        const examplesContainer = document.getElementById('pattern-examples');
+        breakdownContainer.innerHTML = '';
+        
+        if (word.breakdown) {
+            word.breakdown.forEach(part => {
+                const wordPart = document.createElement('span');
+                wordPart.className = `word-part ${part.type}`;
+                wordPart.innerHTML = `${part.word}<br><small>${part.reading}</small><br><small>${part.meaning}</small>`;
+                breakdownContainer.appendChild(wordPart);
+            });
+            const patternDiv = document.createElement('div');
+            patternDiv.style.cssText = 'margin-top: 12px; font-weight: bold; color: #1976d2;';
+            patternDiv.innerHTML = `<strong>📝 Cấu trúc:</strong> ${word.pattern}`;
+            breakdownContainer.appendChild(patternDiv);
+        }
+
+        examplesContainer.innerHTML = '<div style="font-weight: bold; color: #f57c00; margin-bottom: 8px;">📖 Các ví dụ tương tự:</div>';
+        if (word.examples) {
+            word.examples.forEach(example => {
+                const exampleDiv = document.createElement('div');
+                exampleDiv.className = 'pattern-example';
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'pattern-content';
+                const jpDiv = document.createElement('div');
+                jpDiv.className = 'pattern-jp japanese-text';
+                jpDiv.textContent = example.jp;
+                const vnDiv = document.createElement('div');
+                vnDiv.className = 'pattern-vn';
+                vnDiv.textContent = example.vn;
+                const audioBtn = document.createElement('button');
+                audioBtn.className = 'pattern-audio';
+                audioBtn.innerHTML = '🔊';
+                audioBtn.onclick = () => speakPatternExample(example.jp);
+                contentDiv.appendChild(jpDiv);
+                contentDiv.appendChild(vnDiv);
+                exampleDiv.appendChild(contentDiv);
+                exampleDiv.appendChild(audioBtn);
+                examplesContainer.appendChild(exampleDiv);
+            });
+        }
+    }
+
+    function speakPatternExample(text) {
+        speak(text, 'ja-JP');
+    }
+
+    function toggleGrammar() {
+        grammarVisible = !grammarVisible;
+        const grammarSection = document.getElementById('detailed-grammar');
+        const grammarBtn = document.getElementById('grammarBtn');
+        if (grammarVisible) {
+            generateGrammarAnalysis();
+            grammarSection.style.display = 'block';
+            grammarBtn.textContent = '➖ Ẩn phân tích';
+            grammarBtn.style.background = 'linear-gradient(135deg, #f57c00 0%, #ef6c00 100%)';
+        } else {
+            grammarSection.style.display = 'none';
+            grammarBtn.textContent = '📝 Phân tích ngữ pháp';
+            grammarBtn.style.background = 'linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%)';
+        }
+    }
+
+    function showCard() {
+        const word = words[currentIndex];
+        document.getElementById('card-number').textContent = `#${currentIndex + 1}`;
+        document.getElementById('kanji').textContent = word.kanji;
+        document.getElementById('hiragana').textContent = word.hiragana;
+        document.getElementById('romaji').textContent = word.romaji;
+        document.getElementById('kanji2').textContent = word.kanji;
+        document.getElementById('hiragana2').textContent = word.hiragana;
+        document.getElementById('romaji2').textContent = word.romaji;
+        document.getElementById('meaning').textContent = word.meaning;
+        document.getElementById('example-jp').textContent = word.example;
+        document.getElementById('example-vn').textContent = word.exampleVn;
+        document.getElementById('current').textContent = currentIndex + 1;
+        document.getElementById('total').textContent = words.length;
+        document.getElementById('total2').textContent = words.length;
+        document.getElementById('mastered').textContent = masteredSet.size;
+        const btn = document.getElementById('masteredBtn');
+        btn.textContent = masteredSet.has(currentIndex) ? '✅ Đã học' : '☑️ Đánh dấu';
+        btn.className = masteredSet.has(currentIndex) ? 'btn mastered-btn' : 'btn';
+        grammarVisible = false;
+        document.getElementById('detailed-grammar').style.display = 'none';
+        document.getElementById('grammarBtn').textContent = '📝 Phân tích ngữ pháp';
+        document.getElementById('grammarBtn').style.background = 'linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%)';
+        setTimeout(speakJapanese, 500);
+    }
+
+    function flip() {
+        isFlipped = !isFlipped;
+        const front = document.getElementById('front');
+        const back = document.getElementById('back');
+        const card = document.getElementById('card');
+        if (isFlipped) {
+            front.style.display = 'none';
+            back.style.display = 'block';
+            card.className = 'card flipped';
+        } else {
+            front.style.display = 'block';
+            back.style.display = 'none';
+            card.className = 'card';
+        }
+    }
+
+    function next() {
+        currentIndex = (currentIndex + 1) % words.length;
+        isFlipped = false;
+        document.getElementById('front').style.display = 'block';
+        document.getElementById('back').style.display = 'none';
+        document.getElementById('card').className = 'card';
+        showCard();
+    }
+
+    function prev() {
+        currentIndex = currentIndex === 0 ? words.length - 1 : currentIndex - 1;
+        isFlipped = false;
+        document.getElementById('front').style.display = 'block';
+        document.getElementById('back').style.display = 'none';
+        document.getElementById('card').className = 'card';
+        showCard();
+    }
+
+    function toggleMastered() {
+        if (masteredSet.has(currentIndex)) {
+            masteredSet.delete(currentIndex);
+        } else {
+            masteredSet.add(currentIndex);
+        }
+        showCard();
+        try {
+            const lessonProgress = { lesson: currentLesson, masteredWords: Array.from(masteredSet) };
+            localStorage.setItem(`lesson_${currentLesson}_progress`, JSON.stringify(lessonProgress));
+        } catch (e) {
+            console.log('localStorage not available');
+        }
+    }
+
+    function backToMenu() {
+        stopCurrentSpeech(); // Stop speech when going back to menu
+        generateLessonButtons();
+        showInterface('lesson-selection');
+    }
+
+    function retryLoad() {
+        showInterface('loading-interface');
+        loadLessonsData();
+    }
+
+    function startTest() {
+        stopCurrentSpeech(); // Stop speech when starting test
+        const shuffledWords = shuffleArray(words.slice());
+        testWords = shuffledWords.slice(0, Math.min(10, shuffledWords.length));
+        currentTestIndex = 0;
+        testScore = 0;
+        document.getElementById('test-lesson-info').textContent = 
+            `🧠 Bài Test - Bài ${currentLesson}: ${allLessons[currentLesson].title}`;
+        showInterface('test-interface');
+        showTestQuestion();
+    }
+
+    function shuffleArray(array) {
+        const newArray = array.slice();
+        for (let i = newArray.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+        }
+        return newArray;
+    }
+
+    function showTestQuestion() {
+        if (currentTestIndex >= testWords.length) {
+            showTestResult();
+            return;
+        }
+        const word = testWords[currentTestIndex];
+        isTestAnswered = false;
+        selectedAnswer = '';
+        document.getElementById('test-card-number').textContent = `#${currentTestIndex + 1}`;
+        document.getElementById('test-kanji').textContent = word.kanji;
+        document.getElementById('test-hiragana').textContent = word.hiragana;
+        document.getElementById('test-romaji').textContent = word.romaji;
+        document.getElementById('test-current').textContent = currentTestIndex + 1;
+        document.getElementById('test-total').textContent = testWords.length;
+        document.getElementById('test-score').textContent = testScore;
+        generateTestOptions(word);
+        document.getElementById('test-result').style.display = 'none';
+        document.getElementById('test-next-btn').style.display = 'none';
+    }
+
+    function generateTestOptions(correctWord) {
+        const optionsContainer = document.getElementById('test-options');
+        optionsContainer.innerHTML = '';
+        const otherWords = words.filter(w => w.meaning !== correctWord.meaning);
+        const wrongAnswers = shuffleArray(otherWords).slice(0, 3).map(w => w.meaning);
+        const allOptions = [correctWord.meaning, ...wrongAnswers];
+        const shuffledOptions = shuffleArray(allOptions);
+        shuffledOptions.forEach(option => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.textContent = option;
+            btn.onclick = () => selectTestAnswer(option, correctWord.meaning);
+            optionsContainer.appendChild(btn);
+        });
+    }
+
+    function selectTestAnswer(selected, correct) {
+        if (isTestAnswered) return;
+        isTestAnswered = true;
+        selectedAnswer = selected;
+        const optionBtns = document.querySelectorAll('.option-btn');
+        optionBtns.forEach(btn => {
+            btn.classList.add('disabled');
+            if (btn.textContent === correct) {
+                btn.classList.add('correct');
+            } else if (btn.textContent === selected && selected !== correct) {
+                btn.classList.add('wrong');
+            }
+        });
+        const resultDiv = document.getElementById('test-result');
+        const resultIcon = document.getElementById('result-icon');
+        const resultText = document.getElementById('result-text');
+        const correctAnswer = document.getElementById('correct-answer');
+        if (selected === correct) {
+            testScore++;
+            resultDiv.className = 'test-result';
+            resultIcon.textContent = '✅';
+            resultText.textContent = 'Chính xác!';
+            correctAnswer.style.display = 'none';
+        } else {
+            resultDiv.className = 'test-result wrong';
+            resultIcon.textContent = '❌';
+            resultText.textContent = 'Sai rồi!';
+            correctAnswer.textContent = `Đáp án đúng: ${correct}`;
+            correctAnswer.style.display = 'block';
+        }
+        resultDiv.style.display = 'block';
+        document.getElementById('test-next-btn').style.display = 'block';
+        document.getElementById('test-score').textContent = testScore;
+    }
+
+    function nextTestQuestion() {
+        currentTestIndex++;
+        showTestQuestion();
+    }
+
+    function showTestResult() {
+        const percentage = Math.round((testScore / testWords.length) * 100);
+        document.getElementById('final-score').textContent = `${testScore}/${testWords.length}`;
+        document.getElementById('score-percentage').textContent = `${percentage}%`;
+        document.getElementById('correct-count').textContent = testScore;
+        document.getElementById('wrong-count').textContent = testWords.length - testScore;
+        document.getElementById('accuracy').textContent = `${percentage}%`;
+        const messageEl = document.getElementById('score-message');
+        if (percentage >= 90) {
+            messageEl.textContent = '🏆 Xuất sắc! Bạn đã thành thạo bài học này!';
+            messageEl.style.background = 'linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%)';
+            messageEl.style.borderColor = '#28a745';
+        } else if (percentage >= 70) {
+            messageEl.textContent = '👍 Tốt lắm! Hãy ôn lại một chút nữa.';
+            messageEl.style.background = 'linear-gradient(135deg, #fff3e0 0%, #fafafa 100%)';
+            messageEl.style.borderColor = '#ff9800';
+        } else {
+            messageEl.textContent = '📚 Hãy học kỹ hơn và thử lại nhé!';
+            messageEl.style.background = 'linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%)';
+            messageEl.style.borderColor = '#dc3545';
+        }
+        showInterface('score-interface');
+    }
+
+    function speakTestWord() {
+        speak(testWords[currentTestIndex].hiragana, 'ja-JP');
+    }
+
+    function retryTest() {
+        startTest();
+    }
+
+    function backToStudy() {
+        showInterface('learning-interface');
+    }
+
+    function addEventListeners() {
+        const buttons = {
+            'retry-btn': retryLoad,
+            'prevBtn': prev,
+            'nextBtn': next,
+            'masteredBtn': toggleMastered,
+            'flipBtn': flip,
+            'flipBtn2': flip,
+            'audioBtn': speakJapanese,
+            'audioBtn2': speakExample,
+            'grammarBtn': toggleGrammar,
+            'backToMenuBtn': backToMenu,
+            'startTestBtn': startTest,
+            'test-audio-btn': speakTestWord,
+            'test-next-btn': nextTestQuestion,
+            'test-back-btn': backToMenu,
+            'retry-test-btn': retryTest,
+            'back-to-study-btn': backToStudy,
+            'score-back-btn': backToMenu,
+            'reading-audio-btn': speakReadingPassage,
+            'show-reading-btn': toggleReadingPassage,
+            'close-reading-btn': hideReadingPassage
+        };
+
+        Object.entries(buttons).forEach(([id, handler]) => {
+            const btn = document.getElementById(id);
+            if (btn) {
+                btn.onclick = handler;
+                btn.addEventListener('touchend', e => {
+                    e.preventDefault();
+                    handler();
+                });
+            }
+        });
+
+        // Handle lesson button clicks
+        document.getElementById('lesson-grid').addEventListener('click', e => {
+            const btn = e.target.closest('.lesson-btn');
+            if (btn) {
+                const lessonNum = parseInt(btn.querySelector('.lesson-number').textContent.match(/\d+/)[0]);
+                selectLesson(lessonNum);
+            }
+        });
+
+        document.getElementById('lesson-grid').addEventListener('touchend', e => {
+            e.preventDefault();
+            const btn = e.target.closest('.lesson-btn');
+            if (btn) {
+                const lessonNum = parseInt(btn.querySelector('.lesson-number').textContent.match(/\d+/)[0]);
+                selectLesson(lessonNum);
+            }
+        });
+
+        // Hide tooltip when clicking elsewhere
+        document.addEventListener('click', (e) => {
+            if (!e.target.classList.contains('highlighted-word')) {
+                hideTooltip();
+            }
+        });
+
+        // Stop speech when page is hidden or unloaded
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                stopCurrentSpeech();
+            }
+        });
+
+        window.addEventListener('beforeunload', () => {
+            stopCurrentSpeech();
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            loadLessonsData();
+            addEventListeners();
+        });
+    } else {
+        loadLessonsData();
+        addEventListeners();
+    }
+</script>
+</body>
+</html>
