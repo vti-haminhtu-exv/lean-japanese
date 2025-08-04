@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>📚 Flash Cards Tiếng Nhật</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <style>
         * {
             -webkit-tap-highlight-color: transparent;
@@ -624,7 +624,7 @@
         /* Buttons */
         .card-buttons {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 10px;
             margin: 15px 0;
         }
@@ -675,8 +675,8 @@
 
         .controls {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
             margin: 20px 0;
         }
 
@@ -684,18 +684,20 @@
             background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
             color: white;
             border: none;
-            padding: 12px;
-            border-radius: 10px;
-            font-size: 13px;
+            padding: 10px 8px;
+            border-radius: 8px;
+            font-size: 12px;
             font-weight: 600;
             cursor: pointer;
             box-shadow: 0 3px 12px rgba(108,117,125,0.3);
             transition: all 0.2s ease;
-            min-height: 45px;
+            min-height: 42px;
             touch-action: manipulation;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
+            line-height: 1.2;
         }
 
         .btn:active {
@@ -709,7 +711,7 @@
 
         .action-buttons {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 10px;
             margin-top: 15px;
         }
@@ -720,7 +722,7 @@
             border: none;
             padding: 12px;
             border-radius: 10px;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             cursor: pointer;
             box-shadow: 0 3px 12px rgba(23,162,184,0.3);
@@ -731,6 +733,7 @@
             align-items: center;
             justify-content: center;
             gap: 6px;
+            text-align: center;
         }
 
         .back-btn {
@@ -747,28 +750,102 @@
             .kanji { font-size: 2em; }
             .container { padding: 0; }
             body { padding: 8px; }
-            .lesson-grid { 
+
+            .lesson-grid {
                 grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
                 gap: 8px;
             }
-            .lesson-btn { 
+            .lesson-btn {
                 padding: 10px 8px;
                 min-height: 80px;
             }
             .lesson-icon { font-size: 18px; }
             .lesson-number { font-size: 13px; }
-            
+
             .reading-text {
                 font-size: 14px;
                 padding: 15px;
             }
-            
+
             .reading-controls {
                 flex-direction: column;
             }
 
             .reading-audio-btn, .reading-close-btn {
                 flex: none;
+            }
+
+            /* Tối ưu buttons cho mobile */
+            .card-buttons {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+                margin: 12px 0;
+            }
+
+            .card-buttons-single {
+                gap: 8px;
+            }
+
+            .audio-btn, .flip-btn, .grammar-btn {
+                padding: 10px 8px;
+                font-size: 12px;
+                min-height: 40px;
+                border-radius: 8px;
+            }
+
+            .controls {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 6px;
+                margin: 15px 0;
+            }
+
+            .btn {
+                padding: 8px 6px;
+                font-size: 11px;
+                min-height: 38px;
+                border-radius: 6px;
+            }
+
+            .action-buttons {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .test-btn, .back-btn {
+                padding: 10px 8px;
+                font-size: 12px;
+                min-height: 40px;
+            }
+
+            /* Progress bar mobile */
+            .progress {
+                padding: 8px 12px;
+                font-size: 13px;
+                margin-bottom: 12px;
+            }
+
+            #show-reading-btn {
+                padding: 6px 10px !important;
+                font-size: 11px !important;
+                min-height: 32px !important;
+                margin-left: 8px !important;
+            }
+
+            /* Test interface mobile */
+            .test-options {
+                gap: 8px;
+            }
+
+            .option-btn {
+                padding: 10px 8px;
+                font-size: 13px;
+                min-height: 40px;
+            }
+
+            .card-buttons-single .audio-btn,
+            .card-buttons-single .flip-btn {
+                flex: 1;
+                min-height: 40px;
             }
         }
 
@@ -1002,7 +1079,7 @@
         <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
         <div class="learning-container">
             <div class="current-lesson" id="current-lesson-info">📝 Bài 1: Động từ cơ bản</div>
-            
+
             <!-- Reading Practice Section -->
             <div id="reading-section" class="reading-practice">
                 <div class="reading-title">📖 Luyện Đọc: <span id="reading-passage-title">Một ngày của Tanaka-san</span></div>
@@ -1052,6 +1129,8 @@
                         <div class="card-buttons">
                             <button class="audio-btn" id="audioBtn2">🔊 Đọc ví dụ</button>
                             <button class="flip-btn" id="flipBtn2">🔄 Quay lại</button>
+                        </div>
+                        <div class="card-buttons" style="grid-template-columns: 1fr; margin-top: 5px;">
                             <button class="grammar-btn" id="grammarBtn">📝 Phân tích ngữ pháp</button>
                         </div>
                         <div class="detailed-grammar" id="detailed-grammar">
@@ -1333,7 +1412,7 @@
         const grid = document.getElementById('lesson-grid');
         grid.innerHTML = '';
         const lessonKeys = Object.keys(allLessons);
-        
+
         lessonKeys.forEach(lessonNum => {
             const lesson = allLessons[lessonNum];
             const icon = LESSON_ICONS[lessonNum] || '📝';
@@ -1362,7 +1441,7 @@
         const xhr = new XMLHttpRequest();
         xhr.open('GET', DATA_URL, true);
         xhr.timeout = 10000;
-        
+
         xhr.onreadystatechange = () => {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
@@ -1385,7 +1464,7 @@
                 }
             }
         };
-        
+
         xhr.onerror = () => handleLoadError(new Error('Network error'));
         xhr.ontimeout = () => handleLoadError(new Error('Request timeout'));
         xhr.send();
@@ -1420,16 +1499,29 @@
         currentIndex = 0;
         isFlipped = false;
         masteredSet.clear();
-        isReadingVisible = false;
-        
+
+        // RESET READING STATE - Fix cho việc button ảnh hưởng sai bài khác
+        resetReadingState();
+
         document.getElementById('current-lesson-info').textContent = `📝 Bài ${lessonNum}: ${allLessons[lessonNum].title}`;
-        
-        // Hide reading section initially
-        document.getElementById('reading-section').style.display = 'none';
-        
+
         showInterface('learning-interface');
         showCard();
         loadReadingPassage();
+    }
+
+    // Hàm mới để reset trạng thái reading
+    function resetReadingState() {
+        isReadingVisible = false;
+        document.getElementById('reading-section').style.display = 'none';
+
+        // Reset button về trạng thái ban đầu
+        const showReadingBtn = document.getElementById('show-reading-btn');
+        showReadingBtn.textContent = '📖 Luyện Đọc';
+        showReadingBtn.style.background = '';
+
+        // Stop any current speech
+        stopCurrentSpeech();
     }
 
     function showReadingPassage() {
@@ -1444,7 +1536,7 @@
         document.getElementById('reading-section').style.display = 'none';
         document.getElementById('show-reading-btn').textContent = '📖 Luyện Đọc';
         document.getElementById('show-reading-btn').style.background = '';
-        
+
         // Stop any current speech
         stopCurrentSpeech();
     }
@@ -1460,32 +1552,32 @@
     function loadReadingPassage() {
         const lesson = allLessons[currentLesson];
         if (!lesson.readingPassage) return;
-        
+
         const readingTextEl = document.getElementById('reading-text');
         const readingTranslationEl = document.getElementById('reading-translation');
         const readingTitleEl = document.getElementById('reading-passage-title');
         const passage = lesson.readingPassage;
-        
+
         // Set title
         readingTitleEl.textContent = passage.title;
-        
+
         let highlightedText = passage.text;
-        
+
         // Highlight vocabulary words
         if (passage.highlightedWords) {
             passage.highlightedWords.forEach(item => {
                 const regex = new RegExp(item.word, 'g');
-                highlightedText = highlightedText.replace(regex, 
-                    `<span class="highlighted-word" data-meaning="${item.meaning}">${item.word}</span>`
+                highlightedText = highlightedText.replace(regex,
+                    `<span class="highlighted-word" data-meaning="${item.meaning}" data-word="${item.word}">${item.word}</span>`
                 );
             });
         }
-        
+
         readingTextEl.innerHTML = highlightedText;
-        
+
         // Set translation
         readingTranslationEl.textContent = passage.translation;
-        
+
         // Add event listeners for highlighted words
         const highlightedWords = readingTextEl.querySelectorAll('.highlighted-word');
         highlightedWords.forEach(word => {
@@ -1493,23 +1585,43 @@
             word.addEventListener('mouseleave', hideTooltip);
             word.addEventListener('touchstart', showTooltip);
             word.addEventListener('touchend', hideTooltip);
+
+            // THÊM CHỨC NĂNG CLICK ĐỂ ĐỌC TỪ - Fix cho việc highlighted words cần được đọc lên
+            word.addEventListener('click', function(e) {
+                e.preventDefault();
+                const wordText = e.target.getAttribute('data-word');
+                console.log('Clicked word:', wordText); // Debug log
+                console.log('Word element:', e.target); // Debug log
+                if (wordText) {
+                    // Làm sạch text, loại bỏ ký tự đặc biệt
+                    const cleanText = wordText.trim().replace(/[^\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF\u3400-\u4DBF]/g, '');
+                    console.log('Clean text to speak:', cleanText); // Debug log
+                    speak(cleanText, 'ja-JP');
+                } else {
+                    console.log('No data-word found, using textContent');
+                    const textContent = e.target.textContent.trim();
+                    const cleanText = textContent.replace(/[^\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF\u3400-\u4DBF]/g, '');
+                    console.log('Using textContent:', cleanText);
+                    speak(cleanText, 'ja-JP');
+                }
+            });
         });
     }
 
     function showTooltip(e) {
         const tooltip = document.getElementById('tooltip');
         const meaning = e.target.getAttribute('data-meaning');
-        
+
         tooltip.textContent = meaning;
         tooltip.classList.add('show');
-        
+
         // Position tooltip
         const rect = e.target.getBoundingClientRect();
         const tooltipRect = tooltip.getBoundingClientRect();
-        
+
         let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
         let top = rect.top - tooltipRect.height - 10;
-        
+
         // Adjust if tooltip goes off screen
         if (left < 0) left = 10;
         if (left + tooltipRect.width > window.innerWidth) {
@@ -1518,7 +1630,7 @@
         if (top < 0) {
             top = rect.bottom + 10;
         }
-        
+
         tooltip.style.left = left + window.scrollX + 'px';
         tooltip.style.top = top + window.scrollY + 'px';
     }
@@ -1545,11 +1657,11 @@
                     currentSpeechUtterance.rate = 0.7;
                     currentSpeechUtterance.pitch = 1;
                     currentSpeechUtterance.volume = 1;
-                    
+
                     currentSpeechUtterance.onend = () => {
                         currentSpeechUtterance = null;
                     };
-                    
+
                     speechSynthesis.speak(currentSpeechUtterance);
                 }, 100);
             } catch (e) {
@@ -1568,8 +1680,20 @@
 
     function speakReadingPassage() {
         const lesson = allLessons[currentLesson];
-        if (lesson.readingPassage) {
-            speak(lesson.readingPassage.text, 'ja-JP');
+        if (lesson && lesson.readingPassage && lesson.readingPassage.text) {
+            // Debug: In ra console để kiểm tra
+            console.log('Speaking text:', lesson.readingPassage.text);
+            // Chắc chắn sử dụng text gốc từ data, không phải từ DOM
+            const originalText = lesson.readingPassage.text;
+            speak(originalText, 'ja-JP');
+        } else {
+            // Fallback: nếu không có data, lấy textContent từ DOM (loại bỏ HTML tags)
+            const readingTextEl = document.getElementById('reading-text');
+            if (readingTextEl) {
+                const cleanText = readingTextEl.textContent || readingTextEl.innerText;
+                console.log('Fallback speaking text:', cleanText);
+                speak(cleanText, 'ja-JP');
+            }
         }
     }
 
@@ -1578,7 +1702,7 @@
         const breakdownContainer = document.getElementById('sentence-breakdown');
         const examplesContainer = document.getElementById('pattern-examples');
         breakdownContainer.innerHTML = '';
-        
+
         if (word.breakdown) {
             word.breakdown.forEach(part => {
                 const wordPart = document.createElement('span');
@@ -1730,7 +1854,7 @@
         testWords = shuffledWords.slice(0, Math.min(10, shuffledWords.length));
         currentTestIndex = 0;
         testScore = 0;
-        document.getElementById('test-lesson-info').textContent = 
+        document.getElementById('test-lesson-info').textContent =
             `🧠 Bài Test - Bài ${currentLesson}: ${allLessons[currentLesson].title}`;
         showInterface('test-interface');
         showTestQuestion();
