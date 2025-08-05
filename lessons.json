@@ -1488,7 +1488,7 @@
     ]
   }
 },
-"15": {
+  "15": {
   "title": "Hoạt động và mối quan hệ xã hội",
   "words": [
     {
@@ -2064,7 +2064,7 @@
     ]
   }
 },
-"16": {
+  "16": {
   "title": "Hành động và tính từ mô tả",
   "words": [
     {
@@ -3429,5 +3429,965 @@
         {"word": "なくします", "meaning": "làm mất"}
       ]
     }
+  },
+  "18": {
+    "title": "Sở thích và Kỹ năng",
+    "words": [
+      {
+        "kanji": "できます",
+        "hiragana": "できます",
+        "romaji": "dekimasu",
+        "meaning": "có thể",
+        "example": "ピアノができます。",
+        "exampleVn": "Tôi có thể chơi piano.",
+        "grammar": "ピアノ (piano) + が (chủ ngữ) + できます (có thể) - が chỉ đối tượng của khả năng",
+        "breakdown": [
+          {"word": "ピアノ", "reading": "ピアノ", "type": "noun", "meaning": "đàn piano"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ (khả năng)"},
+          {"word": "できます", "reading": "できます", "type": "verb", "meaning": "có thể (lịch sự)"}
+        ],
+        "pattern": "Danh từ + が + できます",
+        "examples": [
+          {"jp": "日本語ができます。", "vn": "Tôi có thể nói tiếng Nhật."},
+          {"jp": "運転ができます。", "vn": "Tôi có thể lái xe."},
+          {"jp": "料理ができます。", "vn": "Tôi có thể nấu ăn."}
+        ]
+      },
+      {
+        "kanji": "洗います",
+        "hiragana": "あらいます",
+        "romaji": "araimasu",
+        "meaning": "rửa",
+        "example": "皿を洗います。",
+        "exampleVn": "Tôi rửa bát.",
+        "grammar": "皿 (bát) + を (tân ngữ) + 洗います (rửa) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "皿", "reading": "さら", "type": "noun", "meaning": "cái bát, đĩa"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "洗います", "reading": "あらいます", "type": "verb", "meaning": "rửa (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 洗います",
+        "examples": [
+          {"jp": "服を洗います。", "vn": "Tôi giặt quần áo."},
+          {"jp": "車を洗います。", "vn": "Tôi rửa xe."},
+          {"jp": "手を洗います。", "vn": "Tôi rửa tay."}
+        ]
+      },
+      {
+        "kanji": "弾きます",
+        "hiragana": "ひきます",
+        "romaji": "hikimasu",
+        "meaning": "chơi (nhạc cụ)",
+        "example": "ギターを弾きます。",
+        "exampleVn": "Tôi chơi guitar.",
+        "grammar": "ギター (guitar) + を (tân ngữ) + 弾きます (chơi) - を chỉ nhạc cụ",
+        "breakdown": [
+          {"word": "ギター", "reading": "ギター", "type": "noun", "meaning": "đàn guitar"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "弾きます", "reading": "ひきます", "type": "verb", "meaning": "chơi (nhạc cụ, lịch sự)"}
+        ],
+        "pattern": "Nhạc cụ + を + 弾きます",
+        "examples": [
+          {"jp": "ピアノを弾きます。", "vn": "Tôi chơi piano."},
+          {"jp": "バイオリンを弾きます。", "vn": "Tôi chơi violin."},
+          {"jp": "ドラムを弾きます。", "vn": "Tôi chơi trống."}
+        ]
+      },
+      {
+        "kanji": "歌います",
+        "hiragana": "うたいます",
+        "romaji": "utaimasu",
+        "meaning": "hát",
+        "example": "歌を歌います。",
+        "exampleVn": "Tôi hát một bài hát.",
+        "grammar": "歌 (bài hát) + を (tân ngữ) + 歌います (hát) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "歌", "reading": "うた", "type": "noun", "meaning": "bài hát"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "歌います", "reading": "うたいます", "type": "verb", "meaning": "hát (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 歌います",
+        "examples": [
+          {"jp": "日本の歌を歌います。", "vn": "Tôi hát bài hát Nhật."},
+          {"jp": "友達と歌を歌います。", "vn": "Tôi hát cùng bạn."},
+          {"jp": "カラオケで歌を歌います。", "vn": "Tôi hát ở karaoke."}
+        ]
+      },
+      {
+        "kanji": "集めます",
+        "hiragana": "あつめます",
+        "romaji": "atsumemasu",
+        "meaning": "sưu tầm, thu thập",
+        "example": "切手を集めます。",
+        "exampleVn": "Tôi sưu tầm tem.",
+        "grammar": "切手 (tem) + を (tân ngữ) + 集めます (sưu tầm) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "切手", "reading": "きって", "type": "noun", "meaning": "con tem"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "集めます", "reading": "あつめます", "type": "verb", "meaning": "sưu tầm (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 集めます",
+        "examples": [
+          {"jp": "コインを集めます。", "vn": "Tôi sưu tầm tiền xu."},
+          {"jp": "本を集めます。", "vn": "Tôi thu thập sách."},
+          {"jp": "写真を集めます。", "vn": "Tôi sưu tầm ảnh."}
+        ]
+      },
+      {
+        "kanji": "捨てます",
+        "hiragana": "すてます",
+        "romaji": "sutemasu",
+        "meaning": "vứt, bỏ đi",
+        "example": "ごみを捨てます。",
+        "exampleVn": "Tôi vứt rác.",
+        "grammar": "ごみ (rác) + を (tân ngữ) + 捨てます (vứt) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "ごみ", "reading": "ごみ", "type": "noun", "meaning": "rác"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "捨てます", "reading": "すてます", "type": "verb", "meaning": "vứt (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 捨てます",
+        "examples": [
+          {"jp": "古い服を捨てます。", "vn": "Tôi vứt quần áo cũ."},
+          {"jp": "紙を捨てます。", "vn": "Tôi vứt giấy."},
+          {"jp": "不要な物を捨てます。", "vn": "Tôi vứt đồ không cần."}
+        ]
+      },
+      {
+        "kanji": "換えます",
+        "hiragana": "かえます",
+        "romaji": "kaemasu",
+        "meaning": "đổi, thay",
+        "example": "お金を換えます。",
+        "exampleVn": "Tôi đổi tiền.",
+        "grammar": "お金 (tiền) + を (tân ngữ) + 換えます (đổi) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "お金", "reading": "おかね", "type": "noun", "meaning": "tiền"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "換えます", "reading": "かえます", "type": "verb", "meaning": "đổi (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 換えます",
+        "examples": [
+          {"jp": "服を換えます。", "vn": "Tôi thay quần áo."},
+          {"jp": "電球を換えます。", "vn": "Tôi thay bóng đèn."},
+          {"jp": "外貨を換えます。", "vn": "Tôi đổi ngoại tệ."}
+        ]
+      },
+      {
+        "kanji": "運転します",
+        "hiragana": "うんてんします",
+        "romaji": "untenshimasu",
+        "meaning": "lái (xe)",
+        "example": "車を運転します。",
+        "exampleVn": "Tôi lái xe ô tô.",
+        "grammar": "車 (xe ô tô) + を (tân ngữ) + 運転します (lái) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "車", "reading": "くるま", "type": "noun", "meaning": "xe ô tô"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "運転します", "reading": "うんてんします", "type": "verb", "meaning": "lái (lịch sự)"}
+        ],
+        "pattern": "Phương tiện + を + 運転します",
+        "examples": [
+          {"jp": "バスを運転します。", "vn": "Tôi lái xe buýt."},
+          {"jp": "トラックを運転します。", "vn": "Tôi lái xe tải."},
+          {"jp": "自転車を運転します。", "vn": "Tôi điều khiển xe đạp."}
+        ]
+      },
+      {
+        "kanji": "予約します",
+        "hiragana": "よやくします",
+        "romaji": "yoyakushimasu",
+        "meaning": "đặt trước",
+        "example": "ホテルを予約します。",
+        "exampleVn": "Tôi đặt trước khách sạn.",
+        "grammar": "ホテル (khách sạn) + を (tân ngữ) + 予約します (đặt trước) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "ホテル", "reading": "ホテル", "type": "noun", "meaning": "khách sạn"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "予約します", "reading": "よやくします", "type": "verb", "meaning": "đặt trước (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 予約します",
+        "examples": [
+          {"jp": "レストランを予約します。", "vn": "Tôi đặt trước nhà hàng."},
+          {"jp": "飛行機を予約します。", "vn": "Tôi đặt vé máy bay."},
+          {"jp": "電車を予約します。", "vn": "Tôi đặt vé tàu."}
+        ]
+      },
+      {
+        "kanji": "見学します",
+        "hiragana": "けんがくします",
+        "romaji": "kengakushimasu",
+        "meaning": "tham quan học tập",
+        "example": "博物館を見学します。",
+        "exampleVn": "Tôi tham quan bảo tàng.",
+        "grammar": "博物館 (bảo tàng) + を (tân ngữ) + 見学します (tham quan) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "博物館", "reading": "はくぶつかん", "type": "noun", "meaning": "bảo tàng"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "見学します", "reading": "けんがくします", "type": "verb", "meaning": "tham quan (lịch sự)"}
+        ],
+        "pattern": "Nơi chốn + を + 見学します",
+        "examples": [
+          {"jp": "工場を見学します。", "vn": "Tôi tham quan nhà máy."},
+          {"jp": "学校を見学します。", "vn": "Tôi tham quan trường học."},
+          {"jp": "美術館を見学します。", "vn": "Tôi tham quan bảo tàng nghệ thuật."}
+        ]
+      },
+      {
+        "kanji": "ピアノ",
+        "hiragana": "ピアノ",
+        "romaji": "piano",
+        "meaning": "đàn piano",
+        "example": "ピアノを弾きます。",
+        "exampleVn": "Tôi chơi piano.",
+        "grammar": "ピアノ (piano) + を (tân ngữ) + 弾きます (chơi) - を chỉ nhạc cụ",
+        "breakdown": [
+          {"word": "ピアノ", "reading": "ピアノ", "type": "noun", "meaning": "đàn piano"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "弾きます", "reading": "ひきます", "type": "verb", "meaning": "chơi (nhạc cụ, lịch sự)"}
+        ],
+        "pattern": "Nhạc cụ + を + 弾きます",
+        "examples": [
+          {"jp": "ピアノを練習します。", "vn": "Tôi luyện tập piano."},
+          {"jp": "ピアノが上手です。", "vn": "Tôi chơi piano giỏi."},
+          {"jp": "ピアノを買います。", "vn": "Tôi mua đàn piano."}
+        ]
+      },
+      {
+        "kanji": "メートル",
+        "hiragana": "メートル",
+        "romaji": "meetoru",
+        "meaning": "mét",
+        "example": "1メートルの布を買います。",
+        "exampleVn": "Tôi mua 1 mét vải.",
+        "grammar": "1メートル (1 mét) + の (sở hữu) + 布 (vải) + を + 買います (mua)",
+        "breakdown": [
+          {"word": "1メートル", "reading": "いちメートル", "type": "noun", "meaning": "1 mét"},
+          {"word": "の", "reading": "の", "type": "particle", "meaning": "sở hữu, thuộc về"},
+          {"word": "布", "reading": "ぬの", "type": "noun", "meaning": "vải"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "買います", "reading": "かいます", "type": "verb", "meaning": "mua (lịch sự)"}
+        ],
+        "pattern": "Số + メートル + の + Danh từ + を + Hành động",
+        "examples": [
+          {"jp": "2メートルのロープを買います。", "vn": "Tôi mua 2 mét dây thừng."},
+          {"jp": "5メートルの距離を走ります。", "vn": "Tôi chạy 5 mét."},
+          {"jp": "3メートルの木があります。", "vn": "Có một cái cây cao 3 mét."}
+        ]
+      },
+      {
+        "kanji": "趣味",
+        "hiragana": "しゅみ",
+        "romaji": "shumi",
+        "meaning": "sở thích",
+        "example": "趣味は切手を集めることです。",
+        "exampleVn": "Sở thích của tôi là sưu tầm tem.",
+        "grammar": "趣味 (sở thích) + は (chủ đề) + 切手を集めます (sưu tầm tem) + ことです - Cấu trúc danh từ + です",
+        "breakdown": [
+          {"word": "趣味", "reading": "しゅみ", "type": "noun", "meaning": "sở thích"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "切手", "reading": "きって", "type": "noun", "meaning": "con tem"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "集めます", "reading": "あつめます", "type": "verb", "meaning": "sưu tầm (lịch sự)"},
+          {"word": "こと", "reading": "こと", "type": "noun", "meaning": "việc, hành động"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Danh từ + は + Danh từ + を + Động từ + ことです",
+        "examples": [
+          {"jp": "趣味は歌うことです。", "vn": "Sở thích của tôi là hát."},
+          {"jp": "趣味は旅行することです。", "vn": "Sở thích của tôi là đi du lịch."},
+          {"jp": "趣味はピアノを弾くことです。", "vn": "Sở thích của tôi là chơi piano."}
+        ]
+      },
+      {
+        "kanji": "日記",
+        "hiragana": "にっき",
+        "romaji": "nikki",
+        "meaning": "nhật ký",
+        "example": "毎日日記を書きます。",
+        "exampleVn": "Hàng ngày tôi viết nhật ký.",
+        "grammar": "毎日 (hàng ngày) + 日記 (nhật ký) + を (tân ngữ) + 書きます (viết) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "毎日", "reading": "まいにち", "type": "time", "meaning": "hàng ngày"},
+          {"word": "日記", "reading": "にっき", "type": "noun", "meaning": "nhật ký"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "書きます", "reading": "かきます", "type": "verb", "meaning": "viết (lịch sự)"}
+        ],
+        "pattern": "Thời gian + Danh từ + を + 書きます",
+        "examples": [
+          {"jp": "日記を読みます。", "vn": "Tôi đọc nhật ký."},
+          {"jp": "日記を捨てます。", "vn": "Tôi vứt nhật ký."},
+          {"jp": "日記に秘密を書きます。", "vn": "Tôi viết bí mật vào nhật ký."}
+        ]
+      },
+      {
+        "kanji": "（お）祈り",
+        "hiragana": "（お）いのり",
+        "romaji": "(o)inori",
+        "meaning": "việc cầu nguyện",
+        "example": "お祈りをします。",
+        "exampleVn": "Tôi cầu nguyện.",
+        "grammar": "お祈り (cầu nguyện) + を (tân ngữ) + します (làm) - を chỉ hành động",
+        "breakdown": [
+          {"word": "お祈り", "reading": "おいのり", "type": "noun", "meaning": "việc cầu nguyện"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "します", "reading": "します", "type": "verb", "meaning": "làm (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + します",
+        "examples": [
+          {"jp": "毎朝お祈りをします。", "vn": "Tôi cầu nguyện mỗi sáng."},
+          {"jp": "お祈りをする時間です。", "vn": "Đã đến giờ cầu nguyện."},
+          {"jp": "家族のためにお祈りをします。", "vn": "Tôi cầu nguyện cho gia đình."}
+        ]
+      },
+      {
+        "kanji": "祈ります",
+        "hiragana": "いのります",
+        "romaji": "inorimasu",
+        "meaning": "cầu nguyện",
+        "example": "健康を祈ります。",
+        "exampleVn": "Tôi cầu nguyện cho sức khỏe.",
+        "grammar": "健康 (sức khỏe) + を (tân ngữ) + 祈ります (cầu nguyện) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "健康", "reading": "けんこう", "type": "noun", "meaning": "sức khỏe"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "祈ります", "reading": "いのります", "type": "verb", "meaning": "cầu nguyện (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 祈ります",
+        "examples": [
+          {"jp": "成功を祈ります。", "vn": "Tôi cầu nguyện cho sự thành công."},
+          {"jp": "平安を祈ります。", "vn": "Tôi cầu nguyện cho sự bình an."},
+          {"jp": "友達を祈ります。", "vn": "Tôi cầu nguyện cho bạn bè."}
+        ]
+      },
+      {
+        "kanji": "課長",
+        "hiragana": "かちょう",
+        "romaji": "kachou",
+        "meaning": "tổ trưởng",
+        "example": "課長は忙しいです。",
+        "exampleVn": "Tổ trưởng thì bận rộn.",
+        "grammar": "課長 (tổ trưởng) + は (chủ đề) + 忙しい (bận rộn) + です - Tính từ-i + です",
+        "breakdown": [
+          {"word": "課長", "reading": "かちょう", "type": "noun", "meaning": "tổ trưởng"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "忙しい", "reading": "いそがしい", "type": "adjective", "meaning": "bận rộn"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Danh từ + は + Tính từ-i + です",
+        "examples": [
+          {"jp": "課長は優しいです。", "vn": "Tổ trưởng thì tốt bụng."},
+          {"jp": "課長と話します。", "vn": "Tôi nói chuyện với tổ trưởng."},
+          {"jp": "課長は会議をします。", "vn": "Tổ trưởng tổ chức cuộc họp."}
+        ]
+      },
+      {
+        "kanji": "部長",
+        "hiragana": "ぶちょう",
+        "romaji": "buchou",
+        "meaning": "trưởng phòng",
+        "example": "部長に相談します。",
+        "exampleVn": "Tôi hỏi ý kiến trưởng phòng.",
+        "grammar": "部長 (trưởng phòng) + に (đối tượng) + 相談します (hỏi ý kiến) - に chỉ đối tượng",
+        "breakdown": [
+          {"word": "部長", "reading": "ぶちょう", "type": "noun", "meaning": "trưởng phòng"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "đối với, cho"},
+          {"word": "相談します", "reading": "そうだんします", "type": "verb", "meaning": "hỏi ý kiến (lịch sự)"}
+        ],
+        "pattern": "Người + に + Hành động",
+        "examples": [
+          {"jp": "部長は厳しいです。", "vn": "Trưởng phòng thì nghiêm khắc."},
+          {"jp": "部長に報告します。", "vn": "Tôi báo cáo với trưởng phòng."},
+          {"jp": "部長と一緒に出張します。", "vn": "Tôi đi công tác cùng trưởng phòng."}
+        ]
+      },
+      {
+        "kanji": "社長",
+        "hiragana": "しゃちょう",
+        "romaji": "shachou",
+        "meaning": "giám đốc",
+        "example": "社長は若いです。",
+        "exampleVn": "Giám đốc thì trẻ.",
+        "grammar": "社長 (giám đốc) + は (chủ đề) + 若い (trẻ) + です - Tính từ-i + です",
+        "breakdown": [
+          {"word": "社長", "reading": "しゃちょう", "type": "noun", "meaning": "giám đốc"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "若い", "reading": "わかい", "type": "adjective", "meaning": "trẻ"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Danh từ + は + Tính từ-i + です",
+        "examples": [
+          {"jp": "社長に会います。", "vn": "Tôi gặp giám đốc."},
+          {"jp": "社長は親切です。", "vn": "Giám đốc thì thân thiện."},
+          {"jp": "社長と話したいです。", "vn": "Tôi muốn nói chuyện với giám đốc."}
+        ]
+      },
+      {
+        "kanji": "動物",
+        "hiragana": "どうぶつ",
+        "romaji": "doubutsu",
+        "meaning": "động vật",
+        "example": "動物が好きです。",
+        "exampleVn": "Tôi thích động vật.",
+        "grammar": "動物 (động vật) + が (chủ ngữ) + 好き (thích) + です - が chỉ đối tượng yêu thích",
+        "breakdown": [
+          {"word": "動物", "reading": "どうぶつ", "type": "noun", "meaning": "động vật"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ (yêu thích)"},
+          {"word": "好き", "reading": "すき", "type": "adjective", "meaning": "thích (tính từ-na)"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Danh từ + が + 好き + です",
+        "examples": [
+          {"jp": "動物を飼います。", "vn": "Tôi nuôi động vật."},
+          {"jp": "動物を見学します。", "vn": "Tôi tham quan động vật."},
+          {"jp": "動物を祈ります。", "vn": "Tôi cầu nguyện cho động vật."}
+        ]
+      },
+      {
+        "kanji": "馬",
+        "hiragana": "うま",
+        "romaji": "uma",
+        "meaning": "ngựa",
+        "example": "馬に乗ります。",
+        "exampleVn": "Tôi cưỡi ngựa.",
+        "grammar": "馬 (ngựa) + に (lên) + 乗ります (cưỡi) - に chỉ đích của hành động",
+        "breakdown": [
+          {"word": "馬", "reading": "うま", "type": "noun", "meaning": "con ngựa"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "lên, vào"},
+          {"word": "乗ります", "reading": "のります", "type": "verb", "meaning": "cưỡi, lên (lịch sự)"}
+        ],
+        "pattern": "Danh từ + に + 乗ります",
+        "examples": [
+          {"jp": "馬が速いです。", "vn": "Con ngựa thì nhanh."},
+          {"jp": "馬を借ります。", "vn": "Tôi mượn ngựa."},
+          {"jp": "馬を見ます。", "vn": "Tôi nhìn con ngựa."}
+        ]
+      },
+      {
+        "kanji": "なかなか",
+        "hiragana": "なかなか",
+        "romaji": "nakanaka",
+        "meaning": "mãi mà không (dùng với thể phủ định)",
+        "example": "なかなか上手になれません。",
+        "exampleVn": "Tôi mãi mà không giỏi lên được.",
+        "grammar": "なかなか (mãi mà không) + Tính từ (phủ định) - Trạng từ nhấn mạnh khó khăn",
+        "breakdown": [
+          {"word": "なかなか", "reading": "なかなか", "type": "adverb", "meaning": "mãi mà không"},
+          {"word": "上手", "reading": "じょうず", "type": "adjective", "meaning": "giỏi, khéo léo"},
+          {"word": "になれません", "reading": "になれません", "type": "verb", "meaning": "không thể trở nên (phủ định)"}
+        ],
+        "pattern": "なかなか + Tính từ/Động từ (phủ định)",
+        "examples": [
+          {"jp": "なかなか覚えられません。", "vn": "Tôi mãi mà không nhớ được."},
+          {"jp": "なかなか終わらないです。", "vn": "Mãi mà không xong."},
+          {"jp": "なかなか上手く歌えません。", "vn": "Tôi mãi mà không hát hay được."}
+        ]
+      },
+      {
+        "kanji": "ぜひ",
+        "hiragana": "ぜひ",
+        "romaji": "zehi",
+        "meaning": "nhất định",
+        "example": "ぜひ行きたいです。",
+        "exampleVn": "Tôi nhất định muốn đi.",
+        "grammar": "ぜひ (nhất định) + Động từ + たい (muốn) + です - Trạng từ nhấn mạnh ý muốn",
+        "breakdown": [
+          {"word": "ぜひ", "reading": "ぜひ", "type": "adverb", "meaning": "nhất định"},
+          {"word": "行きたい", "reading": "いきたい", "type": "verb", "meaning": "muốn đi"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "ぜひ + Động từ + たい + です",
+        "examples": [
+          {"jp": "ぜひ参加したいです。", "vn": "Tôi nhất định muốn tham gia."},
+          {"jp": "ぜひ見学したいです。", "vn": "Tôi nhất định muốn tham quan."},
+          {"jp": "ぜひ会いたいです。", "vn": "Tôi nhất định muốn gặp."}
+        ]
+      }
+    ],
+    "readingPassage": {
+      "title": "Sở thích của Taro-san",
+      "text": "太郎さんは大学生です。趣味はたくさんあります。ピアノを弾くことができます。ギターも弾きます。毎週末、友達とカラオケで歌を歌います。なかなか上手になれませんが、ぜひ上手になりたいです。太郎さんは切手を集めます。古い切手は珍しいので、大切です。ごみを捨てるとき、間違えて切手を捨てないように気をつけます。日曜日に、太郎さんは日記を書きます。日記に趣味や夢を書きます。去年、馬に乗りました。馬は速かったです。来週、動物園を見学します。動物が大好きです。特に、馬が好きです。太郎さんは車を運転できます。2メートルのロープを持って、友達と山へ行きます。山で馬に乗る予定です。来月、ホテルを予約します。ぜひ旅行したいです。会社で、課長と部長に相談します。社長はとても忙しいです。お祈りをします。「健康と成功を祈ります」と太郎さんは言います。",
+      "translation": "Taro-san là sinh viên đại học. Anh ấy có nhiều sở thích. Anh ấy có thể chơi piano. Anh ấy cũng chơi guitar. Mỗi cuối tuần, anh ấy hát karaoke với bạn bè. Anh ấy mãi mà không hát hay được, nhưng nhất định muốn trở nên giỏi hơn. Taro-san sưu tầm tem. Tem cũ rất hiếm, nên rất quan trọng. Khi vứt rác, anh ấy cẩn thận để không vứt nhầm tem. Vào Chủ Nhật, Taro-san viết nhật ký. Trong nhật ký, anh ấy viết về sở thích và giấc mơ. Năm ngoái, anh ấy cưỡi ngựa. Con ngựa rất nhanh. Tuần sau, anh ấy sẽ tham quan sở thú. Anh ấy rất thích động vật, đặc biệt là ngựa. Taro-san có thể lái xe. Anh ấy mang theo 2 mét dây thừng và đi leo núi với bạn bè. Anh ấy dự định cưỡi ngựa trên núi. Tháng sau, anh ấy sẽ đặt trước khách sạn. Anh ấy nhất định muốn đi du lịch. Tại công ty, anh ấy hỏi ý kiến tổ trưởng và trưởng phòng. Giám đốc thì rất bận rộn. Anh ấy cầu nguyện: “Tôi cầu nguyện cho sức khỏe và thành công.”",
+      "highlightedWords": [
+        {"word": "趣味", "meaning": "sở thích"},
+        {"word": "ピアノ", "meaning": "đàn piano"},
+        {"word": "できます", "meaning": "có thể"},
+        {"word": "ギター", "meaning": "đàn guitar"},
+        {"word": "歌います", "meaning": "hát"},
+        {"word": "なかなか", "meaning": "mãi mà không"},
+        {"word": "ぜひ", "meaning": "nhất định"},
+        {"word": "切手", "meaning": "con tem"},
+        {"word": "集めます", "meaning": "sưu tầm"},
+        {"word": "大切", "meaning": "quan trọng"},
+        {"word": "捨てます", "meaning": "vứt"},
+        {"word": "日記", "meaning": "nhật ký"},
+        {"word": "書きます", "meaning": "viết"},
+        {"word": "馬", "meaning": "ngựa"},
+        {"word": "乗ります", "meaning": "cưỡi"},
+        {"word": "動物", "meaning": "động vật"},
+        {"word": "見学します", "meaning": "tham quan"},
+        {"word": "運転します", "meaning": "lái xe"},
+        {"word": "メートル", "meaning": "mét"},
+        {"word": "ロープ", "meaning": "dây thừng"},
+        {"word": "予約します", "meaning": "đặt trước"},
+        {"word": "課長", "meaning": "tổ trưởng"},
+        {"word": "部長", "meaning": "trưởng phòng"},
+        {"word": "社長", "meaning": "giám đốc"},
+        {"word": "祈ります", "meaning": "cầu nguyện"},
+        {"word": "お祈り", "meaning": "việc cầu nguyện"},
+        {"word": "健康", "meaning": "sức khỏe"},
+        {"word": "成功", "meaning": "thành công"}
+      ]
+    }
+  },
+  "19": {
+    "title": "Hoạt động Hàng ngày và Tương tác Xã hội",
+    "words": [
+      {
+        "kanji": "起きます",
+        "hiragana": "おきます",
+        "romaji": "okimasu",
+        "meaning": "thức dậy",
+        "example": "朝6時に起きます。",
+        "exampleVn": "Tôi thức dậy lúc 6 giờ sáng.",
+        "grammar": "朝6時 (6 giờ sáng) + に (thời điểm) + 起きます (thức dậy) - に chỉ thời điểm hành động",
+        "breakdown": [
+          {"word": "朝", "reading": "あさ", "type": "noun", "meaning": "buổi sáng"},
+          {"word": "6時", "reading": "ごじ", "type": "noun", "meaning": "6 giờ"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "tại, vào (thời điểm)"},
+          {"word": "起きます", "reading": "おきます", "type": "verb", "meaning": "thức dậy (lịch sự)"}
+        ],
+        "pattern": "Thời gian + に + 起きます",
+        "examples": [
+          {"jp": "7時に起きます。", "vn": "Tôi thức dậy lúc 7 giờ."},
+          {"jp": "朝早く起きます。", "vn": "Tôi thức dậy sớm vào buổi sáng."},
+          {"jp": "休みに遅く起きます。", "vn": "Tôi thức dậy muộn vào ngày nghỉ."}
+        ]
+      },
+      {
+        "kanji": "寝ます",
+        "hiragana": "ねます",
+        "romaji": "nemasu",
+        "meaning": "ngủ",
+        "example": "夜11時に寝ます。",
+        "exampleVn": "Tôi đi ngủ lúc 11 giờ tối.",
+        "grammar": "夜11時 (11 giờ tối) + に (thời điểm) + 寝ます (ngủ) - に chỉ thời điểm hành động",
+        "breakdown": [
+          {"word": "夜", "reading": "よる", "type": "noun", "meaning": "buổi tối"},
+          {"word": "11時", "reading": "じゅういちじ", "type": "noun", "meaning": "11 giờ"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "tại, vào (thời điểm)"},
+          {"word": "寝ます", "reading": "ねます", "type": "verb", "meaning": "ngủ (lịch sự)"}
+        ],
+        "pattern": "Thời gian + に + 寝ます",
+        "examples": [
+          {"jp": "10時に寝ます。", "vn": "Tôi đi ngủ lúc 10 giờ."},
+          {"jp": "早く寝ます。", "vn": "Tôi đi ngủ sớm."},
+          {"jp": "夜遅く寝ます。", "vn": "Tôi đi ngủ muộn vào ban đêm."}
+        ]
+      },
+      {
+        "kanji": "話します",
+        "hiragana": "はなします",
+        "romaji": "hanashimasu",
+        "meaning": "nói chuyện",
+        "example": "友達と話します。",
+        "exampleVn": "Tôi nói chuyện với bạn.",
+        "grammar": "友達 (bạn) + と (cùng với) + 話します (nói chuyện) - と chỉ người cùng hành động",
+        "breakdown": [
+          {"word": "友達", "reading": "ともだち", "type": "noun", "meaning": "bạn bè"},
+          {"word": "と", "reading": "と", "type": "particle", "meaning": "cùng với"},
+          {"word": "話します", "reading": "はなします", "type": "verb", "meaning": "nói chuyện (lịch sự)"}
+        ],
+        "pattern": "Người + と + 話します",
+        "examples": [
+          {"jp": "先生と話します。", "vn": "Tôi nói chuyện với giáo viên."},
+          {"jp": "電話で話します。", "vn": "Tôi nói chuyện qua điện thoại."},
+          {"jp": "家族と話します。", "vn": "Tôi nói chuyện với gia đình."}
+        ]
+      },
+      {
+        "kanji": "教えます",
+        "hiragana": "おしえます",
+        "romaji": "oshiemasu",
+        "meaning": "dạy",
+        "example": "日本語を教えます。",
+        "exampleVn": "Tôi dạy tiếng Nhật.",
+        "grammar": "日本語 (tiếng Nhật) + を (tân ngữ) + 教えます (dạy) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "日本語", "reading": "にほんご", "type": "noun", "meaning": "tiếng Nhật"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "教えます", "reading": "おしえます", "type": "verb", "meaning": "dạy (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 教えます",
+        "examples": [
+          {"jp": "英語を教えます。", "vn": "Tôi dạy tiếng Anh."},
+          {"jp": "数学を教えます。", "vn": "Tôi dạy toán."},
+          {"jp": "子供に日本語を教えます。", "vn": "Tôi dạy tiếng Nhật cho trẻ em."}
+        ]
+      },
+      {
+        "kanji": "借ります",
+        "hiragana": "かります",
+        "romaji": "karimasu",
+        "meaning": "mượn",
+        "example": "本を借ります。",
+        "exampleVn": "Tôi mượn sách.",
+        "grammar": "本 (sách) + を (tân ngữ) + 借ります (mượn) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "本", "reading": "ほん", "type": "noun", "meaning": "cuốn sách"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "借ります", "reading": "かります", "type": "verb", "meaning": "mượn (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 借ります",
+        "examples": [
+          {"jp": "お金を借ります。", "vn": "Tôi mượn tiền."},
+          {"jp": "車を借ります。", "vn": "Tôi mượn xe."},
+          {"jp": "友達にペンを借ります。", "vn": "Tôi mượn bút từ bạn."}
+        ]
+      },
+      {
+        "kanji": "貸します",
+        "hiragana": "かします",
+        "romaji": "kashimasu",
+        "meaning": "cho mượn",
+        "example": "友達に本を貸します。",
+        "exampleVn": "Tôi cho bạn mượn sách.",
+        "grammar": "友達 (bạn) + に (đối tượng) + 本 (sách) + を (tân ngữ) + 貸します (cho mượn) - に chỉ người nhận",
+        "breakdown": [
+          {"word": "友達", "reading": "ともだち", "type": "noun", "meaning": "bạn bè"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "cho, đối với"},
+          {"word": "本", "reading": "ほん", "type": "noun", "meaning": "cuốn sách"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "貸します", "reading": "かします", "type": "verb", "meaning": "cho mượn (lịch sự)"}
+        ],
+        "pattern": "Người + に + Danh từ + を + 貸します",
+        "examples": [
+          {"jp": "友達にお金を貸します。", "vn": "Tôi cho bạn mượn tiền."},
+          {"jp": "妹にペンを貸します。", "vn": "Tôi cho em gái mượn bút."},
+          {"jp": "同僚にノートを貸します。", "vn": "Tôi cho đồng nghiệp mượn vở."}
+        ]
+      },
+      {
+        "kanji": "遊びます",
+        "hiragana": "あそびます",
+        "romaji": "asobimasu",
+        "meaning": "chơi, giải trí",
+        "example": "公園で遊びます。",
+        "exampleVn": "Tôi chơi ở công viên.",
+        "grammar": "公園 (công viên) + で (nơi chốn) + 遊びます (chơi) - で chỉ nơi hành động",
+        "breakdown": [
+          {"word": "公園", "reading": "こうえん", "type": "noun", "meaning": "công viên"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở (nơi hành động)"},
+          {"word": "遊びます", "reading": "あそびます", "type": "verb", "meaning": "chơi, giải trí (lịch sự)"}
+        ],
+        "pattern": "Nơi chốn + で + 遊びます",
+        "examples": [
+          {"jp": "友達と遊びます。", "vn": "Tôi chơi với bạn."},
+          {"jp": "庭で遊びます。", "vn": "Tôi chơi ở sân."},
+          {"jp": "海で遊びます。", "vn": "Tôi chơi ở biển."}
+        ]
+      },
+      {
+        "kanji": "待います",
+        "hiragana": "まちます",
+        "romaji": "machimasu",
+        "meaning": "chờ đợi",
+        "example": "駅で友達を待います。",
+        "exampleVn": "Tôi chờ bạn ở ga tàu.",
+        "grammar": "駅 (ga tàu) + で (nơi chốn) + 友達 (bạn) + を (tân ngữ) + 待います (chờ) - で chỉ nơi, を chỉ đối tượng",
+        "breakdown": [
+          {"word": "駅", "reading": "えき", "type": "noun", "meaning": "ga tàu"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở (nơi hành động)"},
+          {"word": "友達", "reading": "ともだち", "type": "noun", "meaning": "bạn bè"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "待います", "reading": "まちます", "type": "verb", "meaning": "chờ đợi (lịch sự)"}
+        ],
+        "pattern": "Nơi chốn + で + Người/Vật + を + 待います",
+        "examples": [
+          {"jp": "バスを待います。", "vn": "Tôi chờ xe buýt."},
+          {"jp": "空港で家族を待います。", "vn": "Tôi chờ gia đình ở sân bay."},
+          {"jp": "教室で先生を待います。", "vn": "Tôi chờ giáo viên ở lớp học."}
+        ]
+      },
+      {
+        "kanji": "手伝います",
+        "hiragana": "てつだいます",
+        "romaji": "tetsudaimasu",
+        "meaning": "giúp đỡ",
+        "example": "母を手伝います。",
+        "exampleVn": "Tôi giúp mẹ.",
+        "grammar": "母 (mẹ) + を (tân ngữ) + 手伝います (giúp đỡ) - を chỉ đối tượng được giúp",
+        "breakdown": [
+          {"word": "母", "reading": "はは", "type": "noun", "meaning": "mẹ"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "手伝います", "reading": "てつだいます", "type": "verb", "meaning": "giúp đỡ (lịch sự)"}
+        ],
+        "pattern": "Người + を + 手伝います",
+        "examples": [
+          {"jp": "友達を手伝います。", "vn": "Tôi giúp bạn."},
+          {"jp": "先生を手伝います。", "vn": "Tôi giúp giáo viên."},
+          {"jp": "仕事を手伝います。", "vn": "Tôi giúp công việc."}
+        ]
+      },
+      {
+        "kanji": "電話",
+        "hiragana": "でんわ",
+        "romaji": "denwa",
+        "meaning": "điện thoại",
+        "example": "電話をかけます。",
+        "exampleVn": "Tôi gọi điện thoại.",
+        "grammar": "電話 (điện thoại) + を (tân ngữ) + かけます (gọi) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "電話", "reading": "でんわ", "type": "noun", "meaning": "điện thoại"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "かけます", "reading": "かけます", "type": "verb", "meaning": "gọi (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + かけます",
+        "examples": [
+          {"jp": "友達に電話をかけます。", "vn": "Tôi gọi điện cho bạn."},
+          {"jp": "電話で話します。", "vn": "Tôi nói chuyện qua điện thoại."},
+          {"jp": "電話を買います。", "vn": "Tôi mua điện thoại."}
+        ]
+      },
+      {
+        "kanji": "手紙",
+        "hiragana": "てがみ",
+        "romaji": "tegami",
+        "meaning": "thư",
+        "example": "手紙を書きます。",
+        "exampleVn": "Tôi viết thư.",
+        "grammar": "手紙 (thư) + を (tân ngữ) + 書きます (viết) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "手紙", "reading": "てがみ", "type": "noun", "meaning": "lá thư"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "書きます", "reading": "かきます", "type": "verb", "meaning": "viết (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 書きます",
+        "examples": [
+          {"jp": "友達に手紙を書きます。", "vn": "Tôi viết thư cho bạn."},
+          {"jp": "手紙を読みます。", "vn": "Tôi đọc thư."},
+          {"jp": "手紙を送ります。", "vn": "Tôi gửi thư."}
+        ]
+      },
+      {
+        "kanji": "写真",
+        "hiragana": "しゃしん",
+        "romaji": "shashin",
+        "meaning": "ảnh, hình",
+        "example": "写真を撮ります。",
+        "exampleVn": "Tôi chụp ảnh.",
+        "grammar": "写真 (ảnh) + を (tân ngữ) + 撮ります (chụp) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "写真", "reading": "しゃしん", "type": "noun", "meaning": "ảnh, hình"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "撮ります", "reading": "とります", "type": "verb", "meaning": "chụp (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 撮ります",
+        "examples": [
+          {"jp": "友達と写真を撮ります。", "vn": "Tôi chụp ảnh với bạn."},
+          {"jp": "写真を見ます。", "vn": "Tôi xem ảnh."},
+          {"jp": "写真を集めます。", "vn": "Tôi sưu tầm ảnh."}
+        ]
+      },
+      {
+        "kanji": "買い物",
+        "hiragana": "かいもの",
+        "romaji": "kaimono",
+        "meaning": "mua sắm",
+        "example": "スーパーで買い物をします。",
+        "exampleVn": "Tôi mua sắm ở siêu thị.",
+        "grammar": "スーパー (siêu thị) + で (nơi chốn) + 買い物 (mua sắm) + を (tân ngữ) + します (làm) - で chỉ nơi hành động",
+        "breakdown": [
+          {"word": "スーパー", "reading": "スーパー", "type": "noun", "meaning": "siêu thị"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở (nơi hành động)"},
+          {"word": "買い物", "reading": "かいもの", "type": "noun", "meaning": "mua sắm"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "します", "reading": "します", "type": "verb", "meaning": "làm (lịch sự)"}
+        ],
+        "pattern": "Nơi chốn + で + 買い物 + を + します",
+        "examples": [
+          {"jp": "友達と買い物をします。", "vn": "Tôi mua sắm với bạn."},
+          {"jp": "市場で買い物をします。", "vn": "Tôi mua sắm ở chợ."},
+          {"jp": "オンラインで買い物をします。", "vn": "Tôi mua sắm trực tuyến."}
+        ]
+      },
+      {
+        "kanji": "散歩",
+        "hiragana": "さんぽ",
+        "romaji": "sanpo",
+        "meaning": "đi bộ, đi dạo",
+        "example": "公園で散歩します。",
+        "exampleVn": "Tôi đi dạo ở công viên.",
+        "grammar": "公園 (công viên) + で (nơi chốn) + 散歩 (đi dạo) + を + します (làm) - で chỉ nơi hành động",
+        "breakdown": [
+          {"word": "公園", "reading": "こうえん", "type": "noun", "meaning": "công viên"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở (nơi hành động)"},
+          {"word": "散歩", "reading": "さんぽ", "type": "noun", "meaning": "đi dạo"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "します", "reading": "します", "type": "verb", "meaning": "làm (lịch sự)"}
+        ],
+        "pattern": "Nơi chốn + で + 散歩 + を + します",
+        "examples": [
+          {"jp": "犬と散歩します。", "vn": "Tôi đi dạo với chó."},
+          {"jp": "海で散歩します。", "vn": "Tôi đi dạo ở biển."},
+          {"jp": "朝に散歩します。", "vn": "Tôi đi dạo vào buổi sáng."}
+        ]
+      },
+      {
+        "kanji": "旅行",
+        "hiragana": "りょこう",
+        "romaji": "ryokou",
+        "meaning": "du lịch",
+        "example": "日本に旅行します。",
+        "exampleVn": "Tôi du lịch đến Nhật Bản.",
+        "grammar": "日本 (Nhật Bản) + に (đích đến) + 旅行 (du lịch) + を + します (làm) - に chỉ đích đến",
+        "breakdown": [
+          {"word": "日本", "reading": "にほん", "type": "noun", "meaning": "Nhật Bản"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "đến, tại"},
+          {"word": "旅行", "reading": "りょこう", "type": "noun", "meaning": "du lịch"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "します", "reading": "します", "type": "verb", "meaning": "làm (lịch sự)"}
+        ],
+        "pattern": "Nơi chốn + に + 旅行 + を + します",
+        "examples": [
+          {"jp": "海外に旅行します。", "vn": "Tôi du lịch nước ngoài."},
+          {"jp": "友達と旅行します。", "vn": "Tôi du lịch với bạn."},
+          {"jp": "夏に旅行します。", "vn": "Tôi du lịch vào mùa hè."}
+        ]
+      },
+      {
+        "kanji": "一緒",
+        "hiragana": "いっしょ",
+        "romaji": "issho",
+        "meaning": "cùng nhau",
+        "example": "友達と一緒に行きます。",
+        "exampleVn": "Tôi đi cùng bạn.",
+        "grammar": "友達 (bạn) + と (cùng với) + 一緒 (cùng nhau) + に + 行きます (đi) - と chỉ người cùng hành động",
+        "breakdown": [
+          {"word": "友達", "reading": "ともだち", "type": "noun", "meaning": "bạn bè"},
+          {"word": "と", "reading": "と", "type": "particle", "meaning": "cùng với"},
+          {"word": "一緒", "reading": "いっしょ", "type": "noun", "meaning": "cùng nhau"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "để, cho (mục đích)"},
+          {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+        ],
+        "pattern": "Người + と + 一緒 + に + Động từ",
+        "examples": [
+          {"jp": "家族と一緒に行きます。", "vn": "Tôi đi cùng gia đình."},
+          {"jp": "友達と一緒に食べます。", "vn": "Tôi ăn cùng bạn."},
+          {"jp": "先生と一緒に勉強します。", "vn": "Tôi học cùng giáo viên."}
+        ]
+      },
+      {
+        "kanji": "時間",
+        "hiragana": "じかん",
+        "romaji": "jikan",
+        "meaning": "thời gian",
+        "example": "時間があります。",
+        "exampleVn": "Tôi có thời gian.",
+        "grammar": "時間 (thời gian) + が (chủ ngữ) + あります (có) - が chỉ đối tượng tồn tại",
+        "breakdown": [
+          {"word": "時間", "reading": "じかん", "type": "noun", "meaning": "thời gian"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ (tồn tại)"},
+          {"word": "あります", "reading": "あります", "type": "verb", "meaning": "có (lịch sự)"}
+        ],
+        "pattern": "Danh từ + が + あります",
+        "examples": [
+          {"jp": "時間がないです。", "vn": "Tôi không có thời gian."},
+          {"jp": "時間に遅れます。", "vn": "Tôi bị trễ giờ."},
+          {"jp": "時間を見ます。", "vn": "Tôi xem giờ."}
+        ]
+      },
+      {
+        "kanji": "忙しい",
+        "hiragana": "いそがしい",
+        "romaji": "isogashii",
+        "meaning": "bận rộn",
+        "example": "毎日忙しいです。",
+        "exampleVn": "Hàng ngày tôi bận rộn.",
+        "grammar": "毎日 (hàng ngày) + 忙しい (bận rộn) + です - Tính từ-i + です",
+        "breakdown": [
+          {"word": "毎日", "reading": "まいにち", "type": "noun", "meaning": "hàng ngày"},
+          {"word": "忙しい", "reading": "いそがしい", "type": "adjective", "meaning": "bận rộn"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Thời gian + Tính từ-i + です",
+        "examples": [
+          {"jp": "仕事が忙しいです。", "vn": "Công việc thì bận rộn."},
+          {"jp": "朝は忙しいです。", "vn": "Buổi sáng thì bận rộn."},
+          {"jp": "友達は忙しいです。", "vn": "Bạn tôi thì bận rộn."}
+        ]
+      },
+      {
+        "kanji": "楽しい",
+        "hiragana": "たのしい",
+        "romaji": "tanoshii",
+        "meaning": "vui vẻ",
+        "example": "旅行は楽しいです。",
+        "exampleVn": "Chuyến du lịch thì vui vẻ.",
+        "grammar": "旅行 (du lịch) + は (chủ đề) + 楽しい (vui vẻ) + です - Tính từ-i + です",
+        "breakdown": [
+          {"word": "旅行", "reading": "りょこう", "type": "noun", "meaning": "du lịch"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "楽しい", "reading": "たのしい", "type": "adjective", "meaning": "vui vẻ"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Danh từ + は + Tính từ-i + です",
+        "examples": [
+          {"jp": "パーティーは楽しいです。", "vn": "Bữa tiệc thì vui vẻ."},
+          {"jp": "友達と話すのは楽しいです。", "vn": "Nói chuyện với bạn thì vui vẻ."},
+          {"jp": "ゲームは楽しいです。", "vn": "Trò chơi thì vui vẻ."}
+        ]
+      },
+      {
+        "kanji": "大好き",
+        "hiragana": "だいすき",
+        "romaji": "daisuki",
+        "meaning": "rất thích",
+        "example": "音楽が大好きです。",
+        "exampleVn": "Tôi rất thích âm nhạc.",
+        "grammar": "音楽 (âm nhạc) + が (chủ ngữ) + 大好き (rất thích) + です - が chỉ đối tượng yêu thích",
+        "breakdown": [
+          {"word": "音楽", "reading": "おんがく", "type": "noun", "meaning": "âm nhạc"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ (yêu thích)"},
+          {"word": "大好き", "reading": "だいすき", "type": "adjective", "meaning": "rất thích (tính từ-na)"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Danh từ + が + 大好き + です",
+        "examples": [
+          {"jp": "映画が大好きです。", "vn": "Tôi rất thích phim."},
+          {"jp": "犬が大好きです。", "vn": "Tôi rất thích chó."},
+          {"jp": "旅行が大好きです。", "vn": "Tôi rất thích du lịch."}
+        ]
+      }
+    ],
+    "readingPassage": {
+      "title": "Một ngày của Hana-san",
+      "text": "花さんは大学生です。毎朝、6時に起きます。朝は忙しいので、早くご飯を食べます。7時に大学に行きます。大学で、日本語を教えます。友達に日本語を教えるのは楽しいです。昼休みに、友達と一緒に話します。話すのが大好きです。午後、学校の図書館で本を借ります。友達に本を貸します。時間があるとき、公園で散歩します。散歩はとても楽しいです。夕方、写真を撮ります。きれいな花の写真を撮るのが大好きです。夜、友達に電話をかけます。旅行の計画について話します。来月、京都に旅行します。旅行は大好きです。夜11時に寝ます。寝る前に、手紙を書きます。友達に手紙を送ります。忙しい日ですが、楽しいです。花さんは毎日を大切にします。",
+      "translation": "Hana-san là sinh viên đại học. Mỗi sáng, cô ấy thức dậy lúc 6 giờ. Buổi sáng thì bận rộn, nên cô ấy ăn sáng nhanh. 7 giờ, cô ấy đi đến trường đại học. Ở trường, cô ấy dạy tiếng Nhật. Dạy tiếng Nhật cho bạn bè thì rất vui. Vào giờ nghỉ trưa, cô ấy nói chuyện cùng bạn bè. Cô ấy rất thích nói chuyện. Buổi chiều, cô ấy mượn sách ở thư viện trường. Cô ấy cho bạn mượn sách. Khi có thời gian, cô ấy đi dạo ở công viên. Đi dạo thì rất vui. Buổi tối, cô ấy chụp ảnh. Cô ấy rất thích chụp ảnh hoa đẹp. Ban đêm, cô ấy gọi điện cho bạn. Cô ấy nói về kế hoạch du lịch. Tháng sau, cô ấy sẽ du lịch đến Kyoto. Cô ấy rất thích du lịch. 11 giờ tối, cô ấy đi ngủ. Trước khi ngủ, cô ấy viết thư. Cô ấy gửi thư cho bạn. Ngày bận rộn nhưng rất vui. Hana-san trân trọng mỗi ngày.",
+      "highlightedWords": [
+        {"word": "起きます", "meaning": "thức dậy"},
+        {"word": "寝ます", "meaning": "ngủ"},
+        {"word": "話します", "meaning": "nói chuyện"},
+        {"word": "教えます", "meaning": "dạy"},
+        {"word": "借ります", "meaning": "mượn"},
+        {"word": "貸します", "meaning": "cho mượn"},
+        {"word": "遊びます", "meaning": "chơi, giải trí"},
+        {"word": "待います", "meaning": "chờ đợi"},
+        {"word": "手伝います", "meaning": "giúp đỡ"},
+        {"word": "電話", "meaning": "điện thoại"},
+        {"word": "手紙", "meaning": "thư"},
+        {"word": "写真", "meaning": "ảnh, hình"},
+        {"word": "買い物", "meaning": "mua sắm"},
+        {"word": "散歩", "meaning": "đi bộ, đi dạo"},
+        {"word": "旅行", "meaning": "du lịch"},
+        {"word": "一緒", "meaning": "cùng nhau"},
+        {"word": "時間", "meaning": "thời gian"},
+        {"word": "忙しい", "meaning": "bận rộn"},
+        {"word": "楽しい", "meaning": "vui vẻ"},
+        {"word": "大好き", "meaning": "rất thích"},
+        {"word": "大切", "meaning": "quan trọng"}
+      ]
+    }
   }
 }
+
