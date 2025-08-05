@@ -6278,6 +6278,674 @@
         {"word": "無駄遣い", "meaning": "sự phung phí"}
       ]
     }
+  },
+  "22": {
+    "title": "Trang phục và nhà cửa",
+    "words": [
+      {
+        "kanji": "着ます",
+        "hiragana": "きます",
+        "romaji": "kimasu",
+        "meaning": "mặc (áo, đồ từ thắt lưng trở lên)",
+        "example": "シャツを着ます。",
+        "exampleVn": "Tôi mặc áo sơ mi.",
+        "grammar": "シャツ (áo sơ mi) + を (tân ngữ) + 着ます (mặc) - を chỉ đối tượng mặc",
+        "breakdown": [
+          {"word": "シャツ", "reading": "シャツ", "type": "noun", "meaning": "áo sơ mi"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "着ます", "reading": "きます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "Trang phục + を + 着ます",
+        "examples": [
+          {"jp": "コートを着ます。", "vn": "Tôi mặc áo khoác."},
+          {"jp": "セーターを着ます。", "vn": "Tôi mặc áo len."},
+          {"jp": "スーツを着ます。", "vn": "Tôi mặc bộ vest."}
+        ]
+      },
+      {
+        "kanji": "はきます",
+        "hiragana": "",
+        "romaji": "hakimasu",
+        "meaning": "mặc (quần, giày, tất...)",
+        "example": "ズボンをはきます。",
+        "exampleVn": "Tôi mặc quần dài.",
+        "grammar": "ズボン (quần dài) + を (tân ngữ) + はきます (mặc) - を chỉ đối tượng mặc",
+        "breakdown": [
+          {"word": "ズボン", "reading": "ズボン", "type": "noun", "meaning": "quần dài"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "はきます", "reading": "はきます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "Trang phục + を + はきます",
+        "examples": [
+          {"jp": "ジーンズをはきます。", "vn": "Tôi mặc quần jeans."},
+          {"jp": "靴をはきます。", "vn": "Tôi mang giày."},
+          {"jp": "スカートをはきます。", "vn": "Tôi mặc váy."}
+        ]
+      },
+      {
+        "kanji": "かぶります",
+        "hiragana": "",
+        "romaji": "kaburimasu",
+        "meaning": "đội (mũ)",
+        "example": "帽子をかぶります。",
+        "exampleVn": "Tôi đội mũ.",
+        "grammar": "帽子 (mũ) + を (tân ngữ) + かぶります (đội) - を chỉ đối tượng đội",
+        "breakdown": [
+          {"word": "帽子", "reading": "ぼうし", "type": "noun", "meaning": "mũ"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "かぶります", "reading": "かぶります", "type": "verb", "meaning": "đội (lịch sự)"}
+        ],
+        "pattern": "Mũ + を + かぶります",
+        "examples": [
+          {"jp": "キャップをかぶります。", "vn": "Tôi đội mũ lưỡi trai."},
+          {"jp": "帽子をかぶります。", "vn": "Tôi đội mũ."},
+          {"jp": "ヘルメットをかぶります。", "vn": "Tôi đội mũ bảo hộ."}
+        ]
+      },
+      {
+        "kanji": "かけます",
+        "hiragana": "",
+        "romaji": "kakemasu",
+        "meaning": "đeo (kính)",
+        "example": "眼鏡をかけます。",
+        "exampleVn": "Tôi đeo kính.",
+        "grammar": "眼鏡 (kính) + を (tân ngữ) + かけます (đeo) - を chỉ đối tượng đeo",
+        "breakdown": [
+          {"word": "眼鏡", "reading": "めがね", "type": "noun", "meaning": "kính"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "かけます", "reading": "かけます", "type": "verb", "meaning": "đeo (lịch sự)"}
+        ],
+        "pattern": "Kính + を + かけます",
+        "examples": [
+          {"jp": "サングラスをかけます。", "vn": "Tôi đeo kính râm."},
+          {"jp": "眼鏡をかけます。", "vn": "Tôi đeo kính."},
+          {"jp": "メガネをかけます。", "vn": "Tôi đeo kính cận."}
+        ]
+      },
+      {
+        "kanji": "生まれます",
+        "hiragana": "うまれます",
+        "romaji": "umaremasu",
+        "meaning": "được sinh ra",
+        "example": "東京で生まれました。",
+        "exampleVn": "Tôi sinh ra ở Tokyo.",
+        "grammar": "東京 (Tokyo) + で (nơi) + 生まれました (sinh ra) - で chỉ địa điểm",
+        "breakdown": [
+          {"word": "東京", "reading": "とうきょう", "type": "noun", "meaning": "Tokyo"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở"},
+          {"word": "生まれました", "reading": "うまれました", "type": "verb", "meaning": "sinh ra (quá khứ)"}
+        ],
+        "pattern": "Địa điểm + で + 生まれます",
+        "examples": [
+          {"jp": "大阪で生まれました。", "vn": "Tôi sinh ra ở Osaka."},
+          {"jp": "日本で生まれました。", "vn": "Tôi sinh ra ở Nhật Bản."},
+          {"jp": "アメリカで生まれました。", "vn": "Tôi sinh ra ở Mỹ."}
+        ]
+      },
+      {
+        "kanji": "コート",
+        "hiragana": "",
+        "romaji": "kooto",
+        "meaning": "áo khoác",
+        "example": "コートを着ます。",
+        "exampleVn": "Tôi mặc áo khoác.",
+        "grammar": "コート (áo khoác) + を + 着ます (mặc) - を chỉ trang phục",
+        "breakdown": [
+          {"word": "コート", "reading": "コート", "type": "noun", "meaning": "áo khoác"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "着ます", "reading": "きます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "コート + を + 着ます",
+        "examples": [
+          {"jp": "コートを買います。", "vn": "Tôi mua áo khoác."},
+          {"jp": "コートを脱ぎます。", "vn": "Tôi cởi áo khoác."},
+          {"jp": "コートを着ます。", "vn": "Tôi mặc áo khoác."}
+        ]
+      },
+      {
+        "kanji": "スーツ",
+        "hiragana": "",
+        "romaji": "suutsu",
+        "meaning": "bộ vest",
+        "example": "スーツを着ます。",
+        "exampleVn": "Tôi mặc bộ vest.",
+        "grammar": "スーツ (bộ vest) + を + 着ます (mặc) - を chỉ trang phục",
+        "breakdown": [
+          {"word": "スーツ", "reading": "スーツ", "type": "noun", "meaning": "bộ vest"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "着ます", "reading": "きます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "スーツ + を + 着ます",
+        "examples": [
+          {"jp": "スーツを買います。", "vn": "Tôi mua bộ vest."},
+          {"jp": "スーツを着ます。", "vn": "Tôi mặc bộ vest."},
+          {"jp": "スーツを洗います。", "vn": "Tôi giặt bộ vest."}
+        ]
+      },
+      {
+        "kanji": "セーター",
+        "hiragana": "",
+        "romaji": "seetaa",
+        "meaning": "áo len",
+        "example": "セーターを着ます。",
+        "exampleVn": "Tôi mặc áo len.",
+        "grammar": "セーター (áo len) + を + 着ます (mặc) - を chỉ trang phục",
+        "breakdown": [
+          {"word": "セーター", "reading": "セーター", "type": "noun", "meaning": "áo len"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "着ます", "reading": "きます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "セーター + を + 着ます",
+        "examples": [
+          {"jp": "セーターを買います。", "vn": "Tôi mua áo len."},
+          {"jp": "セーターを着ます。", "vn": "Tôi mặc áo len."},
+          {"jp": "セーターを脱ぎます。", "vn": "Tôi cởi áo len."}
+        ]
+      },
+      {
+        "kanji": "シャツ",
+        "hiragana": "",
+        "romaji": "shatsu",
+        "meaning": "áo sơ mi",
+        "example": "シャツを着ます。",
+        "exampleVn": "Tôi mặc áo sơ mi.",
+        "grammar": "シャツ (áo sơ mi) + を + 着ます (mặc) - を chỉ trang phục",
+        "breakdown": [
+          {"word": "シャツ", "reading": "シャツ", "type": "noun", "meaning": "áo sơ mi"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "着ます", "reading": "きます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "シャツ + を + 着ます",
+        "examples": [
+          {"jp": "シャツを買います。", "vn": "Tôi mua áo sơ mi."},
+          {"jp": "シャツを洗います。", "vn": "Tôi giặt áo sơ mi."},
+          {"jp": "シャツを着ます。", "vn": "Tôi mặc áo sơ mi."}
+        ]
+      },
+      {
+        "kanji": "スカート",
+        "hiragana": "",
+        "romaji": "sukaato",
+        "meaning": "váy",
+        "example": "スカートをはきます。",
+        "exampleVn": "Tôi mặc váy.",
+        "grammar": "スカート (váy) + を + はきます (mặc) - を chỉ trang phục",
+        "breakdown": [
+          {"word": "スカート", "reading": "スカート", "type": "noun", "meaning": "váy"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "はきます", "reading": "はきます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "スカート + を + はきます",
+        "examples": [
+          {"jp": "スカートを買います。", "vn": "Tôi mua váy."},
+          {"jp": "スカートをはきます。", "vn": "Tôi mặc váy."},
+          {"jp": "スカートを洗います。", "vn": "Tôi giặt váy."}
+        ]
+      },
+      {
+        "kanji": "ズボン",
+        "hiragana": "",
+        "romaji": "zubon",
+        "meaning": "quần dài",
+        "example": "ズボンをはきます。",
+        "exampleVn": "Tôi mặc quần dài.",
+        "grammar": "ズボン (quần dài) + を + はきます (mặc) - を chỉ trang phục",
+        "breakdown": [
+          {"word": "ズボン", "reading": "ズボン", "type": "noun", "meaning": "quần dài"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "はきます", "reading": "はきます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "ズボン + を + はきます",
+        "examples": [
+          {"jp": "ズボンを買います。", "vn": "Tôi mua quần dài."},
+          {"jp": "ズボンを洗います。", "vn": "Tôi giặt quần dài."},
+          {"jp": "ズボンをはきます。", "vn": "Tôi mặc quần dài."}
+        ]
+      },
+      {
+        "kanji": "ジーンズ",
+        "hiragana": "",
+        "romaji": "jiinzu",
+        "meaning": "quần jeans",
+        "example": "ジーンズをはきます。",
+        "exampleVn": "Tôi mặc quần jeans.",
+        "grammar": "ジーンズ (quần jeans) + を + はきます (mặc) - を chỉ trang phục",
+        "breakdown": [
+          {"word": "ジーンズ", "reading": "ジーンズ", "type": "noun", "meaning": "quần jeans"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "はきます", "reading": "はきます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "ジーンズ + を + はきます",
+        "examples": [
+          {"jp": "ジーンズを買います。", "vn": "Tôi mua quần jeans."},
+          {"jp": "ジーンズを洗います。", "vn": "Tôi giặt quần jeans."},
+          {"jp": "ジーンズをはきます。", "vn": "Tôi mặc quần jeans."}
+        ]
+      },
+      {
+        "kanji": "帽子",
+        "hiragana": "ぼうし",
+        "romaji": "boushi",
+        "meaning": "mũ, nón",
+        "example": "帽子をかぶります。",
+        "exampleVn": "Tôi đội mũ.",
+        "grammar": "帽子 (mũ) + を + かぶります (đội) - を chỉ đối tượng đội",
+        "breakdown": [
+          {"word": "帽子", "reading": "ぼうし", "type": "noun", "meaning": "mũ"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "かぶります", "reading": "かぶります", "type": "verb", "meaning": "đội (lịch sự)"}
+        ],
+        "pattern": "帽子 + を + かぶります",
+        "examples": [
+          {"jp": "帽子を買います。", "vn": "Tôi mua mũ."},
+          {"jp": "帽子を脱ぎます。", "vn": "Tôi tháo mũ."},
+          {"jp": "帽子をかぶります。", "vn": "Tôi đội mũ."}
+        ]
+      },
+      {
+        "kanji": "眼鏡",
+        "hiragana": "めがね",
+        "romaji": "megane",
+        "meaning": "kính",
+        "example": "眼鏡をかけます。",
+        "exampleVn": "Tôi đeo kính.",
+        "grammar": "眼鏡 (kính) + を + かけます (đeo) - を chỉ đối tượng đeo",
+        "breakdown": [
+          {"word": "眼鏡", "reading": "めがね", "type": "noun", "meaning": "kính"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "かけます", "reading": "かけます", "type": "verb", "meaning": "đeo (lịch sự)"}
+        ],
+        "pattern": "眼鏡 + を + かけます",
+        "examples": [
+          {"jp": "眼鏡を買います。", "vn": "Tôi mua kính."},
+          {"jp": "眼鏡を外します。", "vn": "Tôi tháo kính."},
+          {"jp": "眼鏡をかけます。", "vn": "Tôi đeo kính."}
+        ]
+      },
+      {
+        "kanji": "こちら",
+        "hiragana": "",
+        "romaji": "kochira",
+        "meaning": "phía này, bên này (lịch sự)",
+        "example": "こちらは食堂です。",
+        "exampleVn": "Đây là phòng ăn.",
+        "grammar": "こちら (phía này) + は + 食堂 (phòng ăn) + です - Chỉ địa điểm lịch sự",
+        "breakdown": [
+          {"word": "こちら", "reading": "こちら", "type": "pronoun", "meaning": "phía này"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "食堂", "reading": "しょくどう", "type": "noun", "meaning": "phòng ăn"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "こちら + は + Địa điểm + です",
+        "examples": [
+          {"jp": "こちらは和室です。", "vn": "Đây là phòng kiểu Nhật."},
+          {"jp": "こちらはアパートです。", "vn": "Đây là căn hộ."},
+          {"jp": "こちらは駅です。", "vn": "Đây là nhà ga."}
+        ]
+      },
+      {
+        "kanji": "家賃",
+        "hiragana": "やちん",
+        "romaji": "yachin",
+        "meaning": "tiền thuê nhà",
+        "example": "家賃を払います。",
+        "exampleVn": "Tôi trả tiền thuê nhà.",
+        "grammar": "家賃 (tiền thuê nhà) + を + 払います (trả) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "家賃", "reading": "やちん", "type": "noun", "meaning": "tiền thuê nhà"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "払います", "reading": "はらいます", "type": "verb", "meaning": "trả (lịch sự)"}
+        ],
+        "pattern": "家賃 + を + 払います",
+        "examples": [
+          {"jp": "家賃は高いです。", "vn": "Tiền thuê nhà thì cao."},
+          {"jp": "家賃を払います。", "vn": "Tôi trả tiền thuê nhà."},
+          {"jp": "家賃を下げます。", "vn": "Tôi giảm tiền thuê nhà."}
+        ]
+      },
+      {
+        "kanji": "食堂",
+        "hiragana": "しょくどう",
+        "romaji": "shokudou",
+        "meaning": "nhà ăn, phòng ăn",
+        "example": "食堂でご飯を食べます。",
+        "exampleVn": "Tôi ăn cơm ở phòng ăn.",
+        "grammar": "食堂 (phòng ăn) + で + ご飯 (cơm) + を + 食べます (ăn) - で chỉ nơi chốn",
+        "breakdown": [
+          {"word": "食堂", "reading": "しょくどう", "type": "noun", "meaning": "phòng ăn"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở"},
+          {"word": "ご飯", "reading": "ごはん", "type": "noun", "meaning": "cơm"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "食べます", "reading": "たべます", "type": "verb", "meaning": "ăn (lịch sự)"}
+        ],
+        "pattern": "食堂 + で + Hành động",
+        "examples": [
+          {"jp": "食堂で話します。", "vn": "Tôi nói chuyện ở phòng ăn."},
+          {"jp": "食堂で勉強します。", "vn": "Tôi học ở phòng ăn."},
+          {"jp": "食堂で食べます。", "vn": "Tôi ăn ở phòng ăn."}
+        ]
+      },
+      {
+        "kanji": "和室",
+        "hiragana": "わしつ",
+        "romaji": "washitsu",
+        "meaning": "phòng kiểu Nhật",
+        "example": "和室で寝ます。",
+        "exampleVn": "Tôi ngủ ở phòng kiểu Nhật.",
+        "grammar": "和室 (phòng kiểu Nhật) + で + 寝ます (ngủ) - で chỉ nơi chốn",
+        "breakdown": [
+          {"word": "和室", "reading": "わしつ", "type": "noun", "meaning": "phòng kiểu Nhật"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở"},
+          {"word": "寝ます", "reading": "ねます", "type": "verb", "meaning": "ngủ (lịch sự)"}
+        ],
+        "pattern": "和室 + で + Hành động",
+        "examples": [
+          {"jp": "和室で座ります。", "vn": "Tôi ngồi ở phòng kiểu Nhật."},
+          {"jp": "和室で本を読みます。", "vn": "Tôi đọc sách ở phòng kiểu Nhật."},
+          {"jp": "和室で寝ます。", "vn": "Tôi ngủ ở phòng kiểu Nhật."}
+        ]
+      },
+      {
+        "kanji": "押し入れ",
+        "hiragana": "おしいれ",
+        "romaji": "oshiire",
+        "meaning": "tủ âm tường (kiểu Nhật)",
+        "example": "布団を押し入れに入れます。",
+        "exampleVn": "Tôi để nệm vào tủ âm tường.",
+        "grammar": "布団 (nệm) + を + 押し入れ (tủ âm tường) + に + 入れます (để vào) - に chỉ đích",
+        "breakdown": [
+          {"word": "布団", "reading": "ふとん", "type": "noun", "meaning": "nệm"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "押し入れ", "reading": "おしいれ", "type": "noun", "meaning": "tủ âm tường"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "vào, tại"},
+          {"word": "入れます", "reading": "いれます", "type": "verb", "meaning": "để vào (lịch sự)"}
+        ],
+        "pattern": "Vật + を + 押し入れ + に + 入れます",
+        "examples": [
+          {"jp": "服を押し入れに入れます。", "vn": "Tôi để quần áo vào tủ âm tường."},
+          {"jp": "布団を押し入れにしまいます。", "vn": "Tôi cất nệm vào tủ âm tường."},
+          {"jp": "本を押し入れに入れます。", "vn": "Tôi để sách vào tủ âm tường."}
+        ]
+      },
+      {
+        "kanji": "布団",
+        "hiragana": "ふとん",
+        "romaji": "futon",
+        "meaning": "nệm (trải đất để ngủ kiểu Nhật)",
+        "example": "布団で寝ます。",
+        "exampleVn": "Tôi ngủ trên nệm.",
+        "grammar": "布団 (nệm) + で + 寝ます (ngủ) - で chỉ phương tiện",
+        "breakdown": [
+          {"word": "布団", "reading": "ふとん", "type": "noun", "meaning": "nệm"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "trên, bằng"},
+          {"word": "寝ます", "reading": "ねます", "type": "verb", "meaning": "ngủ (lịch sự)"}
+        ],
+        "pattern": "布団 + で + 寝ます",
+        "examples": [
+          {"jp": "布団を敷きます。", "vn": "Tôi trải nệm."},
+          {"jp": "布団で寝ます。", "vn": "Tôi ngủ trên nệm."},
+          {"jp": "布団を押し入れに入れます。", "vn": "Tôi để nệm vào tủ âm tường."}
+        ]
+      },
+      {
+        "kanji": "アパート",
+        "hiragana": "",
+        "romaji": "apaato",
+        "meaning": "căn hộ (kiểu phương Tây)",
+        "example": "アパートを探しています。",
+        "exampleVn": "Tôi đang tìm căn hộ.",
+        "grammar": "アパート (căn hộ) + を + 探しています (đang tìm) - を chỉ đối tượng tìm",
+        "breakdown": [
+          {"word": "アパート", "reading": "アパート", "type": "noun", "meaning": "căn hộ"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "探しています", "reading": "さがしています", "type": "verb", "meaning": "đang tìm (lịch sự)"}
+        ],
+        "pattern": "アパート + を + 探しています",
+        "examples": [
+          {"jp": "アパートに住みます。", "vn": "Tôi sống ở căn hộ."},
+          {"jp": "アパートを借ります。", "vn": "Tôi thuê căn hộ."},
+          {"jp": "アパートは高いです。", "vn": "Căn hộ thì đắt."}
+        ]
+      },
+      {
+        "kanji": "万里の長城",
+        "hiragana": "ばんりのちょうじょう",
+        "romaji": "Banri no Choujou",
+        "meaning": "Vạn Lý Trường Thành",
+        "example": "万里の長城を見ます。",
+        "exampleVn": "Tôi xem Vạn Lý Trường Thành.",
+        "grammar": "万里の長城 (Vạn Lý Trường Thành) + を + 見ます (xem) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "万里の長城", "reading": "ばんりのちょうじょう", "type": "noun", "meaning": "Vạn Lý Trường Thành"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "見ます", "reading": "みます", "type": "verb", "meaning": "xem (lịch sự)"}
+        ],
+        "pattern": "万里の長城 + を + 見ます",
+        "examples": [
+          {"jp": "万里の長城を訪れます。", "vn": "Tôi thăm Vạn Lý Trường Thành."},
+          {"jp": "万里の長城は長いです。", "vn": "Vạn Lý Trường Thành thì dài."},
+          {"jp": "万里の長城を見ます。", "vn": "Tôi xem Vạn Lý Trường Thành."}
+        ]
+      },
+      {
+        "kanji": "よく",
+        "hiragana": "",
+        "romaji": "yoku",
+        "meaning": "thường, hay",
+        "example": "よく旅行します。",
+        "exampleVn": "Tôi thường đi du lịch.",
+        "grammar": "よく (thường) + 旅行します (đi du lịch) - Trạng từ chỉ tần suất",
+        "breakdown": [
+          {"word": "よく", "reading": "よく", "type": "adverb", "meaning": "thường"},
+          {"word": "旅行します", "reading": "りょこうします", "type": "verb", "meaning": "đi du lịch (lịch sự)"}
+        ],
+        "pattern": "よく + Động từ",
+        "examples": [
+          {"jp": "よく本を読みます。", "vn": "Tôi thường đọc sách."},
+          {"jp": "よく走ります。", "vn": "Tôi thường chạy bộ."},
+          {"jp": "よく寝ます。", "vn": "Tôi thường ngủ."}
+        ]
+      },
+      {
+        "kanji": "おめでとうございます",
+        "hiragana": "",
+        "romaji": "omedetou gozaimasu",
+        "meaning": "chúc mừng",
+        "example": "お誕生日、おめでとうございます。",
+        "exampleVn": "Chúc mừng sinh nhật.",
+        "grammar": "お誕生日 (sinh nhật) + おめでとうございます (chúc mừng) - Lời chúc lịch sự",
+        "breakdown": [
+          {"word": "お誕生日", "reading": "おたんじょうび", "type": "noun", "meaning": "sinh nhật"},
+          {"word": "おめでとうございます", "reading": "おめでとうございます", "type": "phrase", "meaning": "chúc mừng (lịch sự)"}
+        ],
+        "pattern": "Sự kiện + おめでとうございます",
+        "examples": [
+          {"jp": "結婚、おめでとうございます。", "vn": "Chúc mừng đám cưới."},
+          {"jp": "卒業、おめでとうございます。", "vn": "Chúc mừng tốt nghiệp."},
+          {"jp": "おめでとうございます！", "vn": "Chúc mừng!"}
+        ]
+      },
+      {
+        "kanji": "～を探しています",
+        "hiragana": "～をさがしています",
+        "romaji": "～o sagashiteimasu",
+        "meaning": "đang tìm ~",
+        "example": "アパートを探しています。",
+        "exampleVn": "Tôi đang tìm căn hộ.",
+        "grammar": "アパート (căn hộ) + を + 探しています (đang tìm) - を chỉ đối tượng tìm",
+        "breakdown": [
+          {"word": "アパート", "reading": "アパート", "type": "noun", "meaning": "căn hộ"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "探しています", "reading": "さがしています", "type": "verb", "meaning": "đang tìm (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + を + 探しています",
+        "examples": [
+          {"jp": "家を探しています。", "vn": "Tôi đang tìm nhà."},
+          {"jp": "仕事を探しています。", "vn": "Tôi đang tìm việc."},
+          {"jp": "本を探しています。", "vn": "Tôi đang tìm sách."}
+        ]
+      },
+      {
+        "kanji": "では",
+        "hiragana": "",
+        "romaji": "dewa",
+        "meaning": "vậy thì... (cách nói lịch sự)",
+        "example": "では、行きましょう。",
+        "exampleVn": "Vậy thì, đi thôi.",
+        "grammar": "では (vậy thì) + 行きましょう (đi thôi) - Mở đầu lịch sự",
+        "breakdown": [
+          {"word": "では", "reading": "では", "type": "particle", "meaning": "vậy thì"},
+          {"word": "行きましょう", "reading": "いきましょう", "type": "verb", "meaning": "đi thôi (lịch sự)"}
+        ],
+        "pattern": "では + Đề xuất hành động",
+        "examples": [
+          {"jp": "では、始めましょう。", "vn": "Vậy thì, bắt đầu thôi."},
+          {"jp": "では、食べましょう。", "vn": "Vậy thì, ăn thôi."},
+          {"jp": "では、話しましょう。", "vn": "Vậy thì, nói chuyện thôi."}
+        ]
+      },
+      {
+        "kanji": "失礼します",
+        "hiragana": "しつれいします",
+        "romaji": "shitsureishimasu",
+        "meaning": "xin phép (rời đi, ngắt lời...)",
+        "example": "失礼します、帰ります。",
+        "exampleVn": "Xin phép, tôi về đây.",
+        "grammar": "失礼します (xin phép) + 帰ります (về) - Lời nói lịch sự",
+        "breakdown": [
+          {"word": "失礼します", "reading": "しつれいします", "type": "phrase", "meaning": "xin phép"},
+          {"word": "帰ります", "reading": "かえります", "type": "verb", "meaning": "về (lịch sự)"}
+        ],
+        "pattern": "失礼します + Hành động",
+        "examples": [
+          {"jp": "失礼します、入ります。", "vn": "Xin phép, tôi vào."},
+          {"jp": "失礼します、話します。", "vn": "Xin phép, tôi nói."},
+          {"jp": "失礼します、帰ります。", "vn": "Xin phép, tôi về."}
+        ]
+      },
+      {
+        "kanji": "浅草",
+        "hiragana": "あさくさ",
+        "romaji": "Asakusa",
+        "meaning": "Asakusa (khu phố ở Tokyo)",
+        "example": "浅草に行きます。",
+        "exampleVn": "Tôi đi Asakusa.",
+        "grammar": "浅草 (Asakusa) + に + 行きます (đi) - に chỉ đích",
+        "breakdown": [
+          {"word": "浅草", "reading": "あさくさ", "type": "noun", "meaning": "Asakusa"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "đến, tới"},
+          {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+        ],
+        "pattern": "浅草 + に + 行きます",
+        "examples": [
+          {"jp": "浅草を観光します。", "vn": "Tôi tham quan Asakusa."},
+          {"jp": "浅草で食べます。", "vn": "Tôi ăn ở Asakusa."},
+          {"jp": "浅草に行きます。", "vn": "Tôi đi Asakusa."}
+        ]
+      },
+      {
+        "kanji": "東京スカイツリー",
+        "hiragana": "",
+        "romaji": "Toukyou Sukaitsuri",
+        "meaning": "Tháp Tokyo Skytree",
+        "example": "東京スカイツリーを見ます。",
+        "exampleVn": "Tôi xem Tháp Tokyo Skytree.",
+        "grammar": "東京スカイツリー (Tháp Tokyo Skytree) + を + 見ます (xem) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "東京スカイツリー", "reading": "とうきょうスカイツリー", "type": "noun", "meaning": "Tháp Tokyo Skytree"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "見ます", "reading": "みます", "type": "verb", "meaning": "xem (lịch sự)"}
+        ],
+        "pattern": "東京スカイツリー + を + 見ます",
+        "examples": [
+          {"jp": "東京スカイツリーを訪れます。", "vn": "Tôi thăm Tháp Tokyo Skytree."},
+          {"jp": "東京スカイツリーは高いです。", "vn": "Tháp Tokyo Skytree thì cao."},
+          {"jp": "東京スカイツリーに行きます。", "vn": "Tôi đi Tháp Tokyo Skytree."}
+        ]
+      },
+      {
+        "kanji": "外国人",
+        "hiragana": "がいこくじん",
+        "romaji": "gaikokujin",
+        "meaning": "người nước ngoài",
+        "example": "外国人が浅草に来ます。",
+        "exampleVn": "Người nước ngoài đến Asakusa.",
+        "grammar": "外国人 (người nước ngoài) + が + 浅草 (Asakusa) + に + 来ます (đến) - が chỉ chủ ngữ",
+        "breakdown": [
+          {"word": "外国人", "reading": "がいこくじん", "type": "noun", "meaning": "người nước ngoài"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "浅草", "reading": "あさくさ", "type": "noun", "meaning": "Asakusa"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "đến, tới"},
+          {"word": "来ます", "reading": "きます", "type": "verb", "meaning": "đến (lịch sự)"}
+        ],
+        "pattern": "外国人 + が + Địa điểm + に + 来ます",
+        "examples": [
+          {"jp": "外国人が日本に来ます。", "vn": "Người nước ngoài đến Nhật Bản."},
+          {"jp": "外国人が東京に住みます。", "vn": "Người nước ngoài sống ở Tokyo."},
+          {"jp": "外国人が桜を見ます。", "vn": "Người nước ngoài ngắm hoa anh đào."}
+        ]
+      },
+      {
+        "kanji": "桜",
+        "hiragana": "さくら",
+        "romaji": "sakura",
+        "meaning": "hoa anh đào",
+        "example": "桜を見ます。",
+        "exampleVn": "Tôi ngắm hoa anh đào.",
+        "grammar": "桜 (hoa anh đào) + を + 見ます (xem) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "桜", "reading": "さくら", "type": "noun", "meaning": "hoa anh đào"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "見ます", "reading": "みます", "type": "verb", "meaning": "xem (lịch sự)"}
+        ],
+        "pattern": "桜 + を + 見ます",
+        "examples": [
+          {"jp": "桜を撮影します。", "vn": "Tôi chụp ảnh hoa anh đào."},
+          {"jp": "桜は綺麗です。", "vn": "Hoa anh đào thì đẹp."},
+          {"jp": "桜を見ます。", "vn": "Tôi ngắm hoa anh đào."}
+        ]
+      }
+    ],
+    "readingPassage": {
+      "title": "Một ngày tham quan ở Tokyo",
+      "text": "健君は東京で生まれました。よく旅行します。今日は外国人友達とおめでとうございますと言いながら、浅草と東京スカイツリーを探しています。では、行きましょう！と健君は言います。シャツとスーツを着ます。ズボンやジーンズをはきます。帽子をかぶります。眼鏡もかけます。コートやセーターは着ません。スカートもはきません。こちらはアパートです、と健君が言います。家賃は高いです。和室で布団を敷きます。押し入れに布団を入れます。食堂でご飯を食べます。失礼します、と言って出かけます。浅草で桜を見ます。東京スカイツリーも見ます。万里の長城は見ません。",
+      "translation": "Yuki-kun sinh ra ở Tokyo. Cậu ấy thường đi du lịch. Hôm nay, cậu ấy nói chúc mừng với bạn nước ngoài và đang tìm Asakusa cùng Tháp Tokyo Skytree. Vậy thì, đi thôi! Yuki-kun nói. Cậu ấy mặc áo sơ mi và bộ vest, mặc quần dài hoặc quần jeans, đội mũ và đeo kính. Cậu ấy không mặc áo khoác hay áo len, cũng không mặc váy. Đây là căn hộ, Yuki-kun nói. Tiền thuê nhà thì cao. Cậu ấy trải nệm trong phòng kiểu Nhật và cất nệm vào tủ âm tường. Cậu ấy ăn cơm ở phòng ăn. Xin phép, cậu ấy nói rồi rời đi. Cậu ấy ngắm hoa anh đào ở Asakusa và xem Tháp Tokyo Skytree, nhưng không xem Vạn Lý Trường Thành.",
+      "highlightedWords": [
+        {"word": "東京", "meaning": "Tokyo"},
+        {"word": "生まれました", "meaning": "sinh ra"},
+        {"word": "よく", "meaning": "thường"},
+        {"word": "旅行します", "meaning": "đi du lịch"},
+        {"word": "外国人", "meaning": "người nước ngoài"},
+        {"word": "おめでとうございます", "meaning": "chúc mừng"},
+        {"word": "浅草", "meaning": "Asakusa"},
+        {"word": "東京スカイツリー", "meaning": "Tháp Tokyo Skytree"},
+        {"word": "探しています", "meaning": "đang tìm"},
+        {"word": "では", "meaning": "vậy thì"},
+        {"word": "シャツ", "meaning": "áo sơ mi"},
+        {"word": "スーツ", "meaning": "bộ vest"},
+        {"word": "着ます", "meaning": "mặc (áo)"},
+        {"word": "ズボン", "meaning": "quần dài"},
+        {"word": "ジーンズ", "meaning": "quần jeans"},
+        {"word": "はきます", "meaning": "mặc (quần)"},
+        {"word": "帽子", "meaning": "mũ"},
+        {"word": "かぶります", "meaning": "đội (mũ)"},
+        {"word": "眼鏡", "meaning": "kính"},
+        {"word": "かけます", "meaning": "đeo (kính)"},
+        {"word": "コート", "meaning": "áo khoác"},
+        {"word": "セーター", "meaning": "áo len"},
+        {"word": "スカート", "meaning": "váy"},
+        {"word": "こちら", "meaning": "phía này"},
+        {"word": "アパート", "meaning": "căn hộ"},
+        {"word": "家賃", "meaning": "tiền thuê nhà"},
+        {"word": "和室", "meaning": "phòng kiểu Nhật"},
+        {"word": "布団", "meaning": "nệm"},
+        {"word": "押し入れ", "meaning": "tủ âm tường"},
+        {"word": "食堂", "meaning": "phòng ăn"},
+        {"word": "失礼します", "meaning": "xin phép"},
+        {"word": "桜", "meaning": "hoa anh đào"},
+        {"word": "万里の長城", "meaning": "Vạn Lý Trường Thành"}
+      ]
+    }
   }
 }
 
