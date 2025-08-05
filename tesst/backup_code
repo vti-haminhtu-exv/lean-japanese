@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>📚 Flash Cards Tiếng Nhật</title>
+    <title>? Flash Cards Ti?ng Nh?t</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -354,6 +354,7 @@
             border-bottom: 2px solid #ff9800;
             position: relative;
             transition: all 0.3s ease;
+            display: inline-block;
         }
 
         .highlighted-word:hover {
@@ -362,14 +363,61 @@
             transform: scale(1.05);
         }
 
-        /* Tooltip */
+        /* Furigana style reading display */
+        .word-reading {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Noto Sans JP', serif;
+            font-size: 11px;
+            color: #2196f3;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2px 6px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            z-index: 100;
+            border: 1px solid rgba(33, 150, 243, 0.3);
+        }
+
+        .highlighted-word:hover .word-reading {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-2px);
+        }
+
+        .click-hint {
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 9px;
+            color: #666;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1px 4px;
+            border-radius: 2px;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .highlighted-word:hover .click-hint {
+            opacity: 1;
+        }
+
+        /* Enhanced Tooltip - Now simplified for meaning only */
         .tooltip {
             position: absolute;
             background: linear-gradient(135deg, #333 0%, #555 100%);
             color: white;
             padding: 8px 12px;
             border-radius: 8px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 500;
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
             z-index: 1000;
@@ -380,6 +428,7 @@
             max-width: 200px;
             text-align: center;
             font-family: 'Inter', sans-serif;
+            border: 1px solid rgba(255,255,255,0.2);
         }
 
         .tooltip.show {
@@ -775,7 +824,21 @@
                 flex: none;
             }
 
-            /* Tối ưu buttons cho mobile */
+            .tooltip {
+                max-width: 200px;
+                font-size: 12px;
+                padding: 10px 12px;
+            }
+
+            .tooltip-word {
+                font-size: 16px;
+            }
+
+            .tooltip-reading {
+                font-size: 13px;
+            }
+
+            /* T?i ?u buttons cho mobile */
             .card-buttons {
                 grid-template-columns: 1fr 1fr;
                 gap: 8px;
@@ -1037,52 +1100,52 @@
 <div class="container">
     <!-- Loading Interface -->
     <div id="loading-interface" class="interface active">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <h1>? Flash Cards Ti?ng Nh?t</h1>
+        <div class="author-credit">? ???c t?o b?i H? Minh T? ?</div>
         <div class="loading-screen">
             <div class="loading-spinner"></div>
-            <div class="loading-text">Đang tải dữ liệu bài học...</div>
+            <div class="loading-text">?ang t?i d? li?u b?i h?c...</div>
         </div>
     </div>
 
     <!-- Error Interface -->
     <div id="error-interface" class="interface">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <h1>? Flash Cards Ti?ng Nh?t</h1>
+        <div class="author-credit">? ???c t?o b?i H? Minh T? ?</div>
         <div class="error-screen">
-            <div class="error-icon">⚠️</div>
-            <div class="error-title">Không thể tải dữ liệu</div>
+            <div class="error-icon">??</div>
+            <div class="error-title">Kh?ng th? t?i d? li?u</div>
             <div class="error-message" id="error-message">
-                Có lỗi xảy ra khi tải dữ liệu bài học. Vui lòng kiểm tra kết nối internet và thử lại.
+                C? l?i x?y ra khi t?i d? li?u b?i h?c. Vui l?ng ki?m tra k?t n?i internet v? th? l?i.
             </div>
-            <button class="retry-btn" id="retry-btn">🔄 Thử lại</button>
+            <button class="retry-btn" id="retry-btn">? Th? l?i</button>
         </div>
     </div>
 
     <!-- Lesson Selection Interface -->
     <div id="lesson-selection" class="interface">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <h1>? Flash Cards Ti?ng Nh?t</h1>
+        <div class="author-credit">? ???c t?o b?i H? Minh T? ?</div>
         <div class="lesson-selector">
-            <div class="lesson-title">📖 Chọn Bài Học</div>
+            <div class="lesson-title">? Ch?n B?i H?c</div>
             <div class="lesson-grid" id="lesson-grid"></div>
             <div class="lesson-info">
-                Nhấn vào bài học để bắt đầu. Bài đã hoàn thành sẽ có màu xanh.
-                <br>📊 Tiến độ học tập sẽ được lưu tự động.
+                Nh?n v?o b?i h?c ?? b?t ??u. B?i ?? ho?n th?nh s? c? m?u xanh.
+                <br>? Ti?n ?? h?c t?p s? ???c l?u t? ??ng.
             </div>
         </div>
     </div>
 
     <!-- Learning Interface -->
     <div id="learning-interface" class="interface">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <h1>? Flash Cards Ti?ng Nh?t</h1>
+        <div class="author-credit">? ???c t?o b?i H? Minh T? ?</div>
         <div class="learning-container">
-            <div class="current-lesson" id="current-lesson-info">📝 Bài 1: Động từ cơ bản</div>
+            <div class="current-lesson" id="current-lesson-info">? B?i 1: ??ng t? c? b?n</div>
 
             <!-- Reading Practice Section -->
             <div id="reading-section" class="reading-practice">
-                <div class="reading-title">📖 Luyện Đọc: <span id="reading-passage-title">Một ngày của Tanaka-san</span></div>
+                <div class="reading-title">? Luy?n ??c: <span id="reading-passage-title">M?t ng?y c?a Tanaka-san</span></div>
                 <div class="reading-content">
                     <div class="reading-text" id="reading-text">
                         <!-- Reading content will be loaded here -->
@@ -1092,15 +1155,15 @@
                     </div>
                 </div>
                 <div class="reading-controls">
-                    <button class="reading-audio-btn" id="reading-audio-btn">🔊 Đọc đoạn văn</button>
-                    <button class="reading-close-btn" id="close-reading-btn">❌ Đóng đoạn văn</button>
+                    <button class="reading-audio-btn" id="reading-audio-btn">? ??c ?o?n v?n</button>
+                    <button class="reading-close-btn" id="close-reading-btn">? ??ng ?o?n v?n</button>
                 </div>
             </div>
 
             <div class="progress">
                 <span id="current">1</span> / <span id="total">31</span> |
-                Đã học: <span id="mastered">0</span>/<span id="total2">31</span>
-                <button class="btn" id="show-reading-btn" style="margin-left: 10px; padding: 8px 12px; font-size: 12px; min-height: auto;">📖 Luyện Đọc</button>
+                ?? h?c: <span id="mastered">0</span>/<span id="total2">31</span>
+                <button class="btn" id="show-reading-btn" style="margin-left: 10px; padding: 8px 12px; font-size: 12px; min-height: auto;">? Luy?n ??c</button>
             </div>
 
             <!-- Flash Cards Section -->
@@ -1108,135 +1171,135 @@
                 <div class="card" id="card">
                     <div id="card-number">#1</div>
                     <div id="front">
-                        <div class="kanji japanese-text" id="kanji">行きます</div>
-                        <div class="hiragana japanese-text" id="hiragana">いきます</div>
+                        <div class="kanji japanese-text" id="kanji">�s���܂�</div>
+                        <div class="hiragana japanese-text" id="hiragana">�����܂�</div>
                         <div class="romaji japanese-text" id="romaji">ikimasu</div>
-                        <div class="auto-speak">🔊 Đang tự đọc...</div>
+                        <div class="auto-speak">? ?ang t? ??c...</div>
                         <div class="card-buttons">
-                            <button class="audio-btn" id="audioBtn">🔊 Đọc lại</button>
-                            <button class="flip-btn" id="flipBtn">👁️ Xem nghĩa</button>
+                            <button class="audio-btn" id="audioBtn">? ??c l?i</button>
+                            <button class="flip-btn" id="flipBtn">?? Xem ngh?a</button>
                         </div>
                     </div>
                     <div id="back" style="display: none;">
-                        <div class="kanji japanese-text" id="kanji2">行きます</div>
-                        <div class="hiragana japanese-text" id="hiragana2">いきます</div>
+                        <div class="kanji japanese-text" id="kanji2">�s���܂�</div>
+                        <div class="hiragana japanese-text" id="hiragana2">�����܂�</div>
                         <div class="romaji japanese-text" id="romaji2">ikimasu</div>
-                        <div class="meaning" id="meaning">đi</div>
+                        <div class="meaning" id="meaning">?i</div>
                         <div class="example">
-                            <div class="example-jp japanese-text" id="example-jp">学校へ行きます。</div>
-                            <div class="example-vn" id="example-vn">Tôi đi đến trường.</div>
+                            <div class="example-jp japanese-text" id="example-jp">�w�Z�֍s���܂��B</div>
+                            <div class="example-vn" id="example-vn">T?i ?i ??n tr??ng.</div>
                         </div>
                         <div class="card-buttons">
-                            <button class="audio-btn" id="audioBtn2">🔊 Đọc ví dụ</button>
-                            <button class="flip-btn" id="flipBtn2">🔄 Quay lại</button>
+                            <button class="audio-btn" id="audioBtn2">? ??c v? d?</button>
+                            <button class="flip-btn" id="flipBtn2">? Quay l?i</button>
                         </div>
                         <div class="card-buttons" style="grid-template-columns: 1fr; margin-top: 5px;">
-                            <button class="grammar-btn" id="grammarBtn">📝 Phân tích ngữ pháp</button>
+                            <button class="grammar-btn" id="grammarBtn">? Ph?n t?ch ng? ph?p</button>
                         </div>
                         <div class="detailed-grammar" id="detailed-grammar">
-                            <div class="grammar-header">📊 Phân tích cấu trúc câu</div>
+                            <div class="grammar-header">? Ph?n t?ch c?u tr?c c?u</div>
                             <div class="sentence-breakdown" id="sentence-breakdown"></div>
                             <div class="pattern-examples" id="pattern-examples"></div>
                         </div>
                     </div>
                 </div>
                 <div class="controls">
-                    <button class="btn" id="prevBtn">⬅️ Trước</button>
-                    <button class="btn" id="masteredBtn">✅ Đánh dấu</button>
-                    <button class="btn" id="nextBtn">Sau ➡️</button>
+                    <button class="btn" id="prevBtn">?? Tr??c</button>
+                    <button class="btn" id="masteredBtn">? ??nh d?u</button>
+                    <button class="btn" id="nextBtn">Sau ??</button>
                 </div>
             </div>
 
             <div class="action-buttons">
-                <button class="test-btn" id="startTestBtn">🧠 Bài Test Kiểm Tra</button>
-                <button class="back-btn" id="backToMenuBtn">📖 Về Menu</button>
+                <button class="test-btn" id="startTestBtn">? B?i Test Ki?m Tra</button>
+                <button class="back-btn" id="backToMenuBtn">? V? Menu</button>
             </div>
         </div>
     </div>
 
     <!-- Test Interface -->
     <div id="test-interface" class="interface">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <h1>? Flash Cards Ti?ng Nh?t</h1>
+        <div class="author-credit">? ???c t?o b?i H? Minh T? ?</div>
         <div class="learning-container">
-            <div class="current-lesson" id="test-lesson-info">🧠 Bài Test - Bài 1: Động từ cơ bản</div>
+            <div class="current-lesson" id="test-lesson-info">? B?i Test - B?i 1: ??ng t? c? b?n</div>
             <div class="progress">
-                Câu <span id="test-current">1</span> / <span id="test-total">10</span> |
-                Điểm: <span id="test-score">0</span>
+                C?u <span id="test-current">1</span> / <span id="test-total">10</span> |
+                ?i?m: <span id="test-score">0</span>
             </div>
             <div class="card" id="test-card">
                 <div id="test-card-number">#1</div>
                 <div class="test-question">
-                    <div class="kanji japanese-text" id="test-kanji">行きます</div>
-                    <div class="hiragana japanese-text" id="test-hiragana">いきます</div>
+                    <div class="kanji japanese-text" id="test-kanji">�s���܂�</div>
+                    <div class="hiragana japanese-text" id="test-hiragana">�����܂�</div>
                     <div class="romaji japanese-text" id="test-romaji">ikimasu</div>
-                    <div class="question-text">Nghĩa của từ này là gì?</div>
+                    <div class="question-text">Ngh?a c?a t? n?y l? g??</div>
                 </div>
                 <div class="test-options" id="test-options"></div>
                 <div class="test-result" id="test-result" style="display: none;">
-                    <div class="result-icon" id="result-icon">✅</div>
-                    <div class="result-text" id="result-text">Chính xác!</div>
-                    <div class="correct-answer" id="correct-answer">Đáp án đúng: đi</div>
+                    <div class="result-icon" id="result-icon">?</div>
+                    <div class="result-text" id="result-text">Ch?nh x?c!</div>
+                    <div class="correct-answer" id="correct-answer">??p ?n ??ng: ?i</div>
                 </div>
                 <div class="card-buttons-single">
-                    <button class="audio-btn" id="test-audio-btn">🔊 Đọc từ</button>
-                    <button class="flip-btn" id="test-next-btn" style="display: none;">➡️ Câu tiếp</button>
+                    <button class="audio-btn" id="test-audio-btn">? ??c t?</button>
+                    <button class="flip-btn" id="test-next-btn" style="display: none;">?? C?u ti?p</button>
                 </div>
             </div>
             <div class="action-buttons">
-                <button class="back-btn" id="test-back-btn">📖 Về Menu</button>
+                <button class="back-btn" id="test-back-btn">? V? Menu</button>
             </div>
         </div>
     </div>
 
     <!-- Score Interface -->
     <div id="score-interface" class="interface">
-        <h1>📚 Flash Cards Tiếng Nhật</h1>
-        <div class="author-credit">🎨 Được tạo bởi Hà Minh Tú 🚀</div>
+        <h1>? Flash Cards Ti?ng Nh?t</h1>
+        <div class="author-credit">? ???c t?o b?i H? Minh T? ?</div>
         <div class="learning-container">
-            <div class="current-lesson">🏆 Kết Quả Bài Test</div>
+            <div class="current-lesson">? K?t Qu? B?i Test</div>
             <div class="score-display">
                 <div class="final-score">
                     <div class="score-number" id="final-score">8/10</div>
                     <div class="score-percentage" id="score-percentage">80%</div>
                 </div>
-                <div class="score-message" id="score-message">Xuất sắc! Bạn đã làm rất tốt!</div>
+                <div class="score-message" id="score-message">Xu?t s?c! B?n ?? l?m r?t t?t!</div>
                 <div class="score-details">
                     <div class="score-row">
-                        <span>Câu đúng:</span>
+                        <span>C?u ??ng:</span>
                         <span id="correct-count">8</span>
                     </div>
                     <div class="score-row">
-                        <span>Câu sai:</span>
+                        <span>C?u sai:</span>
                         <span id="wrong-count">2</span>
                     </div>
                     <div class="score-row">
-                        <span>Tỷ lệ chính xác:</span>
+                        <span>T? l? ch?nh x?c:</span>
                         <span id="accuracy">80%</span>
                     </div>
                 </div>
             </div>
             <div class="action-buttons">
-                <button class="test-btn" id="retry-test-btn">🔄 Làm lại</button>
-                <button class="flip-btn" id="back-to-study-btn">📚 Tiếp tục học</button>
-                <button class="back-btn" id="score-back-btn">📖 Về Menu</button>
+                <button class="test-btn" id="retry-test-btn">? L?m l?i</button>
+                <button class="flip-btn" id="back-to-study-btn">? Ti?p t?c h?c</button>
+                <button class="back-btn" id="score-back-btn">? V? Menu</button>
             </div>
         </div>
     </div>
 
-    <!-- Tooltip for reading practice -->
+    <!-- Simple Tooltip for reading practice -->
     <div class="tooltip" id="tooltip"></div>
 </div>
 
 <script>
     const DATA_URL = `https://raw.githubusercontent.com/vti-haminhtu-exv/lean-japanese/main/lessons.json?ts=${Date.now()}`;
     const LESSON_ICONS = {
-        1: '🚶', 2: '🍽️', 3: '👥', 4: '🏠', 5: '⏰',
-        6: '🎨', 7: '🌸', 8: '📱', 9: '🚗', 10: '🏫',
-        11: '💼', 12: '🛍️', 13: '🍜', 14: '🎵', 15: '📚',
-        16: '⚽', 17: '🌍', 18: '💰', 19: '🏥', 20: '✈️',
-        21: '🎉', 22: '🌤️', 23: '👘', 24: '🗾', 25: '🎯',
-        26: '🎬', 27: '🚅', 28: '🏮', 29: '🌊', 30: '⛩️'
+        1: '?', 2: '??', 3: '?', 4: '?', 5: '?',
+        6: '?', 7: '?', 8: '?', 9: '?', 10: '?',
+        11: '?', 12: '??', 13: '?', 14: '?', 15: '?',
+        16: '?', 17: '?', 18: '?', 19: '?', 20: '??',
+        21: '?', 22: '??', 23: '?', 24: '?', 25: '?',
+        26: '?', 27: '?', 28: '?', 29: '?', 30: '??'
     };
 
     let allLessons = {};
@@ -1257,152 +1320,158 @@
     // Enhanced fallback data with reading passages and translations
     const FALLBACK_DATA = {
         1: {
-            title: "Động từ cơ bản",
+            title: "??ng t? c? b?n",
             words: [
                 {
-                    kanji: '行きます',
-                    hiragana: 'いきます',
+                    kanji: '�s���܂�',
+                    hiragana: '�����܂�',
                     romaji: 'ikimasu',
-                    meaning: 'đi',
-                    example: '学校へ行きます。',
-                    exampleVn: 'Tôi đi đến trường.',
+                    meaning: '?i',
+                    example: '�w�Z�֍s���܂��B',
+                    exampleVn: 'T?i ?i ??n tr??ng.',
                     breakdown: [
-                        {word: '学校', reading: 'がっこう', type: 'noun', meaning: 'trường học'},
-                        {word: 'へ', reading: 'へ', type: 'particle', meaning: 'đến, về phía'},
-                        {word: '行きます', reading: 'いきます', type: 'verb', meaning: 'đi (lịch sự)'}
+                        {word: '�w�Z', reading: '��������', type: 'noun', meaning: 'tr??ng h?c'},
+                        {word: '��', reading: '��', type: 'particle', meaning: '??n, v? ph?a'},
+                        {word: '�s���܂�', reading: '�����܂�', type: 'verb', meaning: '?i (l?ch s?)'}
                     ],
-                    pattern: 'Danh từ + へ + Động từ di chuyển',
+                    pattern: 'Danh t? + �� + ??ng t? di chuy?n',
                     examples: [
-                        {jp: '家へ帰ります。', vn: 'Tôi về nhà.'},
-                        {jp: '会社へ行きます。', vn: 'Tôi đi công ty.'},
-                        {jp: '駅へ走ります。', vn: 'Tôi chạy đến ga.'}
+                        {jp: '�Ƃ֋A��܂��B', vn: 'T?i v? nh?.'},
+                        {jp: '��Ђ֍s���܂��B', vn: 'T?i ?i c?ng ty.'},
+                        {jp: '�w�֑���܂��B', vn: 'T?i ch?y ??n ga.'}
                     ]
                 },
                 {
-                    kanji: '来ます',
-                    hiragana: 'きます',
+                    kanji: '���܂�',
+                    hiragana: '���܂�',
                     romaji: 'kimasu',
-                    meaning: 'đến',
-                    example: '友達が来ます。',
-                    exampleVn: 'Bạn tôi đến.',
+                    meaning: '??n',
+                    example: '�F�B�����܂��B',
+                    exampleVn: 'B?n t?i ??n.',
                     breakdown: [
-                        {word: '友達', reading: 'ともだち', type: 'noun', meaning: 'bạn bè'},
-                        {word: 'が', reading: 'が', type: 'particle', meaning: 'đánh dấu chủ ngữ'},
-                        {word: '来ます', reading: 'きます', type: 'verb', meaning: 'đến (lịch sự)'}
+                        {word: '�F�B', reading: '�Ƃ�����', type: 'noun', meaning: 'b?n b?'},
+                        {word: '��', reading: '��', type: 'particle', meaning: '??nh d?u ch? ng?'},
+                        {word: '���܂�', reading: '���܂�', type: 'verb', meaning: '??n (l?ch s?)'}
                     ],
-                    pattern: 'Chủ ngữ + が + Động từ',
+                    pattern: 'Ch? ng? + �� + ??ng t?',
                     examples: [
-                        {jp: '先生が来ます。', vn: 'Thầy giáo đến.'},
-                        {jp: '電車が来ます。', vn: 'Tàu điện đến.'},
-                        {jp: '雨が来ます。', vn: 'Mưa đến.'}
+                        {jp: '�搶�����܂��B', vn: 'Th?y gi?o ??n.'},
+                        {jp: '�d�Ԃ����܂��B', vn: 'T?u ?i?n ??n.'},
+                        {jp: '�J�����܂��B', vn: 'M?a ??n.'}
                     ]
                 },
                 {
-                    kanji: '帰ります',
-                    hiragana: 'かえります',
+                    kanji: '�A��܂�',
+                    hiragana: '������܂�',
                     romaji: 'kaerimasu',
-                    meaning: 'về',
-                    example: '家に帰ります。',
-                    exampleVn: 'Tôi về nhà.',
+                    meaning: 'v?',
+                    example: '�ƂɋA��܂��B',
+                    exampleVn: 'T?i v? nh?.',
                     breakdown: [
-                        {word: '家', reading: 'いえ', type: 'noun', meaning: 'nhà'},
-                        {word: 'に', reading: 'に', type: 'particle', meaning: 'vào, tại'},
-                        {word: '帰ります', reading: 'かえります', type: 'verb', meaning: 'về (lịch sự)'}
+                        {word: '��', reading: '����', type: 'noun', meaning: 'nh?'},
+                        {word: '��', reading: '��', type: 'particle', meaning: 'v?o, t?i'},
+                        {word: '�A��܂�', reading: '������܂�', type: 'verb', meaning: 'v? (l?ch s?)'}
                     ],
-                    pattern: 'Địa điểm + に + Động từ',
+                    pattern: '??a ?i?m + �� + ??ng t?',
                     examples: [
-                        {jp: '学校に帰ります。', vn: 'Tôi về trường.'},
-                        {jp: '国に帰ります。', vn: 'Tôi về nước.'}
+                        {jp: '�w�Z�ɋA��܂��B', vn: 'T?i v? tr??ng.'},
+                        {jp: '���ɋA��܂��B', vn: 'T?i v? n??c.'}
                     ]
                 },
                 {
-                    kanji: '食べます',
-                    hiragana: 'たべます',
+                    kanji: '�H�ׂ܂�',
+                    hiragana: '���ׂ܂�',
                     romaji: 'tabemasu',
-                    meaning: 'ăn',
-                    example: 'ご飯を食べます。',
-                    exampleVn: 'Tôi ăn cơm.',
+                    meaning: '?n',
+                    example: '���т�H�ׂ܂��B',
+                    exampleVn: 'T?i ?n c?m.',
                     breakdown: [
-                        {word: 'ご飯', reading: 'ごはん', type: 'noun', meaning: 'cơm'},
-                        {word: 'を', reading: 'を', type: 'particle', meaning: 'đánh dấu tân ngữ'},
-                        {word: '食べます', reading: 'たべます', type: 'verb', meaning: 'ăn (lịch sự)'}
+                        {word: '����', reading: '���͂�', type: 'noun', meaning: 'c?m'},
+                        {word: '��', reading: '��', type: 'particle', meaning: '??nh d?u t?n ng?'},
+                        {word: '�H�ׂ܂�', reading: '���ׂ܂�', type: 'verb', meaning: '?n (l?ch s?)'}
                     ],
-                    pattern: 'Tân ngữ + を + Động từ',
+                    pattern: 'T?n ng? + �� + ??ng t?',
                     examples: [
-                        {jp: 'パンを食べます。', vn: 'Tôi ăn bánh mì.'},
-                        {jp: '魚を食べます。', vn: 'Tôi ăn cá.'}
+                        {jp: '�p����H�ׂ܂��B', vn: 'T?i ?n b?nh m?.'},
+                        {jp: '����H�ׂ܂��B', vn: 'T?i ?n c?.'}
                     ]
                 },
                 {
-                    kanji: '働きます',
-                    hiragana: 'はたらきます',
+                    kanji: '�����܂�',
+                    hiragana: '�͂��炫�܂�',
                     romaji: 'hatarakimasu',
-                    meaning: 'làm việc',
-                    example: '会社で働きます。',
-                    exampleVn: 'Tôi làm việc ở công ty.',
+                    meaning: 'l?m vi?c',
+                    example: '��Ђœ����܂��B',
+                    exampleVn: 'T?i l?m vi?c ? c?ng ty.',
                     breakdown: [
-                        {word: '会社', reading: 'かいしゃ', type: 'noun', meaning: 'công ty'},
-                        {word: 'で', reading: 'で', type: 'particle', meaning: 'tại, ở'},
-                        {word: '働きます', reading: 'はたらきます', type: 'verb', meaning: 'làm việc (lịch sự)'}
+                        {word: '���', reading: '��������', type: 'noun', meaning: 'c?ng ty'},
+                        {word: '��', reading: '��', type: 'particle', meaning: 't?i, ?'},
+                        {word: '�����܂�', reading: '�͂��炫�܂�', type: 'verb', meaning: 'l?m vi?c (l?ch s?)'}
                     ],
-                    pattern: 'Địa điểm + で + Động từ',
+                    pattern: '??a ?i?m + �� + ??ng t?',
                     examples: [
-                        {jp: '家で働きます。', vn: 'Tôi làm việc ở nhà.'},
-                        {jp: '学校で働きます。', vn: 'Tôi làm việc ở trường.'}
+                        {jp: '�Ƃœ����܂��B', vn: 'T?i l?m vi?c ? nh?.'},
+                        {jp: '�w�Z�œ����܂��B', vn: 'T?i l?m vi?c ? tr??ng.'}
                     ]
                 }
             ],
             readingPassage: {
-                title: "Một ngày của Tanaka-san",
-                text: "田中さんは毎朝七時に家を出ます。電車で会社へ行きます。会社で働きます。昼にご飯を食べます。夕方六時に会社から帰ります。家で夕食を食べます。友達が来ます。",
-                translation: "Tanaka-san rời khỏi nhà lúc 7 giờ sáng mỗi ngày. Anh ấy đi công ty bằng tàu điện. Anh ấy làm việc ở công ty. Anh ấy ăn cơm trưa. Anh ấy về từ công ty lúc 6 giờ chiều. Anh ấy ăn tối ở nhà. Bạn anh ấy đến chơi.",
+                title: "M?t ng?y c?a Tanaka-san",
+                text: "�c������͖��������ɉƂ��o�܂��B�d�Ԃŉ�Ђ֍s���܂��B��Ђœ����܂��B���ɂ��т�H�ׂ܂��B�[���Z���ɉ�Ђ���A��܂��B�Ƃŗ[�H��H�ׂ܂��B�F�B�����܂��B",
+                translation: "Tanaka-san r?i kh?i nh? l?c 7 gi? s?ng m?i ng?y. Anh ?y ?i c?ng ty b?ng t?u ?i?n. Anh ?y l?m vi?c ? c?ng ty. Anh ?y ?n c?m tr?a. Anh ?y v? t? c?ng ty l?c 6 gi? chi?u. Anh ?y ?n t?i ? nh?. B?n anh ?y ??n ch?i.",
                 highlightedWords: [
-                    {word: '出ます', meaning: 'rời khỏi, ra ngoài'},
-                    {word: '電車', meaning: 'tàu điện'},
-                    {word: '会社', meaning: 'công ty'},
-                    {word: '行きます', meaning: 'đi'},
-                    {word: '働きます', meaning: 'làm việc'},
-                    {word: '昼', meaning: 'trưa'},
-                    {word: 'ご飯', meaning: 'cơm'},
-                    {word: '食べます', meaning: 'ăn'},
-                    {word: '夕方', meaning: 'buổi chiều'},
-                    {word: '帰ります', meaning: 'về'},
-                    {word: '夕食', meaning: 'bữa tối'},
-                    {word: '友達', meaning: 'bạn bè'},
-                    {word: '来ます', meaning: 'đến'}
+                    {word: '�s���܂�', hiragana: '�����܂�', romaji: 'ikimasu', meaning: '?i'},
+                    {word: '���܂�', hiragana: '���܂�', romaji: 'kimasu', meaning: '??n'},
+                    {word: '�A��܂�', hiragana: '������܂�', romaji: 'kaerimasu', meaning: 'v?'},
+                    {word: '�H�ׂ܂�', hiragana: '���ׂ܂�', romaji: 'tabemasu', meaning: '?n'},
+                    {word: '�����܂�', hiragana: '�͂��炫�܂�', romaji: 'hatarakimasu', meaning: 'l?m vi?c'},
+                    {word: '�c��', hiragana: '���Ȃ�', romaji: 'tanaka', meaning: 'Tanaka (t?n ng??i)'},
+                    {word: '����', hiragana: '�܂�����', romaji: 'maiasa', meaning: 'm?i s?ng'},
+                    {word: '����', hiragana: '������', romaji: 'shichiji', meaning: '7 gi?'},
+                    {word: '��', hiragana: '����', romaji: 'ie', meaning: 'nh?'},
+                    {word: '�o�܂�', hiragana: '�ł܂�', romaji: 'demasu', meaning: 'r?i kh?i, ra ngo?i'},
+                    {word: '�d��', hiragana: '�ł񂵂�', romaji: 'densha', meaning: 't?u ?i?n'},
+                    {word: '���', hiragana: '��������', romaji: 'kaisha', meaning: 'c?ng ty'},
+                    {word: '��', hiragana: '�Ђ�', romaji: 'hiru', meaning: 'tr?a'},
+                    {word: '����', hiragana: '���͂�', romaji: 'gohan', meaning: 'c?m'},
+                    {word: '�[��', hiragana: '�䂤����', romaji: 'yuugata', meaning: 'bu?i chi?u'},
+                    {word: '�Z��', hiragana: '�낭��', romaji: 'rokuji', meaning: '6 gi?'},
+                    {word: '�[�H', hiragana: '�䂤���傭', romaji: 'yuushoku', meaning: 'b?a t?i'},
+                    {word: '�F�B', hiragana: '�Ƃ�����', romaji: 'tomodachi', meaning: 'b?n b?'}
                 ]
             }
         },
         2: {
-            title: "Ăn uống",
+            title: "?n u?ng",
             words: [
                 {
-                    kanji: '飲みます',
-                    hiragana: 'のみます',
+                    kanji: '���݂܂�',
+                    hiragana: '�݂̂܂�',
                     romaji: 'nomimasu',
-                    meaning: 'uống',
-                    example: '水を飲みます。',
-                    exampleVn: 'Tôi uống nước.'
+                    meaning: 'u?ng',
+                    example: '�������݂܂��B',
+                    exampleVn: 'T?i u?ng n??c.'
                 },
                 {
-                    kanji: '買います',
-                    hiragana: 'かいます',
+                    kanji: '�����܂�',
+                    hiragana: '�����܂�',
                     romaji: 'kaimasu',
                     meaning: 'mua',
-                    example: 'パンを買います。',
-                    exampleVn: 'Tôi mua bánh mì.'
+                    example: '�p���𔃂��܂��B',
+                    exampleVn: 'T?i mua b?nh m?.'
                 }
             ],
             readingPassage: {
-                title: "Đi mua sắm",
-                text: "今日、スーパーに行きます。パンを買います。牛乳を買います。家に帰ります。パンを食べます。牛乳を飲みます。",
-                translation: "Hôm nay tôi đi siêu thị. Tôi mua bánh mì. Tôi mua sữa. Tôi về nhà. Tôi ăn bánh mì. Tôi uống sữa.",
+                title: "?i mua s?m",
+                text: "�����A�X�[�p�[�ɍs���܂��B�p���𔃂��܂��B�����𔃂��܂��B�ƂɋA��܂��B�p����H�ׂ܂��B���������݂܂��B",
+                translation: "H?m nay t?i ?i si?u th?. T?i mua b?nh m?. T?i mua s?a. T?i v? nh?. T?i ?n b?nh m?. T?i u?ng s?a.",
                 highlightedWords: [
-                    {word: 'スーパー', meaning: 'siêu thị'},
-                    {word: 'パン', meaning: 'bánh mì'},
-                    {word: '買います', meaning: 'mua'},
-                    {word: '牛乳', meaning: 'sữa'},
-                    {word: '飲みます', meaning: 'uống'}
+                    {word: '����', hiragana: '���傤', romaji: 'kyou', meaning: 'h?m nay'},
+                    {word: '�X�[�p�[', hiragana: '�X�[�p�[', romaji: 'suupaa', meaning: 'si?u th?'},
+                    {word: '�p��', hiragana: '�p��', romaji: 'pan', meaning: 'b?nh m?'},
+                    {word: '�����܂�', hiragana: '�����܂�', romaji: 'kaimasu', meaning: 'mua'},
+                    {word: '����', hiragana: '���イ�ɂイ', romaji: 'gyuunyuu', meaning: 's?a'},
+                    {word: '���݂܂�', hiragana: '�݂̂܂�', romaji: 'nomimasu', meaning: 'u?ng'}
                 ]
             }
         }
@@ -1415,14 +1484,14 @@
 
         lessonKeys.forEach(lessonNum => {
             const lesson = allLessons[lessonNum];
-            const icon = LESSON_ICONS[lessonNum] || '📝';
+            const icon = LESSON_ICONS[lessonNum] || '?';
             const btn = document.createElement('button');
             btn.className = 'lesson-btn';
             btn.innerHTML = `
                 <div class="lesson-icon">${icon}</div>
-                <div class="lesson-number">Bài ${lessonNum}</div>
+                <div class="lesson-number">B?i ${lessonNum}</div>
                 <div class="lesson-name">${lesson.title}</div>
-                <div class="lesson-stats">${lesson.words.length} từ</div>
+                <div class="lesson-stats">${lesson.words.length} t?</div>
             `;
             if (lessonNum == currentLesson) btn.classList.add('active');
             try {
@@ -1437,7 +1506,7 @@
     }
 
     function loadLessonsData() {
-        console.log("Đang tải dữ liệu từ:", DATA_URL);
+        console.log("?ang t?i d? li?u t?:", DATA_URL);
         const xhr = new XMLHttpRequest();
         xhr.open('GET', DATA_URL, true);
         xhr.timeout = 10000;
@@ -1475,15 +1544,15 @@
         allLessons = FALLBACK_DATA;
         generateLessonButtons();
         showInterface('lesson-selection');
-        showError('Không thể tải dữ liệu từ server.\n\nLỗi: ' + error.message + '\n\nĐang sử dụng dữ liệu mẫu.', true);
+        showError('Kh?ng th? t?i d? li?u t? server.\n\nL?i: ' + error.message + '\n\n?ang s? d?ng d? li?u m?u.', true);
     }
 
     function showError(message, isWarning) {
         const errorMsg = document.getElementById('error-message');
         const errorTitle = document.querySelector('.error-title');
         const errorIcon = document.querySelector('.error-icon');
-        errorTitle.textContent = isWarning ? 'Cảnh báo' : 'Không thể tải dữ liệu';
-        errorIcon.textContent = isWarning ? '⚠️' : '❌';
+        errorTitle.textContent = isWarning ? 'C?nh b?o' : 'Kh?ng th? t?i d? li?u';
+        errorIcon.textContent = isWarning ? '??' : '?';
         errorMsg.textContent = message;
         showInterface('error-interface');
     }
@@ -1500,24 +1569,24 @@
         isFlipped = false;
         masteredSet.clear();
 
-        // RESET READING STATE - Fix cho việc button ảnh hưởng sai bài khác
+        // RESET READING STATE - Fix cho vi?c button ?nh h??ng sai b?i kh?c
         resetReadingState();
 
-        document.getElementById('current-lesson-info').textContent = `📝 Bài ${lessonNum}: ${allLessons[lessonNum].title}`;
+        document.getElementById('current-lesson-info').textContent = `? B?i ${lessonNum}: ${allLessons[lessonNum].title}`;
 
         showInterface('learning-interface');
         showCard();
         loadReadingPassage();
     }
 
-    // Hàm mới để reset trạng thái reading
+    // H?m m?i ?? reset tr?ng th?i reading
     function resetReadingState() {
         isReadingVisible = false;
         document.getElementById('reading-section').style.display = 'none';
 
-        // Reset button về trạng thái ban đầu
+        // Reset button v? tr?ng th?i ban ??u
         const showReadingBtn = document.getElementById('show-reading-btn');
-        showReadingBtn.textContent = '📖 Luyện Đọc';
+        showReadingBtn.textContent = '? Luy?n ??c';
         showReadingBtn.style.background = '';
 
         // Stop any current speech
@@ -1527,14 +1596,14 @@
     function showReadingPassage() {
         isReadingVisible = true;
         document.getElementById('reading-section').style.display = 'block';
-        document.getElementById('show-reading-btn').textContent = '❌ Ẩn Đọc';
+        document.getElementById('show-reading-btn').textContent = '? ?n ??c';
         document.getElementById('show-reading-btn').style.background = 'linear-gradient(135deg, #dc3545 0%, #c82333 100%)';
     }
 
     function hideReadingPassage() {
         isReadingVisible = false;
         document.getElementById('reading-section').style.display = 'none';
-        document.getElementById('show-reading-btn').textContent = '📖 Luyện Đọc';
+        document.getElementById('show-reading-btn').textContent = '? Luy?n ??c';
         document.getElementById('show-reading-btn').style.background = '';
 
         // Stop any current speech
@@ -1563,12 +1632,43 @@
 
         let highlightedText = passage.text;
 
-        // Highlight vocabulary words
+        // Create a lookup map from lesson words for better data matching
+        const wordsLookup = {};
+        lesson.words.forEach(wordItem => {
+            wordsLookup[wordItem.kanji] = {
+                hiragana: wordItem.hiragana,
+                romaji: wordItem.romaji,
+                meaning: wordItem.meaning
+            };
+        });
+
+        // Highlight vocabulary words with enhanced data attributes
         if (passage.highlightedWords) {
             passage.highlightedWords.forEach(item => {
                 const regex = new RegExp(item.word, 'g');
+                
+                // Try to get hiragana/romaji from lesson words first, then fallback to passage data
+                let hiraganaReading = item.hiragana || '';
+                let romajiReading = item.romaji || '';
+                let meaningText = item.meaning || '';
+
+                // Check if this word exists in the lesson vocabulary
+                if (wordsLookup[item.word]) {
+                    hiraganaReading = wordsLookup[item.word].hiragana;
+                    romajiReading = wordsLookup[item.word].romaji;
+                    meaningText = wordsLookup[item.word].meaning;
+                }
+
                 highlightedText = highlightedText.replace(regex,
-                    `<span class="highlighted-word" data-meaning="${item.meaning}" data-word="${item.word}">${item.word}</span>`
+                    `<span class="highlighted-word" 
+                        data-word="${item.word}" 
+                        data-hiragana="${hiraganaReading}" 
+                        data-romaji="${romajiReading}" 
+                        data-meaning="${meaningText}">
+                        ${item.word}
+                        <span class="word-reading">${hiraganaReading}</span>
+                        <span class="click-hint">? click ?? nghe</span>
+                    </span>`
                 );
             });
         }
@@ -1581,24 +1681,55 @@
         // Add event listeners for highlighted words
         const highlightedWords = readingTextEl.querySelectorAll('.highlighted-word');
         highlightedWords.forEach(word => {
-            word.addEventListener('mouseenter', showTooltip);
-            word.addEventListener('mouseleave', hideTooltip);
-            word.addEventListener('touchstart', showTooltip);
-            word.addEventListener('touchend', hideTooltip);
+            // Show meaning tooltip on long hover/touch
+            let hoverTimeout;
+            
+            word.addEventListener('mouseenter', (e) => {
+                hoverTimeout = setTimeout(() => {
+                    showSimpleTooltip(e);
+                }, 800); // Show meaning after 800ms hover
+            });
+            
+            word.addEventListener('mouseleave', () => {
+                clearTimeout(hoverTimeout);
+                hideTooltip();
+            });
+            
+            word.addEventListener('touchstart', (e) => {
+                hoverTimeout = setTimeout(() => {
+                    showSimpleTooltip(e);
+                }, 500); // Show meaning after 500ms touch
+            });
+            
+            word.addEventListener('touchend', () => {
+                clearTimeout(hoverTimeout);
+                hideTooltip();
+            });
 
-            // THÊM CHỨC NĂNG CLICK ĐỂ ĐỌC TỪ - Fix cho việc highlighted words cần được đọc lên
+            // Enhanced click functionality to read words
             word.addEventListener('click', function(e) {
                 e.preventDefault();
+                clearTimeout(hoverTimeout);
+                hideTooltip();
+                
                 const wordText = e.target.getAttribute('data-word');
-                console.log('Clicked word:', wordText); // Debug log
-                console.log('Word element:', e.target); // Debug log
-                if (wordText) {
-                    // Làm sạch text, loại bỏ ký tự đặc biệt
+                const hiraganaText = e.target.getAttribute('data-hiragana');
+                
+                console.log('Clicked word:', wordText);
+                console.log('Hiragana:', hiraganaText);
+                
+                if (hiraganaText) {
+                    // Prioritize hiragana reading if available
+                    const cleanText = hiraganaText.trim().replace(/[^\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF\u3400-\u4DBF]/g, '');
+                    console.log('Speaking hiragana:', cleanText);
+                    speak(cleanText, 'ja-JP');
+                } else if (wordText) {
+                    // Fallback to kanji/original word
                     const cleanText = wordText.trim().replace(/[^\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF\u3400-\u4DBF]/g, '');
-                    console.log('Clean text to speak:', cleanText); // Debug log
+                    console.log('Speaking original word:', cleanText);
                     speak(cleanText, 'ja-JP');
                 } else {
-                    console.log('No data-word found, using textContent');
+                    // Final fallback to textContent
                     const textContent = e.target.textContent.trim();
                     const cleanText = textContent.replace(/[^\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF\u3400-\u4DBF]/g, '');
                     console.log('Using textContent:', cleanText);
@@ -1608,11 +1739,11 @@
         });
     }
 
-    function showTooltip(e) {
+    function showSimpleTooltip(e) {
         const tooltip = document.getElementById('tooltip');
         const meaning = e.target.getAttribute('data-meaning');
 
-        tooltip.textContent = meaning;
+        tooltip.textContent = meaning || '';
         tooltip.classList.add('show');
 
         // Position tooltip
@@ -1681,13 +1812,13 @@
     function speakReadingPassage() {
         const lesson = allLessons[currentLesson];
         if (lesson && lesson.readingPassage && lesson.readingPassage.text) {
-            // Debug: In ra console để kiểm tra
+            // Debug: In ra console ?? ki?m tra
             console.log('Speaking text:', lesson.readingPassage.text);
-            // Chắc chắn sử dụng text gốc từ data, không phải từ DOM
+            // Ch?c ch?n s? d?ng text g?c t? data, kh?ng ph?i t? DOM
             const originalText = lesson.readingPassage.text;
             speak(originalText, 'ja-JP');
         } else {
-            // Fallback: nếu không có data, lấy textContent từ DOM (loại bỏ HTML tags)
+            // Fallback: n?u kh?ng c? data, l?y textContent t? DOM (lo?i b? HTML tags)
             const readingTextEl = document.getElementById('reading-text');
             if (readingTextEl) {
                 const cleanText = readingTextEl.textContent || readingTextEl.innerText;
@@ -1712,11 +1843,11 @@
             });
             const patternDiv = document.createElement('div');
             patternDiv.style.cssText = 'margin-top: 12px; font-weight: bold; color: #1976d2;';
-            patternDiv.innerHTML = `<strong>📝 Cấu trúc:</strong> ${word.pattern}`;
+            patternDiv.innerHTML = `<strong>? C?u tr?c:</strong> ${word.pattern}`;
             breakdownContainer.appendChild(patternDiv);
         }
 
-        examplesContainer.innerHTML = '<div style="font-weight: bold; color: #f57c00; margin-bottom: 8px;">📖 Các ví dụ tương tự:</div>';
+        examplesContainer.innerHTML = '<div style="font-weight: bold; color: #f57c00; margin-bottom: 8px;">? C?c v? d? t??ng t?:</div>';
         if (word.examples) {
             word.examples.forEach(example => {
                 const exampleDiv = document.createElement('div');
@@ -1731,7 +1862,7 @@
                 vnDiv.textContent = example.vn;
                 const audioBtn = document.createElement('button');
                 audioBtn.className = 'pattern-audio';
-                audioBtn.innerHTML = '🔊';
+                audioBtn.innerHTML = '?';
                 audioBtn.onclick = () => speakPatternExample(example.jp);
                 contentDiv.appendChild(jpDiv);
                 contentDiv.appendChild(vnDiv);
@@ -1753,11 +1884,11 @@
         if (grammarVisible) {
             generateGrammarAnalysis();
             grammarSection.style.display = 'block';
-            grammarBtn.textContent = '➖ Ẩn phân tích';
+            grammarBtn.textContent = '? ?n ph?n t?ch';
             grammarBtn.style.background = 'linear-gradient(135deg, #f57c00 0%, #ef6c00 100%)';
         } else {
             grammarSection.style.display = 'none';
-            grammarBtn.textContent = '📝 Phân tích ngữ pháp';
+            grammarBtn.textContent = '? Ph?n t?ch ng? ph?p';
             grammarBtn.style.background = 'linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%)';
         }
     }
@@ -1779,11 +1910,11 @@
         document.getElementById('total2').textContent = words.length;
         document.getElementById('mastered').textContent = masteredSet.size;
         const btn = document.getElementById('masteredBtn');
-        btn.textContent = masteredSet.has(currentIndex) ? '✅ Đã học' : '☑️ Đánh dấu';
+        btn.textContent = masteredSet.has(currentIndex) ? '? ?? h?c' : '?? ??nh d?u';
         btn.className = masteredSet.has(currentIndex) ? 'btn mastered-btn' : 'btn';
         grammarVisible = false;
         document.getElementById('detailed-grammar').style.display = 'none';
-        document.getElementById('grammarBtn').textContent = '📝 Phân tích ngữ pháp';
+        document.getElementById('grammarBtn').textContent = '? Ph?n t?ch ng? ph?p';
         document.getElementById('grammarBtn').style.background = 'linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%)';
         setTimeout(speakJapanese, 500);
     }
@@ -1855,7 +1986,7 @@
         currentTestIndex = 0;
         testScore = 0;
         document.getElementById('test-lesson-info').textContent =
-            `🧠 Bài Test - Bài ${currentLesson}: ${allLessons[currentLesson].title}`;
+            `? B?i Test - B?i ${currentLesson}: ${allLessons[currentLesson].title}`;
         showInterface('test-interface');
         showTestQuestion();
     }
@@ -1925,14 +2056,14 @@
         if (selected === correct) {
             testScore++;
             resultDiv.className = 'test-result';
-            resultIcon.textContent = '✅';
-            resultText.textContent = 'Chính xác!';
+            resultIcon.textContent = '?';
+            resultText.textContent = 'Ch?nh x?c!';
             correctAnswer.style.display = 'none';
         } else {
             resultDiv.className = 'test-result wrong';
-            resultIcon.textContent = '❌';
-            resultText.textContent = 'Sai rồi!';
-            correctAnswer.textContent = `Đáp án đúng: ${correct}`;
+            resultIcon.textContent = '?';
+            resultText.textContent = 'Sai r?i!';
+            correctAnswer.textContent = `??p ?n ??ng: ${correct}`;
             correctAnswer.style.display = 'block';
         }
         resultDiv.style.display = 'block';
@@ -1954,15 +2085,15 @@
         document.getElementById('accuracy').textContent = `${percentage}%`;
         const messageEl = document.getElementById('score-message');
         if (percentage >= 90) {
-            messageEl.textContent = '🏆 Xuất sắc! Bạn đã thành thạo bài học này!';
+            messageEl.textContent = '? Xu?t s?c! B?n ?? th?nh th?o b?i h?c n?y!';
             messageEl.style.background = 'linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%)';
             messageEl.style.borderColor = '#28a745';
         } else if (percentage >= 70) {
-            messageEl.textContent = '👍 Tốt lắm! Hãy ôn lại một chút nữa.';
+            messageEl.textContent = '? T?t l?m! H?y ?n l?i m?t ch?t n?a.';
             messageEl.style.background = 'linear-gradient(135deg, #fff3e0 0%, #fafafa 100%)';
             messageEl.style.borderColor = '#ff9800';
         } else {
-            messageEl.textContent = '📚 Hãy học kỹ hơn và thử lại nhé!';
+            messageEl.textContent = '? H?y h?c k? h?n v? th? l?i nh?!';
             messageEl.style.background = 'linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%)';
             messageEl.style.borderColor = '#dc3545';
         }
