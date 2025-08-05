@@ -3498,17 +3498,19 @@
         "hiragana": "うたいます",
         "romaji": "utaimasu",
         "meaning": "hát",
-        "example": "歌を歌います。",
-        "exampleVn": "Tôi hát một bài hát.",
-        "grammar": "歌 (bài hát) + を (tân ngữ) + 歌います (hát) - を chỉ đối tượng",
+        "example": "英語の歌を歌います。",
+        "exampleVn": "Tôi hát bài hát tiếng Anh.",
+        "grammar": "英語の歌 (bài hát tiếng Anh) + を (tân ngữ) + 歌います (hát) - を chỉ đối tượng",
         "breakdown": [
+          {"word": "英語", "reading": "えいご", "type": "noun", "meaning": "tiếng Anh"},
+          {"word": "の", "reading": "の", "type": "particle", "meaning": "sở hữu"},
           {"word": "歌", "reading": "うた", "type": "noun", "meaning": "bài hát"},
           {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
           {"word": "歌います", "reading": "うたいます", "type": "verb", "meaning": "hát (lịch sự)"}
         ],
         "pattern": "Danh từ + を + 歌います",
         "examples": [
-          {"jp": "英語の歌を歌います。", "vn": "Tôi hát bài hát tiếng Anh."},
+          {"jp": "日本の歌を歌います。", "vn": "Tôi hát bài hát Nhật."},
           {"jp": "友達と歌を歌います。", "vn": "Tôi hát cùng bạn."},
           {"jp": "カラオケで歌を歌います。", "vn": "Tôi hát ở karaoke."}
         ]
@@ -3518,19 +3520,19 @@
         "hiragana": "あつめます",
         "romaji": "atsumemasu",
         "meaning": "sưu tầm, gom lại",
-        "example": "切手を集めます。",
-        "exampleVn": "Tôi sưu tầm tem.",
-        "grammar": "切手 (tem) + を (tân ngữ) + 集めます (sưu tầm) - を chỉ đối tượng",
+        "example": "絵を集めます。",
+        "exampleVn": "Tôi sưu tầm tranh.",
+        "grammar": "絵 (tranh) + を (tân ngữ) + 集めます (sưu tầm) - を chỉ đối tượng",
         "breakdown": [
-          {"word": "切手", "reading": "きって", "type": "noun", "meaning": "con tem"},
+          {"word": "絵", "reading": "え", "type": "noun", "meaning": "tranh, hội họa"},
           {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
           {"word": "集めます", "reading": "あつめます", "type": "verb", "meaning": "sưu tầm (lịch sự)"}
         ],
         "pattern": "Danh từ + を + 集めます",
         "examples": [
-          {"jp": "絵を集めます。", "vn": "Tôi sưu tầm tranh."},
-          {"jp": "本を集めます。", "vn": "Tôi thu thập sách."},
-          {"jp": "外国のコインを集めます。", "vn": "Tôi sưu tầm tiền xu nước ngoài."}
+          {"jp": "切手を集めます。", "vn": "Tôi sưu tầm tem."},
+          {"jp": "外国のコインを集めます。", "vn": "Tôi sưu tầm tiền xu nước ngoài."},
+          {"jp": "本を集めます。", "vn": "Tôi thu thập sách."}
         ]
       },
       {
@@ -3558,19 +3560,21 @@
         "hiragana": "かえます",
         "romaji": "kaemasu",
         "meaning": "đổi",
-        "example": "お金を換えます。",
-        "exampleVn": "Tôi đổi tiền.",
-        "grammar": "お金 (tiền) + を (tân ngữ) + 換えます (đổi) - を chỉ đối tượng",
+        "example": "外国のお金を換えます。",
+        "exampleVn": "Tôi đổi tiền nước ngoài.",
+        "grammar": "外国のお金 (tiền nước ngoài) + を (tân ngữ) + 換えます (đổi) - を chỉ đối tượng",
         "breakdown": [
+          {"word": "外国", "reading": "がいこく", "type": "noun", "meaning": "nước ngoài"},
+          {"word": "の", "reading": "の", "type": "particle", "meaning": "sở hữu"},
           {"word": "お金", "reading": "おかね", "type": "noun", "meaning": "tiền"},
           {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
           {"word": "換えます", "reading": "かえます", "type": "verb", "meaning": "đổi (lịch sự)"}
         ],
         "pattern": "Danh từ + を + 換えます",
         "examples": [
-          {"jp": "外国のお金を換えます。", "vn": "Tôi đổi tiền nước ngoài."},
           {"jp": "服を換えます。", "vn": "Tôi thay quần áo."},
-          {"jp": "電球を換えます。", "vn": "Tôi thay bóng đèn."}
+          {"jp": "電球を換えます。", "vn": "Tôi thay bóng đèn."},
+          {"jp": "外貨を換えます。", "vn": "Tôi đổi ngoại tệ."}
         ]
       },
       {
@@ -3589,8 +3593,8 @@
         "pattern": "Phương tiện + を + 運転します",
         "examples": [
           {"jp": "バスを運転します。", "vn": "Tôi lái xe buýt."},
-          {"jp": "トラックを運転します。", "vn": "Tôi lái xe tải."},
-          {"jp": "外国で車を運転します。", "vn": "Tôi lái xe ở nước ngoài."}
+          {"jp": "外国で車を運転します。", "vn": "Tôi lái xe ở nước ngoài."},
+          {"jp": "トラックを運転します。", "vn": "Tôi lái xe tải."}
         ]
       },
       {
@@ -3598,17 +3602,17 @@
         "hiragana": "よやくします",
         "romaji": "yoyakushimasu",
         "meaning": "đặt chỗ, đặt trước",
-        "example": "ホテルを予約します。",
-        "exampleVn": "Tôi đặt trước khách sạn.",
-        "grammar": "ホテル (khách sạn) + を (tân ngữ) + 予約します (đặt trước) - を chỉ đối tượng",
+        "example": "旅行を予約します。",
+        "exampleVn": "Tôi đặt trước chuyến du lịch.",
+        "grammar": "旅行 (du lịch) + を (tân ngữ) + 予約します (đặt trước) - を chỉ đối tượng",
         "breakdown": [
-          {"word": "ホテル", "reading": "ホテル", "type": "noun", "meaning": "khách sạn"},
+          {"word": "旅行", "reading": "りょこう", "type": "noun", "meaning": "du lịch"},
           {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
           {"word": "予約します", "reading": "よやくします", "type": "verb", "meaning": "đặt trước (lịch sự)"}
         ],
         "pattern": "Danh từ + を + 予約します",
         "examples": [
-          {"jp": "旅行を予約します。", "vn": "Tôi đặt trước chuyến du lịch."},
+          {"jp": "ホテルを予約します。", "vn": "Tôi đặt trước khách sạn."},
           {"jp": "レストランを予約します。", "vn": "Tôi đặt trước nhà hàng."},
           {"jp": "電車を予約します。", "vn": "Tôi đặt vé tàu."}
         ]
@@ -3629,7 +3633,7 @@
         "pattern": "Nơi chốn + を + 見学します",
         "examples": [
           {"jp": "外国の学校を見学します。", "vn": "Tôi tham quan trường học nước ngoài."},
-          {"jp": "工場を見学します。", "vn": "Tôi tham quan nhà máy."},
+          {"jp": "動物園を見学します。", "vn": "Tôi tham quan sở thú."},
           {"jp": "美術館を見学します。", "vn": "Tôi tham quan bảo tàng nghệ thuật."}
         ]
       },
@@ -3704,20 +3708,19 @@
         "hiragana": "にっき",
         "romaji": "nikki",
         "meaning": "nhật ký",
-        "example": "毎日日記を書きます。",
-        "exampleVn": "Hàng ngày tôi viết nhật ký.",
-        "grammar": "毎日 (hàng ngày) + 日記 (nhật ký) + を (tân ngữ) + 書きます (viết) - を chỉ đối tượng",
+        "example": "日記を読みます。",
+        "exampleVn": "Tôi đọc nhật ký.",
+        "grammar": "日記 (nhật ký) + を (tân ngữ) + 読みます (đọc) - を chỉ đối tượng",
         "breakdown": [
-          {"word": "毎日", "reading": "まいにち", "type": "time", "meaning": "hàng ngày"},
           {"word": "日記", "reading": "にっき", "type": "noun", "meaning": "nhật ký"},
           {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
-          {"word": "書きます", "reading": "かきます", "type": "verb", "meaning": "viết (lịch sự)"}
+          {"word": "読みます", "reading": "よみます", "type": "verb", "meaning": "đọc (lịch sự)"}
         ],
-        "pattern": "Thời gian + Danh từ + を + 書きます",
+        "pattern": "Danh từ + を + 読みます",
         "examples": [
-          {"jp": "日記を読みます。", "vn": "Tôi đọc nhật ký."},
-          {"jp": "日記に絵を描きます。", "vn": "Tôi vẽ tranh vào nhật ký."},
-          {"jp": "日記を外国の友達に送ります。", "vn": "Tôi gửi nhật ký cho bạn nước ngoài."}
+          {"jp": "日記を書きます。", "vn": "Tôi viết nhật ký."},
+          {"jp": "外国の友達の日記を読みます。", "vn": "Tôi đọc nhật ký của bạn nước ngoài."},
+          {"jp": "日記に絵を描きます。", "vn": "Tôi vẽ tranh vào nhật ký."}
         ]
       },
       {
@@ -3775,9 +3778,9 @@
         ],
         "pattern": "Người + に + Hành động",
         "examples": [
-          {"jp": "課長は忙しいです。", "vn": "Tổ trưởng thì bận rộn."},
-          {"jp": "課長と旅行を予約します。", "vn": "Tôi đặt chuyến du lịch với tổ trưởng."},
-          {"jp": "課長に英語を教えます。", "vn": "Tôi dạy tiếng Anh cho tổ trưởng."}
+          {"jp": "課長は英語ができます。", "vn": "Tổ trưởng có thể nói tiếng Anh."},
+          {"jp": "課長に絵を見せます。", "vn": "Tôi cho tổ trưởng xem tranh."},
+          {"jp": "課長と旅行します。", "vn": "Tôi du lịch với tổ trưởng."}
         ]
       },
       {
@@ -3796,8 +3799,8 @@
         "pattern": "Người + に + Hành động",
         "examples": [
           {"jp": "部長は英語ができます。", "vn": "Trưởng phòng có thể nói tiếng Anh."},
-          {"jp": "部長に報告します。", "vn": "Tôi báo cáo với trưởng phòng."},
-          {"jp": "部長と旅行します。", "vn": "Tôi du lịch với trưởng phòng."}
+          {"jp": "部長に国際電話をかけます。", "vn": "Tôi gọi điện thoại quốc tế cho trưởng phòng."},
+          {"jp": "部長と外国へ行きます。", "vn": "Tôi đi nước ngoài với trưởng phòng."}
         ]
       },
       {
@@ -3816,8 +3819,8 @@
         "pattern": "Người + に + Hành động",
         "examples": [
           {"jp": "社長は英語ができます。", "vn": "Giám đốc có thể nói tiếng Anh."},
-          {"jp": "社長に国際電話をかけます。", "vn": "Tôi gọi điện thoại quốc tế cho giám đốc."},
-          {"jp": "社長と外国へ行きます。", "vn": "Tôi đi nước ngoài với giám đốc."}
+          {"jp": "社長に絵を見せます。", "vn": "Tôi cho giám đốc xem tranh."},
+          {"jp": "社長と旅行します。", "vn": "Tôi du lịch với giám đốc."}
         ]
       },
       {
@@ -3837,8 +3840,8 @@
         "pattern": "Danh từ + が + 好き + です",
         "examples": [
           {"jp": "動物を見学します。", "vn": "Tôi tham quan động vật."},
-          {"jp": "動物を読みます。", "vn": "Tôi đọc về động vật."},
-          {"jp": "動物の絵を描きます。", "vn": "Tôi vẽ tranh động vật."}
+          {"jp": "動物の絵を描きます。", "vn": "Tôi vẽ tranh động vật."},
+          {"jp": "動物を読みます。", "vn": "Tôi đọc về động vật."}
         ]
       },
       {
@@ -3994,17 +3997,19 @@
         "hiragana": "よみます",
         "romaji": "yomimasu",
         "meaning": "đọc",
-        "example": "日記を読みます。",
-        "exampleVn": "Tôi đọc nhật ký.",
-        "grammar": "日記 (nhật ký) + を (tân ngữ) + 読みます (đọc) - を chỉ đối tượng",
+        "example": "英語の本を読みます。",
+        "exampleVn": "Tôi đọc sách tiếng Anh.",
+        "grammar": "英語の本 (sách tiếng Anh) + を (tân ngữ) + 読みます (đọc) - を chỉ đối tượng",
         "breakdown": [
-          {"word": "日記", "reading": "にっき", "type": "noun", "meaning": "nhật ký"},
+          {"word": "英語", "reading": "えいご", "type": "noun", "meaning": "tiếng Anh"},
+          {"word": "の", "reading": "の", "type": "particle", "meaning": "sở hữu"},
+          {"word": "本", "reading": "ほん", "type": "noun", "meaning": "sách"},
           {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
           {"word": "読みます", "reading": "よみます", "type": "verb", "meaning": "đọc (lịch sự)"}
         ],
         "pattern": "Danh từ + を + 読みます",
         "examples": [
-          {"jp": "英語の本を読みます。", "vn": "Tôi đọc sách tiếng Anh."},
+          {"jp": "日記を読みます。", "vn": "Tôi đọc nhật ký."},
           {"jp": "外国の新聞を読みます。", "vn": "Tôi đọc báo nước ngoài."},
           {"jp": "絵の本を読みます。", "vn": "Tôi đọc sách về tranh."}
         ]
@@ -4046,8 +4051,8 @@
         ],
         "pattern": "Danh từ + が + できます",
         "examples": [
-          {"jp": "英語の本を読みます。", "vn": "Tôi đọc sách tiếng Anh."},
           {"jp": "英語の歌を歌います。", "vn": "Tôi hát bài hát tiếng Anh."},
+          {"jp": "英語で日記を書きます。", "vn": "Tôi viết nhật ký bằng tiếng Anh."},
           {"jp": "英語を社長に教えます。", "vn": "Tôi dạy tiếng Anh cho giám đốc."}
         ]
       },
@@ -4073,9 +4078,9 @@
       }
     ],
     "readingPassage": {
-      "title": "Sở thích của Taro-san",
-      "text": "太郎さんは大学生です。趣味はたくさんあります。趣味はピアノを弾くことです。英語の歌も歌います。なかなか上手になれませんが、ぜひ上手になりたいです。太郎さんは絵を描くことができます。外国の絵を集めます。古い絵は大切なので、捨てません。ごみを捨てるとき、間違えて絵を捨てないように気をつけます。日曜日に、日記を書きます。日記に趣味や旅行のことを書きます。去年、馬に乗りました。馬は速かったです。来週、動物園を見学します。動物が好きで、特に馬が好きです。太郎さんは車を運転できます。2メートルのロープを持って、友達と山へ行きます。山で馬に乗る予定です。来月、外国に旅行を予約します。ぜひ外国に行きたいです。国際電話をかけて、外国の友達と話します。会社で、課長と部長に相談します。社長は英語ができます。太郎さんはお祈りをします。「健康と成功を祈ります」と太郎さんは言います。",
-      "translation": "Taro-san là sinh viên đại học. Anh ấy có nhiều sở thích. Sở thích của anh ấy là chơi piano. Anh ấy cũng hát các bài hát tiếng Anh. Anh ấy mãi mà không giỏi lên được, nhưng nhất định muốn trở nên giỏi hơn. Taro-san có thể vẽ tranh. Anh ấy sưu tầm tranh nước ngoài. Tranh cũ rất quan trọng, nên anh ấy không vứt đi. Khi vứt rác, anh ấy cẩn thận để không vứt nhầm tranh. Vào Chủ Nhật, Taro-san viết nhật ký. Trong nhật ký, anh ấy viết về sở thích và du lịch. Năm ngoái, anh ấy cưỡi ngựa. Con ngựa rất nhanh. Tuần sau, anh ấy sẽ tham quan sở thú. Anh ấy thích động vật, đặc biệt là ngựa. Taro-san có thể lái xe. Anh ấy mang theo 2 mét dây thừng và đi leo núi với bạn bè. Anh ấy dự định cưỡi ngựa trên núi. Tháng sau, anh ấy sẽ đặt trước chuyến du lịch nước ngoài. Anh ấy nhất định muốn đi nước ngoài. Anh ấy gọi điện thoại quốc tế để nói chuyện với bạn bè nước ngoài. Tại công ty, anh ấy hỏi ý kiến tổ trưởng và trưởng phòng. Giám đốc có thể nói tiếng Anh. Taro-san cầu nguyện: “Tôi cầu nguyện cho sức khỏe và thành công.”",
+      "title": "Cuộc thi tài năng của Yumi-san",
+      "text": "優美さんは大学生です。趣味はたくさんあります。趣味はピアノを弾くことです。英語の歌を歌うのも大好きです。なかなか上手になれませんが、ぜひプロになりたいです！来週、学校で大きな国際的なイベントがあります。優美さんは課長と部長に相談して、イベントでピアノを弾きます。社長も来 xem, nên cô ấy rất hồi hộp. 優美さんは2メートルの布 để làm áo diễn. Trước khi biểu diễn, cô ấy rửa tay và làm một bài cầu nguyện: 「健康と成功を祈ります。」 Trong lúc luyện tập, cô ấy đọc sách tiếng Anh về âm nhạc và viết nhật ký về cảm xúc của mình. 趣味は英語の本を読むことです, cô ấy nói. Sau buổi diễn, cô ấy dự định du lịch đến nước ngoài, nên đã gọi điện thoại quốc tế để đặt trước khách sạn. Ở đó, cô ấy muốn cưỡi ngựa và xem động vật. 優美さんは外国の絵を集めます, nhưng cẩn thận không vứt tranh quý. Cô ấy cũng thích vẽ tranh ngựa. 趣味は絵を描くことです, cô ấy tự hào nói. Cuối cùng, cô ấy lái xe về nhà, cảm thấy rất vui vì đã làm tốt.",
+      "translation": "Yumi-san là sinh viên đại học. Cô ấy có nhiều sở thích. Sở thích của cô là chơi piano. Cô cũng rất thích hát bài hát tiếng Anh. Cô mãi mà không giỏi lên được, nhưng nhất định muốn trở thành chuyên nghiệp! Tuần sau, trường tổ chức một sự kiện quốc tế lớn. Yumi-san hỏi ý kiến tổ trưởng và trưởng phòng, và sẽ chơi piano tại sự kiện. Giám đốc cũng đến xem, nên cô rất hồi hộp. Yumi-san mua 2 mét vải để may áo diễn. Trước khi biểu diễn, cô rửa tay và cầu nguyện: “Tôi cầu nguyện cho sức khỏe và thành công.” Trong lúc luyện tập, cô đọc sách tiếng Anh về âm nhạc và viết nhật ký về cảm xúc. Sở thích của cô là đọc sách tiếng Anh, cô nói. Sau buổi diễn, cô dự định du lịch nước ngoài, nên đã gọi điện thoại quốc tế để đặt khách sạn. Ở đó, cô muốn cưỡi ngựa và xem động vật. Yumi-san sưu tầm tranh nước ngoài, nhưng cẩn thận không vứt tranh quý. Cô cũng thích vẽ tranh ngựa. Sở thích của cô là vẽ tranh, cô tự hào nói. Cuối cùng, cô lái xe về nhà, cảm thấy rất vui vì đã làm tốt.",
       "highlightedWords": [
         {"word": "趣味", "meaning": "sở thích"},
         {"word": "ピアノ", "meaning": "đàn piano"},
@@ -4086,18 +4091,16 @@
         {"word": "ぜひ", "meaning": "nhất định"},
         {"word": "絵", "meaning": "tranh, hội họa"},
         {"word": "集めます", "meaning": "sưu tầm"},
-        {"word": "大切", "meaning": "quan trọng"},
         {"word": "捨てます", "meaning": "vứt"},
+        {"word": "洗います", "meaning": "rửa"},
         {"word": "日記", "meaning": "nhật ký"},
         {"word": "書きます", "meaning": "viết"},
+        {"word": "読みます", "meaning": "đọc"},
         {"word": "旅行", "meaning": "du lịch"},
         {"word": "馬", "meaning": "con ngựa"},
-        {"word": "乗ります", "meaning": "cưỡi"},
         {"word": "動物", "meaning": "động vật"},
-        {"word": "見学します", "meaning": "tham quan"},
         {"word": "運転します", "meaning": "lái xe"},
         {"word": "メートル", "meaning": "mét"},
-        {"word": "ロープ", "meaning": "dây thừng"},
         {"word": "予約します", "meaning": "đặt trước"},
         {"word": "外国", "meaning": "nước ngoài"},
         {"word": "国際電話", "meaning": "điện thoại quốc tế"},
@@ -4107,7 +4110,8 @@
         {"word": "お祈り", "meaning": "sự cầu nguyện"},
         {"word": "祈ります", "meaning": "cầu nguyện"},
         {"word": "健康", "meaning": "sức khỏe"},
-        {"word": "成功", "meaning": "thành công"}
+        {"word": "成功", "meaning": "thành công"},
+        {"word": "趣味は～です", "meaning": "sở thích là ~"}
       ]
     }
   },
