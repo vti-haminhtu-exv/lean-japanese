@@ -6946,6 +6946,614 @@
         {"word": "万里の長城", "meaning": "Vạn Lý Trường Thành"}
       ]
     }
+  },
+  "23": {
+    "title": "Hành động và địa điểm trong thành phố",
+    "words": [
+      {
+        "kanji": "聞きます（先生に～）",
+        "hiragana": "ききます（せんせいに～）",
+        "romaji": "kikimasu (sensei ni)",
+        "meaning": "hỏi (giáo viên)",
+        "example": "先生に道を聞きます。",
+        "exampleVn": "Tôi hỏi thầy giáo về con đường.",
+        "grammar": "先生 (giáo viên) + に (người được hỏi) + 道 (con đường) + を + 聞きます (hỏi) - に chỉ đối tượng hỏi",
+        "breakdown": [
+          {"word": "先生", "reading": "せんせい", "type": "noun", "meaning": "giáo viên"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "đối với"},
+          {"word": "道", "reading": "みち", "type": "noun", "meaning": "con đường"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "聞きます", "reading": "ききます", "type": "verb", "meaning": "hỏi (lịch sự)"}
+        ],
+        "pattern": "Người + に + Nội dung + を + 聞きます",
+        "examples": [
+          {"jp": "先生に質問を聞きます。", "vn": "Tôi hỏi giáo viên một câu hỏi."},
+          {"jp": "先生に時間を聞きます。", "vn": "Tôi hỏi giáo viên về thời gian."},
+          {"jp": "先生に宿題を聞きます。", "vn": "Tôi hỏi giáo viên về bài tập."}
+        ]
+      },
+      {
+        "kanji": "回します",
+        "hiragana": "まわします",
+        "romaji": "mawashimasu",
+        "meaning": "vặn, xoay",
+        "example": "機械を回します。",
+        "exampleVn": "Tôi vặn máy móc.",
+        "grammar": "機械 (máy móc) + を + 回します (vặn) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "機械", "reading": "きかい", "type": "noun", "meaning": "máy móc"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "回します", "reading": "まわします", "type": "verb", "meaning": "vặn (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + を + 回します",
+        "examples": [
+          {"jp": "スイッチを回します。", "vn": "Tôi vặn công tắc."},
+          {"jp": "ハンドルを回します。", "vn": "Tôi xoay tay lái."},
+          {"jp": "つまみを回します。", "vn": "Tôi vặn núm."}
+        ]
+      },
+      {
+        "kanji": "引きます",
+        "hiragana": "ひきます",
+        "romaji": "hikimasu",
+        "meaning": "kéo",
+        "example": "ドアを引きます。",
+        "exampleVn": "Tôi kéo cửa.",
+        "grammar": "ドア (cửa) + を + 引きます (kéo) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "ドア", "reading": "ドア", "type": "noun", "meaning": "cửa"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "引きます", "reading": "ひきます", "type": "verb", "meaning": "kéo (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + を + 引きます",
+        "examples": [
+          {"jp": "カーテンを引きます。", "vn": "Tôi kéo rèm."},
+          {"jp": "ロープを引きます。", "vn": "Tôi kéo dây thừng."},
+          {"jp": "引き出しを引きます。", "vn": "Tôi kéo ngăn kéo."}
+        ]
+      },
+      {
+        "kanji": "変えます",
+        "hiragana": "かえます",
+        "romaji": "kaemasu",
+        "meaning": "đổi, thay đổi",
+        "example": "サイズを変えます。",
+        "exampleVn": "Tôi đổi kích thước.",
+        "grammar": "サイズ (kích thước) + を + 変えます (đổi) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "サイズ", "reading": "サイズ", "type": "noun", "meaning": "kích thước"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "変えます", "reading": "かえます", "type": "verb", "meaning": "đổi (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + を + 変えます",
+        "examples": [
+          {"jp": "服を変えます。", "vn": "Tôi thay quần áo."},
+          {"jp": "予定を変えます。", "vn": "Tôi đổi kế hoạch."},
+          {"jp": "場所を変えます。", "vn": "Tôi đổi địa điểm."}
+        ]
+      },
+      {
+        "kanji": "触ります（ドアに～）",
+        "hiragana": "さわります（ドアに～）",
+        "romaji": "sawarimasu (doa ni)",
+        "meaning": "sờ, chạm vào (cửa)",
+        "example": "ドアに触ります。",
+        "exampleVn": "Tôi chạm vào cửa.",
+        "grammar": "ドア (cửa) + に + 触ります (chạm) - に chỉ đối tượng tiếp xúc",
+        "breakdown": [
+          {"word": "ドア", "reading": "ドア", "type": "noun", "meaning": "cửa"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "vào, tại"},
+          {"word": "触ります", "reading": "さわります", "type": "verb", "meaning": "chạm (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + に + 触ります",
+        "examples": [
+          {"jp": "壁に触ります。", "vn": "Tôi chạm vào tường."},
+          {"jp": "機械に触ります。", "vn": "Tôi chạm vào máy móc."},
+          {"jp": "ドアに触ります。", "vn": "Tôi chạm vào cửa."}
+        ]
+      },
+      {
+        "kanji": "出ます（お釣りが～）",
+        "hiragana": "でます（おつりが～）",
+        "romaji": "demasu (otsuri ga)",
+        "meaning": "(tiền thừa) ra",
+        "example": "お釣りが出ます。",
+        "exampleVn": "Tiền thừa ra.",
+        "grammar": "お釣り (tiền thừa) + が + 出ます (ra) - が chỉ chủ ngữ",
+        "breakdown": [
+          {"word": "お釣り", "reading": "おつり", "type": "noun", "meaning": "tiền thừa"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "出ます", "reading": "でます", "type": "verb", "meaning": "ra (lịch sự)"}
+        ],
+        "pattern": "お釣り + が + 出ます",
+        "examples": [
+          {"jp": "お釣りが100円出ます。", "vn": "Tiền thừa 100 yên ra."},
+          {"jp": "お釣りが出ますか？", "vn": "Có tiền thừa không?"},
+          {"jp": "お釣りが出ました。", "vn": "Tiền thừa đã ra."}
+        ]
+      },
+      {
+        "kanji": "動きます（時計が～）",
+        "hiragana": "うごきます（とけいが～）",
+        "romaji": "ugokimasu (tokei ga)",
+        "meaning": "(đồng hồ) chạy",
+        "example": "時計が動きます。",
+        "exampleVn": "Đồng hồ chạy.",
+        "grammar": "時計 (đồng hồ) + が + 動きます (chạy) - が chỉ chủ ngữ",
+        "breakdown": [
+          {"word": "時計", "reading": "とけい", "type": "noun", "meaning": "đồng hồ"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "動きます", "reading": "うごきます", "type": "verb", "meaning": "chạy (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + が + 動きます",
+        "examples": [
+          {"jp": "機械が動きます。", "vn": "Máy móc chạy."},
+          {"jp": "時計が動きますか？", "vn": "Đồng hồ có chạy không?"},
+          {"jp": "車が動きます。", "vn": "Xe hơi chạy."}
+        ]
+      },
+      {
+        "kanji": "歩きます",
+        "hiragana": "あるきます",
+        "romaji": "arukimasu",
+        "meaning": "đi bộ",
+        "example": "道を歩きます。",
+        "exampleVn": "Tôi đi bộ trên con đường.",
+        "grammar": "道 (con đường) + を + 歩きます (đi bộ) - を chỉ nơi đi qua",
+        "breakdown": [
+          {"word": "道", "reading": "みち", "type": "noun", "meaning": "con đường"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "歩きます", "reading": "あるきます", "type": "verb", "meaning": "đi bộ (lịch sự)"}
+        ],
+        "pattern": "Địa điểm + を + 歩きます",
+        "examples": [
+          {"jp": "公園を歩きます。", "vn": "Tôi đi bộ ở công viên."},
+          {"jp": "街を歩きます。", "vn": "Tôi đi bộ trong phố."},
+          {"jp": "橋を歩きます。", "vn": "Tôi đi bộ trên cầu."}
+        ]
+      },
+      {
+        "kanji": "渡ります（橋を～）",
+        "hiragana": "わたります（はしを～）",
+        "romaji": "watarimasu (hashi o)",
+        "meaning": "qua, băng qua (cầu)",
+        "example": "橋を渡ります。",
+        "exampleVn": "Tôi băng qua cầu.",
+        "grammar": "橋 (cầu) + を + 渡ります (băng qua) - を chỉ nơi đi qua",
+        "breakdown": [
+          {"word": "橋", "reading": "はし", "type": "noun", "meaning": "cầu"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "渡ります", "reading": "わたります", "type": "verb", "meaning": "băng qua (lịch sự)"}
+        ],
+        "pattern": "Địa điểm + を + 渡ります",
+        "examples": [
+          {"jp": "川を渡ります。", "vn": "Tôi băng qua sông."},
+          {"jp": "道を渡ります。", "vn": "Tôi băng qua đường."},
+          {"jp": "橋を渡ります。", "vn": "Tôi băng qua cầu."}
+        ]
+      },
+      {
+        "kanji": "曲がります（右へ～）",
+        "hiragana": "まがります（みぎへ～）",
+        "romaji": "magarimasu (migi e)",
+        "meaning": "rẽ, quẹo (phải)",
+        "example": "右へ曲がります。",
+        "exampleVn": "Tôi rẽ phải.",
+        "grammar": "右 (phải) + へ + 曲がります (rẽ) - へ chỉ hướng",
+        "breakdown": [
+          {"word": "右", "reading": "みぎ", "type": "noun", "meaning": "phải"},
+          {"word": "へ", "reading": "へ", "type": "particle", "meaning": "hướng (đọc là e)"},
+          {"word": "曲がります", "reading": "まがります", "type": "verb", "meaning": "rẽ (lịch sự)"}
+        ],
+        "pattern": "Hướng + へ + 曲がります",
+        "examples": [
+          {"jp": "左へ曲がります。", "vn": "Tôi rẽ trái."},
+          {"jp": "角で曲がります。", "vn": "Tôi rẽ ở góc đường."},
+          {"jp": "右へ曲がります。", "vn": "Tôi rẽ phải."}
+        ]
+      },
+      {
+        "kanji": "故障",
+        "hiragana": "こしょう",
+        "romaji": "koshou",
+        "meaning": "hỏng hóc",
+        "example": "機械が故障します。",
+        "exampleVn": "Máy móc bị hỏng.",
+        "grammar": "機械 (máy móc) + が + 故障します (hỏng) - が chỉ chủ ngữ",
+        "breakdown": [
+          {"word": "機械", "reading": "きかい", "type": "noun", "meaning": "máy móc"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "故障します", "reading": "こしょうします", "type": "verb", "meaning": "hỏng (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + が + 故障します",
+        "examples": [
+          {"jp": "時計が故障します。", "vn": "Đồng hồ bị hỏng."},
+          {"jp": "車が故障します。", "vn": "Xe hơi bị hỏng."},
+          {"jp": "機械が故障します。", "vn": "Máy móc bị hỏng."}
+        ]
+      },
+      {
+        "kanji": "電気屋",
+        "hiragana": "でんきや",
+        "romaji": "denkiya",
+        "meaning": "cửa hàng điện, thợ điện",
+        "example": "電気屋に聞きます。",
+        "exampleVn": "Tôi hỏi thợ điện.",
+        "grammar": "電気屋 (thợ điện) + に + 聞きます (hỏi) - に chỉ đối tượng hỏi",
+        "breakdown": [
+          {"word": "電気屋", "reading": "でんきや", "type": "noun", "meaning": "thợ điện"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "đối với"},
+          {"word": "聞きます", "reading": "ききます", "type": "verb", "meaning": "hỏi (lịch sự)"}
+        ],
+        "pattern": "電気屋 + に + Hành động",
+        "examples": [
+          {"jp": "電気屋に機械を直します。", "vn": "Tôi nhờ thợ điện sửa máy móc."},
+          {"jp": "電気屋に行きます。", "vn": "Tôi đi đến cửa hàng điện."},
+          {"jp": "電気屋に聞きます。", "vn": "Tôi hỏi thợ điện."}
+        ]
+      },
+      {
+        "kanji": "サイズ",
+        "hiragana": "",
+        "romaji": "saizu",
+        "meaning": "cỡ, kích thước",
+        "example": "サイズを変えます。",
+        "exampleVn": "Tôi đổi kích thước.",
+        "grammar": "サイズ (kích thước) + を + 変えます (đổi) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "サイズ", "reading": "サイズ", "type": "noun", "meaning": "kích thước"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "変えます", "reading": "かえます", "type": "verb", "meaning": "đổi (lịch sự)"}
+        ],
+        "pattern": "サイズ + を + 変えます",
+        "examples": [
+          {"jp": "サイズを測ります。", "vn": "Tôi đo kích thước."},
+          {"jp": "サイズを確認します。", "vn": "Tôi kiểm tra kích thước."},
+          {"jp": "サイズを変えます。", "vn": "Tôi đổi kích thước."}
+        ]
+      },
+      {
+        "kanji": "音",
+        "hiragana": "おと",
+        "romaji": "oto",
+        "meaning": "âm thanh, tiếng động",
+        "example": "音が聞きます。",
+        "exampleVn": "Tôi nghe âm thanh.",
+        "grammar": "音 (âm thanh) + が + 聞きます (nghe) - が chỉ chủ ngữ",
+        "breakdown": [
+          {"word": "音", "reading": "おと", "type": "noun", "meaning": "âm thanh"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "聞きます", "reading": "ききます", "type": "verb", "meaning": "nghe (lịch sự)"}
+        ],
+        "pattern": "音 + が + 聞きます",
+        "examples": [
+          {"jp": "音が大きいです。", "vn": "Âm thanh lớn."},
+          {"jp": "音を聞きます。", "vn": "Tôi nghe âm thanh."},
+          {"jp": "音がします。", "vn": "Có tiếng động."}
+        ]
+      },
+      {
+        "kanji": "機械",
+        "hiragana": "きかい",
+        "romaji": "kikai",
+        "meaning": "máy móc",
+        "example": "機械が故障します。",
+        "exampleVn": "Máy móc bị hỏng.",
+        "grammar": "機械 (máy móc) + が + 故障します (hỏng) - が chỉ chủ ngữ",
+        "breakdown": [
+          {"word": "機械", "reading": "きかい", "type": "noun", "meaning": "máy móc"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "故障します", "reading": "こしょうします", "type": "verb", "meaning": "hỏng (lịch sự)"}
+        ],
+        "pattern": "機械 + が + 故障します",
+        "examples": [
+          {"jp": "機械を回します。", "vn": "Tôi vặn máy móc."},
+          {"jp": "機械を触ります。", "vn": "Tôi chạm vào máy móc."},
+          {"jp": "機械が動きます。", "vn": "Máy móc chạy."}
+        ]
+      },
+      {
+        "kanji": "道",
+        "hiragana": "みち",
+        "romaji": "michi",
+        "meaning": "con đường",
+        "example": "道を歩きます。",
+        "exampleVn": "Tôi đi bộ trên con đường.",
+        "grammar": "道 (con đường) + を + 歩きます (đi bộ) - を chỉ nơi đi qua",
+        "breakdown": [
+          {"word": "道", "reading": "みち", "type": "noun", "meaning": "con đường"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "歩きます", "reading": "あるきます", "type": "verb", "meaning": "đi bộ (lịch sự)"}
+        ],
+        "pattern": "道 + を + 歩きます",
+        "examples": [
+          {"jp": "道を渡ります。", "vn": "Tôi băng qua đường."},
+          {"jp": "道を聞きます。", "vn": "Tôi hỏi đường."},
+          {"jp": "道を歩きます。", "vn": "Tôi đi bộ trên đường."}
+        ]
+      },
+      {
+        "kanji": "交差点",
+        "hiragana": "こうさてん",
+        "romaji": "kousaten",
+        "meaning": "ngã tư",
+        "example": "交差点で曲がります。",
+        "exampleVn": "Tôi rẽ ở ngã tư.",
+        "grammar": "交差点 (ngã tư) + で + 曲がります (rẽ) - で chỉ nơi hành động",
+        "breakdown": [
+          {"word": "交差点", "reading": "こうさてん", "type": "noun", "meaning": "ngã tư"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở"},
+          {"word": "曲がります", "reading": "まがります", "type": "verb", "meaning": "rẽ (lịch sự)"}
+        ],
+        "pattern": "交差点 + で + 曲がります",
+        "examples": [
+          {"jp": "交差点で止まります。", "vn": "Tôi dừng ở ngã tư."},
+          {"jp": "交差点を渡ります。", "vn": "Tôi băng qua ngã tư."},
+          {"jp": "交差点で曲がります。", "vn": "Tôi rẽ ở ngã tư."}
+        ]
+      },
+      {
+        "kanji": "信号",
+        "hiragana": "しんごう",
+        "romaji": "shingou",
+        "meaning": "đèn giao thông",
+        "example": "信号を渡ります。",
+        "exampleVn": "Tôi băng qua đèn giao thông.",
+        "grammar": "信号 (đèn giao thông) + を + 渡ります (băng qua) - を chỉ nơi đi qua",
+        "breakdown": [
+          {"word": "信号", "reading": "しんごう", "type": "noun", "meaning": "đèn giao thông"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "渡ります", "reading": "わたります", "type": "verb", "meaning": "băng qua (lịch sự)"}
+        ],
+        "pattern": "信号 + を + 渡ります",
+        "examples": [
+          {"jp": "信号で止まります。", "vn": "Tôi dừng ở đèn giao thông."},
+          {"jp": "信号を見ます。", "vn": "Tôi nhìn đèn giao thông."},
+          {"jp": "信号を渡ります。", "vn": "Tôi băng qua đèn giao thông."}
+        ]
+      },
+      {
+        "kanji": "角",
+        "hiragana": "かど",
+        "romaji": "kado",
+        "meaning": "góc (đường, phố)",
+        "example": "角で曲がります。",
+        "exampleVn": "Tôi rẽ ở góc đường.",
+        "grammar": "角 (góc đường) + で + 曲がります (rẽ) - で chỉ nơi hành động",
+        "breakdown": [
+          {"word": "角", "reading": "かど", "type": "noun", "meaning": "góc đường"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "tại, ở"},
+          {"word": "曲がります", "reading": "まがります", "type": "verb", "meaning": "rẽ (lịch sự)"}
+        ],
+        "pattern": "角 + で + 曲がります",
+        "examples": [
+          {"jp": "角で待ちます。", "vn": "Tôi đợi ở góc đường."},
+          {"jp": "角を歩きます。", "vn": "Tôi đi bộ ở góc đường."},
+          {"jp": "角で曲がります。", "vn": "Tôi rẽ ở góc đường."}
+        ]
+      },
+      {
+        "kanji": "橋",
+        "hiragana": "はし",
+        "romaji": "hashi",
+        "meaning": "cây cầu",
+        "example": "橋を渡ります。",
+        "exampleVn": "Tôi băng qua cầu.",
+        "grammar": "橋 (cầu) + を + 渡ります (băng qua) - を chỉ nơi đi qua",
+        "breakdown": [
+          {"word": "橋", "reading": "はし", "type": "noun", "meaning": "cầu"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "渡ります", "reading": "わたります", "type": "verb", "meaning": "băng qua (lịch sự)"}
+        ],
+        "pattern": "橋 + を + 渡ります",
+        "examples": [
+          {"jp": "橋を見ます。", "vn": "Tôi nhìn cầu."},
+          {"jp": "橋を歩きます。", "vn": "Tôi đi bộ trên cầu."},
+          {"jp": "橋を渡ります。", "vn": "Tôi băng qua cầu."}
+        ]
+      },
+      {
+        "kanji": "駐車場",
+        "hiragana": "ちゅうしゃじょう",
+        "romaji": "chuushajou",
+        "meaning": "bãi đậu xe",
+        "example": "駐車場に車を停めます。",
+        "exampleVn": "Tôi đỗ xe ở bãi đậu xe.",
+        "grammar": "駐車場 (bãi đậu xe) + に + 車 (xe) + を + 停めます (đỗ) - に chỉ nơi chốn",
+        "breakdown": [
+          {"word": "駐車場", "reading": "ちゅうしゃじょう", "type": "noun", "meaning": "bãi đậu xe"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "tại, ở"},
+          {"word": "車", "reading": "くるま", "type": "noun", "meaning": "xe"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "停めます", "reading": "とめます", "type": "verb", "meaning": "đỗ (lịch sự)"}
+        ],
+        "pattern": "駐車場 + に + Đối tượng + を + 停めます",
+        "examples": [
+          {"jp": "駐車場に行きます。", "vn": "Tôi đi đến bãi đậu xe."},
+          {"jp": "駐車場で待ちます。", "vn": "Tôi đợi ở bãi đậu xe."},
+          {"jp": "駐車場に車を停めます。", "vn": "Tôi đỗ xe ở bãi đậu xe."}
+        ]
+      },
+      {
+        "kanji": "～目",
+        "hiragana": "～め",
+        "romaji": "~me",
+        "meaning": "thứ ~ (biểu thị thứ tự)",
+        "example": "2番目の建物です。",
+        "exampleVn": "Đó là tòa nhà thứ hai.",
+        "grammar": "2番目 (thứ hai) + の + 建物 (tòa nhà) + です - ～目 chỉ thứ tự",
+        "breakdown": [
+          {"word": "2番目", "reading": "にばんめ", "type": "noun", "meaning": "thứ hai"},
+          {"word": "の", "reading": "の", "type": "particle", "meaning": "sở hữu, của"},
+          {"word": "建物", "reading": "たてもの", "type": "noun", "meaning": "tòa nhà"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Số + 番目 + の + Danh từ + です",
+        "examples": [
+          {"jp": "1番目の角です。", "vn": "Đó là góc đường thứ nhất."},
+          {"jp": "3番目の信号です。", "vn": "Đó là đèn giao thông thứ ba."},
+          {"jp": "2番目の建物です。", "vn": "Đó là tòa nhà thứ hai."}
+        ]
+      },
+      {
+        "kanji": "建物",
+        "hiragana": "たてもの",
+        "romaji": "tatemono",
+        "meaning": "tòa nhà",
+        "example": "建物に入ります。",
+        "exampleVn": "Tôi vào tòa nhà.",
+        "grammar": "建物 (tòa nhà) + に + 入ります (vào) - に chỉ đích",
+        "breakdown": [
+          {"word": "建物", "reading": "たてもの", "type": "noun", "meaning": "tòa nhà"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "vào, tại"},
+          {"word": "入ります", "reading": "はいります", "type": "verb", "meaning": "vào (lịch sự)"}
+        ],
+        "pattern": "建物 + に + 入ります",
+        "examples": [
+          {"jp": "建物を見ます。", "vn": "Tôi nhìn tòa nhà."},
+          {"jp": "建物で働きます。", "vn": "Tôi làm việc trong tòa nhà."},
+          {"jp": "建物に入ります。", "vn": "Tôi vào tòa nhà."}
+        ]
+      },
+      {
+        "kanji": "外国人登録証",
+        "hiragana": "がいこくじんとうろくしょう",
+        "romaji": "gaikokujin tourokushou",
+        "meaning": "thẻ đăng ký người nước ngoài",
+        "example": "外国人登録証を見せます。",
+        "exampleVn": "Tôi xuất trình thẻ đăng ký người nước ngoài.",
+        "grammar": "外国人登録証 (thẻ đăng ký) + を + 見せます (xuất trình) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "外国人登録証", "reading": "がいこくじんとうろくしょう", "type": "noun", "meaning": "thẻ đăng ký người nước ngoài"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "見せます", "reading": "みせます", "type": "verb", "meaning": "xuất trình (lịch sự)"}
+        ],
+        "pattern": "外国人登録証 + を + 見せます",
+        "examples": [
+          {"jp": "外国人登録証を取ります。", "vn": "Tôi lấy thẻ đăng ký người nước ngoài."},
+          {"jp": "外国人登録証を更新します。", "vn": "Tôi cập nhật thẻ đăng ký người nước ngoài."},
+          {"jp": "外国人登録証を見せます。", "vn": "Tôi xuất trình thẻ đăng ký người nước ngoài."}
+        ]
+      },
+      {
+        "kanji": "何回も",
+        "hiragana": "なんかいも",
+        "romaji": "nankaimo",
+        "meaning": "nhiều lần",
+        "example": "何回も聞きます。",
+        "exampleVn": "Tôi hỏi nhiều lần.",
+        "grammar": "何回も (nhiều lần) + 聞きます (hỏi) - Trạng từ chỉ tần suất",
+        "breakdown": [
+          {"word": "何回も", "reading": "なんかいも", "type": "adverb", "meaning": "nhiều lần"},
+          {"word": "聞きます", "reading": "ききます", "type": "verb", "meaning": "hỏi (lịch sự)"}
+        ],
+        "pattern": "何回も + Động từ",
+        "examples": [
+          {"jp": "何回も行きます。", "vn": "Tôi đi nhiều lần."},
+          {"jp": "何回も試します。", "vn": "Tôi thử nhiều lần."},
+          {"jp": "何回も聞きます。", "vn": "Tôi hỏi nhiều lần."}
+        ]
+      },
+      {
+        "kanji": "－屋",
+        "hiragana": "－や",
+        "romaji": "-ya",
+        "meaning": "cửa hàng ~",
+        "example": "電気屋に行きます。",
+        "exampleVn": "Tôi đi đến cửa hàng điện.",
+        "grammar": "電気屋 (cửa hàng điện) + に + 行きます (đi) - に chỉ đích",
+        "breakdown": [
+          {"word": "電気屋", "reading": "でんきや", "type": "noun", "meaning": "cửa hàng điện"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "đến, tới"},
+          {"word": "行きます", "reading": "いきます", "type": "verb", "meaning": "đi (lịch sự)"}
+        ],
+        "pattern": "Cửa hàng + に + 行きます",
+        "examples": [
+          {"jp": "パン屋に行きます。", "vn": "Tôi đi đến tiệm bánh mì."},
+          {"jp": "本屋に行きます。", "vn": "Tôi đi đến hiệu sách."},
+          {"jp": "電気屋に行きます。", "vn": "Tôi đi đến cửa hàng điện."}
+        ]
+      },
+      {
+        "kanji": "ごちそうさまでした",
+        "hiragana": "",
+        "romaji": "gochisousama deshita",
+        "meaning": "Xin cảm ơn vì bữa ăn",
+        "example": "ごちそうさまでした、美味しかったです。",
+        "exampleVn": "Cảm ơn vì bữa ăn, ngon lắm.",
+        "grammar": "ごちそうさまでした (cảm ơn vì bữa ăn) + 美味しかったです (ngon) - Lời cảm ơn lịch sự",
+        "breakdown": [
+          {"word": "ごちそうさまでした", "reading": "ごちそうさまでした", "type": "phrase", "meaning": "cảm ơn vì bữa ăn"},
+          {"word": "美味しい", "reading": "おいしい", "type": "adjective", "meaning": "ngon"},
+          {"word": "でした", "reading": "でした", "type": "verb", "meaning": "là (quá khứ, lịch sự)"}
+        ],
+        "pattern": "ごちそうさまでした + Lời khen",
+        "examples": [
+          {"jp": "ごちそうさまでした、楽しかったです。", "vn": "Cảm ơn vì bữa ăn, rất vui."},
+          {"jp": "ごちそうさまでした、素晴らしかったです。", "vn": "Cảm ơn vì bữa ăn, tuyệt vời."},
+          {"jp": "ごちそうさまでした、美味しかったです。", "vn": "Cảm ơn vì bữa ăn, ngon lắm."}
+        ]
+      },
+      {
+        "kanji": "正月",
+        "hiragana": "しょうがつ",
+        "romaji": "shougatsu",
+        "meaning": "Tết (dương lịch của Nhật)",
+        "example": "正月に旅行します。",
+        "exampleVn": "Tôi đi du lịch vào Tết.",
+        "grammar": "正月 (Tết) + に + 旅行します (đi du lịch) - に chỉ thời điểm",
+        "breakdown": [
+          {"word": "正月", "reading": "しょうがつ", "type": "noun", "meaning": "Tết"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "vào, tại"},
+          {"word": "旅行します", "reading": "りょこうします", "type": "verb", "meaning": "đi du lịch (lịch sự)"}
+        ],
+        "pattern": "正月 + に + Hành động",
+        "examples": [
+          {"jp": "正月に帰ります。", "vn": "Tôi về nhà vào Tết."},
+          {"jp": "正月に食べます。", "vn": "Tôi ăn uống vào Tết."},
+          {"jp": "正月に旅行します。", "vn": "Tôi đi du lịch vào Tết."}
+        ]
+      }
+    ],
+    "readingPassage": {
+      "title": "Một ngày sửa chữa và khám phá thành phố",
+      "text": "正月に、健君は外国人登録証を更新するために建物に行きます。先生に道を何回も聞きます。道を歩きます。交差点で右へ曲がります。信号を渡ります。橋も渡ります。2番目の角で駐車場に車を停めます。建物に入ると、機械が故障しています。音がします。電気屋に聞きます。「サイズを変えますか？」と聞かれますが、健君は「いいえ、機械を回します」と答えます。ドアに触ります。ドアを引きます。しかし、動きますか？時計が動きます！お釣りが出ます。ごちそうさまでした、と言って食堂を出ます。",
+      "translation": "Vào Tết, Yuki-kun đi đến một tòa nhà để cập nhật thẻ đăng ký người nước ngoài. Cậu ấy hỏi giáo viên về con đường nhiều lần. Cậu ấy đi bộ trên đường, rẽ phải ở ngã tư, băng qua đèn giao thông và cũng băng qua cầu. Ở góc đường thứ hai, cậu ấy đỗ xe ở bãi đậu xe. Khi vào tòa nhà, máy móc bị hỏng và phát ra tiếng động. Cậu ấy hỏi thợ điện. “Có đổi kích thước không?” thợ điện hỏi, nhưng Yuki-kun trả lời: “Không, tôi vặn máy móc.” Cậu ấy chạm vào cửa và kéo cửa. Nhưng nó có chạy không? Đồng hồ thì chạy! Tiền thừa ra. Cậu ấy nói “Cảm ơn vì bữa ăn” và rời khỏi食堂.",
+      "highlightedWords": [
+        {"word": "正月", "meaning": "Tết"},
+        {"word": "外国人登録証", "meaning": "thẻ đăng ký người nước ngoài"},
+        {"word": "建物", "meaning": "tòa nhà"},
+        {"word": "先生", "meaning": "giáo viên"},
+        {"word": "道", "meaning": "con đường"},
+        {"word": "何回も", "meaning": "nhiều lần"},
+        {"word": "聞きます", "meaning": "hỏi"},
+        {"word": "歩きます", "meaning": "đi bộ"},
+        {"word": "交差点", "meaning": "ngã tư"},
+        {"word": "右へ", "meaning": "phải"},
+        {"word": "曲がります", "meaning": "rẽ"},
+        {"word": "信号", "meaning": "đèn giao thông"},
+        {"word": "渡ります", "meaning": "băng qua"},
+        {"word": "橋", "meaning": "cầu"},
+        {"word": "2番目", "meaning": "thứ hai"},
+        {"word": "角", "meaning": "góc đường"},
+        {"word": "駐車場", "meaning": "bãi đậu xe"},
+        {"word": "機械", "meaning": "máy móc"},
+        {"word": "故障", "meaning": "hỏng hóc"},
+        {"word": "音", "meaning": "âm thanh"},
+        {"word": "電気屋", "meaning": "thợ điện"},
+        {"word": "サイズ", "meaning": "kích thước"},
+        {"word": "変えます", "meaning": "đổi"},
+        {"word": "回します", "meaning": "vặn"},
+        {"word": "ドア", "meaning": "cửa"},
+        {"word": "触ります", "meaning": "chạm"},
+        {"word": "引きます", "meaning": "kéo"},
+        {"word": "動きます", "meaning": "chạy"},
+        {"word": "時計", "meaning": "đồng hồ"},
+        {"word": "お釣り", "meaning": "tiền thừa"},
+        {"word": "出ます", "meaning": "ra"},
+        {"word": "ごちそうさまでした", "meaning": "cảm ơn vì bữa ăn"}
+      ]
+    }
   }
 }
 
