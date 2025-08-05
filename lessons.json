@@ -7554,6 +7554,571 @@
         {"word": "ごちそうさまでした", "meaning": "cảm ơn vì bữa ăn"}
       ]
     }
+  },
+  "24": {
+    "title": "Gia đình và chuẩn bị",
+    "words": [
+      {
+        "kanji": "くれます",
+        "hiragana": "",
+        "romaji": "kuremasu",
+        "meaning": "cho, tặng (tôi/người thân tôi)",
+        "example": "母がお菓子をくれます。",
+        "exampleVn": "Mẹ cho tôi bánh kẹo.",
+        "grammar": "母 (mẹ) + が + お菓子 (bánh kẹo) + を + くれます (cho) - が chỉ chủ ngữ, を chỉ đối tượng",
+        "breakdown": [
+          {"word": "母", "reading": "はは", "type": "noun", "meaning": "mẹ"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "お菓子", "reading": "おかし", "type": "noun", "meaning": "bánh kẹo"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "くれます", "reading": "くれます", "type": "verb", "meaning": "cho (lịch sự)"}
+        ],
+        "pattern": "Người + が + Vật + を + くれます",
+        "examples": [
+          {"jp": "父がお弁当をくれます。", "vn": "Bố cho tôi cơm hộp."},
+          {"jp": "友達が本をくれます。", "vn": "Bạn cho tôi sách."},
+          {"jp": "母がお菓子をくれます。", "vn": "Mẹ cho tôi bánh kẹo."}
+        ]
+      },
+      {
+        "kanji": "直します",
+        "hiragana": "なおします",
+        "romaji": "naoshimasu",
+        "meaning": "sửa chữa",
+        "example": "ワゴン車を直します。",
+        "exampleVn": "Tôi sửa xe wagon.",
+        "grammar": "ワゴン車 (xe wagon) + を + 直します (sửa) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "ワゴン車", "reading": "ワゴンしゃ", "type": "noun", "meaning": "xe wagon"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "直します", "reading": "なおします", "type": "verb", "meaning": "sửa (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + を + 直します",
+        "examples": [
+          {"jp": "機械を直します。", "vn": "Tôi sửa máy móc."},
+          {"jp": "時計を直します。", "vn": "Tôi sửa đồng hồ."},
+          {"jp": "ワゴン車を直します。", "vn": "Tôi sửa xe wagon."}
+        ]
+      },
+      {
+        "kanji": "連れて行きます",
+        "hiragana": "つれていきます",
+        "romaji": "tsurete ikimasu",
+        "meaning": "dẫn (ai đó) đi",
+        "example": "お母さんを連れて行きます。",
+        "exampleVn": "Tôi dẫn mẹ đi.",
+        "grammar": "お母さん (mẹ) + を + 連れて行きます (dẫn đi) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "お母さん", "reading": "おかあさん", "type": "noun", "meaning": "mẹ"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "連れて行きます", "reading": "つれていきます", "type": "verb", "meaning": "dẫn đi (lịch sự)"}
+        ],
+        "pattern": "Người + を + 連れて行きます",
+        "examples": [
+          {"jp": "友達を連れて行きます。", "vn": "Tôi dẫn bạn đi."},
+          {"jp": "子供を連れて行きます。", "vn": "Tôi dẫn con đi."},
+          {"jp": "お母さんを連れて行きます。", "vn": "Tôi dẫn mẹ đi."}
+        ]
+      },
+      {
+        "kanji": "連れて来ます",
+        "hiragana": "つれてきます",
+        "romaji": "tsurete kimasu",
+        "meaning": "dẫn (ai đó) đến",
+        "example": "お父さんを連れて来ます。",
+        "exampleVn": "Tôi dẫn bố đến.",
+        "grammar": "お父さん (bố) + を + 連れて来ます (dẫn đến) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "お父さん", "reading": "おとうさん", "type": "noun", "meaning": "bố"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "連れて来ます", "reading": "つれてきます", "type": "verb", "meaning": "dẫn đến (lịch sự)"}
+        ],
+        "pattern": "Người + を + 連れて来ます",
+        "examples": [
+          {"jp": "友達を連れて来ます。", "vn": "Tôi dẫn bạn đến."},
+          {"jp": "姉を連れて来ます。", "vn": "Tôi dẫn chị đến."},
+          {"jp": "お父さんを連れて来ます。", "vn": "Tôi dẫn bố đến."}
+        ]
+      },
+      {
+        "kanji": "送ります（人を～）",
+        "hiragana": "おくります（ひとを～）",
+        "romaji": "okurimasu (hito o)",
+        "meaning": "đưa tiễn (ai đó)",
+        "example": "お母さんを送ります。",
+        "exampleVn": "Tôi đưa tiễn mẹ.",
+        "grammar": "お母さん (mẹ) + を + 送ります (đưa tiễn) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "お母さん", "reading": "おかあさん", "type": "noun", "meaning": "mẹ"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "送ります", "reading": "おくります", "type": "verb", "meaning": "đưa tiễn (lịch sự)"}
+        ],
+        "pattern": "Người + を + 送ります",
+        "examples": [
+          {"jp": "友達を送ります。", "vn": "Tôi đưa tiễn bạn."},
+          {"jp": "先生を送ります。", "vn": "Tôi đưa tiễn thầy."},
+          {"jp": "お母さんを送ります。", "vn": "Tôi đưa tiễn mẹ."}
+        ]
+      },
+      {
+        "kanji": "紹介します",
+        "hiragana": "しょうかいします",
+        "romaji": "shoukai shimasu",
+        "meaning": "giới thiệu",
+        "example": "お父さんを紹介します。",
+        "exampleVn": "Tôi giới thiệu bố.",
+        "grammar": "お父さん (bố) + を + 紹介します (giới thiệu) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "お父さん", "reading": "おとうさん", "type": "noun", "meaning": "bố"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "紹介します", "reading": "しょうかいします", "type": "verb", "meaning": "giới thiệu (lịch sự)"}
+        ],
+        "pattern": "Người + を + 紹介します",
+        "examples": [
+          {"jp": "友達を紹介します。", "vn": "Tôi giới thiệu bạn."},
+          {"jp": "姉を紹介します。", "vn": "Tôi giới thiệu chị."},
+          {"jp": "お父さんを紹介します。", "vn": "Tôi giới thiệu bố."}
+        ]
+      },
+      {
+        "kanji": "案内します",
+        "hiragana": "あんないします",
+        "romaji": "annai shimasu",
+        "meaning": "hướng dẫn, dẫn đường",
+        "example": "グループを案内します。",
+        "exampleVn": "Tôi dẫn đường cho nhóm.",
+        "grammar": "グループ (nhóm) + を + 案内します (dẫn đường) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "グループ", "reading": "グループ", "type": "noun", "meaning": "nhóm"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "案内します", "reading": "あんないします", "type": "verb", "meaning": "dẫn đường (lịch sự)"}
+        ],
+        "pattern": "Người/Nhóm + を + 案内します",
+        "examples": [
+          {"jp": "友達を案内します。", "vn": "Tôi dẫn đường cho bạn."},
+          {"jp": "観光客を案内します。", "vn": "Tôi dẫn đường cho khách du lịch."},
+          {"jp": "グループを案内します。", "vn": "Tôi dẫn đường cho nhóm."}
+        ]
+      },
+      {
+        "kanji": "説明します",
+        "hiragana": "せつめいします",
+        "romaji": "setsumei shimasu",
+        "meaning": "giải thích",
+        "example": "意味を説明します。",
+        "exampleVn": "Tôi giải thích ý nghĩa.",
+        "grammar": "意味 (ý nghĩa) + を + 説明します (giải thích) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "意味", "reading": "いみ", "type": "noun", "meaning": "ý nghĩa"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "説明します", "reading": "せつめいします", "type": "verb", "meaning": "giải thích (lịch sự)"}
+        ],
+        "pattern": "Nội dung + を + 説明します",
+        "examples": [
+          {"jp": "ルールを説明します。", "vn": "Tôi giải thích quy tắc."},
+          {"jp": "計画を説明します。", "vn": "Tôi giải thích kế hoạch."},
+          {"jp": "意味を説明します。", "vn": "Tôi giải thích ý nghĩa."}
+        ]
+      },
+      {
+        "kanji": "コーヒーをいれます",
+        "hiragana": "",
+        "romaji": "koohii o iremasu",
+        "meaning": "pha cà phê",
+        "example": "コーヒーをいれます。",
+        "exampleVn": "Tôi pha cà phê.",
+        "grammar": "コーヒー (cà phê) + を + いれます (pha) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "コーヒー", "reading": "コーヒー", "type": "noun", "meaning": "cà phê"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "いれます", "reading": "いれます", "type": "verb", "meaning": "pha (lịch sự)"}
+        ],
+        "pattern": "コーヒー + を + いれます",
+        "examples": [
+          {"jp": "お茶をいれます。", "vn": "Tôi pha trà."},
+          {"jp": "コーヒーをいれます。", "vn": "Tôi pha cà phê."},
+          {"jp": "紅茶をいれます。", "vn": "Tôi pha hồng trà."}
+        ]
+      },
+      {
+        "kanji": "準備",
+        "hiragana": "じゅんび",
+        "romaji": "junbi",
+        "meaning": "sự chuẩn bị",
+        "example": "準備をします。",
+        "exampleVn": "Tôi chuẩn bị.",
+        "grammar": "準備 (chuẩn bị) + を + します (làm) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "準備", "reading": "じゅんび", "type": "noun", "meaning": "chuẩn bị"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "します", "reading": "します", "type": "verb", "meaning": "làm (lịch sự)"}
+        ],
+        "pattern": "準備 + を + します",
+        "examples": [
+          {"jp": "旅行の準備をします。", "vn": "Tôi chuẩn bị cho chuyến du lịch."},
+          {"jp": "会議の準備をします。", "vn": "Tôi chuẩn bị cho cuộc họp."},
+          {"jp": "準備をします。", "vn": "Tôi chuẩn bị."}
+        ]
+      },
+      {
+        "kanji": "意味",
+        "hiragana": "いみ",
+        "romaji": "imi",
+        "meaning": "ý nghĩa",
+        "example": "意味を説明します。",
+        "exampleVn": "Tôi giải thích ý nghĩa.",
+        "grammar": "意味 (ý nghĩa) + を + 説明します (giải thích) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "意味", "reading": "いみ", "type": "noun", "meaning": "ý nghĩa"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "説明します", "reading": "せつめいします", "type": "verb", "meaning": "giải thích (lịch sự)"}
+        ],
+        "pattern": "意味 + を + 説明します",
+        "examples": [
+          {"jp": "言葉の意味を教えます。", "vn": "Tôi dạy ý nghĩa của từ."},
+          {"jp": "意味を調べます。", "vn": "Tôi tra ý nghĩa."},
+          {"jp": "意味を説明します。", "vn": "Tôi giải thích ý nghĩa."}
+        ]
+      },
+      {
+        "kanji": "お菓子",
+        "hiragana": "おかし",
+        "romaji": "okashi",
+        "meaning": "bánh kẹo",
+        "example": "お菓子を食べます。",
+        "exampleVn": "Tôi ăn bánh kẹo.",
+        "grammar": "お菓子 (bánh kẹo) + を + 食べます (ăn) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "お菓子", "reading": "おかし", "type": "noun", "meaning": "bánh kẹo"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "食べます", "reading": "たべます", "type": "verb", "meaning": "ăn (lịch sự)"}
+        ],
+        "pattern": "お菓子 + を + 食べます",
+        "examples": [
+          {"jp": "お菓子を買います。", "vn": "Tôi mua bánh kẹo."},
+          {"jp": "お菓子をくれます。", "vn": "Ai đó cho tôi bánh kẹo."},
+          {"jp": "お菓子を食べます。", "vn": "Tôi ăn bánh kẹo."}
+        ]
+      },
+      {
+        "kanji": "全部",
+        "hiragana": "ぜんぶ",
+        "romaji": "zenbu",
+        "meaning": "tất cả",
+        "example": "お菓子を全部食べます。",
+        "exampleVn": "Tôi ăn hết bánh kẹo.",
+        "grammar": "お菓子 (bánh kẹo) + を + 全部 (tất cả) + 食べます (ăn) - 全部 bổ nghĩa cho danh từ",
+        "breakdown": [
+          {"word": "お菓子", "reading": "おかし", "type": "noun", "meaning": "bánh kẹo"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "全部", "reading": "ぜんぶ", "type": "adverb", "meaning": "tất cả"},
+          {"word": "食べます", "reading": "たべます", "type": "verb", "meaning": "ăn (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 全部 + Động từ",
+        "examples": [
+          {"jp": "本を全部読みます。", "vn": "Tôi đọc hết sách."},
+          {"jp": "お弁当を全部食べます。", "vn": "Tôi ăn hết cơm hộp."},
+          {"jp": "お菓子を全部食べます。", "vn": "Tôi ăn hết bánh kẹo."}
+        ]
+      },
+      {
+        "kanji": "自分で",
+        "hiragana": "じぶんで",
+        "romaji": "jibun de",
+        "meaning": "tự mình",
+        "example": "自分で準備をします。",
+        "exampleVn": "Tôi tự chuẩn bị.",
+        "grammar": "自分で (tự mình) + 準備 (chuẩn bị) + を + します (làm) - で chỉ phương tiện",
+        "breakdown": [
+          {"word": "自分で", "reading": "じぶんで", "type": "adverb", "meaning": "tự mình"},
+          {"word": "準備", "reading": "じゅんび", "type": "noun", "meaning": "chuẩn bị"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "します", "reading": "します", "type": "verb", "meaning": "làm (lịch sự)"}
+        ],
+        "pattern": "自分で + Hành động",
+        "examples": [
+          {"jp": "自分でコーヒーをいれます。", "vn": "Tôi tự pha cà phê."},
+          {"jp": "自分で直します。", "vn": "Tôi tự sửa chữa."},
+          {"jp": "自分で準備をします。", "vn": "Tôi tự chuẩn bị."}
+        ]
+      },
+      {
+        "kanji": "他に",
+        "hiragana": "ほかに",
+        "romaji": "hoka ni",
+        "meaning": "ngoài ra",
+        "example": "他にお菓子がありますか？",
+        "exampleVn": "Ngoài ra có bánh kẹo nào không?",
+        "grammar": "他に (ngoài ra) + お菓子 (bánh kẹo) + が + あります (có) - Chỉ thêm lựa chọn",
+        "breakdown": [
+          {"word": "他に", "reading": "ほかに", "type": "adverb", "meaning": "ngoài ra"},
+          {"word": "お菓子", "reading": "おかし", "type": "noun", "meaning": "bánh kẹo"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "あります", "reading": "あります", "type": "verb", "meaning": "có (lịch sự)"}
+        ],
+        "pattern": "他に + Danh từ + が + あります",
+        "examples": [
+          {"jp": "他に飲み物がありますか？", "vn": "Ngoài ra có đồ uống nào không?"},
+          {"jp": "他に人がいますか？", "vn": "Ngoài ra có ai không?"},
+          {"jp": "他にお菓子がありますか？", "vn": "Ngoài ra có bánh kẹo nào không?"}
+        ]
+      },
+      {
+        "kanji": "母",
+        "hiragana": "はは",
+        "romaji": "haha",
+        "meaning": "mẹ (của mình)",
+        "example": "母がコーヒーをいれます。",
+        "exampleVn": "Mẹ tôi pha cà phê.",
+        "grammar": "母 (mẹ) + が + コーヒー (cà phê) + を + いれます (pha) - が chỉ chủ ngữ",
+        "breakdown": [
+          {"word": "母", "reading": "はは", "type": "noun", "meaning": "mẹ"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "コーヒー", "reading": "コーヒー", "type": "noun", "meaning": "cà phê"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "いれます", "reading": "いれます", "type": "verb", "meaning": "pha (lịch sự)"}
+        ],
+        "pattern": "母 + が + Hành động",
+        "examples": [
+          {"jp": "母がお弁当を作ります。", "vn": "Mẹ tôi làm cơm hộp."},
+          {"jp": "母が話します。", "vn": "Mẹ tôi nói chuyện."},
+          {"jp": "母がコーヒーをいれます。", "vn": "Mẹ tôi pha cà phê."}
+        ]
+      },
+      {
+        "kanji": "父",
+        "hiragana": "ちち",
+        "romaji": "chichi",
+        "meaning": "bố (của mình)",
+        "example": "父がワゴン車を直します。",
+        "exampleVn": "Bố tôi sửa xe wagon.",
+        "grammar": "父 (bố) + が + ワゴン車 (xe wagon) + を + 直します (sửa) - が chỉ chủ ngữ",
+        "breakdown": [
+          {"word": "父", "reading": "ちち", "type": "noun", "meaning": "bố"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "ワゴン車", "reading": "ワゴンしゃ", "type": "noun", "meaning": "xe wagon"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "直します", "reading": "なおします", "type": "verb", "meaning": "sửa (lịch sự)"}
+        ],
+        "pattern": "父 + が + Hành động",
+        "examples": [
+          {"jp": "父が運転します。", "vn": "Bố tôi lái xe."},
+          {"jp": "父が話します。", "vn": "Bố tôi nói chuyện."},
+          {"jp": "父がワゴン車を直します。", "vn": "Bố tôi sửa xe wagon."}
+        ]
+      },
+      {
+        "kanji": "お母さん",
+        "hiragana": "おかあさん",
+        "romaji": "okaasan",
+        "meaning": "mẹ (của người khác)",
+        "example": "お母さんを連れて行きます。",
+        "exampleVn": "Tôi dẫn mẹ đi.",
+        "grammar": "お母さん (mẹ) + を + 連れて行きます (dẫn đi) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "お母さん", "reading": "おかあさん", "type": "noun", "meaning": "mẹ"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "連れて行きます", "reading": "つれていきます", "type": "verb", "meaning": "dẫn đi (lịch sự)"}
+        ],
+        "pattern": "お母さん + を + 連れて行きます",
+        "examples": [
+          {"jp": "お母さんを紹介します。", "vn": "Tôi giới thiệu mẹ."},
+          {"jp": "お母さんを送ります。", "vn": "Tôi đưa tiễn mẹ."},
+          {"jp": "お母さんを連れて行きます。", "vn": "Tôi dẫn mẹ đi."}
+        ]
+      },
+      {
+        "kanji": "お父さん",
+        "hiragana": "おとうさん",
+        "romaji": "otousan",
+        "meaning": "bố (của người khác)",
+        "example": "お父さんを連れて来ます。",
+        "exampleVn": "Tôi dẫn bố đến.",
+        "grammar": "お父さん (bố) + を + 連れて来ます (dẫn đến) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "お父さん", "reading": "おとうさん", "type": "noun", "meaning": "bố"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "連れて来ます", "reading": "つれてきます", "type": "verb", "meaning": "dẫn đến (lịch sự)"}
+        ],
+        "pattern": "お父さん + を + 連れて来ます",
+        "examples": [
+          {"jp": "お父さんを紹介します。", "vn": "Tôi giới thiệu bố."},
+          {"jp": "お父さんを送ります。", "vn": "Tôi đưa tiễn bố."},
+          {"jp": "お父さんを連れて来ます。", "vn": "Tôi dẫn bố đến."}
+        ]
+      },
+      {
+        "kanji": "どうぞお元気で。",
+        "hiragana": "どうぞおげんきで。",
+        "romaji": "douzo ogenki de",
+        "meaning": "chúc mạnh khỏe (khi chia tay)",
+        "example": "どうぞお元気で、と言います。",
+        "exampleVn": "Tôi nói chúc mạnh khỏe.",
+        "grammar": "どうぞお元気で (chúc mạnh khỏe) - Lời chia tay lịch sự",
+        "breakdown": [
+          {"word": "どうぞ", "reading": "どうぞ", "type": "adverb", "meaning": "xin mời, làm ơn"},
+          {"word": "お元気で", "reading": "おげんきで", "type": "phrase", "meaning": "mạnh khỏe"}
+        ],
+        "pattern": "どうぞお元気で + Lời chia tay",
+        "examples": [
+          {"jp": "どうぞお元気で、また会いましょう。", "vn": "Chúc mạnh khỏe, hẹn gặp lại."},
+          {"jp": "どうぞお元気で、気をつけて。", "vn": "Chúc mạnh khỏe, cẩn thận nhé."},
+          {"jp": "どうぞお元気で、と言います。", "vn": "Tôi nói chúc mạnh khỏe."}
+        ]
+      },
+      {
+        "kanji": "グループ",
+        "hiragana": "",
+        "romaji": "guruupu",
+        "meaning": "nhóm",
+        "example": "グループを案内します。",
+        "exampleVn": "Tôi dẫn đường cho nhóm.",
+        "grammar": "グループ (nhóm) + を + 案内します (dẫn đường) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "グループ", "reading": "グループ", "type": "noun", "meaning": "nhóm"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "案内します", "reading": "あんないします", "type": "verb", "meaning": "dẫn đường (lịch sự)"}
+        ],
+        "pattern": "グループ + を + 案内します",
+        "examples": [
+          {"jp": "グループを紹介します。", "vn": "Tôi giới thiệu nhóm."},
+          {"jp": "グループで旅行します。", "vn": "Tôi đi du lịch với nhóm."},
+          {"jp": "グループを案内します。", "vn": "Tôi dẫn đường cho nhóm."}
+        ]
+      },
+      {
+        "kanji": "ワゴン車",
+        "hiragana": "ワゴンしゃ",
+        "romaji": "wagonsha",
+        "meaning": "xe wagon (xe thùng nhỏ)",
+        "example": "ワゴン車を直します。",
+        "exampleVn": "Tôi sửa xe wagon.",
+        "grammar": "ワゴン車 (xe wagon) + を + 直します (sửa) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "ワゴン車", "reading": "ワゴンしゃ", "type": "noun", "meaning": "xe wagon"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "直します", "reading": "なおします", "type": "verb", "meaning": "sửa (lịch sự)"}
+        ],
+        "pattern": "ワゴン車 + を + 直します",
+        "examples": [
+          {"jp": "ワゴン車を運転します。", "vn": "Tôi lái xe wagon."},
+          {"jp": "ワゴン車を買います。", "vn": "Tôi mua xe wagon."},
+          {"jp": "ワゴン車を直します。", "vn": "Tôi sửa xe wagon."}
+        ]
+      },
+      {
+        "kanji": "お弁当",
+        "hiragana": "おべんとう",
+        "romaji": "obentou",
+        "meaning": "cơm hộp",
+        "example": "お弁当を準備します。",
+        "exampleVn": "Tôi chuẩn bị cơm hộp.",
+        "grammar": "お弁当 (cơm hộp) + を + 準備します (chuẩn bị) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "お弁当", "reading": "おべんとう", "type": "noun", "meaning": "cơm hộp"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "準備します", "reading": "じゅんびします", "type": "verb", "meaning": "chuẩn bị (lịch sự)"}
+        ],
+        "pattern": "お弁当 + を + 準備します",
+        "examples": [
+          {"jp": "お弁当を食べます。", "vn": "Tôi ăn cơm hộp."},
+          {"jp": "お弁当を買います。", "vn": "Tôi mua cơm hộp."},
+          {"jp": "お弁当を準備します。", "vn": "Tôi chuẩn bị cơm hộp."}
+        ]
+      },
+      {
+        "kanji": "意味を説明します",
+        "hiragana": "いみをせつめいします",
+        "romaji": "imi o setsumei shimasu",
+        "meaning": "giải thích ý nghĩa",
+        "example": "意味を説明します。",
+        "exampleVn": "Tôi giải thích ý nghĩa.",
+        "grammar": "意味 (ý nghĩa) + を + 説明します (giải thích) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "意味", "reading": "いみ", "type": "noun", "meaning": "ý nghĩa"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "説明します", "reading": "せつめいします", "type": "verb", "meaning": "giải thích (lịch sự)"}
+        ],
+        "pattern": "意味 + を + 説明します",
+        "examples": [
+          {"jp": "言葉の意味を説明します。", "vn": "Tôi giải thích ý nghĩa của từ."},
+          {"jp": "文章の意味を説明します。", "vn": "Tôi giải thích ý nghĩa của câu."},
+          {"jp": "意味を説明します。", "vn": "Tôi giải thích ý nghĩa."}
+        ]
+      },
+      {
+        "kanji": "準備をします",
+        "hiragana": "じゅんびをします",
+        "romaji": "junbi o shimasu",
+        "meaning": "chuẩn bị (làm)",
+        "example": "準備をします。",
+        "exampleVn": "Tôi chuẩn bị.",
+        "grammar": "準備 (chuẩn bị) + を + します (làm) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "準備", "reading": "じゅんび", "type": "noun", "meaning": "chuẩn bị"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "します", "reading": "します", "type": "verb", "meaning": "làm (lịch sự)"}
+        ],
+        "pattern": "準備 + を + します",
+        "examples": [
+          {"jp": "旅行の準備をします。", "vn": "Tôi chuẩn bị cho chuyến du lịch."},
+          {"jp": "パーティーの準備をします。", "vn": "Tôi chuẩn bị cho bữa tiệc."},
+          {"jp": "準備をします。", "vn": "Tôi chuẩn bị."}
+        ]
+      },
+      {
+        "kanji": "お菓子を食べます",
+        "hiragana": "おかしをたべます",
+        "romaji": "okashi o tabemasu",
+        "meaning": "ăn bánh kẹo",
+        "example": "お菓子を食べます。",
+        "exampleVn": "Tôi ăn bánh kẹo.",
+        "grammar": "お菓子 (bánh kẹo) + を + 食べます (ăn) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "お菓子", "reading": "おかし", "type": "noun", "meaning": "bánh kẹo"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "食べます", "reading": "たべます", "type": "verb", "meaning": "ăn (lịch sự)"}
+        ],
+        "pattern": "お菓子 + を + 食べます",
+        "examples": [
+          {"jp": "お菓子を全部食べます。", "vn": "Tôi ăn hết bánh kẹo."},
+          {"jp": "お菓子を友達と食べます。", "vn": "Tôi ăn bánh kẹo với bạn."},
+          {"jp": "お菓子を食べます。", "vn": "Tôi ăn bánh kẹo."}
+        ]
+      }
+    ],
+    "readingPassage": {
+      "title": "Một buổi dã ngoại của gia đình",
+      "text": "健君の父がワゴン車を直します。母が自分で準備をします。お弁当を準備します。コーヒーをいれます。お菓子をくれます。他にお菓子がありますか？と健君が聞きます。全部準備しました、と母が言います。健君はお母さんとお父さんを連れて行きます。グループを案内します。意味を説明します。「ピクニックの意味は楽しい外出です」と健君が言います。友達を連れて来ます。お母さんを紹介します。お父さんも紹介します。どうぞお元気で、と言って友達を送ります。お菓子を食べます。お弁当を全部食べます。",
+      "translation": "Bố của Yuki-kun sửa xe wagon. Mẹ tự chuẩn bị, làm cơm hộp và pha cà phê. Mẹ cho Yuki-kun bánh kẹo. “Ngoài ra có bánh kẹo nào không?” Yuki-kun hỏi. “Tất cả đã chuẩn bị xong,” mẹ nói. Yuki-kun dẫn mẹ và bố đi, hướng dẫn nhóm và giải thích ý nghĩa. “Ý nghĩa của picnic là chuyến đi chơi vui vẻ,” Yuki-kun nói. Cậu ấy dẫn bạn đến, giới thiệu mẹ và bố. Cậu ấy nói “Chúc mạnh khỏe” khi tiễn bạn. Mọi người ăn bánh kẹo và ăn hết cơm hộp.",
+      "highlightedWords": [
+        {"word": "父", "meaning": "bố (của mình)"},
+        {"word": "ワゴン車", "meaning": "xe wagon"},
+        {"word": "直します", "meaning": "sửa chữa"},
+        {"word": "母", "meaning": "mẹ (của mình)"},
+        {"word": "自分で", "meaning": "tự mình"},
+        {"word": "準備をします", "meaning": "chuẩn bị"},
+        {"word": "お弁当", "meaning": "cơm hộp"},
+        {"word": "コーヒーをいれます", "meaning": "pha cà phê"},
+        {"word": "お菓子", "meaning": "bánh kẹo"},
+        {"word": "くれます", "meaning": "cho"},
+        {"word": "他に", "meaning": "ngoài ra"},
+        {"word": "全部", "meaning": "tất cả"},
+        {"word": "お母さん", "meaning": "mẹ (của người khác)"},
+        {"word": "お父さん", "meaning": "bố (của người khác)"},
+        {"word": "連れて行きます", "meaning": "dẫn đi"},
+        {"word": "グループ", "meaning": "nhóm"},
+        {"word": "案内します", "meaning": "dẫn đường"},
+        {"word": "意味", "meaning": "ý nghĩa"},
+        {"word": "説明します", "meaning": "giải thích"},
+        {"word": "連れて来ます", "meaning": "dẫn đến"},
+        {"word": "紹介します", "meaning": "giới thiệu"},
+        {"word": "どうぞお元気で", "meaning": "chúc mạnh khỏe"},
+        {"word": "送ります", "meaning": "đưa tiễn"},
+        {"word": "お菓子を食べます", "meaning": "ăn bánh kẹo"},
+        {"word": "お弁当を全部食べます", "meaning": "ăn hết cơm hộp"}
+      ]
+    }
   }
 }
 
