@@ -1,6 +1,6 @@
 {
   "5": {
-  "title": "Hành động và phương tiện di chuyển",
+  "title": "Thời gian, lịch trình",
   "words": [
     {
       "kanji": "行きます",
@@ -699,7 +699,7 @@
   }
 },
   "13": {
-  "title": "Cuộc sống năng động và kế hoạch tương lai",
+  "title": "Ăn uống, nhà hàng",
   "words": [
     {
       "kanji": "遊びます",
@@ -1363,7 +1363,7 @@
   }
 },
   "14": {
-  "title": "Hành động và chỉ dẫn",
+  "title": "Sở thích, âm nhạc",
   "words": [
     {
       "kanji": "開けます",
@@ -2153,7 +2153,7 @@
   }
 },
   "15": {
-  "title": "Hoạt động và mối quan hệ xã hội",
+  "title": "Học tập, tài liệu",
   "words": [
     {
       "kanji": "置きます",
@@ -2729,7 +2729,7 @@
   }
 },
   "16": {
-  "title": "Hành động và tính từ mô tả",
+  "title": "Thể thao",
   "words": [
     {
       "kanji": "乗ります",
@@ -3386,7 +3386,7 @@
   }
 },
   "17": {
-    "title": "Hoạt động hàng ngày và Sức khỏe",
+    "title": "Du lịch, địa điểm nổi tiếng",
     "words": [
       {
         "kanji": "覚えます",
@@ -4095,7 +4095,7 @@
     }
   },
   "18": {
-    "title": "Sở thích và Kỹ năng",
+    "title": "Tiền bạc, giao dịch",
     "words": [
       {
         "kanji": "できます",
@@ -4778,7 +4778,7 @@
     }
   },
   "19": {
-    "title": "Hoạt động và trạng thái",
+    "title": "Bệnh viện, sức khoẻ",
     "words": [
       {
         "kanji": "登ります",
@@ -5543,7 +5543,7 @@
     }
   },
   "20": {
-    "title": "Hoạt động và giao tiếp thân mật",
+    "title": "Du lịch, máy bay",
     "words": [
       {
         "kanji": "要ります",
@@ -6292,7 +6292,7 @@
     }
   },
   "21": {
-    "title": "Ý kiến và sự kiện",
+    "title": "Lễ hội, sự kiện",
     "words": [
       {
         "kanji": "思います",
@@ -6944,7 +6944,7 @@
     }
   },
   "22": {
-    "title": "Trang phục và nhà cửa",
+    "title": "Thời tiết",
     "words": [
       {
         "kanji": "着ます",
@@ -7612,7 +7612,7 @@
     }
   },
   "23": {
-    "title": "Hành động và địa điểm trong thành phố",
+    "title": "Văn hoá Nhật, trang phục",
     "words": [
       {
         "kanji": "聞きます（先生に～）",
@@ -8220,7 +8220,7 @@
     }
   },
   "24": {
-    "title": "Gia đình và chuẩn bị",
+    "title": "Địa lý Nhật Bản",
     "words": [
       {
         "kanji": "くれます",
@@ -8785,7 +8785,7 @@
     }
   },
   "25": {
-    "title": "Tương lai và chuyển đổi",
+    "title": "TKế hoạch, mục tiêu",
     "words": [
       {
         "kanji": "考えます",

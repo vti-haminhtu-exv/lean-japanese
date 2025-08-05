@@ -1231,13 +1231,38 @@
 <script>
     const DATA_URL = `https://raw.githubusercontent.com/vti-haminhtu-exv/lean-japanese/main/lessons.json?ts=${Date.now()}`;
     const LESSON_ICONS = {
-        1: '🚶', 2: '🍽️', 3: '👥', 4: '🏠', 5: '⏰',
-        6: '🎨', 7: '🌸', 8: '📱', 9: '🚗', 10: '🏫',
-        11: '💼', 12: '🛍️', 13: '🍜', 14: '🎵', 15: '📚',
-        16: '⚽', 17: '🌍', 18: '💰', 19: '🏥', 20: '✈️',
-        21: '🎉', 22: '🌤️', 23: '👘', 24: '🗾', 25: '🎯',
-        26: '🎬', 27: '🚅', 28: '🏮', 29: '🌊', 30: '⛩️'
-    };
+    1: '🙋', // Chào hỏi, giới thiệu bản thân
+    2: '🎁', // Quà tặng, đồ vật
+    3: '📍', // Địa điểm, nơi chốn
+    4: '🏠', // Nhà cửa, toà nhà
+    5: '⏰', // Thời gian, lịch trình
+    6: '🚋', // Phương tiện giao thông
+    7: '🌸', // Mùa xuân, hoa anh đào
+    8: '☎️', // Liên lạc qua điện thoại
+    9: '🚗', // Phương tiện đi lại, đường sá
+    10: '🏫', // Trường học, lớp học
+    11: '💼', // Công việc, công ty
+    12: '🛍️', // Mua sắm
+    13: '🍜', // Ăn uống, nhà hàng
+    14: '🎵', // Sở thích, âm nhạc
+    15: '📚', // Học tập, tài liệu
+    16: '⚽', // Thể thao
+    17: '🌍', // Du lịch, địa điểm nổi tiếng
+    18: '💰', // Tiền bạc, giao dịch
+    19: '🏥', // Bệnh viện, sức khoẻ
+    20: '✈️', // Du lịch, máy bay
+    21: '🎉', // Lễ hội, sự kiện
+    22: '🌤️', // Thời tiết
+    23: '👘', // Văn hoá Nhật, trang phục
+    24: '🗾', // Địa lý Nhật Bản
+    25: '🎯', // Kế hoạch, mục tiêu
+    26: '🎬', // Giải trí, phim ảnh
+    27: '🚅', // Tàu shinkansen, giao thông nhanh
+    28: '🏮', // Văn hoá lễ hội Nhật
+    29: '🌊', // Biển, thiên nhiên
+    30: '⛩️'  // Đền chùa, tín ngưỡng Nhật Bản
+};
+
 
     let allLessons = {};
     let currentLesson = 1;
