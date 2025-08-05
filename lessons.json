@@ -2720,6 +2720,714 @@
       {"word": "ゆっくり", "meaning": "chậm, thong thả"}
     ]
   }
-}
-
+},
+  "17": {
+    "title": "Hoạt động hàng ngày và Sức khỏe",
+    "words": [
+      {
+        "kanji": "覚えます",
+        "hiragana": "おぼえます",
+        "romaji": "oboemasu",
+        "meaning": "nhớ",
+        "example": "漢字を覚えます。",
+        "exampleVn": "Tôi nhớ kanji.",
+        "grammar": "漢字 (kanji) + を (tân ngữ) + 覚えます (nhớ) - を đánh dấu đối tượng của hành động",
+        "breakdown": [
+          {"word": "漢字", "reading": "かんじ", "type": "noun", "meaning": "chữ Hán, kanji"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "覚えます", "reading": "おぼえます", "type": "verb", "meaning": "nhớ (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 覚えます",
+        "examples": [
+          {"jp": "単語を覚えます。", "vn": "Tôi nhớ từ vựng."},
+          {"jp": "名前を覚えます。", "vn": "Tôi nhớ tên."},
+          {"jp": "電話番号を覚えます。", "vn": "Tôi nhớ số điện thoại."}
+        ]
+      },
+      {
+        "kanji": "忘れます",
+        "hiragana": "わすれます",
+        "romaji": "wasuremasu",
+        "meaning": "quên",
+        "example": "宿題を忘れました。",
+        "exampleVn": "Tôi quên bài tập về nhà.",
+        "grammar": "宿題 (bài tập) + を (tân ngữ) + 忘れます (quên) - Quá khứ với ~ました",
+        "breakdown": [
+          {"word": "宿題", "reading": "しゅくだい", "type": "noun", "meaning": "bài tập về nhà"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "忘れました", "reading": "わすれました", "type": "verb", "meaning": "đã quên (quá khứ)"}
+        ],
+        "pattern": "Danh từ + を + 忘れます",
+        "examples": [
+          {"jp": "約束を忘れました。", "vn": "Tôi quên lời hứa."},
+          {"jp": "鍵を忘れました。", "vn": "Tôi quên chìa khóa."},
+          {"jp": "時間を忘れます。", "vn": "Tôi quên thời gian."}
+        ]
+      },
+      {
+        "kanji": "なくします",
+        "hiragana": "なくします",
+        "romaji": "nakushimasu",
+        "meaning": "làm mất",
+        "example": "財布をなくしました。",
+        "exampleVn": "Tôi làm mất ví.",
+        "grammar": "財布 (ví) + を (tân ngữ) + なくします (làm mất) - Quá khứ với ~ました",
+        "breakdown": [
+          {"word": "財布", "reading": "さいふ", "type": "noun", "meaning": "cái ví"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "なくしました", "reading": "なくしました", "type": "verb", "meaning": "đã làm mất (quá khứ)"}
+        ],
+        "pattern": "Danh từ + を + なくします",
+        "examples": [
+          {"jp": "携帯をなくしました。", "vn": "Tôi làm mất điện thoại."},
+          {"jp": "鍵をなくします。", "vn": "Tôi làm mất chìa khóa."},
+          {"jp": "パスポートをなくしました。", "vn": "Tôi làm mất hộ chiếu."}
+        ]
+      },
+      {
+        "kanji": "払います",
+        "hiragana": "はらいます",
+        "romaji": "haraimasu",
+        "meaning": "trả tiền",
+        "example": "食事代を払います。",
+        "exampleVn": "Tôi trả tiền bữa ăn.",
+        "grammar": "食事代 (tiền bữa ăn) + を (tân ngữ) + 払います (trả tiền) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "食事代", "reading": "しょくじだい", "type": "noun", "meaning": "tiền bữa ăn"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "払います", "reading": "はらいます", "type": "verb", "meaning": "trả tiền (lịch sự)"}
+        ],
+        "pattern": "Danh từ (tiền) + を + 払います",
+        "examples": [
+          {"jp": "家賃を払います。", "vn": "Tôi trả tiền thuê nhà."},
+          {"jp": "チケット代を払います。", "vn": "Tôi trả tiền vé."},
+          {"jp": "税金を払います。", "vn": "Tôi trả thuế."}
+        ]
+      },
+      {
+        "kanji": "返します",
+        "hiragana": "かえします",
+        "romaji": "kaeshimasu",
+        "meaning": "trả lại",
+        "example": "本を返します。",
+        "exampleVn": "Tôi trả lại sách.",
+        "grammar": "本 (sách) + を (tân ngữ) + 返します (trả lại) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "本", "reading": "ほん", "type": "noun", "meaning": "cuốn sách"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "返します", "reading": "かえします", "type": "verb", "meaning": "trả lại (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 返します",
+        "examples": [
+          {"jp": "お金を返します。", "vn": "Tôi trả lại tiền."},
+          {"jp": "借りた物を返します。", "vn": "Tôi trả lại đồ mượn."},
+          {"jp": "DVDを返します。", "vn": "Tôi trả lại DVD."}
+        ]
+      },
+      {
+        "kanji": "出かけます",
+        "hiragana": "でかけます",
+        "romaji": "dekakemasu",
+        "meaning": "ra ngoài",
+        "example": "友達と出かけます。",
+        "exampleVn": "Tôi ra ngoài với bạn.",
+        "grammar": "友達 (bạn) + と (cùng) + 出かけます (ra ngoài) - と chỉ người đồng hành",
+        "breakdown": [
+          {"word": "友達", "reading": "ともだち", "type": "noun", "meaning": "bạn bè"},
+          {"word": "と", "reading": "と", "type": "particle", "meaning": "cùng, với"},
+          {"word": "出かけます", "reading": "でかけます", "type": "verb", "meaning": "ra ngoài (lịch sự)"}
+        ],
+        "pattern": "Người + と + 出かけます",
+        "examples": [
+          {"jp": "家族と出かけます。", "vn": "Tôi ra ngoài với gia đình."},
+          {"jp": "一人で出かけます。", "vn": "Tôi ra ngoài một mình."},
+          {"jp": "買い物に出かけます。", "vn": "Tôi ra ngoài mua sắm."}
+        ]
+      },
+      {
+        "kanji": "脱ぎます",
+        "hiragana": "ぬぎます",
+        "romaji": "nugimasu",
+        "meaning": "cởi (quần áo, giày)",
+        "example": "靴を脱ぎます。",
+        "exampleVn": "Tôi cởi giày.",
+        "grammar": "靴 (giày) + を (tân ngữ) + 脱ぎます (cởi) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "靴", "reading": "くつ", "type": "noun", "meaning": "đôi giày"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "脱ぎます", "reading": "ぬぎます", "type": "verb", "meaning": "cởi (lịch sự)"}
+        ],
+        "pattern": "Danh từ (quần áo/giày) + を + 脱ぎます",
+        "examples": [
+          {"jp": "上着を脱ぎます。", "vn": "Tôi cởi áo khoác."},
+          {"jp": "帽子を脱ぎます。", "vn": "Tôi cởi mũ."},
+          {"jp": "服を脱ぎます。", "vn": "Tôi cởi quần áo."}
+        ]
+      },
+      {
+        "kanji": "持って行きます",
+        "hiragana": "もっていきます",
+        "romaji": "motteikimasu",
+        "meaning": "mang đi",
+        "example": "かばんを持って行きます。",
+        "exampleVn": "Tôi mang túi đi.",
+        "grammar": "かばん (túi) + を (tân ngữ) + 持って行きます (mang đi) - 持つ + 行く = mang đi",
+        "breakdown": [
+          {"word": "かばん", "reading": "かばん", "type": "noun", "meaning": "cái túi"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "持って行きます", "reading": "もっていきます", "type": "verb", "meaning": "mang đi (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 持って行きます",
+        "examples": [
+          {"jp": "お弁当を持って行きます。", "vn": "Tôi mang cơm hộp đi."},
+          {"jp": "本を持って行きます。", "vn": "Tôi mang sách đi."},
+          {"jp": "水を持って行きます。", "vn": "Tôi mang nước đi."}
+        ]
+      },
+      {
+        "kanji": "持って来ます",
+        "hiragana": "もってきます",
+        "romaji": "mottekimasu",
+        "meaning": "mang đến",
+        "example": "友達にプレゼントを持って来ます。",
+        "exampleVn": "Tôi mang quà đến cho bạn.",
+        "grammar": "友達 (bạn) + に (cho) + プレゼント (quà) + を + 持って来ます (mang đến)",
+        "breakdown": [
+          {"word": "友達", "reading": "ともだち", "type": "noun", "meaning": "bạn bè"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "cho, đến"},
+          {"word": "プレゼント", "reading": "プレゼント", "type": "noun", "meaning": "món quà"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "持って来ます", "reading": "もってきます", "type": "verb", "meaning": "mang đến (lịch sự)"}
+        ],
+        "pattern": "Người + に + Danh từ + を + 持って来ます",
+        "examples": [
+          {"jp": "先生に宿題を持って来ます。", "vn": "Tôi mang bài tập đến cho thầy."},
+          {"jp": "会社に書類を持って来ます。", "vn": "Tôi mang tài liệu đến công ty."},
+          {"jp": "家にお菓子を持って来ます。", "vn": "Tôi mang bánh đến nhà."}
+        ]
+      },
+      {
+        "kanji": "心配します",
+        "hiragana": "しんぱいします",
+        "romaji": "shinpaishimasu",
+        "meaning": "lo lắng",
+        "example": "友達を心配します。",
+        "exampleVn": "Tôi lo lắng cho bạn.",
+        "grammar": "友達 (bạn) + を (tân ngữ) + 心配します (lo lắng) - を chỉ đối tượng lo lắng",
+        "breakdown": [
+          {"word": "友達", "reading": "ともだち", "type": "noun", "meaning": "bạn bè"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "心配します", "reading": "しんぱいします", "type": "verb", "meaning": "lo lắng (lịch sự)"}
+        ],
+        "pattern": "Người + を + 心配します",
+        "examples": [
+          {"jp": "家族を心配します。", "vn": "Tôi lo lắng cho gia đình."},
+          {"jp": "健康を心配します。", "vn": "Tôi lo lắng về sức khỏe."},
+          {"jp": "試験を心配します。", "vn": "Tôi lo lắng về kỳ thi."}
+        ]
+      },
+      {
+        "kanji": "残業します",
+        "hiragana": "ざんぎょうします",
+        "romaji": "zangyoushimasu",
+        "meaning": "làm thêm giờ",
+        "example": "今週は残業します。",
+        "exampleVn": "Tuần này tôi làm thêm giờ.",
+        "grammar": "今週 (tuần này) + は + 残業します (làm thêm giờ) - は đánh dấu chủ đề",
+        "breakdown": [
+          {"word": "今週", "reading": "こんしゅう", "type": "time", "meaning": "tuần này"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "残業します", "reading": "ざんぎょうします", "type": "verb", "meaning": "làm thêm giờ (lịch sự)"}
+        ],
+        "pattern": "Thời gian + は + 残業します",
+        "examples": [
+          {"jp": "毎日残業します。", "vn": "Hàng ngày tôi làm thêm giờ."},
+          {"jp": "来週残業します。", "vn": "Tuần sau tôi làm thêm giờ."},
+          {"jp": "残業しないで帰ります。", "vn": "Tôi về mà không làm thêm giờ."}
+        ]
+      },
+      {
+        "kanji": "出張します",
+        "hiragana": "しゅっちょうします",
+        "romaji": "shucchoushimasu",
+        "meaning": "đi công tác",
+        "example": "大阪へ出張します。",
+        "exampleVn": "Tôi đi công tác đến Osaka.",
+        "grammar": "大阪 (Osaka) + へ (đến) + 出張します (đi công tác) - へ chỉ hướng",
+        "breakdown": [
+          {"word": "大阪", "reading": "おおさか", "type": "noun", "meaning": "Osaka"},
+          {"word": "へ", "reading": "へ", "type": "particle", "meaning": "đến"},
+          {"word": "出張します", "reading": "しゅっちょうします", "type": "verb", "meaning": "đi công tác (lịch sự)"}
+        ],
+        "pattern": "Địa điểm + へ + 出張します",
+        "examples": [
+          {"jp": "東京へ出張します。", "vn": "Tôi đi công tác đến Tokyo."},
+          {"jp": "来月出張します。", "vn": "Tháng sau tôi đi công tác."},
+          {"jp": "アメリカへ出張します。", "vn": "Tôi đi công tác đến Mỹ."}
+        ]
+      },
+      {
+        "kanji": "飲みます（薬を）",
+        "hiragana": "のみます（くすりを）",
+        "romaji": "nomimasu (kusuri o)",
+        "meaning": "uống (thuốc)",
+        "example": "薬を飲みます。",
+        "exampleVn": "Tôi uống thuốc.",
+        "grammar": "薬 (thuốc) + を (tân ngữ) + 飲みます (uống) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "薬", "reading": "くすり", "type": "noun", "meaning": "thuốc"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "飲みます", "reading": "のみます", "type": "verb", "meaning": "uống (lịch sự)"}
+        ],
+        "pattern": "Danh từ (thuốc) + を + 飲みます",
+        "examples": [
+          {"jp": "風邪薬を飲みます。", "vn": "Tôi uống thuốc cảm."},
+          {"jp": "朝に薬を飲みます。", "vn": "Tôi uống thuốc vào buổi sáng."},
+          {"jp": "水で薬を飲みます。", "vn": "Tôi uống thuốc với nước."}
+        ]
+      },
+      {
+        "kanji": "入ります（お風呂に）",
+        "hiragana": "はいります（おふろに）",
+        "romaji": "hairimasu (ofuro ni)",
+        "meaning": "vào (bồn tắm)",
+        "example": "お風呂に入ります。",
+        "exampleVn": "Tôi tắm bồn.",
+        "grammar": "お風呂 (bồn tắm) + に (vào) + 入ります (vào) - に chỉ đích của hành động",
+        "breakdown": [
+          {"word": "お風呂", "reading": "おふろ", "type": "noun", "meaning": "bồn tắm"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "vào"},
+          {"word": "入ります", "reading": "はいります", "type": "verb", "meaning": "vào (lịch sự)"}
+        ],
+        "pattern": "Địa điểm (bồn tắm) + に + 入ります",
+        "examples": [
+          {"jp": "シャワーに入ります。", "vn": "Tôi tắm vòi sen."},
+          {"jp": "温泉に入ります。", "vn": "Tôi tắm suối nước nóng."},
+          {"jp": "夜にお風呂に入ります。", "vn": "Tôi tắm bồn vào buổi tối."}
+        ]
+      },
+      {
+        "kanji": "大切",
+        "hiragana": "たいせつ",
+        "romaji": "taisetsu",
+        "meaning": "quan trọng",
+        "example": "健康は大切です。",
+        "exampleVn": "Sức khỏe thì quan trọng.",
+        "grammar": "健康 (sức khỏe) + は (chủ đề) + 大切 (quan trọng) + です - Tính từ-na + です",
+        "breakdown": [
+          {"word": "健康", "reading": "けんこう", "type": "noun", "meaning": "sức khỏe"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "大切", "reading": "たいせつ", "type": "adjective", "meaning": "quan trọng (tính từ-na)"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Danh từ + は + Tính từ-na + です",
+        "examples": [
+          {"jp": "家族は大切です。", "vn": "Gia đình thì quan trọng."},
+          {"jp": "時間は大切です。", "vn": "Thời gian thì quan trọng."},
+          {"jp": "友達は大切です。", "vn": "Bạn bè thì quan trọng."}
+        ]
+      },
+      {
+        "kanji": "大丈夫",
+        "hiragana": "だいじょうぶ",
+        "romaji": "daijoubu",
+        "meaning": "không sao, ổn",
+        "example": "私は大丈夫です。",
+        "exampleVn": "Tôi ổn.",
+        "grammar": "私 (tôi) + は (chủ đề) + 大丈夫 (ổn) + です - Tính từ-na + です",
+        "breakdown": [
+          {"word": "私", "reading": "わたし", "type": "noun", "meaning": "tôi"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "大丈夫", "reading": "だいじょうぶ", "type": "adjective", "meaning": "không sao, ổn (tính từ-na)"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Người + は + 大丈夫 + です",
+        "examples": [
+          {"jp": "仕事は大丈夫です。", "vn": "Công việc thì ổn."},
+          {"jp": "全て大丈夫です。", "vn": "Mọi thứ thì ổn."},
+          {"jp": "怪我は大丈夫です。", "vn": "Vết thương thì ổn."}
+        ]
+      },
+      {
+        "kanji": "危ない",
+        "hiragana": "あぶない",
+        "romaji": "abunai",
+        "meaning": "nguy hiểm",
+        "example": "ここは危ないです。",
+        "exampleVn": "Chỗ này nguy hiểm.",
+        "grammar": "ここ (chỗ này) + は (chủ đề) + 危ない (nguy hiểm) + です - Tính từ-i + です",
+        "breakdown": [
+          {"word": "ここ", "reading": "ここ", "type": "noun", "meaning": "chỗ này"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "危ない", "reading": "あぶない", "type": "adjective", "meaning": "nguy hiểm (tính từ-i)"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Nơi chốn + は + 危ない + です",
+        "examples": [
+          {"jp": "道は危ないです。", "vn": "Con đường thì nguy hiểm."},
+          {"jp": "夜は危ないです。", "vn": "Ban đêm thì nguy hiểm."},
+          {"jp": "この場所は危ないです。", "vn": "Nơi này thì nguy hiểm."}
+        ]
+      },
+      {
+        "kanji": "問題",
+        "hiragana": "もんだい",
+        "romaji": "mondai",
+        "meaning": "vấn đề",
+        "example": "問題があります。",
+        "exampleVn": "Có vấn đề.",
+        "grammar": "問題 (vấn đề) + が (chủ ngữ) + あります (có) - が + あります = có cái gì",
+        "breakdown": [
+          {"word": "問題", "reading": "もんだい", "type": "noun", "meaning": "vấn đề"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ (tồn tại)"},
+          {"word": "あります", "reading": "あります", "type": "verb", "meaning": "có, tồn tại (đồ vật)"}
+        ],
+        "pattern": "Danh từ + が + あります",
+        "examples": [
+          {"jp": "仕事に問題があります。", "vn": "Công việc có vấn đề."},
+          {"jp": "テストに問題があります。", "vn": "Bài kiểm tra có vấn đề."},
+          {"jp": "大きな問題があります。", "vn": "Có một vấn đề lớn."}
+        ]
+      },
+      {
+        "kanji": "答え",
+        "hiragana": "こたえ",
+        "romaji": "kotae",
+        "meaning": "câu trả lời",
+        "example": "答えを言います。",
+        "exampleVn": "Tôi nói câu trả lời.",
+        "grammar": "答え (câu trả lời) + を (tân ngữ) + 言います (nói) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "答え", "reading": "こたえ", "type": "noun", "meaning": "câu trả lời"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "言います", "reading": "いいます", "type": "verb", "meaning": "nói (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 言います",
+        "examples": [
+          {"jp": "正しい答えを言います。", "vn": "Tôi nói câu trả lời đúng."},
+          {"jp": "答えを書きます。", "vn": "Tôi viết câu trả lời."},
+          {"jp": "答えを考えます。", "vn": "Tôi nghĩ về câu trả lời."}
+        ]
+      },
+      {
+        "kanji": "禁煙",
+        "hiragana": "きんえん",
+        "romaji": "kin’en",
+        "meaning": "cấm hút thuốc",
+        "example": "ここは禁煙です。",
+        "exampleVn": "Chỗ này cấm hút thuốc.",
+        "grammar": "ここ (chỗ này) + は + 禁煙 (cấm hút thuốc) + です - Cấu trúc danh từ + です",
+        "breakdown": [
+          {"word": "ここ", "reading": "ここ", "type": "noun", "meaning": "chỗ này"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "禁煙", "reading": "きんえん", "type": "noun", "meaning": "cấm hút thuốc"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Nơi chốn + は + 禁煙 + です",
+        "examples": [
+          {"jp": "電車は禁煙です。", "vn": "Tàu điện cấm hút thuốc."},
+          {"jp": "レストランは禁煙です。", "vn": "Nhà hàng cấm hút thuốc."},
+          {"jp": "禁煙の部屋にします。", "vn": "Tôi chọn phòng cấm hút thuốc."}
+        ]
+      },
+      {
+        "kanji": "保険証",
+        "hiragana": "ほけんしょう",
+        "romaji": "hokenshou",
+        "meaning": "thẻ bảo hiểm",
+        "example": "保険証を持って来ます。",
+        "exampleVn": "Tôi mang thẻ bảo hiểm đến.",
+        "grammar": "保険証 (thẻ bảo hiểm) + を + 持って来ます (mang đến) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "保険証", "reading": "ほけんしょう", "type": "noun", "meaning": "thẻ bảo hiểm"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "持って来ます", "reading": "もってきます", "type": "verb", "meaning": "mang đến (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 持って来ます",
+        "examples": [
+          {"jp": "病院に保険証を持って行きます。", "vn": "Tôi mang thẻ bảo hiểm đến bệnh viện."},
+          {"jp": "保険証をなくしました。", "vn": "Tôi làm mất thẻ bảo hiểm."},
+          {"jp": "保険証を見せます。", "vn": "Tôi đưa thẻ bảo hiểm."}
+        ]
+      },
+      {
+        "kanji": "風邪",
+        "hiragana": "かぜ",
+        "romaji": "kaze",
+        "meaning": "cảm",
+        "example": "風邪をひきました。",
+        "exampleVn": "Tôi bị cảm.",
+        "grammar": "風邪 (cảm) + を + ひきました (bị) - を + ひく = bị bệnh",
+        "breakdown": [
+          {"word": "風邪", "reading": "かぜ", "type": "noun", "meaning": "cảm"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "ひきました", "reading": "ひきました", "type": "verb", "meaning": "đã bị (quá khứ)"}
+        ],
+        "pattern": "Danh từ (bệnh) + を + ひきます",
+        "examples": [
+          {"jp": "風邪をひかないでください。", "vn": "Đừng bị cảm."},
+          {"jp": "風邪が治りました。", "vn": "Cảm của tôi đã khỏi."},
+          {"jp": "風邪で休みます。", "vn": "Tôi nghỉ vì bị cảm."}
+        ]
+      },
+      {
+        "kanji": "熱",
+        "hiragana": "ねつ",
+        "romaji": "netsu",
+        "meaning": "sốt",
+        "example": "熱があります。",
+        "exampleVn": "Tôi bị sốt.",
+        "grammar": "熱 (sốt) + が + あります (có) - が + あります = có triệu chứng",
+        "breakdown": [
+          {"word": "熱", "reading": "ねつ", "type": "noun", "meaning": "sốt"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ (tồn tại)"},
+          {"word": "あります", "reading": "あります", "type": "verb", "meaning": "có, tồn tại (đồ vật)"}
+        ],
+        "pattern": "Triệu chứng + が + あります",
+        "examples": [
+          {"jp": "高い熱があります。", "vn": "Tôi bị sốt cao."},
+          {"jp": "熱と咳があります。", "vn": "Tôi bị sốt và ho."},
+          {"jp": "熱が下がりました。", "vn": "Sốt của tôi đã giảm."}
+        ]
+      },
+      {
+        "kanji": "病気",
+        "hiragana": "びょうき",
+        "romaji": "byouki",
+        "meaning": "bệnh",
+        "example": "病気で寝ています。",
+        "exampleVn": "Tôi nằm nghỉ vì bệnh.",
+        "grammar": "病気 (bệnh) + で (lý do) + 寝ています (nằm nghỉ) - で chỉ lý do",
+        "breakdown": [
+          {"word": "病気", "reading": "びょうき", "type": "noun", "meaning": "bệnh"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "vì, do (lý do)"},
+          {"word": "寝ています", "reading": "ねています", "type": "verb", "meaning": "đang nằm nghỉ (lịch sự)"}
+        ],
+        "pattern": "Danh từ (bệnh) + で + Hành động",
+        "examples": [
+          {"jp": "病気で休みます。", "vn": "Tôi nghỉ vì bệnh."},
+          {"jp": "病気で病院に行きます。", "vn": "Tôi đi bệnh viện vì bệnh."},
+          {"jp": "病気で薬を飲みます。", "vn": "Tôi uống thuốc vì bệnh."}
+        ]
+      },
+      {
+        "kanji": "薬",
+        "hiragana": "くすり",
+        "romaji": "kusuri",
+        "meaning": "thuốc",
+        "example": "薬を買います。",
+        "exampleVn": "Tôi mua thuốc.",
+        "grammar": "薬 (thuốc) + を (tân ngữ) + 買います (mua) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "薬", "reading": "くすり", "type": "noun", "meaning": "thuốc"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "買います", "reading": "かいます", "type": "verb", "meaning": "mua (lịch sự)"}
+        ],
+        "pattern": "Danh từ + を + 買います",
+        "examples": [
+          {"jp": "薬を飲みます。", "vn": "Tôi uống thuốc."},
+          {"jp": "薬を持って来ます。", "vn": "Tôi mang thuốc đến."},
+          {"jp": "薬を忘れました。", "vn": "Tôi quên thuốc."}
+        ]
+      },
+      {
+        "kanji": "お風呂",
+        "hiragana": "おふろ",
+        "romaji": "ofuro",
+        "meaning": "bồn tắm",
+        "example": "お風呂は熱いです。",
+        "exampleVn": "Nước tắm thì nóng.",
+        "grammar": "お風呂 (bồn tắm) + は (chủ đề) + 熱い (nóng) + です - Tính từ-i + です",
+        "breakdown": [
+          {"word": "お風呂", "reading": "おふろ", "type": "noun", "meaning": "bồn tắm"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "熱い", "reading": "あつい", "type": "adjective", "meaning": "nóng (tính từ-i)"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Danh từ + は + Tính từ-i + です",
+        "examples": [
+          {"jp": "お風呂は気持ちいいです。", "vn": "Tắm bồn thì thoải mái."},
+          {"jp": "お風呂は毎日入ります。", "vn": "Tôi tắm bồn hàng ngày."},
+          {"jp": "お風呂は大切です。", "vn": "Tắm bồn thì quan trọng."}
+        ]
+      },
+      {
+        "kanji": "上着",
+        "hiragana": "うわぎ",
+        "romaji": "uwagi",
+        "meaning": "áo khoác",
+        "example": "上着を着ます。",
+        "exampleVn": "Tôi mặc áo khoác.",
+        "grammar": "上着 (áo khoác) + を (tân ngữ) + 着ます (mặc) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "上着", "reading": "うわぎ", "type": "noun", "meaning": "áo khoác"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "着ます", "reading": "きます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "Danh từ (quần áo) + を + 着ます",
+        "examples": [
+          {"jp": "上着を脱ぎます。", "vn": "Tôi cởi áo khoác."},
+          {"jp": "上着を買います。", "vn": "Tôi mua áo khoác."},
+          {"jp": "上着を忘れました。", "vn": "Tôi quên áo khoác."}
+        ]
+      },
+      {
+        "kanji": "下着",
+        "hiragana": "したぎ",
+        "romaji": "shitagi",
+        "meaning": "đồ lót",
+        "example": "下着を買います。",
+        "exampleVn": "Tôi mua đồ lót.",
+        "grammar": "下着 (đồ lót) + を (tân ngữ) + 買います (mua) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "下着", "reading": "したぎ", "type": "noun", "meaning": "đồ lót"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "買います", "reading": "かいます", "type": "verb", "meaning": "mua (lịch sự)"}
+        ],
+        "pattern": "Danh từ (quần áo) + を + 買います",
+        "examples": [
+          {"jp": "下着を洗います。", "vn": "Tôi giặt đồ lót."},
+          {"jp": "下着を着ます。", "vn": "Tôi mặc đồ lót."},
+          {"jp": "下着を忘れました。", "vn": "Tôi quên đồ lót."}
+        ]
+      },
+      {
+        "kanji": "先生",
+        "hiragana": "せんせい",
+        "romaji": "sensei",
+        "meaning": "bác sĩ, thầy",
+        "example": "先生に相談します。",
+        "exampleVn": "Tôi hỏi ý kiến bác sĩ.",
+        "grammar": "先生 (bác sĩ) + に (đối tượng) + 相談します (hỏi ý kiến) - に chỉ đối tượng",
+        "breakdown": [
+          {"word": "先生", "reading": "せんせい", "type": "noun", "meaning": "bác sĩ, thầy"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "đối với, cho"},
+          {"word": "相談します", "reading": "そうだんします", "type": "verb", "meaning": "hỏi ý kiến (lịch sự)"}
+        ],
+        "pattern": "Người + に + Hành động",
+        "examples": [
+          {"jp": "先生に薬をもらいます。", "vn": "Tôi nhận thuốc từ bác sĩ."},
+          {"jp": "先生に聞きます。", "vn": "Tôi hỏi thầy."},
+          {"jp": "先生を心配します。", "vn": "Tôi lo lắng cho bác sĩ."}
+        ]
+      },
+      {
+        "kanji": "２、３日",
+        "hiragana": "にさんにち",
+        "romaji": "nisan-nichi",
+        "meaning": "2-3 ngày",
+        "example": "２、３日で治ります。",
+        "exampleVn": "Sẽ khỏi trong 2-3 ngày.",
+        "grammar": "２、３日 (2-3 ngày) + で (trong) + 治ります (khỏi) - で chỉ khoảng thời gian",
+        "breakdown": [
+          {"word": "２、３日", "reading": "にさんにち", "type": "time", "meaning": "2-3 ngày"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "trong (thời gian)"},
+          {"word": "治ります", "reading": "なおります", "type": "verb", "meaning": "khỏi bệnh (lịch sự)"}
+        ],
+        "pattern": "Thời gian + で + Kết quả",
+        "examples": [
+          {"jp": "２、３日で終わります。", "vn": "Sẽ xong trong 2-3 ngày."},
+          {"jp": "２、３日で帰ります。", "vn": "Tôi về trong 2-3 ngày."},
+          {"jp": "２、３日で準備します。", "vn": "Tôi chuẩn bị trong 2-3 ngày."}
+        ]
+      },
+      {
+        "kanji": "～までに",
+        "hiragana": "～までに",
+        "romaji": "~made ni",
+        "meaning": "trước ~ (hạn)",
+        "example": "月曜日までに宿題をします。",
+        "exampleVn": "Tôi làm bài tập trước thứ Hai.",
+        "grammar": "月曜日 (thứ Hai) + までに (trước) + 宿題 (bài tập) + を + します (làm)",
+        "breakdown": [
+          {"word": "月曜日", "reading": "げつようび", "type": "time", "meaning": "thứ Hai"},
+          {"word": "までに", "reading": "までに", "type": "particle", "meaning": "trước (hạn chót)"},
+          {"word": "宿題", "reading": "しゅくだい", "type": "noun", "meaning": "bài tập về nhà"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "します", "reading": "します", "type": "verb", "meaning": "làm (lịch sự)"}
+        ],
+        "pattern": "Thời gian + までに + Hành động",
+        "examples": [
+          {"jp": "明日までに返します。", "vn": "Tôi trả lại trước ngày mai."},
+          {"jp": "締め切りまでに提出します。", "vn": "Tôi nộp trước hạn chót."},
+          {"jp": "来週までに準備します。", "vn": "Tôi chuẩn bị trước tuần sau."}
+        ]
+      },
+      {
+        "kanji": "ですから",
+        "hiragana": "ですから",
+        "romaji": "desukara",
+        "meaning": "vì vậy",
+        "example": "病気ですから休みます。",
+        "exampleVn": "Tôi nghỉ vì bị bệnh.",
+        "grammar": "病気 (bệnh) + ですから (vì vậy) + 休みます (nghỉ) - ですから nối lý do và kết quả",
+        "breakdown": [
+          {"word": "病気", "reading": "びょうき", "type": "noun", "meaning": "bệnh"},
+          {"word": "ですから", "reading": "ですから", "type": "conjunction", "meaning": "vì vậy"},
+          {"word": "休みます", "reading": "やすみます", "type": "verb", "meaning": "nghỉ (lịch sự)"}
+        ],
+        "pattern": "Lý do + ですから + Kết quả",
+        "examples": [
+          {"jp": "忙しいですから残業します。", "vn": "Tôi làm thêm giờ vì bận."},
+          {"jp": "疲れたですから寝ます。", "vn": "Tôi ngủ vì mệt."},
+          {"jp": "危ないですから気をつけます。", "vn": "Tôi cẩn thận vì nguy hiểm."}
+        ]
+      },
+      {
+        "kanji": "痛い",
+        "hiragana": "いたい",
+        "romaji": "itai",
+        "meaning": "đau",
+        "example": "頭が痛いです。",
+        "exampleVn": "Đầu tôi đau.",
+        "grammar": "頭 (đầu) + が (chủ ngữ) + 痛い (đau) + です - が chỉ bộ phận cơ thể",
+        "breakdown": [
+          {"word": "頭", "reading": "あたま", "type": "noun", "meaning": "đầu"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ (bộ phận)"},
+          {"word": "痛い", "reading": "いたい", "type": "adjective", "meaning": "đau (tính từ-i)"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Bộ phận cơ thể + が + 痛い + です",
+        "examples": [
+          {"jp": "足が痛いです。", "vn": "Chân tôi đau."},
+          {"jp": "お腹が痛いです。", "vn": "Bụng tôi đau."},
+          {"jp": "背中が痛いです。", "vn": "Lưng tôi đau."}
+        ]
+      }
+    ],
+    "readingPassage": {
+      "title": "Một tuần của Hanako-san",
+      "text": "花子さんは会社員です。今週はとても忙しいです。月曜日に大阪へ出張します。出張は２、３日です。火曜日に会社に書類を持って来ます。書類は大切です。仕事に問題があると、花子さんは心配します。ですから、いつも気をつけます。水曜日に残業します。残業は疲れますが、大丈夫です。木曜日に風邪をひきました。頭が痛いし、熱があります。病気ですから、先生に相談します。先生は「薬を飲んで、２、３日で治ります」と言います。花子さんは保険証を持って病院へ行きます。薬を飲みます。お風呂に入って、早く寝ます。金曜日は禁煙のレストランで友達と食事します。友達は「健康は大切だよ」と言います。花子さんは「うん、危ないことはしないよ」と答えました。土曜日に上着と下着を買います。日曜日に友達に借りた本を返します。花子さんは漢字を覚えますが、時々忘れます。鍵をなくしたこともあります。ですから、今は物を大切にします。",
+      "translation": "Hanako-san là nhân viên văn phòng. Tuần này rất bận rộn. Thứ Hai, cô ấy đi công tác đến Osaka. Chuyến công tác kéo dài 2-3 ngày. Thứ Ba, cô ấy mang tài liệu đến công ty. Tài liệu thì quan trọng. Nếu công việc có vấn đề, Hanako-san lo lắng. Vì vậy, cô ấy luôn cẩn thận. Thứ Tư, cô ấy làm thêm giờ. Làm thêm giờ thì mệt, nhưng không sao. Thứ Năm, cô ấy bị cảm. Đầu đau và bị sốt. Vì bị bệnh, cô ấy hỏi ý kiến bác sĩ. Bác sĩ nói: “Uống thuốc, sẽ khỏi trong 2-3 ngày.” Hanako-san mang thẻ bảo hiểm đến bệnh viện. Cô ấy uống thuốc, tắm bồn, và ngủ sớm. Thứ Sáu, cô ấy ăn tối với bạn ở một nhà hàng cấm hút thuốc. Bạn nói: “Sức khỏe rất quan trọng.” Hanako-san trả lời: “Ừ, tớ không làm gì nguy hiểm đâu.” Thứ Bảy, cô ấy mua áo khoác và đồ lót. Chủ Nhật, cô ấy trả lại sách mượn của bạn. Hanako-san nhớ kanji, nhưng đôi khi quên. Cô ấy từng làm mất chìa khóa. Vì vậy, giờ cô ấy trân trọng đồ đạc.",
+      "highlightedWords": [
+        {"word": "出張します", "meaning": "đi công tác"},
+        {"word": "２、３日", "meaning": "2-3 ngày"},
+        {"word": "持って来ます", "meaning": "mang đến"},
+        {"word": "大切", "meaning": "quan trọng"},
+        {"word": "問題", "meaning": "vấn đề"},
+        {"word": "心配します", "meaning": "lo lắng"},
+        {"word": "ですから", "meaning": "vì vậy"},
+        {"word": "残業します", "meaning": "làm thêm giờ"},
+        {"word": "大丈夫", "meaning": "không sao, ổn"},
+        {"word": "風邪", "meaning": "cảm"},
+        {"word": "痛い", "meaning": "đau"},
+        {"word": "熱", "meaning": "sốt"},
+        {"word": "病気", "meaning": "bệnh"},
+        {"word": "先生", "meaning": "bác sĩ, thầy"},
+        {"word": "薬", "meaning": "thuốc"},
+        {"word": "保険証", "meaning": "thẻ bảo hiểm"},
+        {"word": "お風呂", "meaning": "bồn tắm"},
+        {"word": "禁煙", "meaning": "cấm hút thuốc"},
+        {"word": "健康", "meaning": "sức khỏe"},
+        {"word": "危ない", "meaning": "nguy hiểm"},
+        {"word": "答え", "meaning": "câu trả lời"},
+        {"word": "上着", "meaning": "áo khoác"},
+        {"word": "下着", "meaning": "đồ lót"},
+        {"word": "返します", "meaning": "trả lại"},
+        {"word": "覚えます", "meaning": "nhớ"},
+        {"word": "忘れます", "meaning": "quên"},
+        {"word": "なくします", "meaning": "làm mất"}
+      ]
+    }
+  }
 }
