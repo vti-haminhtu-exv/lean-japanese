@@ -8119,6 +8119,582 @@
         {"word": "お弁当を全部食べます", "meaning": "ăn hết cơm hộp"}
       ]
     }
+  },
+  "25": {
+    "title": "Tương lai và chuyển đổi",
+    "words": [
+      {
+        "kanji": "考えます",
+        "hiragana": "かんがえます",
+        "romaji": "kangaemasu",
+        "meaning": "suy nghĩ",
+        "example": "将来を考えます。",
+        "exampleVn": "Tôi suy nghĩ về tương lai.",
+        "grammar": "将来 (tương lai) + を + 考えます (suy nghĩ) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "将来", "reading": "しょうらい", "type": "noun", "meaning": "tương lai"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "考えます", "reading": "かんがえます", "type": "verb", "meaning": "suy nghĩ (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + を + 考えます",
+        "examples": [
+          {"jp": "計画を考えます。", "vn": "Tôi suy nghĩ về kế hoạch."},
+          {"jp": "希望を考えます。", "vn": "Tôi suy nghĩ về nguyện vọng."},
+          {"jp": "将来を考えます。", "vn": "Tôi suy nghĩ về tương lai."}
+        ]
+      },
+      {
+        "kanji": "着きます（駅に～）",
+        "hiragana": "つきます（えきに～）",
+        "romaji": "tsukimasu (eki ni)",
+        "meaning": "đến (ga, nơi...)",
+        "example": "駅に着きます。",
+        "exampleVn": "Tôi đến ga.",
+        "grammar": "駅 (ga) + に + 着きます (đến) - に chỉ đích",
+        "breakdown": [
+          {"word": "駅", "reading": "えき", "type": "noun", "meaning": "ga"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "tại, đến"},
+          {"word": "着きます", "reading": "つきます", "type": "verb", "meaning": "đến (lịch sự)"}
+        ],
+        "pattern": "Địa điểm + に + 着きます",
+        "examples": [
+          {"jp": "空港に着きます。", "vn": "Tôi đến sân bay."},
+          {"jp": "学校に着きます。", "vn": "Tôi đến trường."},
+          {"jp": "駅に着きます。", "vn": "Tôi đến ga."}
+        ]
+      },
+      {
+        "kanji": "留学します",
+        "hiragana": "りゅうがくします",
+        "romaji": "ryuugaku shimasu",
+        "meaning": "du học",
+        "example": "日本に留学します。",
+        "exampleVn": "Tôi du học ở Nhật.",
+        "grammar": "日本 (Nhật Bản) + に + 留学します (du học) - に chỉ đích",
+        "breakdown": [
+          {"word": "日本", "reading": "にほん", "type": "noun", "meaning": "Nhật Bản"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "tại, đến"},
+          {"word": "留学します", "reading": "りゅうがくします", "type": "verb", "meaning": "du học (lịch sự)"}
+        ],
+        "pattern": "Địa điểm + に + 留学します",
+        "examples": [
+          {"jp": "アメリカに留学します。", "vn": "Tôi du học ở Mỹ."},
+          {"jp": "中国に留学します。", "vn": "Tôi du học ở Trung Quốc."},
+          {"jp": "日本に留学します。", "vn": "Tôi du học ở Nhật."}
+        ]
+      },
+      {
+        "kanji": "取ります（年を～）",
+        "hiragana": "とります（としを～）",
+        "romaji": "torimasu (toshi o)",
+        "meaning": "thêm (tuổi), già thêm",
+        "example": "年を取ります。",
+        "exampleVn": "Tôi già thêm.",
+        "grammar": "年 (tuổi) + を + 取ります (thêm) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "年", "reading": "とし", "type": "noun", "meaning": "tuổi"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "取ります", "reading": "とります", "type": "verb", "meaning": "thêm (lịch sự)"}
+        ],
+        "pattern": "年 + を + 取ります",
+        "examples": [
+          {"jp": "年を取ります。", "vn": "Tôi già thêm."},
+          {"jp": "おじいさんが年を取ります。", "vn": "Ông già thêm."},
+          {"jp": "年を取ると疲れます。", "vn": "Già thêm thì mệt."}
+        ]
+      },
+      {
+        "kanji": "見つけます",
+        "hiragana": "みつけます",
+        "romaji": "mitsukemasu",
+        "meaning": "tìm thấy",
+        "example": "チャンスを見つけます。",
+        "exampleVn": "Tôi tìm thấy cơ hội.",
+        "grammar": "チャンス (cơ hội) + を + 見つけます (tìm thấy) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "チャンス", "reading": "チャンス", "type": "noun", "meaning": "cơ hội"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "見つけます", "reading": "みつけます", "type": "verb", "meaning": "tìm thấy (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + を + 見つけます",
+        "examples": [
+          {"jp": "鍵を見つけます。", "vn": "Tôi tìm thấy chìa khóa."},
+          {"jp": "仕事を見つけます。", "vn": "Tôi tìm thấy công việc."},
+          {"jp": "チャンスを見つけます。", "vn": "Tôi tìm thấy cơ hội."}
+        ]
+      },
+      {
+        "kanji": "辞めます",
+        "hiragana": "やめます",
+        "romaji": "yamemasu",
+        "meaning": "nghỉ, bỏ (việc)",
+        "example": "仕事を辞めます。",
+        "exampleVn": "Tôi nghỉ việc.",
+        "grammar": "仕事 (công việc) + を + 辞めます (nghỉ) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "仕事", "reading": "しごと", "type": "noun", "meaning": "công việc"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "辞めます", "reading": "やめます", "type": "verb", "meaning": "nghỉ (lịch sự)"}
+        ],
+        "pattern": "Đối tượng + を + 辞めます",
+        "examples": [
+          {"jp": "会社を辞めます。", "vn": "Tôi nghỉ công ty."},
+          {"jp": "学校を辞めます。", "vn": "Tôi nghỉ học."},
+          {"jp": "仕事を辞めます。", "vn": "Tôi nghỉ việc."}
+        ]
+      },
+      {
+        "kanji": "希望",
+        "hiragana": "きぼう",
+        "romaji": "kibou",
+        "meaning": "nguyện vọng, mong muốn",
+        "example": "希望を考えます。",
+        "exampleVn": "Tôi suy nghĩ về nguyện vọng.",
+        "grammar": "希望 (nguyện vọng) + を + 考えます (suy nghĩ) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "希望", "reading": "きぼう", "type": "noun", "meaning": "nguyện vọng"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "考えます", "reading": "かんがえます", "type": "verb", "meaning": "suy nghĩ (lịch sự)"}
+        ],
+        "pattern": "希望 + を + 考えます",
+        "examples": [
+          {"jp": "希望を話します。", "vn": "Tôi nói về nguyện vọng."},
+          {"jp": "希望を書きます。", "vn": "Tôi viết nguyện vọng."},
+          {"jp": "希望を考えます。", "vn": "Tôi suy nghĩ về nguyện vọng."}
+        ]
+      },
+      {
+        "kanji": "将来",
+        "hiragana": "しょうらい",
+        "romaji": "shourai",
+        "meaning": "tương lai",
+        "example": "将来を考えます。",
+        "exampleVn": "Tôi suy nghĩ về tương lai.",
+        "grammar": "将来 (tương lai) + を + 考えます (suy nghĩ) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "将来", "reading": "しょうらい", "type": "noun", "meaning": "tương lai"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "考えます", "reading": "かんがえます", "type": "verb", "meaning": "suy nghĩ (lịch sự)"}
+        ],
+        "pattern": "将来 + を + 考えます",
+        "examples": [
+          {"jp": "将来の夢を考えます。", "vn": "Tôi suy nghĩ về giấc mơ tương lai."},
+          {"jp": "将来を話します。", "vn": "Tôi nói về tương lai."},
+          {"jp": "将来を考えます。", "vn": "Tôi suy nghĩ về tương lai."}
+        ]
+      },
+      {
+        "kanji": "田舎",
+        "hiragana": "いなか",
+        "romaji": "inaka",
+        "meaning": "nông thôn, quê",
+        "example": "田舎に引越します。",
+        "exampleVn": "Tôi chuyển nhà về quê.",
+        "grammar": "田舎 (nông thôn) + に + 引越します (chuyển nhà) - に chỉ đích",
+        "breakdown": [
+          {"word": "田舎", "reading": "いなか", "type": "noun", "meaning": "nông thôn"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "tới, đến"},
+          {"word": "引越します", "reading": "ひっこしします", "type": "verb", "meaning": "chuyển nhà (lịch sự)"}
+        ],
+        "pattern": "田舎 + に + 引越します",
+        "examples": [
+          {"jp": "田舎に行きます。", "vn": "Tôi đi về quê."},
+          {"jp": "田舎に住みます。", "vn": "Tôi sống ở quê."},
+          {"jp": "田舎に引越します。", "vn": "Tôi chuyển nhà về quê."}
+        ]
+      },
+      {
+        "kanji": "大使館",
+        "hiragana": "たいしかん",
+        "romaji": "taishikan",
+        "meaning": "đại sứ quán",
+        "example": "大使館に着きます。",
+        "exampleVn": "Tôi đến đại sứ quán.",
+        "grammar": "大使館 (đại sứ quán) + に + 着きます (đến) - に chỉ đích",
+        "breakdown": [
+          {"word": "大使館", "reading": "たいしかん", "type": "noun", "meaning": "đại sứ quán"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "tại, đến"},
+          {"word": "着きます", "reading": "つきます", "type": "verb", "meaning": "đến (lịch sự)"}
+        ],
+        "pattern": "大使館 + に + 着きます",
+        "examples": [
+          {"jp": "大使館に行きます。", "vn": "Tôi đi đến đại sứ quán."},
+          {"jp": "大使館で働きます。", "vn": "Tôi làm việc ở đại sứ quán."},
+          {"jp": "大使館に着きます。", "vn": "Tôi đến đại sứ quán."}
+        ]
+      },
+      {
+        "kanji": "グループ",
+        "hiragana": "",
+        "romaji": "guruupu",
+        "meaning": "nhóm",
+        "example": "グループで会話します。",
+        "exampleVn": "Tôi trò chuyện với nhóm.",
+        "grammar": "グループ (nhóm) + で + 会話します (trò chuyện) - で chỉ phương tiện",
+        "breakdown": [
+          {"word": "グループ", "reading": "グループ", "type": "noun", "meaning": "nhóm"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "với, cùng"},
+          {"word": "会話します", "reading": "かいわします", "type": "verb", "meaning": "trò chuyện (lịch sự)"}
+        ],
+        "pattern": "グループ + で + 会話します",
+        "examples": [
+          {"jp": "グループで旅行します。", "vn": "Tôi đi du lịch với nhóm."},
+          {"jp": "グループで話します。", "vn": "Tôi nói chuyện với nhóm."},
+          {"jp": "グループで会話します。", "vn": "Tôi trò chuyện với nhóm."}
+        ]
+      },
+      {
+        "kanji": "チャンス",
+        "hiragana": "",
+        "romaji": "chansu",
+        "meaning": "cơ hội",
+        "example": "チャンスを見つけます。",
+        "exampleVn": "Tôi tìm thấy cơ hội.",
+        "grammar": "チャンス (cơ hội) + を + 見つけます (tìm thấy) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "チャンス", "reading": "チャンス", "type": "noun", "meaning": "cơ hội"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "見つけます", "reading": "みつけます", "type": "verb", "meaning": "tìm thấy (lịch sự)"}
+        ],
+        "pattern": "チャンス + を + 見つけます",
+        "examples": [
+          {"jp": "チャンスを掴みます。", "vn": "Tôi nắm lấy cơ hội."},
+          {"jp": "チャンスを逃します。", "vn": "Tôi bỏ lỡ cơ hội."},
+          {"jp": "チャンスを見つけます。", "vn": "Tôi tìm thấy cơ hội."}
+        ]
+      },
+      {
+        "kanji": "億",
+        "hiragana": "おく",
+        "romaji": "oku",
+        "meaning": "100 triệu",
+        "example": "1億のチャンスです。",
+        "exampleVn": "Đó là cơ hội 100 triệu.",
+        "grammar": "1億 (100 triệu) + の + チャンス (cơ hội) + です - の liên kết danh từ",
+        "breakdown": [
+          {"word": "1億", "reading": "いちおく", "type": "noun", "meaning": "100 triệu"},
+          {"word": "の", "reading": "の", "type": "particle", "meaning": "sở hữu, của"},
+          {"word": "チャンス", "reading": "チャンス", "type": "noun", "meaning": "cơ hội"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Số + 億 + の + Danh từ + です",
+        "examples": [
+          {"jp": "1億のお金です。", "vn": "Đó là 100 triệu tiền."},
+          {"jp": "2億の家です。", "vn": "Đó là ngôi nhà 200 triệu."},
+          {"jp": "1億のチャンスです。", "vn": "Đó là cơ hội 100 triệu."}
+        ]
+      },
+      {
+        "kanji": "もし",
+        "hiragana": "",
+        "romaji": "moshi",
+        "meaning": "nếu",
+        "example": "もしチャンスがあれば、留学します。",
+        "exampleVn": "Nếu có cơ hội, tôi sẽ du học.",
+        "grammar": "もし (nếu) + チャンス (cơ hội) + が + あれば (có) + 留学します (du học)",
+        "breakdown": [
+          {"word": "もし", "reading": "もし", "type": "conjunction", "meaning": "nếu"},
+          {"word": "チャンス", "reading": "チャンス", "type": "noun", "meaning": "cơ hội"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "あれば", "reading": "あれば", "type": "verb", "meaning": "có (điều kiện)"},
+          {"word": "留学します", "reading": "りゅうがくします", "type": "verb", "meaning": "du học (lịch sự)"}
+        ],
+        "pattern": "もし + Điều kiện + なら/あれば + Kết quả",
+        "examples": [
+          {"jp": "もし時間があれば、行きます。", "vn": "Nếu có thời gian, tôi sẽ đi."},
+          {"jp": "もしお金があれば、買います。", "vn": "Nếu có tiền, tôi sẽ mua."},
+          {"jp": "もしチャンスがあれば、留学します。", "vn": "Nếu có cơ hội, tôi sẽ du học."}
+        ]
+      },
+      {
+        "kanji": "いくら（～ても）",
+        "hiragana": "",
+        "romaji": "ikura (~temo)",
+        "meaning": "cho dù bao nhiêu đi nữa",
+        "example": "いくら頑張っても、難しいです。",
+        "exampleVn": "Cho dù cố gắng bao nhiêu, vẫn khó.",
+        "grammar": "いくら (bao nhiêu) + 頑張っても (cố gắng) + 難しいです (khó) - ～ても chỉ nhượng bộ",
+        "breakdown": [
+          {"word": "いくら", "reading": "いくら", "type": "adverb", "meaning": "bao nhiêu"},
+          {"word": "頑張っても", "reading": "がんばっても", "type": "verb", "meaning": "dù cố gắng"},
+          {"word": "難しいです", "reading": "むずかしいです", "type": "adjective", "meaning": "khó (lịch sự)"}
+        ],
+        "pattern": "いくら + Động từ + ても + Kết quả",
+        "examples": [
+          {"jp": "いくら勉強しても、覚えません。", "vn": "Cho dù học bao nhiêu, tôi vẫn không nhớ."},
+          {"jp": "いくら食べても、太りません。", "vn": "Cho dù ăn bao nhiêu, tôi vẫn không mập."},
+          {"jp": "いくら頑張っても、難しいです。", "vn": "Cho dù cố gắng bao nhiêu, vẫn khó."}
+        ]
+      },
+      {
+        "kanji": "転勤",
+        "hiragana": "てんきん",
+        "romaji": "tenkin",
+        "meaning": "chuyển công tác",
+        "example": "転勤を考えます。",
+        "exampleVn": "Tôi suy nghĩ về việc chuyển công tác.",
+        "grammar": "転勤 (chuyển công tác) + を + 考えます (suy nghĩ) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "転勤", "reading": "てんきん", "type": "noun", "meaning": "chuyển công tác"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "考えます", "reading": "かんがえます", "type": "verb", "meaning": "suy nghĩ (lịch sự)"}
+        ],
+        "pattern": "転勤 + を + 考えます",
+        "examples": [
+          {"jp": "転勤を決めます。", "vn": "Tôi quyết định chuyển công tác."},
+          {"jp": "転勤を断ります。", "vn": "Tôi từ chối chuyển công tác."},
+          {"jp": "転勤を考えます。", "vn": "Tôi suy nghĩ về việc chuyển công tác."}
+        ]
+      },
+      {
+        "kanji": "転勤します",
+        "hiragana": "てんきんします",
+        "romaji": "tenkin shimasu",
+        "meaning": "chuyển công tác (tha động từ)",
+        "example": "田舎に転勤します。",
+        "exampleVn": "Tôi chuyển công tác về quê.",
+        "grammar": "田舎 (nông thôn) + に + 転勤します (chuyển công tác) - に chỉ đích",
+        "breakdown": [
+          {"word": "田舎", "reading": "いなか", "type": "noun", "meaning": "nông thôn"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "tới, đến"},
+          {"word": "転勤します", "reading": "てんきんします", "type": "verb", "meaning": "chuyển công tác (lịch sự)"}
+        ],
+        "pattern": "Địa điểm + に + 転勤します",
+        "examples": [
+          {"jp": "東京に転勤します。", "vn": "Tôi chuyển công tác đến Tokyo."},
+          {"jp": "大阪に転勤します。", "vn": "Tôi chuyển công tác đến Osaka."},
+          {"jp": "田舎に転勤します。", "vn": "Tôi chuyển công tác về quê."}
+        ]
+      },
+      {
+        "kanji": "こと",
+        "hiragana": "",
+        "romaji": "koto",
+        "meaning": "việc (chuyện gì đó)",
+        "example": "留学することは希望です。",
+        "exampleVn": "Việc du học là nguyện vọng.",
+        "grammar": "留学する (du học) + こと (việc) + は + 希望 (nguyện vọng) + です - こと danh từ hóa động từ",
+        "breakdown": [
+          {"word": "留学する", "reading": "りゅうがくする", "type": "verb", "meaning": "du học"},
+          {"word": "こと", "reading": "こと", "type": "noun", "meaning": "việc"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề"},
+          {"word": "希望", "reading": "きぼう", "type": "noun", "meaning": "nguyện vọng"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Động từ + こと + は + Danh từ + です",
+        "examples": [
+          {"jp": "働くことは楽しいです。", "vn": "Việc làm việc là vui."},
+          {"jp": "勉強することは大切です。", "vn": "Việc học là quan trọng."},
+          {"jp": "留学することは希望です。", "vn": "Việc du học là nguyện vọng."}
+        ]
+      },
+      {
+        "kanji": "一杯飲みましょう",
+        "hiragana": "いっぱいのみましょう",
+        "romaji": "ippai nomimashou",
+        "meaning": "cùng uống 1 ly nhé",
+        "example": "一杯飲みましょう。",
+        "exampleVn": "Cùng uống một ly nhé.",
+        "grammar": "一杯 (một ly) + 飲みましょう (uống) - Đề nghị lịch sự",
+        "breakdown": [
+          {"word": "一杯", "reading": "いっぱい", "type": "noun", "meaning": "một ly"},
+          {"word": "飲みましょう", "reading": "のみましょう", "type": "verb", "meaning": "uống (đề nghị lịch sự)"}
+        ],
+        "pattern": "一杯 + 飲みましょう",
+        "examples": [
+          {"jp": "ビールを一杯飲みましょう。", "vn": "Cùng uống một ly bia nhé."},
+          {"jp": "お茶を一杯飲みましょう。", "vn": "Cùng uống một ly trà nhé."},
+          {"jp": "一杯飲みましょう。", "vn": "Cùng uống một ly nhé."}
+        ]
+      },
+      {
+        "kanji": "いろいろお世話になりました",
+        "hiragana": "",
+        "romaji": "iroiro osewa ni narimashita",
+        "meaning": "cảm ơn anh/chị đã giúp đỡ nhiều",
+        "example": "いろいろお世話になりました。",
+        "exampleVn": "Cảm ơn anh/chị đã giúp đỡ nhiều.",
+        "grammar": "いろいろ (nhiều) + お世話 (giúp đỡ) + に + なりました (được) - Lời cảm ơn lịch sự",
+        "breakdown": [
+          {"word": "いろいろ", "reading": "いろいろ", "type": "adverb", "meaning": "nhiều, đủ thứ"},
+          {"word": "お世話", "reading": "おせわ", "type": "noun", "meaning": "giúp đỡ"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "đối với"},
+          {"word": "なりました", "reading": "なりました", "type": "verb", "meaning": "được (quá khứ lịch sự)"}
+        ],
+        "pattern": "いろいろお世話になりました",
+        "examples": [
+          {"jp": "いろいろお世話になりました、ありがとう。", "vn": "Cảm ơn anh/chị đã giúp đỡ nhiều, cảm ơn."},
+          {"jp": "いろいろお世話になりました、またね。", "vn": "Cảm ơn anh/chị đã giúp đỡ nhiều, hẹn gặp lại."},
+          {"jp": "いろいろお世話になりました。", "vn": "Cảm ơn anh/chị đã giúp đỡ nhiều."}
+        ]
+      },
+      {
+        "kanji": "頑張ります",
+        "hiragana": "がんばります",
+        "romaji": "ganbarimasu",
+        "meaning": "cố gắng",
+        "example": "頑張ります。",
+        "exampleVn": "Tôi sẽ cố gắng.",
+        "grammar": "頑張ります (cố gắng) - Động từ lịch sự",
+        "breakdown": [
+          {"word": "頑張ります", "reading": "がんばります", "type": "verb", "meaning": "cố gắng (lịch sự)"}
+        ],
+        "pattern": "頑張ります",
+        "examples": [
+          {"jp": "仕事で頑張ります。", "vn": "Tôi sẽ cố gắng trong công việc."},
+          {"jp": "勉強で頑張ります。", "vn": "Tôi sẽ cố gắng trong học tập."},
+          {"jp": "頑張ります。", "vn": "Tôi sẽ cố gắng."}
+        ]
+      },
+      {
+        "kanji": "どうぞお元気で",
+        "hiragana": "",
+        "romaji": "douzo ogenki de",
+        "meaning": "chúc mạnh khỏe (chia tay lâu dài)",
+        "example": "どうぞお元気で。",
+        "exampleVn": "Chúc mạnh khỏe.",
+        "grammar": "どうぞ (xin mời) + お元気で (mạnh khỏe) - Lời chia tay lịch sự",
+        "breakdown": [
+          {"word": "どうぞ", "reading": "どうぞ", "type": "adverb", "meaning": "xin mời, làm ơn"},
+          {"word": "お元気で", "reading": "おげんきで", "type": "phrase", "meaning": "mạnh khỏe"}
+        ],
+        "pattern": "どうぞお元気で",
+        "examples": [
+          {"jp": "どうぞお元気で、また会いましょう。", "vn": "Chúc mạnh khỏe, hẹn gặp lại."},
+          {"jp": "どうぞお元気で、気をつけて。", "vn": "Chúc mạnh khỏe, cẩn thận nhé."},
+          {"jp": "どうぞお元気で。", "vn": "Chúc mạnh khỏe."}
+        ]
+      },
+      {
+        "kanji": "いっぱい",
+        "hiragana": "",
+        "romaji": "ippai",
+        "meaning": "một ly, đầy",
+        "example": "いっぱい飲みましょう。",
+        "exampleVn": "Cùng uống một ly nhé.",
+        "grammar": "いっぱい (một ly) + 飲みましょう (uống) - Đề nghị lịch sự",
+        "breakdown": [
+          {"word": "いっぱい", "reading": "いっぱい", "type": "noun", "meaning": "một ly, đầy"},
+          {"word": "飲みましょう", "reading": "のみましょう", "type": "verb", "meaning": "uống (đề nghị lịch sự)"}
+        ],
+        "pattern": "いっぱい + 飲みましょう",
+        "examples": [
+          {"jp": "水をいっぱい飲みます。", "vn": "Tôi uống một ly nước đầy."},
+          {"jp": "コーヒーをいっぱい飲みます。", "vn": "Tôi uống một ly cà phê."},
+          {"jp": "いっぱい飲みましょう。", "vn": "Cùng uống một ly nhé."}
+        ]
+      },
+      {
+        "kanji": "何でも",
+        "hiragana": "なんでも",
+        "romaji": "nandemo",
+        "meaning": "cái gì cũng",
+        "example": "何でも考えます。",
+        "exampleVn": "Tôi nghĩ về mọi thứ.",
+        "grammar": "何でも (cái gì cũng) + 考えます (suy nghĩ) - Trạng từ",
+        "breakdown": [
+          {"word": "何でも", "reading": "なんでも", "type": "adverb", "meaning": "cái gì cũng"},
+          {"word": "考えます", "reading": "かんがえます", "type": "verb", "meaning": "suy nghĩ (lịch sự)"}
+        ],
+        "pattern": "何でも + Động từ",
+        "examples": [
+          {"jp": "何でも食べます。", "vn": "Tôi ăn mọi thứ."},
+          {"jp": "何でも買います。", "vn": "Tôi mua mọi thứ."},
+          {"jp": "何でも考えます。", "vn": "Tôi nghĩ về mọi thứ."}
+        ]
+      },
+      {
+        "kanji": "会話",
+        "hiragana": "かいわ",
+        "romaji": "kaiwa",
+        "meaning": "hội thoại",
+        "example": "グループで会話します。",
+        "exampleVn": "Tôi trò chuyện với nhóm.",
+        "grammar": "グループ (nhóm) + で + 会話します (trò chuyện) - で chỉ phương tiện",
+        "breakdown": [
+          {"word": "グループ", "reading": "グループ", "type": "noun", "meaning": "nhóm"},
+          {"word": "で", "reading": "で", "type": "particle", "meaning": "với, cùng"},
+          {"word": "会話します", "reading": "かいわします", "type": "verb", "meaning": "trò chuyện (lịch sự)"}
+        ],
+        "pattern": "グループ + で + 会話します",
+        "examples": [
+          {"jp": "友達と会話します。", "vn": "Tôi trò chuyện với bạn."},
+          {"jp": "家族で会話します。", "vn": "Tôi trò chuyện với gia đình."},
+          {"jp": "グループで会話します。", "vn": "Tôi trò chuyện với nhóm."}
+        ]
+      },
+      {
+        "kanji": "引越し",
+        "hiragana": "ひっこし",
+        "romaji": "hikkoshi",
+        "meaning": "việc chuyển nhà",
+        "example": "引越しを考えます。",
+        "exampleVn": "Tôi suy nghĩ về việc chuyển nhà.",
+        "grammar": "引越し (chuyển nhà) + を + 考えます (suy nghĩ) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "引越し", "reading": "ひっこし", "type": "noun", "meaning": "chuyển nhà"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "考えます", "reading": "かんがえます", "type": "verb", "meaning": "suy nghĩ (lịch sự)"}
+        ],
+        "pattern": "引越し + を + 考えます",
+        "examples": [
+          {"jp": "引越しをします。", "vn": "Tôi chuyển nhà."},
+          {"jp": "引越しを計画します。", "vn": "Tôi lên kế hoạch chuyển nhà."},
+          {"jp": "引越しを考えます。", "vn": "Tôi suy nghĩ về việc chuyển nhà."}
+        ]
+      },
+      {
+        "kanji": "引越します",
+        "hiragana": "ひっこしします",
+        "romaji": "hikkoshi shimasu",
+        "meaning": "chuyển nhà",
+        "example": "田舎に引越します。",
+        "exampleVn": "Tôi chuyển nhà về quê.",
+        "grammar": "田舎 (nông thôn) + に + 引越します (chuyển nhà) - に chỉ đích",
+        "breakdown": [
+          {"word": "田舎", "reading": "いなか", "type": "noun", "meaning": "nông thôn"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "tới, đến"},
+          {"word": "引越します", "reading": "ひっこしします", "type": "verb", "meaning": "chuyển nhà (lịch sự)"}
+        ],
+        "pattern": "Địa điểm + に + 引越します",
+        "examples": [
+          {"jp": "東京に引越します。", "vn": "Tôi chuyển nhà đến Tokyo."},
+          {"jp": "大阪に引越します。", "vn": "Tôi chuyển nhà đến Osaka."},
+          {"jp": "田舎に引越します。", "vn": "Tôi chuyển nhà về quê."}
+        ]
+      }
+    ],
+    "readingPassage": {
+      "title": "Một hành trình mới",
+      "text": "健君は将来を考えます。もしチャンスがあれば、留学することは希望です。いくら頑張っても、大使館で書類を見つけるのは難しいです。田舎に転勤します。引越しを考えます。グループで会話します。「仕事を辞めますか？」と聞かれます。「何でも考えます」と答えます。駅に着きます。1億のチャンスを見つけます。転勤することは大変ですが、頑張ります。一杯飲みましょう、と言って友達と話します。いろいろお世話になりました、どうぞお元気で、と言います。",
+      "translation": "Yuki-kun suy nghĩ về tương lai. Nếu có cơ hội, việc du học là nguyện vọng. Cho dù cố gắng bao nhiêu, tìm giấy tờ ở đại sứ quán vẫn khó. Cậu ấy chuyển công tác về quê và suy nghĩ về việc chuyển nhà. Cậu ấy trò chuyện với nhóm. “Cậu nghỉ việc à?” bạn hỏi. “Tôi nghĩ về mọi thứ,” cậu trả lời. Cậu đến ga, tìm thấy cơ hội 100 triệu. Chuyển công tác là khó khăn, nhưng cậu sẽ cố gắng. “Cùng uống một ly nhé,” cậu nói với bạn và cảm ơn: “Cảm ơn đã giúp đỡ nhiều, chúc mạnh khỏe.”",
+      "highlightedWords": [
+        {"word": "将来", "meaning": "tương lai"},
+        {"word": "考えます", "meaning": "suy nghĩ"},
+        {"word": "もし", "meaning": "nếu"},
+        {"word": "チャンス", "meaning": "cơ hội"},
+        {"word": "留学する", "meaning": "du học"},
+        {"word": "こと", "meaning": "việc"},
+        {"word": "希望", "meaning": "nguyện vọng"},
+        {"word": "いくら", "meaning": "bao nhiêu"},
+        {"word": "頑張っても", "meaning": "dù cố gắng"},
+        {"word": "大使館", "meaning": "đại sứ quán"},
+        {"word": "見つけます", "meaning": "tìm thấy"},
+        {"word": "田舎", "meaning": "nông thôn"},
+        {"word": "転勤します", "meaning": "chuyển công tác"},
+        {"word": "引越し", "meaning": "việc chuyển nhà"},
+        {"word": "グループ", "meaning": "nhóm"},
+        {"word": "会話します", "meaning": "trò chuyện"},
+        {"word": "辞めます", "meaning": "nghỉ việc"},
+        {"word": "何でも", "meaning": "cái gì cũng"},
+        {"word": "駅に着きます", "meaning": "đến ga"},
+        {"word": "1億", "meaning": "100 triệu"},
+        {"word": "頑張ります", "meaning": "cố gắng"},
+        {"word": "一杯飲みましょう", "meaning": "cùng uống một ly nhé"},
+        {"word": "いろいろお世話になりました", "meaning": "cảm ơn đã giúp đỡ nhiều"},
+        {"word": "どうぞお元気で", "meaning": "chúc mạnh khỏe"}
+      ]
+    }
   }
 }
 
