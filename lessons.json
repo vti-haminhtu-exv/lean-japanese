@@ -5631,6 +5631,315 @@
     "title": "Ý kiến và sự kiện",
     "words": [
       {
+        "kanji": "思います",
+        "hiragana": "おもいます",
+        "romaji": "omoimasu",
+        "meaning": "nghĩ, cho rằng",
+        "example": "これはいいと思います。",
+        "exampleVn": "Tôi nghĩ cái này tốt.",
+        "grammar": "これ (cái này) + は (chủ đề) + いい (tốt) + と思います (nghĩ) - Câu biểu đạt ý kiến",
+        "breakdown": [
+          {"word": "これ", "reading": "これ", "type": "pronoun", "meaning": "cái này"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "いい", "reading": "いい", "type": "adjective", "meaning": "tốt"},
+          {"word": "と思います", "reading": "おもいます", "type": "verb", "meaning": "nghĩ (lịch sự)"}
+        ],
+        "pattern": "Chủ đề + は + Tính từ + と思います",
+        "examples": [
+          {"jp": "彼は親切だと思います。", "vn": "Tôi nghĩ anh ấy tử tế."},
+          {"jp": "これは難しいと思います。", "vn": "Tôi nghĩ cái này khó."},
+          {"jp": "旅行は楽しいと思います。", "vn": "Tôi nghĩ du lịch thì vui."}
+        ]
+      },
+      {
+        "kanji": "言います",
+        "hiragana": "いいます",
+        "romaji": "iimasu",
+        "meaning": "nói",
+        "example": "本当を言います。",
+        "exampleVn": "Tôi nói sự thật.",
+        "grammar": "本当 (sự thật) + を (tân ngữ) + 言います (nói) - を chỉ nội dung nói",
+        "breakdown": [
+          {"word": "本当", "reading": "ほんとう", "type": "noun", "meaning": "sự thật"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "言います", "reading": "いいます", "type": "verb", "meaning": "nói (lịch sự)"}
+        ],
+        "pattern": "Nội dung + を + 言います",
+        "examples": [
+          {"jp": "意見を言います。", "vn": "Tôi nói ý kiến."},
+          {"jp": "名前を言います。", "vn": "Tôi nói tên."},
+          {"jp": "真実を言います。", "vn": "Tôi nói sự thật."}
+        ]
+      },
+      {
+        "kanji": "勝ちます",
+        "hiragana": "かちます",
+        "romaji": "kachimasu",
+        "meaning": "thắng",
+        "example": "試合に勝ちます。",
+        "exampleVn": "Tôi thắng trận đấu.",
+        "grammar": "試合 (trận đấu) + に (trong) + 勝ちます (thắng) - に chỉ bối cảnh",
+        "breakdown": [
+          {"word": "試合", "reading": "しあい", "type": "noun", "meaning": "trận đấu"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "trong, tại"},
+          {"word": "勝ちます", "reading": "かちます", "type": "verb", "meaning": "thắng (lịch sự)"}
+        ],
+        "pattern": "Sự kiện + に + 勝ちます",
+        "examples": [
+          {"jp": "サッカーに勝ちます。", "vn": "Tôi thắng trong bóng đá."},
+          {"jp": "ゲームに勝ちます。", "vn": "Tôi thắng trong trò chơi."},
+          {"jp": "競争に勝ちます。", "vn": "Tôi thắng trong cuộc thi."}
+        ]
+      },
+      {
+        "kanji": "負けます",
+        "hiragana": "まけます",
+        "romaji": "makemasu",
+        "meaning": "thua",
+        "example": "試合に負けました。",
+        "exampleVn": "Tôi thua trận đấu.",
+        "grammar": "試合 (trận đấu) + に (trong) + 負けます (thua) - に chỉ bối cảnh",
+        "breakdown": [
+          {"word": "試合", "reading": "しあい", "type": "noun", "meaning": "trận đấu"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "trong, tại"},
+          {"word": "負けました", "reading": "まけました", "type": "verb", "meaning": "thua (quá khứ)"}
+        ],
+        "pattern": "Sự kiện + に + 負けます",
+        "examples": [
+          {"jp": "テニスに負けました。", "vn": "Tôi thua trong môn quần vợt."},
+          {"jp": "ゲームに負けました。", "vn": "Tôi thua trong trò chơi."},
+          {"jp": "競争に負けました。", "vn": "Tôi thua trong cuộc thi."}
+        ]
+      },
+      {
+        "kanji": "あります",
+        "hiragana": "",
+        "romaji": "arimasu",
+        "meaning": "được tổ chức, diễn ra (sự kiện)",
+        "example": "パーティーがあります。",
+        "exampleVn": "Có một bữa tiệc được tổ chức.",
+        "grammar": "パーティー (bữa tiệc) + が (chủ ngữ) + あります (diễn ra) - が chỉ sự kiện",
+        "breakdown": [
+          {"word": "パーティー", "reading": "パーティー", "type": "noun", "meaning": "bữa tiệc"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "あります", "reading": "あります", "type": "verb", "meaning": "diễn ra (lịch sự)"}
+        ],
+        "pattern": "Sự kiện + が + あります",
+        "examples": [
+          {"jp": "試合があります。", "vn": "Có một trận đấu được tổ chức."},
+          {"jp": "会議があります。", "vn": "Có một cuộc họp diễn ra."},
+          {"jp": "イベントがあります。", "vn": "Có một sự kiện được tổ chức."}
+        ]
+      },
+      {
+        "kanji": "役に立ちます",
+        "hiragana": "やくにたちます",
+        "romaji": "yakunitachimasu",
+        "meaning": "hữu ích",
+        "example": "この本は役に立ちます。",
+        "exampleVn": "Cuốn sách này hữu ích.",
+        "grammar": "この本 (cuốn sách này) + は (chủ đề) + 役に立ちます (hữu ích) - は chỉ chủ đề",
+        "breakdown": [
+          {"word": "この本", "reading": "このほん", "type": "noun", "meaning": "cuốn sách này"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "役に立ちます", "reading": "やくにたちます", "type": "verb", "meaning": "hữu ích (lịch sự)"}
+        ],
+        "pattern": "Đồ vật + は + 役に立ちます",
+        "examples": [
+          {"jp": "このアプリは役に立ちます。", "vn": "Ứng dụng này hữu ích."},
+          {"jp": "この情報は役に立ちます。", "vn": "Thông tin này hữu ích."},
+          {"jp": "この道具は役に立ちます。", "vn": "Công cụ này hữu ích."}
+        ]
+      },
+      {
+        "kanji": "無駄（な）",
+        "hiragana": "むだ（な）",
+        "romaji": "muda (na)",
+        "meaning": "lãng phí",
+        "example": "それは無駄な時間です。",
+        "exampleVn": "Đó là thời gian lãng phí.",
+        "grammar": "それ (đó) + は + 無駄な (lãng phí) + 時間 (thời gian) + です - Tính từ-na",
+        "breakdown": [
+          {"word": "それ", "reading": "それ", "type": "pronoun", "meaning": "đó"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "無駄な", "reading": "むだな", "type": "adjective", "meaning": "lãng phí"},
+          {"word": "時間", "reading": "じかん", "type": "noun", "meaning": "thời gian"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Chủ đề + は + 無駄な + Danh từ + です",
+        "examples": [
+          {"jp": "無駄なお金です。", "vn": "Đó là tiền lãng phí."},
+          {"jp": "無駄な努力です。", "vn": "Đó là nỗ lực lãng phí."},
+          {"jp": "無駄な買い物です。", "vn": "Đó là mua sắm lãng phí."}
+        ]
+      },
+      {
+        "kanji": "不便（な）",
+        "hiragana": "ふべん（な）",
+        "romaji": "fuben (na)",
+        "meaning": "bất tiện",
+        "example": "この場所は不便です。",
+        "exampleVn": "Nơi này bất tiện.",
+        "grammar": "この場所 (nơi này) + は + 不便 (bất tiện) + です - Tính từ-na",
+        "breakdown": [
+          {"word": "この場所", "reading": "このばしょ", "type": "noun", "meaning": "nơi này"},
+          {"word": "は", "reading": "は", "type": "particle", "meaning": "chủ đề (đọc là wa)"},
+          {"word": "不便", "reading": "ふべん", "type": "adjective", "meaning": "bất tiện"},
+          {"word": "です", "reading": "です", "type": "verb", "meaning": "là (lịch sự)"}
+        ],
+        "pattern": "Địa điểm + は + 不便 + です",
+        "examples": [
+          {"jp": "このバスは不便です。", "vn": "Chuyến xe buýt này bất tiện."},
+          {"jp": "不便な生活です。", "vn": "Đó là cuộc sống bất tiện."},
+          {"jp": "不便な時間です。", "vn": "Đó là thời gian bất tiện."}
+        ]
+      },
+      {
+        "kanji": "同じ",
+        "hiragana": "おなじ",
+        "romaji": "onaji",
+        "meaning": "giống nhau",
+        "example": "同じ服を着ます。",
+        "exampleVn": "Tôi mặc quần áo giống nhau.",
+        "grammar": "同じ (giống nhau) + 服 (quần áo) + を + 着ます (mặc) - Tính từ mô tả",
+        "breakdown": [
+          {"word": "同じ", "reading": "おなじ", "type": "adjective", "meaning": "giống nhau"},
+          {"word": "服", "reading": "ふく", "type": "noun", "meaning": "quần áo"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "着ます", "reading": "きます", "type": "verb", "meaning": "mặc (lịch sự)"}
+        ],
+        "pattern": "同じ + Danh từ + を + Động từ",
+        "examples": [
+          {"jp": "同じ本を読みます。", "vn": "Tôi đọc cùng một cuốn sách."},
+          {"jp": "同じ意見です。", "vn": "Đó là ý kiến giống nhau."},
+          {"jp": "同じ時間に来ます。", "vn": "Tôi đến cùng một thời điểm."}
+        ]
+      },
+      {
+        "kanji": "首相",
+        "hiragana": "しゅしょう",
+        "romaji": "shushou",
+        "meaning": "thủ tướng",
+        "example": "首相がスピーチをします。",
+        "exampleVn": "Thủ tướng phát biểu.",
+        "grammar": "首相 (thủ tướng) + が + スピーチ (bài phát biểu) + を + します (thực hiện)",
+        "breakdown": [
+          {"word": "首相", "reading": "しゅしょう", "type": "noun", "meaning": "thủ tướng"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "スピーチ", "reading": "スピーチ", "type": "noun", "meaning": "bài phát biểu"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "します", "reading": "します", "type": "verb", "meaning": "thực hiện (lịch sự)"}
+        ],
+        "pattern": "首相 + が + Hành động",
+        "examples": [
+          {"jp": "首相がニュースに出ます。", "vn": "Thủ tướng xuất hiện trên tin tức."},
+          {"jp": "首相が政治を話します。", "vn": "Thủ tướng nói về chính trị."},
+          {"jp": "首相に会います。", "vn": "Tôi gặp thủ tướng."}
+        ]
+      },
+      {
+        "kanji": "大統領",
+        "hiragana": "だいとうりょう",
+        "romaji": "daitouryou",
+        "meaning": "tổng thống",
+        "example": "大統領がテレビに出ます。",
+        "exampleVn": "Tổng thống xuất hiện trên TV.",
+        "grammar": "大統領 (tổng thống) + が + テレビ (TV) + に + 出ます (xuất hiện)",
+        "breakdown": [
+          {"word": "大統領", "reading": "だいとうりょう", "type": "noun", "meaning": "tổng thống"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "テレビ", "reading": "テレビ", "type": "noun", "meaning": "TV"},
+          {"word": "に", "reading": "に", "type": "particle", "meaning": "trên, tại"},
+          {"word": "出ます", "reading": "でます", "type": "verb", "meaning": "xuất hiện (lịch sự)"}
+        ],
+        "pattern": "大統領 + が + Hành động",
+        "examples": [
+          {"jp": "大統領がスピーチをします。", "vn": "Tổng thống phát biểu."},
+          {"jp": "大統領が国を訪れます。", "vn": "Tổng thống thăm đất nước."},
+          {"jp": "大統領に会います。", "vn": "Tôi gặp tổng thống."}
+        ]
+      },
+      {
+        "kanji": "政治",
+        "hiragana": "せいじ",
+        "romaji": "seiji",
+        "meaning": "chính trị",
+        "example": "政治について話します。",
+        "exampleVn": "Tôi nói về chính trị.",
+        "grammar": "政治 (chính trị) + について (về) + 話します (nói) - について chỉ chủ đề",
+        "breakdown": [
+          {"word": "政治", "reading": "せいじ", "type": "noun", "meaning": "chính trị"},
+          {"word": "について", "reading": "について", "type": "particle", "meaning": "về"},
+          {"word": "話します", "reading": "はなします", "type": "verb", "meaning": "nói (lịch sự)"}
+        ],
+        "pattern": "Chủ đề + について + 話します",
+        "examples": [
+          {"jp": "政治について考えます。", "vn": "Tôi nghĩ về chính trị."},
+          {"jp": "政治は難しいです。", "vn": "Chính trị thì khó."},
+          {"jp": "政治を勉強します。", "vn": "Tôi học về chính trị."}
+        ]
+      },
+      {
+        "kanji": "ニュース",
+        "hiragana": "",
+        "romaji": "nyuusu",
+        "meaning": "tin tức",
+        "example": "ニュースを見ます。",
+        "exampleVn": "Tôi xem tin tức.",
+        "grammar": "ニュース (tin tức) + を (tân ngữ) + 見ます (xem) - を chỉ đối tượng",
+        "breakdown": [
+          {"word": "ニュース", "reading": "ニュース", "type": "noun", "meaning": "tin tức"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "見ます", "reading": "みます", "type": "verb", "meaning": "xem (lịch sự)"}
+        ],
+        "pattern": "ニュース + を + 見ます",
+        "examples": [
+          {"jp": "ニュースを聞きます。", "vn": "Tôi nghe tin tức."},
+          {"jp": "ニュースは面白いです。", "vn": "Tin tức thì thú vị."},
+          {"jp": "ニュースを読みます。", "vn": "Tôi đọc tin tức."}
+        ]
+      },
+      {
+        "kanji": "スピーチ",
+        "hiragana": "",
+        "romaji": "supiichi",
+        "meaning": "bài phát biểu",
+        "example": "スピーチをします。",
+        "exampleVn": "Tôi phát biểu.",
+        "grammar": "スピーチ (bài phát biểu) + を (tân ngữ) + します (thực hiện) - を chỉ hành động",
+        "breakdown": [
+          {"word": "スピーチ", "reading": "スピーチ", "type": "noun", "meaning": "bài phát biểu"},
+          {"word": "を", "reading": "を", "type": "particle", "meaning": "tân ngữ (đọc là o)"},
+          {"word": "します", "reading": "します", "type": "verb", "meaning": "thực hiện (lịch sự)"}
+        ],
+        "pattern": "スピーチ + を + します",
+        "examples": [
+          {"jp": "スピーチを準備します。", "vn": "Tôi chuẩn bị bài phát biểu."},
+          {"jp": "スピーチは長いです。", "vn": "Bài phát biểu thì dài."},
+          {"jp": "スピーチを聞きます。", "vn": "Tôi nghe bài phát biểu."}
+        ]
+      },
+      {
+        "kanji": "試合",
+        "hiragana": "しあい",
+        "romaji": "shiai",
+        "meaning": "trận đấu",
+        "example": "試合があります。",
+        "exampleVn": "Có một trận đấu được tổ chức.",
+        "grammar": "試合 (trận đấu) + が + あります (diễn ra) - が chỉ sự kiện",
+        "breakdown": [
+          {"word": "試合", "reading": "しあい", "type": "noun", "meaning": "trận đấu"},
+          {"word": "が", "reading": "が", "type": "particle", "meaning": "chủ ngữ"},
+          {"word": "あります", "reading": "あります", "type": "verb", "meaning": "diễn ra (lịch sự)"}
+        ],
+        "pattern": "試合 + が + あります",
+        "examples": [
+          {"jp": "試合を見ます。", "vn": "Tôi xem trận đấu."},
+          {"jp": "試合に勝ちます。", "vn": "Tôi thắng trận đấu."},
+          {"jp": "試合は楽しいです。", "vn": "Trận đấu thì vui."}
+        ]
+      },
+      {
         "kanji": "意見",
         "hiragana": "いけん",
         "romaji": "iken",
@@ -5932,11 +6241,12 @@
     ],
     "readingPassage": {
       "title": "Một ngày bận rộn với chính trị và sự kiện",
-      "text": "最近、健君は忙しいサラリーマンです。久しぶりですね、と友達に言いました。政治について話したいと思います、と健君は言います。ニュースを見ました。首相と大統領がスピーチをします。きっと面白いと思います。試合もあります。健君はサッカーに勝ちます！と本当を言います。でも、多分負けます、仕方がありません。交通はラッシュで不便です。そんなに早く着きません。無駄な時間です、と健君は思います。お話を聞いて、意見を言います。同じ意見の人がいます。本当に役に立ちます！でも、お酒を飲みますか？と聞くと、友達は無駄遣いはしない、と言いました。",
-      "translation": "Gần đây, Yuki-kun là một nhân viên văn phòng bận rộn. Lâu quá không gặp, cậu ấy nói với bạn. Tôi muốn nói về chính trị, Yuki-kun nói. Cậu ấy xem tin tức. Thủ tướng và tổng thống phát biểu. Chắc chắn sẽ thú vị, cậu ấy nghĩ. Có một trận đấu được tổ chức. Yuki-kun nói thật rằng cậu ấy sẽ thắng trong bóng đá! Nhưng có lẽ sẽ thua, không còn cách nào khác. Giao thông thì đông đúc và bất tiện. Không đến sớm đến mức đó. Thật là thời gian lãng phí, Yuki-kun nghĩ. Nghe câu chuyện và nói ý kiến, cậu ấy thấy có người có ý kiến giống nhau. Thực sự hữu ích! Nhưng khi hỏi “Uống rượu không?”, bạn cậu ấy nói không muốn phung phí.",
+      "text": "最近、健君はサラリーマンとして本当に忙しいです。久しぶりですね、と友達に言いました。政治について話したいと思います、と健君は言います。ニュースを見ました。首相と大統領がスピーチをします。きっと面白いと思います。試合もあります。健君はサッカーに勝ちます！と本当を言います。でも、多分負けます、仕方がありません。交通はラッシュで不便です。そんなに早く着きません。無駄な時間です、と健君は思います。お話を聞いて、意見を言います。同じ意見の人がいます。本当に役に立ちます！でも、お酒を飲みますか？と聞くと、友達は無駄遣いはしない、と言いました。",
+      "translation": "Gần đây, Yuki-kun thực sự bận rộn với công việc nhân viên văn phòng. Lâu quá không gặp, cậu ấy nói với bạn. Tôi muốn nói về chính trị, Yuki-kun nghĩ. Cậu ấy xem tin tức. Thủ tướng và tổng thống phát biểu. Chắc chắn sẽ thú vị, cậu ấy nghĩ. Có một trận đấu được tổ chức. Yuki-kun nói thật rằng cậu ấy sẽ thắng trong bóng đá! Nhưng có lẽ sẽ thua, không còn cách nào khác. Giao thông thì đông đúc và bất tiện. Không đến sớm đến mức đó. Thật là thời gian lãng phí, Yuki-kun nghĩ. Nghe câu chuyện và nói ý kiến, cậu ấy thấy có người có ý kiến giống nhau. Thực sự hữu ích! Nhưng khi hỏi “Uống rượu không?”, bạn cậu ấy nói không muốn phung phí.",
       "highlightedWords": [
         {"word": "最近", "meaning": "gần đây"},
         {"word": "サラリーマン", "meaning": "người làm công ăn lương"},
+        {"word": "本当に", "meaning": "thực sự"},
         {"word": "久しぶりですね", "meaning": "lâu quá không gặp"},
         {"word": "政治", "meaning": "chính trị"},
         {"word": "について", "meaning": "về"},
@@ -5963,7 +6273,6 @@
         {"word": "お話", "meaning": "câu chuyện"},
         {"word": "意見", "meaning": "ý kiến"},
         {"word": "同じ", "meaning": "giống nhau"},
-        {"word": "本当に", "meaning": "thực sự"},
         {"word": "役に立ちます", "meaning": "hữu ích"},
         {"word": "お酒を飲みます", "meaning": "uống rượu"},
         {"word": "無駄遣い", "meaning": "sự phung phí"}
